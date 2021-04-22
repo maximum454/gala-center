@@ -1,0 +1,69 @@
+@import 'partials/normalize';
+@import 'mixin';
+@import 'fonts';
+@import 'icon';
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+.wrp {
+	overflow: hidden;
+}
+
+.d-none {
+	display: none;
+}
+
+.d-desktop-none {
+	display: none;
+	@include r(767) {
+		display: block;
+	}
+}
+
+.d-mobile-none {
+	display: block;
+	@include r(767) {
+		display: none !important;
+	}
+}
+
+.container {
+	max-width: 1366px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.w100 {
+	width: 100%;
+}
+
+//Шапка
+@import "componets/header";
+
+//Главная навигация
+@import "componets/nav";
+
+//Подвал
+@import "componets/footer";
+
+//внутряняя стрница
+@import "componets/main";
+
+//Хлебные крошки
+@import "componets/breadcrumb";
+
+//Страница 404
+@import "componets/page404";
