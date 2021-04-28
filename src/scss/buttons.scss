@@ -32,9 +32,12 @@
 		}
 	}
 	&.btn-secondary{
-		color: #fff;
-		background-color: #A4A9BB;
-		border-color: #A4A9BB;
+		color: #324C9A;
+		background-color: #F1F5F9;
+		border-color: #F1F5F9;
+		&:hover {
+
+		}
 	}
 	&.btn-success{
 		color: #fff;

@@ -4,6 +4,8 @@
 @import 'icon';
 @import 'buttons';
 @import 'partials/swiper-bundle';
+@import 'partials/formstyler';
+@import 'partials/formstyler.theme';
 
 
 * {
@@ -52,6 +54,17 @@ body {
 	width: 100%;
 }
 
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	color: #999;
+	background-image: url("../img/icons-sprite.svg#slider-arrow");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 18px;
+}
 //Шапка
 @import "componets/header";
 
@@ -93,3 +106,9 @@ body {
 
 //Возможности на главной
 @import "componets/capability";
+
+//Популярные товары
+@import "componets/slider-populary";
+
+//Товар
+@import "componets/products";
