@@ -1,0 +1,19 @@
+.slider-brands{
+  overflow: hidden;
+  padding-bottom: 30px;
+  margin-bottom: 72px;
+  .swiper-pagination{
+    bottom: 0;
+  }
+
+  .swiper-pagination-bullet {
+    background: #324C9A;
+    opacity: 0.3;
+    &-active{
+      opacity: 1;
+    }
+  }
+  .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+  }
+}

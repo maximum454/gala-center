@@ -2402,6 +2402,29 @@ body.lock {
   margin: 0 10px;
 }
 
+.slider-brands {
+  overflow: hidden;
+  padding-bottom: 30px;
+  margin-bottom: 72px;
+}
+
+.slider-brands .swiper-pagination {
+  bottom: 0;
+}
+
+.slider-brands .swiper-pagination-bullet {
+  background: #324C9A;
+  opacity: 0.3;
+}
+
+.slider-brands .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.slider-brands .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 10px;
+}
+
 @media only screen and (max-width: 1024px) {
   .breadcrumb {
     overflow-x: scroll;
