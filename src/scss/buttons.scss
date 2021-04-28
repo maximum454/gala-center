@@ -12,6 +12,7 @@
 	border-radius: .25rem;
 	cursor: pointer;
 	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	text-decoration: none;
 	&:focus,
 	&:hover {
 		text-decoration: none;
@@ -22,8 +23,8 @@
 	}
 	&.btn-primary{
 		color: #fff;
-		background-color: #007bff;
-		border-color: #007bff;
+		background-color: #324C9A;
+		border-color: #324C9A;
 		&:hover {
 			color: #fff;
 			background-color: #0069d9;
@@ -67,22 +68,22 @@
 	}
 	&.btn-link{
 		font-weight: 400;
-		color: #007bff;
+		color: #324C9A;
 		background-color: transparent;
 	}
 
 	&.btn-outline-primary{
-		color: #007bff;
+		color: #324C9A;
 		background-color: transparent;
 		background-image: none;
-		border-color: #007bff;
+		border-color: #324C9A;
 		&:hover {
 			color: #fff;
-			background-color: #007bff;
-			border-color: #007bff;
+			background-color: #324C9A;
+			border-color: #324C9A;
 		}
 		&:focus {
-			box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 50%);
+			box-shadow: 0 0 0 0.2rem rgb(0,123,255 / 50%);
 		}
 	}
 	&.btn-outline-secondary{
@@ -96,7 +97,7 @@
 			border-color: #6c757d;
 		}
 		&:focus {
-			box-shadow: 0 0 0 0.2rem rgb(108 117 125 / 50%);
+			box-shadow: 0 0 0 0.2rem rgb(108,117,125 / 50%);
 		}
 	}
 	&.btn-outline-success{
@@ -110,7 +111,7 @@
 			border-color: #28a745;
 		}
 		&:focus {
-			box-shadow: 0 0 0 0.2rem rgb(40 167 69 / 50%);
+			box-shadow: 0 0 0 0.2rem rgb(40 ,167,69 / 50%);
 		}
 	}
 	&.btn-outline-danger{
@@ -124,7 +125,7 @@
 			border-color: #dc3545;
 		}
 		&:focus {
-			box-shadow: 0 0 0 0.2rem rgb(220 53 69 / 50%);
+			box-shadow: 0 0 0 0.2rem rgb(220, 53,69 / 50%);
 		}
 	}
 	&.btn-outline-warning{
@@ -138,7 +139,7 @@
 			border-color: #ffc107;
 		}
 		&:focus {
-			box-shadow: 0 0 0 0.2rem rgb(255 193 7 / 50%);
+			box-shadow: 0 0 0 0.2rem rgb(255 ,193,7 / 50%);
 		}
 	}
 	&.btn-outline-info{
@@ -152,7 +153,7 @@
 			border-color: #17a2b8;
 		}
 		&:focus {
-			box-shadow: 0 0 0 0.2rem rgb(23 162 184 / 50%);
+			box-shadow: 0 0 0 0.2rem rgb(23 ,162 ,184 / 50%);
 		}
 	}
 
@@ -167,7 +168,7 @@
 			border-color: #f8f9fa;
 		}
 		&:focus {
-			box-shadow: 0 0 0 0.2rem rgb(248 249 250 / 50%);
+			box-shadow: 0 0 0 0.2rem rgb(248 ,249 ,250 / 50%);
 		}
 	}
 	&.btn-outline-dark{
@@ -181,7 +182,7 @@
 			border-color: #343a40;
 		}
 		&:focus {
-			box-shadow: 0 0 0 0.2rem rgb(52 58 64 / 50%);
+			box-shadow: 0 0 0 0.2rem rgb(52, 58 ,64 / 50%);
 		}
 	}
 

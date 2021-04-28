@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<title>SVG stack preview | svg-sprite</title>
+		<style>@charset "UTF-8";body{padding:0;margin:0;color:#666;background:#fafafa;font-family:Arial,Helvetica,sans-serif;font-size:1em;line-height:1.4}header{display:block;padding:3em 3em 2em 3em;background-color:#fff}header p{margin:2em 0 0 0}section{border-top:1px solid #eee;padding:2em 3em 0 3em}section ul{margin:0;padding:0}section li{display:inline;display:inline-block;background-color:#fff;position:relative;margin:0 2em 2em 0;vertical-align:top;border:1px solid #ccc;padding:1em 1em 3em 1em;cursor:default}.icon-box{margin:0;width:144px;height:144px;position:relative;background:#ccc url("data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=") top left repeat;border:1px solid #ccc;display:table-cell;vertical-align:middle;text-align:center}.icon{display:inline;display:inline-block}h1{margin-top:0}h2{margin:0;padding:0;font-size:1em;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:absolute;left:1em;right:1em;bottom:1em}footer{display:block;margin:0;padding:0 3em 3em 3em}footer p{margin:0;font-size:.7em}footer a{color:#0f7595;margin-left:0}</style>
+		
+<!--
+	
+Sprite shape dimensions
+====================================================================================================
+You will need to set the sprite shape dimensions via CSS when you use them as stack SVGs, otherwise
+they would become a huge 100% in size. You may use the following dimension classes for doing so.
+They might well be outsourced to an external stylesheet of course.
+
+-->
+
+<style type="text/css">
+	.svg-basket-btn-dims { width: 25px; height: 24px; }
+	.svg-checkmark-dims { width: 40px; height: 40px; }
+	.svg-close-dims { width: 24px; height: 24px; }
+	.svg-delivery-dims { width: 24px; height: 24px; }
+	.svg-empire-dims { width: 24px; height: 25px; }
+	.svg-icon-burger-light-dims { width: 24px; height: 24px; }
+	.svg-icon-city-cart-light-dims { width: 11px; height: 11px; }
+	.svg-icon-select-dropdown-dark-dims { width: 6px; height: 5px; }
+	.svg-icon-select-dropdown-light-dims { width: 9px; height: 7px; }
+	.svg-like-blue-dims { width: 24px; height: 24px; }
+	.svg-like-gray-dims { width: 24px; height: 19px; }
+	.svg-like-red-dims { width: 25px; height: 19px; }
+	.svg-login-dims { width: 24px; height: 24px; }
+	.svg-search-blue-dims { width: 24px; height: 24px; }
+	.svg-search-gray-dims { width: 24px; height: 24px; }
+	.svg-slider-arrow-dims { width: 9px; height: 14px; }
+	.svg-time-dims { width: 23px; height: 23px; }
+</style>
+
+<!--
+====================================================================================================
+-->
+
+	</head>
+	<body>
+		<header>
+			<h1>SVG stack preview</h1>
+			<p>This preview features an SVG stack. Please have a look at the HTML source for further details and be aware of the following constraints:</p>
+			<ul>
+				<li>Your browser has to <a href="http://caniuse.com/#feat=svg-fragment" target="_blank">support SVG fragment identifiers</a> for SVG stacks to work.</li>
+				<li>Support for SVG fragment identifiers hasn't always been that decent. For older browsers you will have to use some prolyfill like <a href="https://github.com/preciousforever/SVG-Stacker/blob/master/fixsvgstack.jquery.js" target="_blank">fixsvgstack.jquery.js</a>.</li>
+			</ul>
+		</header>
+		<section>
+			
+<!--
+	
+SVG stack
+====================================================================================================
+These SVG images make use of fragment identifiers (IDs) to reference certain portions of the
+external sprite. By default, all shapes inside the sprite are hidden by CSS. The `:target` pseudo
+selector is used to show the very shape that is referenced by the fragment identifier.  
+
+-->
+
+			<ul>
+				
+				<li title="basket-btn">
+					<div class="icon-box">
+						
+						<!-- basket-btn -->
+						<img src="../icons/icons-sprite.svg#basket-btn" class="svg-basket-btn-dims" alt="basket-btn"/>
+						
+					</div>
+					<h2>basket-btn</h2>
+				</li>
+				<li title="checkmark">
+					<div class="icon-box">
+						
+						<!-- checkmark -->
+						<img src="../icons/icons-sprite.svg#checkmark" class="svg-checkmark-dims" alt="checkmark"/>
+						
+					</div>
+					<h2>checkmark</h2>
+				</li>
+				<li title="close">
+					<div class="icon-box">
+						
+						<!-- close -->
+						<img src="../icons/icons-sprite.svg#close" class="svg-close-dims" alt="close"/>
+						
+					</div>
+					<h2>close</h2>
+				</li>
+				<li title="delivery">
+					<div class="icon-box">
+						
+						<!-- delivery -->
+						<img src="../icons/icons-sprite.svg#delivery" class="svg-delivery-dims" alt="delivery"/>
+						
+					</div>
+					<h2>delivery</h2>
+				</li>
+				<li title="empire">
+					<div class="icon-box">
+						
+						<!-- empire -->
+						<img src="../icons/icons-sprite.svg#empire" class="svg-empire-dims" alt="empire"/>
+						
+					</div>
+					<h2>empire</h2>
+				</li>
+				<li title="icon-burger-light">
+					<div class="icon-box">
+						
+						<!-- icon-burger-light -->
+						<img src="../icons/icons-sprite.svg#icon-burger-light" class="svg-icon-burger-light-dims" alt="icon-burger-light"/>
+						
+					</div>
+					<h2>icon-burger-light</h2>
+				</li>
+				<li title="icon-city-cart-light">
+					<div class="icon-box">
+						
+						<!-- icon-city-cart-light -->
+						<img src="../icons/icons-sprite.svg#icon-city-cart-light" class="svg-icon-city-cart-light-dims" alt="icon-city-cart-light"/>
+						
+					</div>
+					<h2>icon-city-cart-light</h2>
+				</li>
+				<li title="icon-select-dropdown-dark">
+					<div class="icon-box">
+						
+						<!-- icon-select-dropdown-dark -->
+						<img src="../icons/icons-sprite.svg#icon-select-dropdown-dark" class="svg-icon-select-dropdown-dark-dims" alt="icon-select-dropdown-dark"/>
+						
+					</div>
+					<h2>icon-select-dropdown-dark</h2>
+				</li>
+				<li title="icon-select-dropdown-light">
+					<div class="icon-box">
+						
+						<!-- icon-select-dropdown-light -->
+						<img src="../icons/icons-sprite.svg#icon-select-dropdown-light" class="svg-icon-select-dropdown-light-dims" alt="icon-select-dropdown-light"/>
+						
+					</div>
+					<h2>icon-select-dropdown-light</h2>
+				</li>
+				<li title="like-blue">
+					<div class="icon-box">
+						
+						<!-- like-blue -->
+						<img src="../icons/icons-sprite.svg#like-blue" class="svg-like-blue-dims" alt="like-blue"/>
+						
+					</div>
+					<h2>like-blue</h2>
+				</li>
+				<li title="like-gray">
+					<div class="icon-box">
+						
+						<!-- like-gray -->
+						<img src="../icons/icons-sprite.svg#like-gray" class="svg-like-gray-dims" alt="like-gray"/>
+						
+					</div>
+					<h2>like-gray</h2>
+				</li>
+				<li title="like-red">
+					<div class="icon-box">
+						
+						<!-- like-red -->
+						<img src="../icons/icons-sprite.svg#like-red" class="svg-like-red-dims" alt="like-red"/>
+						
+					</div>
+					<h2>like-red</h2>
+				</li>
+				<li title="login">
+					<div class="icon-box">
+						
+						<!-- login -->
+						<img src="../icons/icons-sprite.svg#login" class="svg-login-dims" alt="login"/>
+						
+					</div>
+					<h2>login</h2>
+				</li>
+				<li title="search-blue">
+					<div class="icon-box">
+						
+						<!-- search-blue -->
+						<img src="../icons/icons-sprite.svg#search-blue" class="svg-search-blue-dims" alt="search-blue"/>
+						
+					</div>
+					<h2>search-blue</h2>
+				</li>
+				<li title="search-gray">
+					<div class="icon-box">
+						
+						<!-- search-gray -->
+						<img src="../icons/icons-sprite.svg#search-gray" class="svg-search-gray-dims" alt="search-gray"/>
+						
+					</div>
+					<h2>search-gray</h2>
+				</li>
+				<li title="slider-arrow">
+					<div class="icon-box">
+						
+						<!-- slider-arrow -->
+						<img src="../icons/icons-sprite.svg#slider-arrow" class="svg-slider-arrow-dims" alt="slider-arrow"/>
+						
+					</div>
+					<h2>slider-arrow</h2>
+				</li>
+				<li title="time">
+					<div class="icon-box">
+						
+						<!-- time -->
+						<img src="../icons/icons-sprite.svg#time" class="svg-time-dims" alt="time"/>
+						
+					</div>
+					<h2>time</h2>
+				</li>
+			</ul>
+
+<!--
+====================================================================================================
+-->
+
+		</section>
+		<footer>
+			<p>Generated at Wed, 28 Apr 2021 05:51:00 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
+		</footer>
+	</body>
+</html>
