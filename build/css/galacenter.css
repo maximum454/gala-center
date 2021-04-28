@@ -557,8 +557,8 @@ template {
           user-select: none;
   border: 1px solid transparent;
   padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 20px;
   border-radius: .25rem;
   cursor: pointer;
   -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
@@ -593,8 +593,8 @@ template {
 
 .btn.btn-secondary {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #A4A9BB;
+  border-color: #A4A9BB;
 }
 
 .btn.btn-success {
@@ -658,10 +658,10 @@ template {
 }
 
 .btn.btn-outline-secondary {
-  color: #6c757d;
+  color: #333;
   background-color: transparent;
   background-image: none;
-  border-color: #6c757d;
+  border-color: #A4A9BB;
 }
 
 .btn.btn-outline-secondary:hover {
@@ -2480,6 +2480,32 @@ body.lock {
   overflow: hidden;
   padding-bottom: 30px;
   margin-bottom: 72px;
+}
+
+.slider-brands__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.slider-brands__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.slider-brands .btn {
+  max-width: 178px;
+  width: 100%;
 }
 
 .slider-brands .swiper-pagination {

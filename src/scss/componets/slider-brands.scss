@@ -2,6 +2,23 @@
   overflow: hidden;
   padding-bottom: 30px;
   margin-bottom: 72px;
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    color: #000000;
+  }
+  .btn{
+    max-width: 178px;
+    width: 100%;
+  }
   .swiper-pagination{
     bottom: 0;
   }
