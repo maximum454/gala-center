@@ -3,6 +3,7 @@
 @import 'fonts';
 @import 'icon';
 @import 'buttons';
+@import 'partials/swiper-bundle';
 
 
 * {
@@ -71,3 +72,6 @@ body {
 
 //Меню скролл
 @import "componets/nav-scroller";
+
+//Слайдер банеров на главной
+@import "componets/slider-banners";
