@@ -1,0 +1,23 @@
+.slider-banners-bottom{
+	margin-bottom: 40px;
+	&__body{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-gap: 30px 20px;
+	}
+	&__item{
+		border: 1px solid rgba(68, 121, 163, 0.12);
+		box-sizing: border-box;
+		border-radius: 4px;
+		padding: 22px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 20px;
+		color: #333333;
+		text-decoration: none;
+	}
+}

@@ -2443,6 +2443,39 @@ body.lock {
   margin: 0 10px;
 }
 
+.slider-banners-bottom {
+  margin-bottom: 40px;
+}
+
+.slider-banners-bottom__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px 20px;
+}
+
+.slider-banners-bottom__item {
+  border: 1px solid rgba(68, 121, 163, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  padding: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+  text-decoration: none;
+}
+
 .slider-brands {
   overflow: hidden;
   padding-bottom: 30px;
