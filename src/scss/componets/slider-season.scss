@@ -85,12 +85,13 @@
 	}
 
 	.swiper-button-prev {
-		left: 0;
+		right: 44px;
+		left: auto;
 		border-radius: 4px 0 0 4px;
 	}
 
 	.swiper-button-next {
-		right: 1px;
+		right: 0;
 		transform: rotate(180deg);
 		border-radius: 4px 0 0 4px;
 	}

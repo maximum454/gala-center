@@ -539,6 +539,12 @@ template {
   background-image: url("../img/icons-sprite.svg#login");
 }
 
+.icon-checkmark {
+  background-image: url("../img/icons-sprite.svg#checkmark");
+  width: 40px;
+  height: 40px;
+}
+
 .icon-time {
   width: 21px;
   height: 21px;
@@ -2780,12 +2786,13 @@ body.lock {
 }
 
 .slider-season .swiper-button-prev {
-  left: 0;
+  right: 44px;
+  left: auto;
   border-radius: 4px 0 0 4px;
 }
 
 .slider-season .swiper-button-next {
-  right: 1px;
+  right: 0;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -2802,6 +2809,37 @@ body.lock {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px;
+}
+
+.capability {
+  margin: 0 0 66px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+}
+
+.capability__item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333333;
+  padding: 10px 22px;
+  border-right: 1px solid rgba(68, 121, 163, 0.12);
+}
+
+.capability__item:last-of-type {
+  border-right: none;
+}
+
+.capability .icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 @media only screen and (max-width: 1024px) {
