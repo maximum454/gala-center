@@ -61,6 +61,11 @@
 				line-height: 23px;
 				color: #333333;
 				text-decoration: none;
+				transition: all .3s ease;
+				&:hover{
+					transition: all .3s ease;
+					opacity: .7;
+				}
 			}
 		}
 	}

@@ -65,6 +65,11 @@
 			line-height: 32px;
 			color: #333333;
 			text-decoration: none;
+			transition: all .3s ease;
+			&:hover{
+				transition: all .3s ease;
+				opacity: .7;
+			}
 		}
 		span{
 			display: block;
@@ -73,6 +78,12 @@
 			font-size: 15px;
 			line-height: 20px;
 			color: #A4A9BB;
+			cursor: pointer;
+			transition: all .3s ease;
+			&:hover{
+				transition: all .3s ease;
+				color: #324C9A;
+			}
 		}
 	}
 	&__auth{
@@ -84,6 +95,11 @@
 			color: #324C9A;
 			text-decoration: none;
 			margin-right: 32px;
+			transition: all .3s ease;
+			&:hover{
+				transition: all .3s ease;
+				opacity: .7;
+			}
 			&:last-of-type{
 				margin-right: 0;
 			}

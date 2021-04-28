@@ -1717,6 +1717,16 @@ body.lock {
   line-height: 32px;
   color: #333333;
   text-decoration: none;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.header__phone a:hover {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  opacity: .7;
 }
 
 .header__phone span {
@@ -1726,6 +1736,17 @@ body.lock {
   font-size: 15px;
   line-height: 20px;
   color: #A4A9BB;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.header__phone span:hover {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  color: #324C9A;
 }
 
 .header__auth a {
@@ -1736,6 +1757,16 @@ body.lock {
   color: #324C9A;
   text-decoration: none;
   margin-right: 32px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.header__auth a:hover {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  opacity: .7;
 }
 
 .header__auth a:last-of-type {
@@ -1848,6 +1879,16 @@ body.lock {
   line-height: 23px;
   color: #333333;
   text-decoration: none;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.nav ul li a:hover {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  opacity: .7;
 }
 
 .footer {
@@ -2423,6 +2464,55 @@ body.lock {
 
 .slider-brands .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 10px;
+}
+
+.catalog-section {
+  margin-bottom: 80px;
+}
+
+.catalog-section__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px 20px;
+}
+
+.catalog-section__item {
+  display: block;
+  background: #F1F5F9;
+  border-radius: 4px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  height: 140px;
+  padding: 20px 100px 20px 20px;
+}
+
+.catalog-section__name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.catalog-section__count {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.catalog-section__img {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.catalog-section__img img {
+  max-width: 100%;
+  height: auto;
 }
 
 @media only screen and (max-width: 1024px) {
