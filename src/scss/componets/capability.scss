@@ -1,0 +1,25 @@
+.capability{
+	margin: 0 0 53px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+	&__item{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 20px;
+		display: flex;
+		align-items: center;
+		color: #333333;
+		padding: 10px 22px;
+		border-right: 1px solid rgba(68, 121, 163, 0.12);
+		&:last-of-type{
+			border-right: none;
+		}
+	}
+	.icon{
+		flex-shrink: 0;
+	}
+	@include r(1023){
+		display: none;
+	}
+}

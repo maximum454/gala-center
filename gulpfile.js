@@ -40,7 +40,6 @@ let {src, dest} = require('gulp'),
     imagemin = require('gulp-imagemin'),
     webp = require('gulp-webp'),
     webphtml = require('gulp-webp-html'),
-    webpcss = require('gulp-webpcss'),
     svgSprite = require('gulp-svg-sprite'),
     ttf2woff = require('gulp-ttf2woff'),
     ttf2woff2 = require('gulp-ttf2woff2'),
@@ -83,12 +82,6 @@ function css() {
             autoprefixer({
                 overrideBrowserslist: ['last 5 versions'],
                 cascade: true
-            })
-        )
-        .pipe(
-            webpcss({
-                webpClass: '.webp',
-                noWebpClass: '.no-webp'
             })
         )
         .pipe(dest(path.build.css))
@@ -145,11 +138,31 @@ gulp.task('svgSprite', function () {
             svgSprite({
                 mode: {
                     stack: {
-                        sprite: '../icons/icons.svg',
+                        sprite: '../icons/icons-sprite.svg',
                         example: true,
                     },
                     css: { // Create a «css» sprite
-                        sprite: '../icon/icons.svg',
+                        sprite: '../icon/icons-sprite.svg',
+                        render: {
+                            scss: true
+                        }
+                    }
+                },
+            })
+        )
+        .pipe(dest(path.build.img))
+});
+gulp.task('svgSocialSprite', function () {
+    return gulp.src([source + '/iconsprite/social/*.svg'])
+        .pipe(
+            svgSprite({
+                mode: {
+                    stack: {
+                        sprite: '../social/social-sprite.svg',
+                        example: true,
+                    },
+                    css: { // Create a «css» sprite
+                        sprite: '../social/social-sprite.svg',
                         render: {
                             scss: true
                         }

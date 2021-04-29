@@ -1,0 +1,50 @@
+.subscribe{
+	background: #F1F5F9;
+	border-radius: 4px;
+	padding: 30px 0;
+	margin: 0 0 58px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	&__title{
+		font-style: normal;
+		font-weight: bold;
+		font-size: 17px;
+		line-height: 23px;
+		color: #333333;
+		max-width: 240px;
+		display: flex;
+		margin-right: 45px;
+	}
+	&__form{
+		display: inline-flex;
+		width: 100%;
+		max-width: 580px;
+	}
+	.form-control-plaintext{
+		margin-right: 16px;
+	}
+	.icon-email{
+		width: 45px;
+		height: 45px;
+		flex-shrink: 0;
+	}
+	.btn{
+	}
+	@include r(1023){
+		flex-direction: column;
+		&__title{
+			font-size: 22px;
+			line-height: 28px;
+			max-width: 100%;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+		&__form{
+			max-width: 480px;
+			margin: 0 auto;
+		}
+	}
+}

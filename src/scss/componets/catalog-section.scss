@@ -1,0 +1,50 @@
+.catalog-section {
+	margin-bottom: 80px;
+	overflow: hidden;
+	&__body{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-gap: 30px 20px;
+		overflow: hidden;
+	}
+	&__item {
+		display: block;
+		background: #F1F5F9;
+		border-radius: 4px;
+		position: relative;
+		text-decoration: none;
+		width: 100%;
+		height: 140px;
+		padding: 20px 100px 20px 20px;
+	}
+	&__name{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 28px;
+		color: #333333;
+		margin-bottom: 8px;
+	}
+	&__count{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 20px;
+		color: #333333;
+	}
+	&__img{
+		position: absolute;
+		top: 8px;
+		right: 8px;
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	@include r(1023){
+		&__body{
+			grid-template-columns: repeat(9, minmax(250px, 1fr));
+			overflow-x: scroll;
+		}
+	}
+}

@@ -3,7 +3,14 @@
 @import 'fonts';
 @import 'icon';
 @import 'buttons';
+@import 'form';
+@import 'partials/swiper-bundle';
+@import 'partials/formstyler';
+@import 'partials/formstyler.theme';
+@import 'partials/remodal';
+@import 'partials/remodal-default-theme';
 
+@import 'remodal';
 
 * {
 	box-sizing: border-box;
@@ -11,7 +18,7 @@
 
 body {
 	background-color: #fff;
-
+	font-family: $font1;
 	&.lock {
 		overflow: hidden;
 	}
@@ -51,8 +58,22 @@ body {
 	width: 100%;
 }
 
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	color: #999;
+	background-image: url("../img/icons-sprite.svg#slider-arrow");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 18px;
+}
 //Шапка
 @import "componets/header";
+
+//Шапка доставка
+@import "componets/header-delivery";
 
 //Главная навигация
 @import "componets/nav";
@@ -68,3 +89,45 @@ body {
 
 //Страница 404
 @import "componets/page404";
+
+//Меню скролл
+@import "componets/nav-scroller";
+
+//Слайдер банеров на главной
+@import "componets/slider-banners";
+
+//Слайдер банеров под главным слайдером
+@import "componets/slider-banners-bottom";
+
+//Слайдер брендов
+@import "componets/slider-brands";
+
+//Каталог секции на главной
+@import "componets/catalog-section";
+
+//Статьи
+@import "componets/articles";
+
+//Сезонные предложения
+@import "componets/slider-season";
+
+//Возможности на главной
+@import "componets/capability";
+
+//Популярные товары
+@import "componets/slider-populary";
+
+//Новинки и Хиты
+@import "componets/slider-tabs";
+
+//Слайдер коллекции
+@import "componets/slider-collection";
+
+//Товар
+@import "componets/products";
+
+//Получайте выгодные предложения
+@import "componets/subscribe";
+
+//Стики для карточек
+@import "componets/stick";

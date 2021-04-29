@@ -1,0 +1,59 @@
+.nav-scroller {
+	background-color: #fff;
+	padding: 16px 0;
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+	}
+	&__menu {
+		a {
+			font-family: $font1;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 20px;
+			color: #333333;
+			text-decoration: none;
+			transition: all .3s ease;
+			margin-right: 31px;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+			&:hover {
+				transition: all .3s ease;
+				opacity: .7;
+			}
+		}
+	}
+	&__app {
+		a {
+			text-decoration: none;
+			margin-left: 2px;
+			&:hover {
+				transition: all .3s ease;
+				opacity: .7;
+			}
+		}
+	}
+	@include r(1023){
+		&__menu {
+			a {
+				margin-right: 20px;
+			}
+		}
+		&__app {
+			a {
+				img{
+					max-width: 95px;
+				}
+			}
+		}
+		.header-delivery{
+			display: none;
+		}
+	}
+}
