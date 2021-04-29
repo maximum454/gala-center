@@ -95,5 +95,19 @@
 		transform: rotate(180deg);
 		border-radius: 4px 0 0 4px;
 	}
+	@include r(1023){
 
+		.btn{
+			display: none;
+		}
+		&__nav{
+			display: none;
+		}
+	}
+	@include r(767){
+		&__title{
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
 }

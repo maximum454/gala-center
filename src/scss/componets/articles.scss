@@ -2,6 +2,7 @@
 	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 	padding-bottom: 20px;
 	margin-bottom: 64px;
+	overflow: hidden;
 	&__header{
 		margin-bottom: 32px;
 	}
@@ -14,7 +15,7 @@
 	}
 	&__body{
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
 		grid-gap: 30px 39px;
 	}
 	&__item{
@@ -74,6 +75,19 @@
 		.btn{
 			max-width: 240px;
 			width: 100%;
+		}
+	}
+	@include r(1023){
+		&__body{
+			grid-template-columns: repeat(4, minmax(310px, 1fr));
+			overflow-x: scroll;
+			overflow-y: hidden;
+		}
+	}
+	@include r(767){
+		&__title{
+			font-size: 20px;
+			line-height: 24px;
 		}
 	}
 }

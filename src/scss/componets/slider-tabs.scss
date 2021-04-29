@@ -95,5 +95,12 @@
 		background-position: center;
 		background-size: 18px;
 	}
-
+	@include r(1023){
+		&__nav{
+			display: none;
+		}
+		.btn{
+			display: none;
+		}
+	}
 }
