@@ -1,4 +1,5 @@
 @@include('./partials/jquery.min.js')
+@@include('./partials/dinamicAdap.js')
 @@include('./partials/swiper-bundle.min.js')
 @@include('./partials/jquery.formstyler.min.js')
 @@include('./components/slider-banners.js')
@@ -7,6 +8,7 @@
 @@include('./components/slider-populary.js')
 @@include('./components/slider-tabs.js')
 @@include('./components/slider-collection.js')
+@@include('./components/nav.js')
 
 $(function () {
     setTimeout(function() {

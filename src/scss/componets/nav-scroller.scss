@@ -1,71 +1,76 @@
-.nav-scroller{
-  background-color: #fff;
-  padding: 16px 0;
-  &__body{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-  }
-  &__menu{
-    a{
-      font-family: $font1;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 20px;
-      color: #333333;
-      text-decoration: none;
-      transition: all .3s ease;
-      margin-right: 31px;
-      &:last-of-type{
-        margin-right: 0;
-      }
-      &:hover{
-        transition: all .3s ease;
-        opacity: .7;
-      }
-    }
-  }
-  &__delivery{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-family: $font1;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 20px;
-    color: #A4A9BB;
-    padding-left: 36px;
-    cursor: pointer;
-    &:before{
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      margin-top: -12px;
-      background-image: url("../img/icons-sprite.svg#delivery");
-      background-position: center;
-      background-size: 100%;
-      background-repeat: no-repeat;
-      width: 24px;
-      height: 24px;
-    }
-    span{
-      color: #324C9A;
-      margin-left: 8px;
-    }
-  }
-  &__app{
-    a{
-      text-decoration: none;
-      margin-left: 2px;
-      &:hover{
-        transition: all .3s ease;
-        opacity: .7;
-      }
-    }
-  }
+.nav-scroller {
+	background-color: #fff;
+	padding: 16px 0;
+
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+	}
+
+	&__menu {
+		a {
+			font-family: $font1;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 20px;
+			color: #333333;
+			text-decoration: none;
+			transition: all .3s ease;
+			margin-right: 31px;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+			&:hover {
+				transition: all .3s ease;
+				opacity: .7;
+			}
+		}
+	}
+
+	&__delivery {
+		font-family: $font1;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 20px;
+		color: #A4A9BB;
+		cursor: pointer;
+		span {
+			color: #324C9A;
+			margin-left: 8px;
+		}
+	}
+
+	&__app {
+		a {
+			text-decoration: none;
+			margin-left: 2px;
+			&:hover {
+				transition: all .3s ease;
+				opacity: .7;
+			}
+		}
+	}
+	@include r(1023){
+		&__menu {
+			a {
+				margin-right: 20px;
+			}
+		}
+		&__delivery {
+			display: none;
+		}
+		&__app {
+			a {
+				img{
+					max-width: 95px;
+				}
+			}
+		}
+	}
 }

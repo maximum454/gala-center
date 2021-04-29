@@ -12,26 +12,23 @@
 	&__logo{
 		max-width: 294px;
 		width: 100%;
-		height: auto;
+		flex-shrink: 0;
+		margin-right: 20px;
+		img{
+			max-width: 100%;
+			height: auto;
+		}
 	}
 	&__search{
-		position: relative;
-		height: 44px;
 		width: 100%;
 		max-width: 524px;
-		&-input{
-			width: 100%;
+		form{
+			position: relative;
+			height: 44px;
+		}
+		.form-control{
 			height: 100%;
-			background: #FFFFFF;
-			border: 1px solid #DDE8F4;
-			box-sizing: border-box;
-			border-radius: 4px;
 			padding: 13px 10px 11px 48px;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 15px;
-			line-height: 20px;
-			color: #A4A9BB;
 			&::placeholder{
 				font-family: $font1;
 				font-style: normal;
@@ -55,6 +52,9 @@
 			background-position: center;
 			width: 24px;
 			height: 24px;
+		}
+		&-bottom{
+			display: none;
 		}
 	}
 	&__phone{
@@ -85,8 +85,11 @@
 				color: #324C9A;
 			}
 		}
+		flex-shrink: 0;
+		margin: 0 10px;
 	}
 	&__auth{
+		flex-shrink: 0;
 		a{
 			font-style: normal;
 			font-weight: normal;
@@ -110,9 +113,71 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		.header__search,
+		.header__auth{
+			display: none;
+		}
+	}
+	&__delivery {
+		font-family: $font1;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 20px;
+		color: #A4A9BB;
+		cursor: pointer;
+		display: none;
+		span {
+			color: #324C9A;
+			margin-left: 8px;
+		}
 	}
 	.btn{
 		max-width: 223px;
 		width: 100%;
+	}
+	@include r(1023){
+		&__logo{
+			max-width: 223px;
+		}
+		&__auth{
+			display: none;
+		}
+		&__delivery {
+			display: block;
+			.icon-delivery{
+				top: 10px;
+			}
+			span{
+				display: block;
+				margin-left: 38px;
+				font-size: 17px;
+			}
+		}
+		&__search{
+			display: none;
+		}
+		&__bottom{
+			.btn{
+				margin-right: 36px;
+			}
+			.header__search{
+				display: block;
+			}
+			.header__auth{
+				display: block;
+				margin: 0 12px;
+				.icon-basket-btn,
+				.icon-login{
+					margin: 0;
+				}
+				a{
+					margin-right: 20px;
+					&:last-of-type{
+						margin-right: 0;
+					}
+				}
+			}
+		}
 	}
 }
