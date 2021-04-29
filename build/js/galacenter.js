@@ -206,7 +206,7 @@ const swiperBrands = new Swiper('.swiper-container-brands', {
     },
 })
 const swiperSeason = new Swiper('.swiper-container-season', {
-    slidesPerView: 6,
+    slidesPerView: 3.5,
     slidesPerGroup: 6,
     spaceBetween: 28,
     mousewheel: false,
@@ -216,6 +216,21 @@ const swiperSeason = new Swiper('.swiper-container-season', {
         nextEl: '.season-next',
         prevEl: '.season-prev',
     },
+    breakpoints: {
+        320: {
+            slidesPerView: 1.5,
+        },
+        450: {
+            slidesPerView: 2.5,
+        },
+        640: {
+            slidesPerView: 3.5,
+        },
+        1023: {
+            slidesPerView: 6,
+        },
+
+    }
 })
 const swiperPopulary = new Swiper('.swiper-container-populary', {
     slidesPerView: 'auto',
