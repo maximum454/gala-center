@@ -3,7 +3,7 @@ const swiperPopulary = new Swiper('.swiper-container-populary', {
     spaceBetween: 60,
     freeMode: true,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.populary-next',
+        prevEl: '.populary-prev',
     },
 })

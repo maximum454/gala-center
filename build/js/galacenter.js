@@ -22,12 +22,12 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 const swiper = new Swiper('.swiper-container', {
     slidesPerView: 'auto',
     freeMode: true,
-    mousewheel: true,
+    mousewheel: false,
     initialSlide:0,
     speed: 300,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.banners-next',
+        prevEl: '.banners-prev',
     },
     pagination: {
         el: '.swiper-pagination',
@@ -37,7 +37,7 @@ const swiperBrands = new Swiper('.swiper-container-brands', {
     slidesPerView: 8,
     slidesPerGroup: 8,
     spaceBetween: 68,
-    mousewheel: true,
+    mousewheel: false,
     initialSlide:0,
     speed: 300,
     pagination: {
@@ -48,12 +48,12 @@ const swiperSeason = new Swiper('.swiper-container-season', {
     slidesPerView: 6,
     slidesPerGroup: 6,
     spaceBetween: 28,
-    mousewheel: true,
+    mousewheel: false,
     initialSlide:0,
     speed: 300,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.season-next',
+        prevEl: '.season-prev',
     },
 })
 const swiperPopulary = new Swiper('.swiper-container-populary', {
@@ -61,8 +61,8 @@ const swiperPopulary = new Swiper('.swiper-container-populary', {
     spaceBetween: 60,
     freeMode: true,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.populary-next',
+        prevEl: '.populary-prev',
     },
 })
 

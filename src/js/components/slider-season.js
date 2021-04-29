@@ -6,7 +6,7 @@ const swiperSeason = new Swiper('.swiper-container-season', {
     initialSlide:0,
     speed: 300,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.season-next',
+        prevEl: '.season-prev',
     },
 })
