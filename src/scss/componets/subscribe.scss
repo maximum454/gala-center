@@ -32,4 +32,20 @@
 	}
 	.btn{
 	}
+	@include r(1023){
+		flex-direction: column;
+		&__title{
+			font-size: 22px;
+			line-height: 28px;
+			max-width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+		&__form{
+			max-width: 480px;
+			margin: 0 auto;
+		}
+	}
 }
