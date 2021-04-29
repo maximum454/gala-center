@@ -1,0 +1,24 @@
+.stick{
+	display: flex;
+	&__item{
+		text-transform: uppercase;
+		font-size: 15px;
+		line-height: 20px;
+		color: #FFFFFF;
+		border-radius: 4px;
+		padding: 3px 7px 1px;
+		margin-right: 6px;
+		&:last-of-type{
+			margin-right: 0;
+		}
+		&.hit{
+			background: #F2C94C;
+		}
+		&.new{
+			background: #2D9CDB;
+		}
+		&.spec{
+			background: #6FCF97;
+		}
+	}
+}

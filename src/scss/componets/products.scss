@@ -10,6 +10,7 @@
 	}
 
 	&__img {
+		position: relative;
 		display: block;
 		overflow: hidden;
 		border-radius: 2px;
@@ -83,6 +84,11 @@
 			color: #A4A9BB;
 			font-size: 13px;
 		}
+	}
+	&__stick{
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
 
 	.icon {

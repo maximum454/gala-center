@@ -4015,6 +4015,7 @@ body.lock {
 }
 
 .products__img {
+  position: relative;
   display: block;
   overflow: hidden;
   border-radius: 2px;
@@ -4094,6 +4095,12 @@ body.lock {
 .products__price span {
   color: #A4A9BB;
   font-size: 13px;
+}
+
+.products__stick {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .products .icon {
@@ -4203,6 +4210,38 @@ body.lock {
   height: 45px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.stick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stick__item {
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+  border-radius: 4px;
+  padding: 3px 7px 1px;
+  margin-right: 6px;
+}
+
+.stick__item:last-of-type {
+  margin-right: 0;
+}
+
+.stick__item.hit {
+  background: #F2C94C;
+}
+
+.stick__item.new {
+  background: #2D9CDB;
+}
+
+.stick__item.spec {
+  background: #6FCF97;
 }
 
 @media only screen and (max-width: 1024px) {
