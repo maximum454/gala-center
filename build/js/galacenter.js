@@ -1085,17 +1085,22 @@ document.addEventListener('click', function (e) {
             popup.classList.toggle("active");
         }
 })
-document.addEventListener('click', function (e) {
-        let parent = document.querySelector('.header-delivery');
-        let child = parent.querySelector('.header-delivery__modal');
+
+
+$(function (){
+    $(document).on('click', function (e){
+        let parent = $('.header-delivery');
+        let child = $('.header-delivery__modal');
 
         const target = e.target;
         if (target.classList != 'header-delivery') {
-            document.querySelector('.header-delivery__modal').classList.remove("active");
+            child.removeClass("active");
 
         } else {
-            target.querySelector('.header-delivery__modal').classList.toggle("active");
+            child.toggleClass("active");
         }
+        console.log(target)
+    })
 })
 
 $(function () {
