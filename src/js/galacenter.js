@@ -5,6 +5,7 @@
 @@include('./components/slider-brands.js')
 @@include('./components/slider-season.js')
 @@include('./components/slider-populary.js')
+@@include('./components/slider-tabs.js')
 
 $(function () {
     setTimeout(function() {

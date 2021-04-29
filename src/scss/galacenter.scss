@@ -3,6 +3,7 @@
 @import 'fonts';
 @import 'icon';
 @import 'buttons';
+@import 'form';
 @import 'partials/swiper-bundle';
 @import 'partials/formstyler';
 @import 'partials/formstyler.theme';
@@ -110,5 +111,11 @@ body {
 //Популярные товары
 @import "componets/slider-populary";
 
+//Новинки и Хиты
+@import "componets/slider-tabs";
+
 //Товар
 @import "componets/products";
+
+//Получайте выгодные предложения
+@import "componets/subscribe";

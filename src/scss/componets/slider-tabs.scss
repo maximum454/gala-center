@@ -1,5 +1,5 @@
-.slider-populary{
-	margin-bottom: 65px;
+.slider-tabs{
+	margin-bottom: 60px;
 	overflow: hidden;
 	&__header{
 		display: flex;
@@ -23,6 +23,37 @@
 		position: relative;
 		width: 88px;
 		margin-left: 32px;
+	}
+	&__caption{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		li{
+			font-style: normal;
+			font-weight: bold;
+			font-size: 28px;
+			line-height: 36px;
+			color: #000000;
+			padding: 5px 12px;
+			cursor: pointer;
+			transition: all .3s ease;
+			&.active{
+				background: rgba(68, 121, 163, 0.12);
+				border-radius: 4px;
+			}
+			&:hover{
+				transition: all .3s ease;
+				opacity: .7;
+			}
+		}
+	}
+	&__content {
+		display: none;
+		&.active {
+			display: block;
+		}
 	}
 	.btn{
 		max-width: 178px;
@@ -64,4 +95,5 @@
 		background-position: center;
 		background-size: 18px;
 	}
+
 }
