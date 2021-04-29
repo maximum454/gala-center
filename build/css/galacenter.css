@@ -3074,7 +3074,7 @@ body.lock {
   display: none;
 }
 
-.header__delivery {
+.header .header-delivery {
   font-family: "HelveticaNeueCyr", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -3085,7 +3085,7 @@ body.lock {
   display: none;
 }
 
-.header__delivery span {
+.header .header-delivery span {
   color: #324C9A;
   margin-left: 8px;
 }
@@ -3093,6 +3093,81 @@ body.lock {
 .header .btn {
   max-width: 223px;
   width: 100%;
+}
+
+.header-delivery {
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #A4A9BB;
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-delivery span {
+  color: #324C9A;
+  margin-left: 8px;
+  pointer-events: none;
+}
+
+.header-delivery__modal {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 421px;
+  padding: 20px;
+  z-index: 10;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 24px rgba(50, 76, 154, 0.1);
+          box-shadow: 0px 4px 24px rgba(50, 76, 154, 0.1);
+  border-radius: 4px;
+}
+
+.header-delivery__modal.active {
+  display: block;
+}
+
+.header-delivery__modal p {
+  margin: 0 0 13px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.header-delivery__modal .btn {
+  border-radius: 8px;
+}
+
+.header-delivery__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icons-sprite.svg#close");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.header-delivery__close:hover {
+  opacity: .7;
+}
+
+.header-delivery .icon-delivery {
+  pointer-events: none;
 }
 
 .nav {
@@ -3596,81 +3671,6 @@ body.lock {
   -o-transition: all .3s ease;
   transition: all .3s ease;
   opacity: .7;
-}
-
-.nav-scroller__delivery {
-  font-family: "HelveticaNeueCyr", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 20px;
-  color: #A4A9BB;
-  cursor: pointer;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav-scroller__delivery span {
-  color: #324C9A;
-  margin-left: 8px;
-  pointer-events: none;
-}
-
-.nav-scroller__delivery-modal {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 30px;
-  width: 421px;
-  padding: 20px;
-  z-index: 10;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 4px 24px rgba(50, 76, 154, 0.1);
-          box-shadow: 0px 4px 24px rgba(50, 76, 154, 0.1);
-  border-radius: 4px;
-}
-
-.nav-scroller__delivery-modal.active {
-  display: block;
-}
-
-.nav-scroller__delivery-modal p {
-  margin: 0 0 13px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 20px;
-  color: #333333;
-}
-
-.nav-scroller__delivery-modal .btn {
-  border-radius: 8px;
-}
-
-.nav-scroller__delivery-close {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 15px;
-  height: 15px;
-  background-image: url("../img/icons-sprite.svg#close");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  cursor: pointer;
-}
-
-.nav-scroller__delivery-close:hover {
-  opacity: .7;
-}
-
-.nav-scroller__delivery .icon-delivery {
-  pointer-events: none;
 }
 
 .nav-scroller__app a {
@@ -4795,15 +4795,15 @@ body.lock {
     display: none;
   }
 
-  .header__delivery {
+  .header .header-delivery {
     display: block;
   }
 
-  .header__delivery .icon-delivery {
+  .header .header-delivery .icon-delivery {
     top: 10px;
   }
 
-  .header__delivery span {
+  .header .header-delivery span {
     display: block;
     margin-left: 38px;
     font-size: 17px;
@@ -4937,12 +4937,12 @@ body.lock {
     margin-right: 20px;
   }
 
-  .nav-scroller__delivery {
-    display: none;
-  }
-
   .nav-scroller__app a img {
     max-width: 95px;
+  }
+
+  .nav-scroller .header-delivery {
+    display: none;
   }
 
   .slider-banners-bottom__body {
