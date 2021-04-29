@@ -566,6 +566,14 @@ template {
   background-image: url("../img/icons-sprite.svg#slider-arrow-light");
 }
 
+.icon-stock {
+  background-image: url("../img/icons-sprite.svg#stock");
+}
+
+.icon-anticrisis {
+  background-image: url("../img/icons-sprite.svg#anticrisis");
+}
+
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -3246,7 +3254,7 @@ body.lock {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  padding: 22px;
+  padding: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3262,6 +3270,16 @@ body.lock {
   line-height: 20px;
   color: #333333;
   text-decoration: none;
+}
+
+.slider-banners-bottom .icon-stock {
+  width: 40px;
+  height: 40px;
+}
+
+.slider-banners-bottom .icon-anticrisis {
+  width: 55px;
+  height: 55px;
 }
 
 .slider-brands {
@@ -3583,7 +3601,7 @@ body.lock {
 }
 
 .capability {
-  margin: 0 0 66px;
+  margin: 0 0 53px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
 }
@@ -3614,7 +3632,7 @@ body.lock {
 }
 
 .slider-populary {
-  margin-bottom: 65px;
+  margin-bottom: 52px;
   overflow: hidden;
 }
 
@@ -3628,7 +3646,7 @@ body.lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .slider-populary__title {
@@ -3697,7 +3715,7 @@ body.lock {
 }
 
 .slider-tabs {
-  margin-bottom: 60px;
+  margin-bottom: 52px;
   overflow: hidden;
 }
 
@@ -4004,7 +4022,7 @@ body.lock {
   display: block;
   overflow: hidden;
   border-radius: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   text-decoration: none;
   height: 236px;
 }
@@ -4049,7 +4067,7 @@ body.lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   font-style: normal;
   font-weight: normal;
 }
@@ -4095,6 +4113,9 @@ body.lock {
   line-height: 24px;
   text-align: center;
   color: #324C9A;
+  padding: 3px 10px;
+  max-width: 164px;
+  width: 100%;
 }
 
 .products .btn span {
@@ -4143,7 +4164,7 @@ body.lock {
   background: #F1F5F9;
   border-radius: 4px;
   padding: 30px 0;
-  margin: 0 0 60px;
+  margin: 0 0 58px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -13,7 +13,7 @@
 		display: block;
 		overflow: hidden;
 		border-radius: 2px;
-		margin-bottom: 20px;
+		margin-bottom: 13px;
 		text-decoration: none;
 		height: 236px;
 		img {
@@ -52,7 +52,7 @@
 	&__info {
 		display: flex;
 		align-items: center;
-		margin-bottom: 6px;
+		margin-bottom: 5px;
 		font-style: normal;
 		font-weight: normal;
 	}
@@ -98,6 +98,9 @@
 		line-height: 24px;
 		text-align: center;
 		color: #324C9A;
+		padding: 3px 10px;
+		max-width: 164px;
+		width: 100%;
 
 		span {
 			color: #A4A9BB;
