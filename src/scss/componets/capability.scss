@@ -19,4 +19,7 @@
 	.icon{
 		flex-shrink: 0;
 	}
+	@include r(1023){
+		display: none;
+	}
 }

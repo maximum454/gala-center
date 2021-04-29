@@ -3326,12 +3326,14 @@ body.lock {
 
 .catalog-section {
   margin-bottom: 80px;
+  overflow: hidden;
 }
 
 .catalog-section__body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 30px 20px;
+  overflow: hidden;
 }
 
 .catalog-section__item {
@@ -4303,6 +4305,15 @@ body.lock {
 
   .nav-scroller__app a img {
     max-width: 95px;
+  }
+
+  .catalog-section__body {
+    grid-template-columns: repeat(9, minmax(250px, 1fr));
+    overflow-x: scroll;
+  }
+
+  .capability {
+    display: none;
   }
 }
 
