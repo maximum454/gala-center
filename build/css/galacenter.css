@@ -3234,6 +3234,7 @@ body.lock {
 
 .slider-banners-bottom {
   margin-bottom: 40px;
+  overflow: hidden;
 }
 
 .slider-banners-bottom__body {
@@ -4305,6 +4306,11 @@ body.lock {
 
   .nav-scroller__app a img {
     max-width: 95px;
+  }
+
+  .slider-banners-bottom__body {
+    grid-template-columns: repeat(5, minmax(250px, 1fr));
+    overflow-x: scroll;
   }
 
   .catalog-section__body {

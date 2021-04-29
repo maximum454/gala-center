@@ -1,5 +1,6 @@
 .slider-banners-bottom{
 	margin-bottom: 40px;
+	overflow:hidden;
 	&__body{
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -27,5 +28,11 @@
 	.icon-anticrisis{
 		width: 55px;
 		height: 55px;
+	}
+	@include r(1023){
+		&__body{
+			grid-template-columns: repeat(5, minmax(250px, 1fr));
+			overflow-x: scroll;
+		}
 	}
 }
