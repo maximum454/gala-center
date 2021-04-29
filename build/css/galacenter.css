@@ -3866,8 +3866,10 @@ body.lock {
 
 .slider-collection__body {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 280px 1060px;
   grid-gap: 30px 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .slider-collection__item {
@@ -3950,6 +3952,12 @@ body.lock {
   position: relative;
   width: 88px;
   margin-left: 32px;
+}
+
+.slider-collection__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 340px);
+  grid-gap: 30px 20px;
 }
 
 .slider-collection .slider-season__name {

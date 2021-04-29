@@ -16,8 +16,10 @@
 	}
 	&__body{
 		display: grid;
-		grid-template-columns: 280px 1fr;
+		grid-template-columns: 280px 1060px;
 		grid-gap: 30px 20px;
+		overflow-x: scroll;
+		overflow-y: hidden;
 	}
 	&__item{
 		max-width: 340px;
@@ -84,6 +86,11 @@
 	}
 	&__preview{
 
+	}
+	&__row{
+		display: grid;
+		grid-template-columns: repeat(auto-fill,340px);
+		grid-gap: 30px 20px;
 	}
 	.slider-season__name{
 		font-size: 20px;
