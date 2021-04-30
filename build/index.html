@@ -1532,7 +1532,7 @@
         </div>
     </div>
 </footer>
-
+    <!--Выбор города отгрузки -->
 <div class="remodal delivery" data-remodal-id="delivery">
     <button data-remodal-action="close" class="remodal-close"></button>
     <div class="title">Выбор города отгрузки</div>
@@ -1551,6 +1551,7 @@
 
 </div>
 
+<!--Авторизуйтесь для создания заказа -->
 <div class="remodal auth" data-remodal-id="auth">
     <button data-remodal-action="close" class="remodal-close"></button>
     <div class="title">Авторизуйтесь для создания заказа</div>
@@ -1567,6 +1568,120 @@
         </div>
         <a href="#" class="btn w100 btn-registration">Регистрация</a>
     </form>
+</div>
+
+<!--Отправить на email -->
+<div class="remodal delivery" data-remodal-id="send-email">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="title">Отправить на email</div>
+
+    <form action="">
+        <div class="form-group">
+            <label for="">Email</label>
+            <input type="text" class="form-control">
+        </div>
+    </form>
+    <div>
+        <button data-remodal-action="confirm" class="btn btn-primary w100">Отправить</button>
+        <button data-remodal-action="cancel" class="btn btn-link w100">Отмена</button>
+    </div>
+</div>
+
+<!--Удаление товаров -->
+<div class="remodal delivery" data-remodal-id="delet-product">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="title">Удаление товаров</div>
+    <hr>
+    <p>Вы точно хотите удалить выбранные товары? Отменить действие будет невозможно</p>
+    <div>
+        <button data-remodal-action="confirm" class="btn btn-primary">Удалить</button>
+        <button data-remodal-action="cancel" class="btn btn-link">Отмена</button>
+    </div>
+</div>
+
+<!--Магазин -->
+<div class="remodal delivery" data-remodal-id="score">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="title">Магазин</div>
+    <form action="">
+        <div class="form-group">
+            <label for="">Название магазина</label>
+            <input type="text" class="form-control" placeholder="Богатырский">
+        </div>
+        <div class="form-group">
+            <label for="">Адрес магазина</label>
+            <input type="text" class="form-control" placeholder="г. Калининград, ул. Полоцкая, д. 1">
+        </div>
+        <div class="form-group">
+            <label for="">Комментарий</label>
+            <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+    </form>
+    <div>
+        <button data-remodal-action="confirm" class="btn btn-primary">Сохранить изменения</button>
+        <button data-remodal-action="cancel" class="btn btn-outline-primary">Отмена</button>
+    </div>
+</div>
+
+<!--Новая ценовая группа-->
+<div class="remodal delivery" data-remodal-id="price-group">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="title">Новая ценовая группа</div>
+    <form action="">
+        <div class="form-group">
+            <label for="">Название группы</label>
+            <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="">Скидка в процентах</label>
+            <input type="text" class="form-control" placeholder="">
+        </div>
+    </form>
+    <div>
+        <button data-remodal-action="confirm" class="btn btn-primary">Добавить</button>
+        <button data-remodal-action="cancel" class="btn btn-outline-primary">Отмена</button>
+    </div>
+</div>
+
+<!--Добавление нового пользователя-->
+<div class="remodal delivery" data-remodal-id="add-user">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="title">Добавление нового пользователя</div>
+    <form action="">
+        <div class="form-group">
+            <label for="">Имя</label>
+            <input type="text" class="form-control" placeholder="Егор">
+        </div>
+        <div class="form-group">
+            <label for="">Email</label>
+            <input type="text" class="form-control" placeholder="info@mail.ru">
+        </div>
+        <div class="form-group">
+            <label for="">Логин</label>
+            <input type="text" class="form-control" placeholder="bbq">
+        </div>
+        <div class="form-group">
+            <label for="">Пароль</label>
+            <input type="password" class="form-control" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="">Повторите пароль</label>
+            <input type="password" class="form-control" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="">Выберите ценовую группу</label>
+            <select name="" id="">
+                <option value="">Новогодняя -10%</option>
+                <option value="">Новогодняя -10%</option>
+                <option value="">Новогодняя -10%</option>
+                <option value="">Новогодняя -10%</option>
+            </select>
+        </div>
+    </form>
+    <div>
+        <button data-remodal-action="confirm" class="btn btn-primary">Добавить</button>
+        <button data-remodal-action="cancel" class="btn btn-outline-primary">Отмена</button>
+    </div>
 </div>
 </div>
 

@@ -1,6 +1,15 @@
 .form-group{
 	margin-bottom: 16px;
 }
+.form-group label {
+	display: inline-block;
+	margin-bottom: 6px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 20px;
+	color: #333333;
+}
 .form-control {
 	display: block;
 	width: 100%;
