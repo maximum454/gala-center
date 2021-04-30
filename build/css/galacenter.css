@@ -714,6 +714,10 @@ template {
   background-image: url("../img/icons-sprite.svg#basket-btn");
 }
 
+.icon-star {
+  background-image: url("../img/icons-sprite.svg#star");
+}
+
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -3088,6 +3092,7 @@ body.lock {
 .header__search {
   width: 100%;
   max-width: 524px;
+  position: relative;
 }
 
 .header__search form {
@@ -3159,6 +3164,27 @@ body.lock {
   background-position: center;
   width: 24px;
   height: 24px;
+}
+
+.header__search-close {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  margin-top: -12px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icons-sprite.svg#close");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  display: none;
+  cursor: pointer;
+}
+
+.header__search-close.show {
+  display: block;
 }
 
 .header__search-bottom {
@@ -4958,6 +4984,94 @@ body.lock {
 
 .stick__item.spec {
   background: #6FCF97;
+}
+
+.form-dropdawn {
+  position: absolute;
+  z-index: 10;
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 15px 15px 0;
+  -webkit-box-shadow: 0px 4px 24px rgba(50, 76, 154, 0.1);
+          box-shadow: 0px 4px 24px rgba(50, 76, 154, 0.1);
+  margin-top: 25px;
+  display: none;
+}
+
+.form-dropdawn.show {
+  display: block;
+}
+
+.form-dropdawn__header {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.form-dropdawn__list {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  padding-left: 12px;
+}
+
+.form-dropdawn__list:last-of-type {
+  margin-bottom: 0;
+}
+
+.form-dropdawn__item {
+  display: grid;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  grid-template-columns: 60px 1fr;
+  grid-gap: 40px;
+}
+
+.form-dropdawn__img {
+  max-width: 40px;
+}
+
+.form-dropdawn__name {
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.form-dropdawn__price {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+  margin-right: 17px;
+}
+
+.form-dropdawn__rating {
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.form-dropdawn__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-dropdawn__footer {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  margin-top: 28px;
+}
+
+.form-dropdawn__footer .btn {
+  max-width: 100%;
+}
+
+.form-dropdawn .icon-star {
+  margin-right: 8px;
+  margin-top: -5px;
 }
 
 @media only screen and (min-width: 641px) {

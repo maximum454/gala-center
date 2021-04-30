@@ -139,12 +139,12 @@ gulp.task('svgSprite', function () {
                 mode: {
                     stack: {
                         sprite: '../icons/icons-sprite.svg',
-                        example: true,
+                        example: false,
                     },
                     css: { // Create a «css» sprite
                         sprite: '../icon/icons-sprite.svg',
                         render: {
-                            scss: true
+                            scss: false
                         }
                     }
                 },
