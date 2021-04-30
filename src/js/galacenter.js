@@ -17,5 +17,4 @@ $(function () {
         $('select').styler();
     }, 100)
 
-
 })

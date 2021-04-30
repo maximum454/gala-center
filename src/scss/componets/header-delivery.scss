@@ -59,6 +59,15 @@
 		pointer-events: none;
 	}
 	@include r(1023){
-
+		&__modal{
+			width: 421px;
+			top: 50px;
+			right: 50%;
+			transform: translate(50%,0);
+			.btn{
+				max-width: 100%;
+				border-radius: 8px;
+			}
+		}
 	}
 }

@@ -16,10 +16,9 @@
 	}
 	&__body{
 		display: grid;
-		grid-template-columns: 280px 1060px;
-		grid-gap: 30px 20px;
-		overflow-x: scroll;
-		overflow-y: hidden;
+		grid-template-columns: 280px 1fr;
+		grid-gap:30px 20px;
+		overflow: hidden;
 	}
 	&__item{
 		max-width: 340px;
@@ -72,7 +71,6 @@
 		font-size: 20px;
 		line-height: 28px;
 		color: #333333;
-		margin-bottom: 14px;
 
 		span {
 			color: #A4A9BB;
@@ -91,7 +89,9 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fill,340px);
 		grid-gap: 30px 20px;
+		width: 1060px;
 	}
+
 	.slider-season__name{
 		font-size: 20px;
 		line-height: 32px;
@@ -128,5 +128,17 @@
 		right: 0;
 		transform: rotate(180deg);
 		border-radius: 4px 0 0 4px;
+	}
+	.slider-season__img{
+		margin-bottom: 0;
+	}
+	@include r(1399){
+		&__scroll{
+			overflow-x: scroll;
+			overflow-y: hidden;
+		}
+	}
+	@include r(763){
+		display: none;
 	}
 }

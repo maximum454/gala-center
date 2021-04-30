@@ -1,12 +1,15 @@
-document.addEventListener('click', function (e) {
-        let parent = document.getElementsByClassName('header-delivery');
-        let child = parent.getElementsByClassName('header-delivery__modal');
+$(function () {
+    $(document).on('click', function (e) {
+        let parent = $('.header-delivery');
+        let child = $('.header-delivery__modal');
 
         const target = e.target;
         if (target.classList != 'header-delivery') {
-            child.classList.remove("active");
+            child.removeClass("active");
 
         } else {
-            child.classList.toggle("active");
+            child.toggleClass("active");
+
         }
+    })
 })
