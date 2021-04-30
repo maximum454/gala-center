@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    @@include('./template/_meta.html')
+    <title>Главная</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/galacenter.min.css">
+</head>
+<body>
+<div class="wrp">
+    @@include('./template/_header.html')
+
+    <main class="main container">
+        <h1 class="main__title">Регистрация</h1>
+        <section class="registration">
+            <h2 class="registration__title">Данные о компании</h2>
+            <form action="">
+                <div class="form-group">
+                    <label for="">Страна</label>
+                    <select name="" id="">
+                        <option value="">Россия</option>
+                        <option value="">Россия</option>
+                        <option value="">Россия</option>
+                        <option value="">Россия</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">ИНН</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Название организации</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Город</label>
+                    <select name="" id="">
+                        <option value="">Санкт-Петербург</option>
+                        <option value="">Санкт-Петербург</option>
+                        <option value="">Санкт-Петербург</option>
+                        <option value="">Санкт-Петербург</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Контактный телефон</label>
+                    <input type="text" class="form-control" placeholder="+7">
+                </div>
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Пароль</label>
+                    <input type="password" class="form-control">
+                    <small id="emailHelp" class="form-text text-muted">Длина пароля не менее 6 символов</small>
+                    <a href="">Предложить пароль</a>
+                </div>
+
+                <h2 class="registration__title">Филиал отгрузки</h2>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                           value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Екатеринбург</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                           value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Москва</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                           value="option3">
+                    <label class="form-check-label" for="inlineRadio3">Новосибирск</label>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Хочу получать новости и предложения на почту
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Я принимаю условия «Политики обработки персональных данных» и «Пользовательского соглашения»
+                            и даю своё согласие на хранение и обработку мои данных.
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <div>
+
+            </div>
+        </section>
+    </main>
+
+    @@include('./template/_footer.html')
+    @@include('./template/_modal.html')
+</div>
+
+<script src="js/galacenter.min.js"></script>
+</body>
+</html>

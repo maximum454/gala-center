@@ -41,3 +41,40 @@
 		color: #A4A9BB;
 	}
 }
+.form-text {
+	display: block;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 20px;
+	color: #A4A9BB;
+	margin-top: 10px;
+}
+.form-check {
+	position: relative;
+	display: block;
+	padding-left: 1.25rem;
+}
+.form-check-inline {
+	display: inline-flex;
+	align-items: center;
+	padding-left: 0;
+	margin-right: 26px;
+}
+.form-check-inline .form-check-input {
+	position: static;
+	margin-top: 0;
+	margin-right: .3125rem;
+	margin-left: 0;
+}
+.form-check-label {
+	margin-bottom: 0;
+}
+.form-check-input:disabled~.form-check-label {
+	color: #6c757d;
+}
+.form-check-input {
+	position: absolute;
+	margin-top: .3rem;
+	margin-left: -1.25rem;
+}

@@ -172,6 +172,26 @@ gulp.task('svgSocialSprite', function () {
         )
         .pipe(dest(path.build.img))
 });
+gulp.task('svgMenuSprite', function () {
+    return gulp.src([source + '/iconsprite/menu/*.svg'])
+        .pipe(
+            svgSprite({
+                mode: {
+                    stack: {
+                        sprite: '../menu/menu-sprite.svg',
+                        example: false,
+                    },
+                    css: { // Create a «css» sprite
+                        sprite: '../menu/menu-sprite.svg',
+                        render: {
+                            scss: false
+                        }
+                    }
+                },
+            })
+        )
+        .pipe(dest(path.build.img))
+});
 
 gulp.task('sprite', function () {
     var spriteData = gulp.src([source + '/iconsprite/*.png'])

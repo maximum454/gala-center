@@ -22,6 +22,54 @@ body {
 	&.lock {
 		overflow: hidden;
 	}
+	&.bg-1{
+		background: #F1F5F9;
+	}
+	&.bg-2{
+		background: #FFF8DB;
+	}
+	&.bg-3{
+		background: #FFF0F9;
+	}
+	&.bg-4{
+		background: #FFF0F9;
+	}
+	&.bg-5{
+		background: #FFF5E5;
+	}
+	&.bg-6{
+		background: #F9F1F2;
+	}
+	&.bg-7{
+		background: #FFF1E7;
+	}
+	&.bg-8{
+		background: #F1F5EB;
+	}
+	&.bg-9{
+		background: #FFFDD7;
+	}
+	&.bg-10{
+		background: #F2FEFF;
+	}
+	&.bg-11{
+		background: #F1EDF9;
+	}
+	&.bg-12{
+		background: #ECF4FF;
+	}
+	&.bg-13{
+		background: #EDF6F8;
+	}
+	&.bg-14{
+		background: #F3EAE3;
+	}
+	&.bg-15{
+		background: #EFE9D8;
+	}
+	&.bg-16{
+		background: #31C595;
+	}
 }
 
 .wrp {
@@ -134,3 +182,9 @@ body {
 
 //Выподающее поле для поиска
 @import "componets/form-dropdawn";
+
+//Выподающее поле для поиска
+@import "componets/menu-big";
+
+//Выподающее поле для поиска
+@import "componets/registration";

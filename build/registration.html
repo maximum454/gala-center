@@ -27,9 +27,9 @@
 <meta name="apple-mobile-web-app-title" content="Karachyov Maxim">
 <meta name="application-name" content="Karachyov Maxim">
 
-    <title>404</title>
+    <title>Главная</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/mprshop.min.css">
+    <link rel="stylesheet" href="css/galacenter.min.css">
 </head>
 <body>
 <div class="wrp">
@@ -225,8 +225,90 @@
 
 
 
-    <main class="main">
+    <main class="main container">
+        <h1 class="main__title">Регистрация</h1>
+        <section class="registration">
+            <h2 class="registration__title">Данные о компании</h2>
+            <form action="">
+                <div class="form-group">
+                    <label for="">Страна</label>
+                    <select name="" id="">
+                        <option value="">Россия</option>
+                        <option value="">Россия</option>
+                        <option value="">Россия</option>
+                        <option value="">Россия</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">ИНН</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Название организации</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Город</label>
+                    <select name="" id="">
+                        <option value="">Санкт-Петербург</option>
+                        <option value="">Санкт-Петербург</option>
+                        <option value="">Санкт-Петербург</option>
+                        <option value="">Санкт-Петербург</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Контактный телефон</label>
+                    <input type="text" class="form-control" placeholder="+7">
+                </div>
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Пароль</label>
+                    <input type="password" class="form-control">
+                    <small id="emailHelp" class="form-text text-muted">Длина пароля не менее 6 символов</small>
+                    <a href="">Предложить пароль</a>
+                </div>
 
+                <h2 class="registration__title">Филиал отгрузки</h2>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                           value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Екатеринбург</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                           value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Москва</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                           value="option3">
+                    <label class="form-check-label" for="inlineRadio3">Новосибирск</label>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Хочу получать новости и предложения на почту
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Я принимаю условия «Политики обработки персональных данных» и «Пользовательского соглашения»
+                            и даю своё согласие на хранение и обработку мои данных.
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <div>
+
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -300,8 +382,159 @@
         </div>
     </div>
 </footer>
+    <!--Выбор города отгрузки -->
+<div class="remodal delivery" data-remodal-id="delivery">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="title">Выбор города отгрузки</div>
+
+    <select class="select" name="" id="">
+        <option value="">Екатеринбург</option>
+        <option value="">Екатеринбург</option>
+        <option value="">Екатеринбург</option>
+        <option value="">Екатеринбург</option>
+        <option value="">Екатеринбург</option>
+    </select>
+    <div>
+        <button data-remodal-action="confirm" class="btn btn-primary w100">Подтвердить</button>
+        <button data-remodal-action="cancel" class="btn btn-link w100">Отмена</button>
+    </div>
+
 </div>
 
-<script src="js/mprshop.min.js"></script>
+<!--Авторизуйтесь для создания заказа -->
+<div class="remodal auth" data-remodal-id="auth">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="title">Авторизуйтесь для создания заказа</div>
+    <form action="">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Логин">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Пароль">
+        </div>
+        <a class="forgot-password" href="#">Забыли пароль?</a>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Войти">
+        </div>
+        <a href="#" class="btn w100 btn-registration">Регистрация</a>
+    </form>
+</div>
+
+<!--Отправить на email -->
+<div class="remodal delivery" data-remodal-id="send-email">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="title">Отправить на email</div>
+
+    <form action="">
+        <div class="form-group">
+            <label for="">Email</label>
+            <input type="text" class="form-control">
+        </div>
+    </form>
+    <div>
+        <button data-remodal-action="confirm" class="btn btn-primary w100">Отправить</button>
+        <button data-remodal-action="cancel" class="btn btn-link w100">Отмена</button>
+    </div>
+</div>
+
+<!--Удаление товаров -->
+<div class="remodal delivery" data-remodal-id="delet-product">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="title">Удаление товаров</div>
+    <hr>
+    <p>Вы точно хотите удалить выбранные товары? Отменить действие будет невозможно</p>
+    <div>
+        <button data-remodal-action="confirm" class="btn btn-primary">Удалить</button>
+        <button data-remodal-action="cancel" class="btn btn-link">Отмена</button>
+    </div>
+</div>
+
+<!--Магазин -->
+<div class="remodal delivery" data-remodal-id="score">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="title">Магазин</div>
+    <form action="">
+        <div class="form-group">
+            <label for="">Название магазина</label>
+            <input type="text" class="form-control" placeholder="Богатырский">
+        </div>
+        <div class="form-group">
+            <label for="">Адрес магазина</label>
+            <input type="text" class="form-control" placeholder="г. Калининград, ул. Полоцкая, д. 1">
+        </div>
+        <div class="form-group">
+            <label for="">Комментарий</label>
+            <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+    </form>
+    <div>
+        <button data-remodal-action="confirm" class="btn btn-primary">Сохранить изменения</button>
+        <button data-remodal-action="cancel" class="btn btn-outline-primary">Отмена</button>
+    </div>
+</div>
+
+<!--Новая ценовая группа-->
+<div class="remodal delivery" data-remodal-id="price-group">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="title">Новая ценовая группа</div>
+    <form action="">
+        <div class="form-group">
+            <label for="">Название группы</label>
+            <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="">Скидка в процентах</label>
+            <input type="text" class="form-control" placeholder="">
+        </div>
+    </form>
+    <div>
+        <button data-remodal-action="confirm" class="btn btn-primary">Добавить</button>
+        <button data-remodal-action="cancel" class="btn btn-outline-primary">Отмена</button>
+    </div>
+</div>
+
+<!--Добавление нового пользователя-->
+<div class="remodal delivery" data-remodal-id="add-user">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="title">Добавление нового пользователя</div>
+    <form action="">
+        <div class="form-group">
+            <label for="">Имя</label>
+            <input type="text" class="form-control" placeholder="Егор">
+        </div>
+        <div class="form-group">
+            <label for="">Email</label>
+            <input type="text" class="form-control" placeholder="info@mail.ru">
+        </div>
+        <div class="form-group">
+            <label for="">Логин</label>
+            <input type="text" class="form-control" placeholder="bbq">
+        </div>
+        <div class="form-group">
+            <label for="">Пароль</label>
+            <input type="password" class="form-control" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="">Повторите пароль</label>
+            <input type="password" class="form-control" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="">Выберите ценовую группу</label>
+            <select name="" id="">
+                <option value="">Новогодняя -10%</option>
+                <option value="">Новогодняя -10%</option>
+                <option value="">Новогодняя -10%</option>
+                <option value="">Новогодняя -10%</option>
+            </select>
+        </div>
+    </form>
+    <div>
+        <button data-remodal-action="confirm" class="btn btn-primary">Добавить</button>
+        <button data-remodal-action="cancel" class="btn btn-outline-primary">Отмена</button>
+    </div>
+</div>
+</div>
+
+<script src="js/galacenter.min.js"></script>
 </body>
 </html>

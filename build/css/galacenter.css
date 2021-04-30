@@ -718,6 +718,74 @@ template {
   background-image: url("../img/icons-sprite.svg#star");
 }
 
+.icon-aromatizatory {
+  background-image: url("../img/menu-sprite.svg#aromatizatory");
+}
+
+.icon-avto {
+  background-image: url("../img/menu-sprite.svg#avto");
+}
+
+.icon-bytovaya-khimiya {
+  background-image: url("../img/menu-sprite.svg#bytovaya-khimiya");
+}
+
+.icon-bytovaya-tekhnika {
+  background-image: url("../img/menu-sprite.svg#bytovaya-tekhnika");
+}
+
+.icon-dacha-i-sad {
+  background-image: url("../img/menu-sprite.svg#dacha-i-sad");
+}
+
+.icon-domashniy-tekstil {
+  background-image: url("../img/menu-sprite.svg#domashniy-tekstil");
+}
+
+.icon-elektrotekhnika {
+  background-image: url("../img/menu-sprite.svg#elektrotekhnika");
+}
+
+.icon-galantereya {
+  background-image: url("../img/menu-sprite.svg#galantereya");
+}
+
+.icon-instrumenty {
+  background-image: url("../img/menu-sprite.svg#instrumenty");
+}
+
+.icon-kantselyarskie-tovary {
+  background-image: url("../img/menu-sprite.svg#kantselyarskie-tovary");
+}
+
+.icon-khoztovary {
+  background-image: url("../img/menu-sprite.svg#khoztovary");
+}
+
+.icon-podarki {
+  background-image: url("../img/menu-sprite.svg#podarki");
+}
+
+.icon-posuda {
+  background-image: url("../img/menu-sprite.svg#posuda");
+}
+
+.icon-santehnika {
+  background-image: url("../img/menu-sprite.svg#santehnika");
+}
+
+.icon-sport {
+  background-image: url("../img/menu-sprite.svg#sport");
+}
+
+.icon-tovary-dlya-detey {
+  background-image: url("../img/menu-sprite.svg#tovary-dlya-detey");
+}
+
+.icon-turizm {
+  background-image: url("../img/menu-sprite.svg#turizm");
+}
+
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -1005,6 +1073,54 @@ template {
 
 .form-control-plaintext:placeholder {
   color: #A4A9BB;
+}
+
+.form-text {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #A4A9BB;
+  margin-top: 10px;
+}
+
+.form-check {
+  position: relative;
+  display: block;
+  padding-left: 1.25rem;
+}
+
+.form-check-inline {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0;
+  margin-right: 26px;
+}
+
+.form-check-inline .form-check-input {
+  position: static;
+  margin-top: 0;
+  margin-right: .3125rem;
+  margin-left: 0;
+}
+
+.form-check-label {
+  margin-bottom: 0;
+}
+
+.form-check-input:disabled ~ .form-check-label {
+  color: #6c757d;
+}
+
+.form-check-input {
+  position: absolute;
+  margin-top: .3rem;
+  margin-left: -1.25rem;
 }
 
 /**
@@ -3016,6 +3132,70 @@ body.lock {
   overflow: hidden;
 }
 
+body.bg-1 {
+  background: #F1F5F9;
+}
+
+body.bg-2 {
+  background: #FFF8DB;
+}
+
+body.bg-3 {
+  background: #FFF0F9;
+}
+
+body.bg-4 {
+  background: #FFF0F9;
+}
+
+body.bg-5 {
+  background: #FFF5E5;
+}
+
+body.bg-6 {
+  background: #F9F1F2;
+}
+
+body.bg-7 {
+  background: #FFF1E7;
+}
+
+body.bg-8 {
+  background: #F1F5EB;
+}
+
+body.bg-9 {
+  background: #FFFDD7;
+}
+
+body.bg-10 {
+  background: #F2FEFF;
+}
+
+body.bg-11 {
+  background: #F1EDF9;
+}
+
+body.bg-12 {
+  background: #ECF4FF;
+}
+
+body.bg-13 {
+  background: #EDF6F8;
+}
+
+body.bg-14 {
+  background: #F3EAE3;
+}
+
+body.bg-15 {
+  background: #EFE9D8;
+}
+
+body.bg-16 {
+  background: #31C595;
+}
+
 .wrp {
   overflow: hidden;
 }
@@ -3639,95 +3819,13 @@ body.lock {
   position: relative;
 }
 
-.main--page {
-  display: grid;
-  grid-template-areas: "aside-left contant";
-  grid-template-columns: 280px minmax(280px, 1015px);
-  grid-column-gap: 40px;
-  position: relative;
-  margin-bottom: 80px;
-}
-
-.main--order {
-  display: grid;
-  grid-template-areas: "contant";
-  grid-template-columns: 1fr;
-  grid-column-gap: 40px;
-  position: relative;
-  margin-bottom: 80px;
-}
-
-.main__aside {
-  grid-area: aside-left;
-}
-
-.main__contant {
-  grid-area: contant;
-}
-
-.main__menu-big {
-  position: absolute;
-  z-index: 10;
-  background-color: #fff;
-  display: none;
-  width: 100%;
-  height: 100%;
-}
-
-.main__menu-big.active {
-  display: block;
-  z-index: 100;
-}
-
-.main__menu-big.active:before {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  border-top: 1px solid #E0E0E0;
-}
-
-.main__menu-big.active:after {
-  content: '';
-  position: absolute;
-  top: 0px;
-  right: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  border-top: 1px solid #E0E0E0;
-}
-
-.main__subtitle {
-  font-family: Circe;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #888E94;
-}
-
 .main__title {
-  font-family: Circe;
   font-style: normal;
   font-weight: bold;
-  font-size: 45px;
-  line-height: 60px;
+  font-size: 28px;
+  line-height: 36px;
   color: #333333;
-  margin: 10px 0 32px;
-}
-
-.main__title span {
-  text-decoration: underline;
+  margin-bottom: 20px;
 }
 
 .breadcrumb {
@@ -5074,6 +5172,36 @@ body.lock {
   margin-top: -5px;
 }
 
+.menu-big {
+  background: #ddd;
+  position: absolute;
+  top: 250px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 52px;
+  z-index: 10;
+}
+
+.registration__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.registration a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #324C9A;
+}
+
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 700px;
@@ -5241,19 +5369,6 @@ body.lock {
     transition: all .3s ease;
   }
 
-  .main--page {
-    display: block;
-  }
-
-  .main__title {
-    font-size: 32px;
-    line-height: 48px;
-  }
-
-  .main__aside {
-    display: none;
-  }
-
   .nav-scroller__menu a {
     margin-right: 20px;
   }
@@ -5347,25 +5462,6 @@ body.lock {
 
   .d-mobile-none {
     display: none !important;
-  }
-
-  .main--page {
-    display: block;
-  }
-
-  .main__aside {
-    display: none;
-  }
-
-  .main__subtitle {
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .main__title {
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 16px;
   }
 
   .page404 {
