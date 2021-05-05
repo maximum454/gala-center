@@ -9,7 +9,9 @@
     line-height: 28px;
     color: #333333;
   }
-
+  &__txt{
+    max-width: 643px;
+  }
   &__img {
     overflow: hidden;
     margin-left: 37px;
@@ -25,6 +27,9 @@
 
   &__form {
     max-width: 420px;
+  }
+  .mb-80{
+    margin-bottom: 80px;
   }
 
   p {

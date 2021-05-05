@@ -2691,6 +2691,14 @@ html.remodal-is-locked {
   background-image: url("../img/icons-sprite.svg#arrow-select-dark");
 }
 
+.btn-group {
+  margin: 0 -10px;
+}
+
+.btn-group .btn {
+  margin: .25rem 10px;
+}
+
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -5673,6 +5681,10 @@ body.bg-16 {
   color: #333333;
 }
 
+.partners__txt {
+  max-width: 643px;
+}
+
 .partners__img {
   overflow: hidden;
   margin-left: 37px;
@@ -5690,6 +5702,10 @@ body.bg-16 {
 
 .partners__form {
   max-width: 420px;
+}
+
+.partners .mb-80 {
+  margin-bottom: 80px;
 }
 
 .partners p {
