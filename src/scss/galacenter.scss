@@ -1,14 +1,15 @@
 @import 'partials/normalize';
-@import 'mixin';
-@import 'fonts';
-@import 'icon';
-@import 'buttons';
-@import 'form';
 @import 'partials/swiper-bundle';
 @import 'partials/formstyler';
 @import 'partials/formstyler.theme';
 @import 'partials/remodal';
 @import 'partials/remodal-default-theme';
+@import 'mixin';
+@import 'fonts';
+@import 'icon';
+@import 'buttons';
+@import 'form';
+
 
 @import 'remodal';
 
@@ -117,6 +118,8 @@ body {
 	background-position: center;
 	background-size: 18px;
 }
+
+
 //Шапка
 @import "componets/header";
 

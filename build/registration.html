@@ -228,8 +228,8 @@
     <main class="main container">
         <h1 class="main__title">Регистрация</h1>
         <section class="registration">
-            <h2 class="registration__title">Данные о компании</h2>
             <form action="">
+                <div class="form-title">Данные о компании</div>
                 <div class="form-group">
                     <label for="">Страна</label>
                     <select name="" id="">
@@ -271,21 +271,23 @@
                     <a href="">Предложить пароль</a>
                 </div>
 
-                <h2 class="registration__title">Филиал отгрузки</h2>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                           value="option1">
-                    <label class="form-check-label" for="inlineRadio1">Екатеринбург</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                           value="option2">
-                    <label class="form-check-label" for="inlineRadio2">Москва</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                           value="option3">
-                    <label class="form-check-label" for="inlineRadio3">Новосибирск</label>
+                <div class="form-title">Филиал отгрузки</div>
+                <div class="form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                               value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Екатеринбург</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                               value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Москва</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                               value="option3">
+                        <label class="form-check-label" for="inlineRadio3">Новосибирск</label>
+                    </div>
                 </div>
                 <div class="form-group">
                     <div class="form-check">
@@ -294,19 +296,71 @@
                             Хочу получать новости и предложения на почту
                         </label>
                     </div>
-                </div>
-                <div class="form-group">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
                         <label class="form-check-label" for="defaultCheck2">
-                            Я принимаю условия «Политики обработки персональных данных» и «Пользовательского соглашения»
-                            и даю своё согласие на хранение и обработку мои данных.
+                            Я принимаю условия <a href="">«Политики обработки персональных данных»</a> и <a
+                                href="">«Пользовательского
+                            соглашения»</a> и даю своё согласие на хранение и обработку мои данных.
                         </label>
                     </div>
                 </div>
+                <div class="form-group">
+                    <label for="">Код с картинки</label>
+                    <div class="form-captcha">
+                        <input type="text" class="form-control">
+                        <img src="./img/articles/images-capcha.png" width="73" height="38" alt="">
+                    </div>
+                </div>
+                <input type="text" class="btn btn-primary" value="Зарегистрироваться">
             </form>
             <div>
+                <div class="registration__items">
+                    <div class="registration__item">
+                        <div class="registration__name"><i class="icon icon-vk"></i>Выгрузка товаров ВКонтакте</div>
+                        <p class="registration__anons">При продаже товаров в социальных сетях или организации совместных
+                            покупок, вы можете расширить ассортимент и воспользоваться выгрузкой наших товаров в
+                            социальную сеть ВКонтакте.</p>
+                    </div>
+                    <div class="registration__item">
+                        <div class="registration__name"><i class="icon icon-api"></i>API для интернет-магазинов</div>
+                        <p class="registration__anons">Автоматическая выгрузка актуальной информации о наличии, ценах,
+                            фотографиях и других данных всех товаров нашего каталога на ваш сайт или в 1С</p>
+                    </div>
+                    <div class="registration__item">
+                        <div class="registration__name"><i class="icon icon-gala-catalog"></i>Индивидуальный
+                            Гала-Каталог
+                        </div>
+                        <p class="registration__anons">Уникальная программа, в которой можно установить свой логотип,
+                            наценку, выбрать товарные направления, с которыми работаете, оставить свою контактную
+                            информацию.</p>
+                    </div>
+                    <div class="registration__item">
+                        <div class="registration__name"><i class="icon icon-basket-btn"></i>Готовое решение собственного
+                            интернет-магазина
+                        </div>
+                        <p class="registration__anons">Автообновление каталога, персональная цветовая схема, адаптивный
+                            дизайн и универсальный подход к организации каталога для магазина любой тематики</p>
+                    </div>
+                    <div class="registration__item">
+                        <div class="registration__name"><i class="icon icon-manager"></i>Персональный менеджер</div>
+                        <p class="registration__anons">Автообновление каталога, персональная цветовая схема, адаптивный
+                            дизайн и универсальный подход к организации каталога для магазина любой тематики</p>
+                        <p>Добро пожаловать в Гала-Центр!<br>
+                            После регистрации и отправки заказа с вами свяжется менеджер для уточнения деталей и
+                            заключения договора.
+                            <a href="">Посмотрите тут</a>, какие документы вам понадобятся, на этой же странице
+                            рассказываем о графике доставки и минимальной сумме. Кстати, у нас доступен самовывоз.</p>
 
+                        <p>У каждого клиента Гала-Центр есть персональный менеджер. Будет общаться с вами по телефону, в
+                            почте или мессенджере - как вам удобнее. Поможет в оформлении возврата, если вам что-то не
+                            понравится и решит вопросы.</p>
+
+                        <p>В Гала-Центр вы можете заказывать товары с максимальнйо выгодой: <a href="#">тут
+                            рассказываем</a> о нашей системе скидок. У каждого клиента своя цена - чем больше вы
+                            заказываете, тем меньше вы платите за товар.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
