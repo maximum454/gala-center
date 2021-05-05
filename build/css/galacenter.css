@@ -5748,6 +5748,39 @@ body.bg-16 {
   text-decoration: none;
 }
 
+.faq__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.faq__form {
+  max-width: 420px;
+}
+
+.accordeon {
+  border: 10px solid #fff;
+  -webkit-box-shadow: 0 0 10px grey;
+          box-shadow: 0 0 10px grey;
+  margin: 10px;
+}
+
+.accordeon__header {
+  padding: 5px 10px;
+  background: #c0c0c0;
+  cursor: pointer;
+}
+
+.accordeon__body {
+  padding: 10px;
+  border-bottom: 1px solid #c0c0c0;
+  margin-bottom: 5px;
+  display: none;
+}
+
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 700px;

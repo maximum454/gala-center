@@ -11,6 +11,7 @@
 @@include('./components/slider-collection.js')
 @@include('./components/nav.js')
 @@include('./components/delivery-modal.js')
+@@include('./components/accordeon.js')
 
 $(function () {
     setTimeout(function() {

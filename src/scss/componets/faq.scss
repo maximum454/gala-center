@@ -1,0 +1,13 @@
+.faq{
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  &__form{
+    max-width: 420px;
+  }
+}

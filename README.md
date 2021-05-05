@@ -21,3 +21,6 @@
 
 # Поставщикам
 * https://maximum454.github.io/gala-center/build/contractors.html
+
+# FAQ
+* https://maximum454.github.io/gala-center/build/faq.html
