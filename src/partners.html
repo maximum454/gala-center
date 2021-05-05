@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    @@include('./template/_meta.html')
+    <title>Партнерам</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/galacenter.min.css">
+</head>
+<body>
+<div class="wrp">
+    @@include('./template/_header.html')
+
+    <main class="main container">
+        <h1 class="main__title">Партнерам</h1>
+        <div class="partners">
+            <div class="partners__txt">
+                <div class="partners__title">Торговая платформа «Гала-Центр» —</div>
+                <p>приглашает партнеров из различных регионов РФ к сотрудничеству.</p>
+                <p>Статус партнера гарантирует постоянный поток новых клиентов и выгодные условия сотрудничества с крупными поставщиками и клиентам.</p>
+
+                <p>Заполните заявку на сотрудничество ниже:</p>
+
+                <form class="partners__form" action="">
+                    <div class="form-group">
+                        <label class="form-label" for="">Контактное лицо</label>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="">Город</label>
+                        <select name="" id="">
+                            <option value="">Санкт-Петербург</option>
+                            <option value="">Санкт-Петербург</option>
+                            <option value="">Санкт-Петербург</option>
+                            <option value="">Санкт-Петербург</option>
+                            <option value="">Санкт-Петербург</option>
+                            <option value="">Санкт-Петербург</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="">Контактный телефон</label>
+                        <input class="form-control" type="text" placeholder="+7">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="">Email</label>
+                        <input class="form-control" type="email" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="">Вопрос</label>
+                        <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                            <label class="form-check-label" for="defaultCheck4">
+                                Я принимаю условия <a href="">«Политики обработки персональных данных»</a> и <a
+                                    href="">«Пользовательского
+                                соглашения»</a> и даю своё согласие на хранение и обработку мои данных.
+                            </label>
+                        </div>
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Отправить завку">
+                </form>
+            </div>
+            <div class="partners__img">
+                <img src="./img/articles/partners1.png" width="680" height="403" alt="">
+            </div>
+        </div>
+
+
+    </main>
+
+    @@include('./template/_footer.html')
+    @@include('./template/_modal.html')
+</div>
+
+<script src="js/galacenter.min.js"></script>
+</body>
+</html>

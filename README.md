@@ -15,3 +15,6 @@
 
 # Сервисы
 * https://maximum454.github.io/gala-center/build/services.html
+
+# Партнерам
+* https://maximum454.github.io/gala-center/build/partners.html
