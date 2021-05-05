@@ -12,3 +12,6 @@
 
 # Политика конфиденциальности
 * https://maximum454.github.io/gala-center/build/privacy-policy.html
+
+# Сервисы
+* https://maximum454.github.io/gala-center/build/services.html

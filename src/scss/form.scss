@@ -73,6 +73,9 @@
 }
 .form-check-label {
 	margin-bottom: 0;
+	a{
+		text-decoration: none;
+	}
 }
 .form-check-input:disabled~.form-check-label {
 	color: #6c757d;

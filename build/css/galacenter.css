@@ -2773,6 +2773,12 @@ html.remodal-is-locked {
   border-color: #f8f9fa;
 }
 
+.btn.btn-light:hover {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
 .btn.btn-dark {
   color: #fff;
   background-color: #343a40;
@@ -3020,6 +3026,10 @@ html.remodal-is-locked {
 
 .form-check-label {
   margin-bottom: 0;
+}
+
+.form-check-label a {
+  text-decoration: none;
 }
 
 .form-check-input:disabled ~ .form-check-label {
@@ -5593,6 +5603,7 @@ body.bg-16 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-gap: 22px;
+  margin-bottom: 35px;
 }
 
 .api-integration__item {
@@ -5615,6 +5626,34 @@ body.bg-16 {
   font-size: 17px;
   line-height: 23px;
   color: #333333;
+}
+
+.api-integration__form {
+  max-width: 420px;
+}
+
+.api-integration__form a {
+  text-decoration: none;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.api-integration__form a:hover {
+  text-decoration: underline;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.api-integration .mb-20 {
+  margin-bottom: 20px;
+}
+
+.api-integration .btn-light {
+  padding: 2px 12px;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 @media only screen and (min-width: 641px) {
