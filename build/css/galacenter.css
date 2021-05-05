@@ -4534,6 +4534,11 @@ body.bg-16 {
   color: #000000;
 }
 
+.slider-season__title a {
+  color: #324C9A;
+  text-decoration: none;
+}
+
 .slider-season__body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(203px, 1fr));
@@ -5388,12 +5393,15 @@ body.bg-16 {
 }
 
 .registration {
+  margin-bottom: 60px;
+}
+
+.registration__body {
   display: grid;
   grid-template-columns: 420px 1fr;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 60px;
 }
 
 .registration__items {

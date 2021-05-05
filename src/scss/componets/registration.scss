@@ -1,8 +1,11 @@
 .registration {
-	display: grid;
-	grid-template-columns: 420px 1fr;
-	justify-content: space-between;
+
 	margin-bottom: 60px;
+	&__body{
+		display: grid;
+		grid-template-columns: 420px 1fr;
+		justify-content: space-between;
+	}
 	&__form{
 
 	}
