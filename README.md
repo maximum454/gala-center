@@ -1,5 +1,5 @@
 # gala-center
-верстка нового дизайна гц
+верстка нового дизайна ГЦ
 
 # Главная страница
 * https://maximum454.github.io/gala-center/build/index.html
