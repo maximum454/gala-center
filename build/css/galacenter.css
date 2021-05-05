@@ -2933,6 +2933,10 @@ html.remodal-is-locked {
   margin-bottom: 16px;
 }
 
+.form-group.mb-60 {
+  margin-bottom: 60px;
+}
+
 .form-group .form-label {
   display: inline-block;
   margin-bottom: 6px;
@@ -5454,6 +5458,10 @@ body.bg-16 {
   line-height: 28px;
   color: #333333;
   margin-bottom: 20px;
+}
+
+.registration .form-check-label a {
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 641px) {
