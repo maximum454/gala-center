@@ -1,0 +1,32 @@
+.cooperation{
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+    max-width: 655px;
+    margin-bottom: 50px;
+  }
+  &__list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(133px,250px));
+    grid-gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+      margin-bottom: 26px;
+      a{
+        font-size: 17px;
+        line-height: 23px;
+        color: #333333;
+        text-decoration: none;
+      }
+    }
+  }
+  &__group{
+
+  }
+}
