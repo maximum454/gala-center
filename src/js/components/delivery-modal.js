@@ -1,7 +1,5 @@
-
-
-$(function (){
-    $(document).on('click', function (e){
+$(function () {
+    $(document).on('click', function (e) {
         let parent = $('.header-delivery');
         let child = $('.header-delivery__modal');
 
@@ -11,7 +9,7 @@ $(function (){
 
         } else {
             child.toggleClass("active");
+
         }
-        console.log(target)
     })
 })

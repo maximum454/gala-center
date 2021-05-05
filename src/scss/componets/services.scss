@@ -1,0 +1,48 @@
+.services{
+	&__item{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap:36px;
+		margin-bottom: 86px;
+		align-items: center;
+		&:nth-child(even){
+			grid-auto-flow: revert;
+			.services__img{
+				grid-row: 1 /1;
+			}
+			.services__txt{
+				grid-column: 2 / 3;
+
+			}
+
+		}
+	}
+	&__txt{
+		p{
+			margin: 0 0 20px;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 17px;
+			line-height: 24px;
+			color: #333333;
+		}
+	}
+	&__img{
+		overflow: hidden;
+		img{
+			max-width: 100%;
+			width: 100%;
+			object-fit: cover;
+			height: auto;
+			border-radius: 5px;
+		}
+	}
+	&__name{
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 28px;
+		color: #333333;
+		margin: 0 0 20px;
+	}
+}

@@ -1,109 +1,11 @@
 .main{
 	position: relative;
-	&--page{
-		display: grid;
-		grid-template-areas: "aside-left contant";
-		grid-template-columns: 280px minmax(280px,1015px);
-		grid-column-gap: 40px;
-		position: relative;
-		margin-bottom: 80px;
-	}
-	&--order{
-		display: grid;
-		grid-template-areas: "contant";
-		grid-template-columns: 1fr;
-		grid-column-gap: 40px;
-		position: relative;
-		margin-bottom: 80px;
-	}
-	&__aside{
-		grid-area: aside-left;
-	}
-	&__contant{
-		grid-area: contant;
-	}
-	&__menu-big{
-		position: absolute;
-		z-index: 10;
-		background-color: #fff;
-		display: none;
-		width: 100%;
-		height: 100%;
-
-		&.active{
-			display: block;
-			z-index: 100;
-			&:before{
-				content: '';
-				position: absolute;
-				top: 0px;
-				left: -100%;
-				width: 100%;
-				height: 100%;
-				background-color: #fff;
-				border-top: 1px solid #E0E0E0;
-			}
-			&:after{
-				content: '';
-				position: absolute;
-				top: 0px;
-				right: -100%;
-				width: 100%;
-				height: 100%;
-				background-color: #fff;
-				border-top: 1px solid #E0E0E0;
-			}
-		}
-	}
-	&__subtitle{
-		font-family: Circe;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 20px;
-		line-height: 32px;
-		display: flex;
-		align-items: center;
-		color: #888E94;
-	}
 	&__title{
-		font-family: Circe;
 		font-style: normal;
 		font-weight: bold;
-		font-size: 45px;
-		line-height: 60px;
+		font-size: 28px;
+		line-height: 36px;
 		color: #333333;
-		margin: 10px 0 32px;
-		span{
-			text-decoration: underline;
-		}
-	}
-	@include r(1023){
-		&--page{
-			display: block;
-		}
-		&__title{
-			font-size: 32px;
-			line-height: 48px;
-		}
-		&__aside{
-			display: none;
-		}
-	}
-	@include r(767){
-		&--page{
-			display: block;
-		}
-		&__aside{
-			display: none;
-		}
-		&__subtitle{
-			font-size: 15px;
-			line-height: 20px;
-		}
-		&__title{
-			font-size: 24px;
-			line-height: 32px;
-			margin-bottom: 16px;
-		}
+		margin-bottom: 20px;
 	}
 }

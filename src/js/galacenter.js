@@ -18,4 +18,19 @@ $(function () {
     }, 100)
 
 
+    $('.header__search .form-control').on('keyup', function () {
+        let parents = $(this).parents('form');
+        parents.find('.form-dropdawn').show();
+        parents.find('.header__search-close').show();
+        if (this.value === '') {
+            parents.find('.form-dropdawn').hide();
+            parents.find('.header__search-close').hide();
+        }
+    })
+    $('.header__search-close').on('click', function (){
+        let parents = $(this).parents('form');
+        parents.find('.form-dropdawn').hide();
+        parents.find('.header__search-close').hide();
+    })
+
 })
