@@ -9,6 +9,7 @@
 @@include('./components/slider-populary.js')
 @@include('./components/slider-tabs.js')
 @@include('./components/slider-collection.js')
+@@include('./components/slider-price-list.js')
 @@include('./components/nav.js')
 @@include('./components/delivery-modal.js')
 @@include('./components/accordeon.js')
@@ -33,5 +34,11 @@ $(function () {
         parents.find('.form-dropdawn').hide();
         parents.find('.header__search-close').hide();
     })
+
+    $('.js-materials-more').on('click', function (){
+       $('.materials__more').addClass('show');
+    })
+
+
 
 })

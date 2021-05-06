@@ -24,3 +24,6 @@
 
 # FAQ
 * https://maximum454.github.io/gala-center/build/faq.html
+
+# Материалы
+* https://maximum454.github.io/gala-center/build/materials.html
