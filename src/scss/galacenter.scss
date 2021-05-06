@@ -9,6 +9,7 @@
 @import 'icon';
 @import 'buttons';
 @import 'form';
+@import 'table';
 
 
 @import 'remodal';
@@ -105,6 +106,13 @@ body {
 
 .w100 {
 	width: 100%;
+}
+
+.mb-80{
+	margin-bottom: 80px;
+}
+.mb-60{
+	margin-bottom: 60px;
 }
 
 .swiper-button-next:after,
@@ -221,3 +229,6 @@ body {
 
 //Прайс лист блок для слайдера
 @import "componets/slider-price-list";
+
+//Контакты
+@import "componets/contacts";

@@ -27,3 +27,6 @@
 
 # Материалы
 * https://maximum454.github.io/gala-center/build/materials.html
+
+# Контакты
+* https://maximum454.github.io/gala-center/build/contacts.html
