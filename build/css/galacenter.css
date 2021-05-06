@@ -2691,6 +2691,14 @@ html.remodal-is-locked {
   background-image: url("../img/icons-sprite.svg#arrow-select-dark");
 }
 
+.icon-accordion-close {
+  background-image: url("../img/icons-sprite.svg#icon-accordion-close");
+}
+
+.icon-accordion-open {
+  background-image: url("../img/icons-sprite.svg#icon-accordion-open");
+}
+
 .btn-group {
   margin: 0 -10px;
 }
@@ -5755,30 +5763,90 @@ body.bg-16 {
   line-height: 28px;
   color: #333333;
   margin-bottom: 20px;
+  max-width: 945px;
+}
+
+.faq__accordeon {
+  max-width: 774px;
 }
 
 .faq__form {
   max-width: 420px;
 }
 
-.accordeon {
-  border: 10px solid #fff;
-  -webkit-box-shadow: 0 0 10px grey;
-          box-shadow: 0 0 10px grey;
-  margin: 10px;
-}
-
-.accordeon__header {
-  padding: 5px 10px;
-  background: #c0c0c0;
+.accordeon__item {
+  margin-bottom: 40px;
+  padding: 30px;
+  position: relative;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  border-radius: 5px 5px 0px 0px;
   cursor: pointer;
 }
 
-.accordeon__body {
-  padding: 10px;
-  border-bottom: 1px solid #c0c0c0;
-  margin-bottom: 5px;
+.accordeon__item:hover {
+  background: #F1F5F9;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.accordeon__item:hover .accordeon__toggle {
+  background-image: url("../img/icons-sprite.svg#icon-accordion-open-dark");
+}
+
+.accordeon__item.active {
+  background: #F1F5F9;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.accordeon__item.active .accordeon__toggle {
+  background-image: url("../img/icons-sprite.svg#icon-accordion-close");
+  background-size: 12px;
+}
+
+.accordeon__item.active .accordeon__anons {
+  display: block;
+}
+
+.accordeon__toggle {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 0;
+  background-image: url("../img/icons-sprite.svg#icon-accordion-open");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 42px;
+  height: 42px;
+}
+
+.accordeon__name {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 23px;
+  position: relative;
+  color: #333333;
+  padding-right: 50px;
+}
+
+.accordeon__anons {
+  margin-top: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
   display: none;
+  max-width: 595px;
 }
 
 @media only screen and (min-width: 641px) {

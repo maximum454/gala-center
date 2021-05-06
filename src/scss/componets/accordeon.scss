@@ -1,21 +1,63 @@
 .accordeon{
 
-  border: 10px solid #fff;
-  box-shadow: 0 0 10px grey;
-  margin: 10px;
   &__item{
-
-  }
-  &__header {
-    padding: 5px 10px;
-    background: #c0c0c0;
+    margin-bottom: 40px;
+    padding: 30px;
+    position: relative;
+    transition: all .3s ease;
+    border-radius: 5px 5px 0px 0px;
     cursor: pointer;
+    &:hover{
+      background: #F1F5F9;
+      transition: all .3s ease;
+      .accordeon__toggle{
+        background-image: url("../img/icons-sprite.svg#icon-accordion-open-dark");
+      }
+    }
+    &.active{
+      background: #F1F5F9;
+      transition: all .3s ease;
+      .accordeon__toggle{
+        background-image: url("../img/icons-sprite.svg#icon-accordion-close");
+        background-size: 12px;
+      }
+      .accordeon__anons {
+        display: block;
+      }
+    }
+
+  }
+  &__toggle{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 0;
+    background-image: url("../img/icons-sprite.svg#icon-accordion-open");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 42px;
+    height: 42px;
+  }
+  &__name {
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 23px;
+    position: relative;
+    color: #333333;
+    padding-right: 50px;
   }
 
-  &__body {
-    padding: 10px;
-    border-bottom: 1px solid #c0c0c0;
-    margin-bottom: 5px;
+  &__anons {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
     display: none;
+    max-width: 595px;
   }
 }
