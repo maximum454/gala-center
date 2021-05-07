@@ -2731,6 +2731,18 @@ html.remodal-is-locked {
   background-image: url("../img/icons-sprite.svg#icon-train");
 }
 
+.icon-outline-phone {
+  background-image: url("../img/icons-sprite.svg#icon-outline-phone");
+}
+
+.icon-placemark {
+  background-image: url("../img/icons-sprite.svg#icon-placemark");
+}
+
+.icon-ruble {
+  background-image: url("../img/icons-sprite.svg#icon-ruble");
+}
+
 .btn-group {
   margin: 0 -10px;
 }
@@ -3354,7 +3366,7 @@ th {
 
 .tabs-secondary > .tabs__caption li.active {
   background-color: transparent;
-  border-bottom: 1px solid #324C9A;
+  border-bottom: 2px solid #324C9A;
   border-radius: 0;
 }
 
@@ -6477,8 +6489,13 @@ body.bg-16 {
 
 .delivery__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 640px));
+  grid-template-columns: repeat(auto-fill, minmax(445px, 1fr));
   grid-gap: 37px;
+}
+
+.delivery__img {
+  max-width: 640px;
+  width: 100%;
 }
 
 .delivery__img img {
@@ -6535,11 +6552,84 @@ body.bg-16 {
   max-width: 200px;
 }
 
+.card-maps {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(445px, 1fr));
+  grid-gap: 32px 20px;
+}
+
+.card-maps__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
 .card-maps__item {
   border: 1px solid rgba(68, 121, 163, 0.12);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 670px;
+}
+
+.card-maps__txt {
+  padding: 30px;
+}
+
+.card-maps__txt p {
+  color: #333333;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0 0 20px;
+}
+
+.card-maps__txt p:last-of-type {
+  margin-bottom: 0;
+}
+
+.card-maps__map {
+  height: 100%;
+  max-width: 320px;
+  width: 100%;
+}
+
+.card-maps__map img {
+  max-width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-maps__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 540px;
+}
+
+.card-maps__list li {
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-maps__list li .icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 21px;
+  height: 21px;
 }
 
 @media only screen and (min-width: 641px) {
