@@ -10,6 +10,7 @@
 @import 'buttons';
 @import 'form';
 @import 'table';
+@import "tabs";
 
 
 @import 'remodal';
@@ -232,3 +233,9 @@ body {
 
 //Контакты
 @import "componets/contacts";
+
+//Оплата и доставка
+@import "componets/delivery";
+
+//Карточки с картой
+@import "componets/card-maps";

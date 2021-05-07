@@ -52,39 +52,6 @@
 		width: 24px;
 		height: 24px;
 	}
-	&__caption{
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		li{
-			font-style: normal;
-			font-weight: normal;
-			font-size: 17px;
-			line-height: 24px;
-			color: #324C9A;
-			padding: 5px 12px;
-			cursor: pointer;
-			transition: all .3s ease;
-			&.active{
-				background: rgba(68, 121, 163, 0.12);
-				border-radius: 4px;
-				color: #333;
-			}
-			&:hover{
-				transition: all .3s ease;
-				opacity: .7;
-			}
-		}
-	}
-	&__content {
-		display: none;
-		&.active {
-			display: block;
-		}
-	}
 	.table{
 		max-width: 1000px;
 	}

@@ -13,7 +13,7 @@
 @@include('./components/nav.js')
 @@include('./components/delivery-modal.js')
 @@include('./components/accordeon.js')
-@@include('./components/contacts-tabs.js')
+@@include('./components/tabs.js')
 
 $(function () {
     setTimeout(function() {
