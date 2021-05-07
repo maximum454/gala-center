@@ -1,4 +1,7 @@
 .about-us{
+  p{
+    max-width: 1012px;
+  }
   &__title{
     font-style: normal;
     font-weight: bold;
@@ -27,6 +30,7 @@
       line-height: 20px;
       color: #333333;
       margin: 0;
+
     }
   }
   &__name{
