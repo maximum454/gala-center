@@ -33,3 +33,6 @@
 
 # Доставка: График отгрузки и доставки, Точки самовывоза
 * https://maximum454.github.io/gala-center/build/delivery.html
+
+# О компании
+* https://maximum454.github.io/gala-center/build/about-us.html

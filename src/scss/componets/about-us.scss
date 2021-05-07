@@ -1,0 +1,51 @@
+.about-us{
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+    margin-bottom: 20px;
+    max-width: 530px;
+  }
+  &__items{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 22px;
+    margin: 32px 0;
+  }
+  &__item{
+    background: #FFFFFF;
+    border: 1px solid rgba(68, 121, 163, 0.12);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 26px;
+    p{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 20px;
+      color: #333333;
+      margin: 0;
+    }
+  }
+  &__name{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 23px;
+    color: #333333;
+    margin-bottom: 25px;
+    position: relative;
+    padding-right: 50px;
+    .icon{
+      position: absolute;
+      top: 50%;
+      transform: translate(0,-50%);
+      right: 0;
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
