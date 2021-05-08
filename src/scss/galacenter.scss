@@ -127,6 +127,19 @@ body {
 	background-position: center;
 	background-size: 18px;
 }
+ul{
+	padding-left: 18px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	li{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 20px;
+		color: #333333;
+		margin-bottom: 10px;
+	}
+}
 
 
 //Шапка
@@ -245,3 +258,9 @@ body {
 
 //9 Федеральных округов
 @import "componets/federal-districts";
+
+//Сервисные центры
+@import "componets/service-centres";
+
+//Блок специолистов
+@import "componets/specialist";

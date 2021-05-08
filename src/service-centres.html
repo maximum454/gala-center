@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    @@include('./template/_meta.html')
+    <title>Сервисные центры</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/galacenter.min.css">
+</head>
+<body>
+<div class="wrp">
+    @@include('./template/_header.html')
+
+    <main class="main container">
+        <h1 class="main__title">Сервисные центры Leben</h1>
+
+        <div class="service-centres">
+            <p>С вопросами и предложениями по сотрудничеству, по организации сервисных центров, и по обслуживанию
+                техники Leben, обращайтесь к Спиридоновой (Чесноковой) Оксане или Олексенко Андрею.</p>
+            <div class="specialist">
+                <div class="specialist__item">
+                    <div class="specialist__title">Cпециалист по работе с СЦ</div>
+                    <div class="specialist__txt">
+                        <div class="specialist__img">
+                            <img src="./img/articles/specialist1.png" width="48" height="48" alt="">
+                        </div>
+                        <div class="specialist__name">Чеснокова Ольга
+
+                        </div>
+                        <div class="specialist__phone">+7 (343) 378-40-03, доб. 5149</div>
+                        <a class="specialist__email"
+                           href="mailto:chesnokova-o@galacentre.ru">chesnokova-o@galacentre.ru</a>
+                    </div>
+                </div>
+                <div class="specialist__item">
+                    <div class="specialist__title">Cпециалист по работе с СЦ</div>
+                    <div class="specialist__txt">
+                        <div class="specialist__img">
+                            <img src="./img/articles/specialist1.png" width="48" height="48" alt="">
+                        </div>
+                        <div class="specialist__name">Андрей Олексеенко
+
+                        </div>
+                        <div class="specialist__phone">+7 (343) 378-40-03, доб. 5149</div>
+                        <a class="specialist__email"
+                           href="mailto:chesnokova-o@galacentre.ru">chesnokova-o@galacentre.ru</a>
+                    </div>
+                </div>
+                <div class="specialist__item">
+                    <div class="specialist__title">Cпециалист по работе с СЦ</div>
+                    <div class="specialist__txt">
+                        <div class="specialist__img">
+                            <img src="./img/articles/specialist1.png" width="48" height="48" alt="">
+                        </div>
+                        <div class="specialist__phone">+7 (343) 378-40-03, доб. 5149</div>
+                        <a class="specialist__email"
+                           href="mailto:chesnokova-o@galacentre.ru">chesnokova-o@galacentre.ru</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__title">Адреса сервисных центров</div>
+            <form class="contacts__search" action="">
+                <input class="form-control" type="text" placeholder="Поиск вашего города">
+                <input class="contacts__search-btn" type="text">
+            </form>
+            <div class="tabs tabs-secondary">
+                <ul class="tabs__caption">
+                    <li class="active">Обслуживание бытовой техники</li>
+                    <li>Обслуживание телевизоров Leben</li>
+                </ul>
+
+                <div class="tabs__content active">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Город</th>
+                            <th scope="col">Адрес</th>
+                            <th scope="col">Телефон</th>
+                            <th scope="col">Название СЦ</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Абакан</th>
+                            <td>ул. Баумана, 3</td>
+                            <td>+7 (908) 326 63 64</td>
+                            <td>ВидеоТехника-Сервис</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Абакан</th>
+                            <td>пр. Дружбы Народов, 29</td>
+                            <td>+7 (3902) 233-927</td>
+                            <td>HomeLife</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Алапаевск</th>
+                            <td>ул. Тюрикова, 20</td>
+                            <td>+7 (908) 326 63 64</td>
+                            <td>Телесервис</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="tabs__content">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Город</th>
+                            <th scope="col">Адрес</th>
+                            <th scope="col">Телефон</th>
+                            <th scope="col">Название СЦ</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Абакан</th>
+                            <td>ул. Баумана, 3</td>
+                            <td>+7 (908) 326 63 64</td>
+                            <td>ВидеоТехника-Сервис</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Абакан</th>
+                            <td>пр. Дружбы Народов, 29</td>
+                            <td>+7 (3902) 233-927</td>
+                            <td>HomeLife</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Алапаевск</th>
+                            <td>ул. Тюрикова, 20</td>
+                            <td>+7 (908) 326 63 64</td>
+                            <td>Телесервис</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    @@include('./template/_footer.html')
+    @@include('./template/_modal.html')
+</div>
+
+<script src="js/galacenter.min.js"></script>
+</body>
+</html>

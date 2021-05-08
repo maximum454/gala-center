@@ -3661,6 +3661,21 @@ body.bg-16 {
   background-size: 18px;
 }
 
+ul {
+  padding-left: 18px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+ul li {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
 .header {
   position: relative;
   background-color: #F1F5F9;
@@ -6749,6 +6764,70 @@ body.bg-16 {
   line-height: 20px;
   color: #333333;
   margin: 0 0 20px;
+}
+
+.specialist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  margin: 20px 0 50px;
+}
+
+.specialist__item {
+  border: 1px solid rgba(68, 121, 163, 0.12);
+  border-radius: 10px;
+  padding: 16px;
+  position: relative;
+}
+
+.specialist__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 23px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.specialist__name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 6px;
+}
+
+.specialist__txt {
+  position: relative;
+  padding-right: 70px;
+}
+
+.specialist__img {
+  position: absolute;
+  top: 0;
+  right: 17px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.specialist__phone {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.specialist__email {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #324C9A;
 }
 
 @media only screen and (min-width: 641px) {

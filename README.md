@@ -36,3 +36,7 @@
 
 # О компании
 * https://maximum454.github.io/gala-center/build/about-us.html
+
+# Сервисные центры
+* https://maximum454.github.io/gala-center/build/service-centres.html
+* https://maximum454.github.io/gala-center/build/service-centres2.html
