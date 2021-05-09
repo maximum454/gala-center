@@ -85,6 +85,9 @@
 		font-weight: 400;
 		color: #324C9A;
 		background-color: transparent;
+		&.text-muted{
+			color: #A4A9BB;
+		}
 	}
 
 	&.btn-outline-primary{

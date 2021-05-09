@@ -1,0 +1,31 @@
+.card-shop{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+  grid-gap: 20px;
+  margin-bottom: 60px;
+  max-width: 1090px;
+  &__item{
+    background: #F1F5F9;
+    border-radius: 5px;
+    padding: 16px 21px;
+  }
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+    margin-bottom: 4px;
+  }
+  &__comment{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #333333;
+    margin: 0 0 10px;
+  }
+  .btn-link{
+    padding: 0;
+  }
+}

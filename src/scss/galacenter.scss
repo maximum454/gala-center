@@ -146,7 +146,9 @@ ul{
 .text-success{
 	color: #6FCF97;
 }
-
+.text-muted{
+	color: #A4A9BB;
+}
 
 //Шапка
 @import "componets/header";
@@ -276,3 +278,6 @@ ul{
 
 //Состояние аккаунта
 @import "componets/state-account";
+
+//магазин аккаунта
+@import "componets/card-shop";
