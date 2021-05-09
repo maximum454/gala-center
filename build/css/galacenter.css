@@ -2995,6 +2995,12 @@ html.remodal-is-locked {
           box-shadow: 0 0 0 0.2rem #343a01;
 }
 
+.form-bg {
+  background: #F1F5F9;
+  border-radius: 4px;
+  padding: 32px;
+}
+
 .form-group {
   margin-bottom: 16px;
 }
@@ -3338,10 +3344,6 @@ th {
   font-weight: normal;
 }
 
-.table > tbody > :not(:last-child) > :last-child > * {
-  border-bottom-color: transparent;
-}
-
 .tabs {
   margin: 20px 0;
 }
@@ -3674,6 +3676,14 @@ ul li {
   line-height: 20px;
   color: #333333;
   margin-bottom: 10px;
+}
+
+.text-warning {
+  color: #EB5757;
+}
+
+.text-success {
+  color: #6FCF97;
 }
 
 .header {
@@ -4267,6 +4277,15 @@ ul li {
   line-height: 36px;
   color: #333333;
   margin-bottom: 20px;
+}
+
+.main__subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+  color: #333333;
+  margin: 0 0 25px;
 }
 
 .breadcrumb {
@@ -6828,6 +6847,53 @@ ul li {
   line-height: 20px;
   text-decoration: none;
   color: #324C9A;
+}
+
+.account__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-gap: 80px;
+}
+
+.account__state-account {
+  max-width: 340px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.state-account {
+  background: #F1F5F9;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.state-account__header {
+  background: rgba(93, 144, 184, 0.08);
+  padding: 14px 32px;
+}
+
+.state-account__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.state-account__body {
+  padding: 14px 32px;
+}
+
+.state-account__body .form-control {
+  max-width: 167px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+  color: #A4A9BB;
 }
 
 @media only screen and (min-width: 641px) {

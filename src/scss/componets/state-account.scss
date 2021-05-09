@@ -1,0 +1,27 @@
+.state-account{
+  background: #F1F5F9;
+  border-radius: 4px;
+  overflow: hidden;
+  &__header{
+    background: rgba(93, 144, 184, 0.08);
+    padding: 14px 32px;
+  }
+  &__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
+  }
+  &__body{
+    padding: 14px 32px;
+    .form-control{
+      max-width: 167px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 36px;
+      color: #A4A9BB;
+    }
+  }
+}

@@ -140,6 +140,12 @@ ul{
 		margin-bottom: 10px;
 	}
 }
+.text-warning{
+	color: #EB5757;
+}
+.text-success{
+	color: #6FCF97;
+}
 
 
 //Шапка
@@ -264,3 +270,9 @@ ul{
 
 //Блок специолистов
 @import "componets/specialist";
+
+//Аккаунт
+@import "componets/account";
+
+//Состояние аккаунта
+@import "componets/state-account";
