@@ -24,4 +24,25 @@
       color: #A4A9BB;
     }
   }
+  &__price{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    color: #333333;
+    margin-bottom: 24px;
+  }
+  hr{
+    border-color: rgba(68, 121, 163, 0.12);
+    margin: 24px 0;
+  }
+  a{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #324C9A;
+    text-decoration: none;
+  }
+
 }

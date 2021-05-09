@@ -6908,6 +6908,29 @@ ul li {
   color: #A4A9BB;
 }
 
+.state-account__price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+  color: #333333;
+  margin-bottom: 24px;
+}
+
+.state-account hr {
+  border-color: rgba(68, 121, 163, 0.12);
+  margin: 24px 0;
+}
+
+.state-account a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #324C9A;
+  text-decoration: none;
+}
+
 .card-shop {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
