@@ -1,3 +1,8 @@
+.form-bg{
+	background: #F1F5F9;
+	border-radius: 4px;
+	padding: 32px;
+}
 .form-group{
 	margin-bottom: 16px;
 	&.mb-60{
@@ -73,6 +78,9 @@
 }
 .form-check-label {
 	margin-bottom: 0;
+	a{
+		text-decoration: none;
+	}
 }
 .form-check-input:disabled~.form-check-label {
 	color: #6c757d;

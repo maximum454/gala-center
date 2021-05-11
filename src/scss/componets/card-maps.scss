@@ -1,0 +1,62 @@
+.card-maps{
+  display: grid;
+  grid-template-columns:repeat(auto-fill,minmax(445px,1fr));
+  grid-gap: 32px 20px;
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  &__item{
+    border: 1px solid rgba(68, 121, 163, 0.12);
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    max-width: 670px;
+  }
+  &__txt{
+    padding: 30px;
+    p{
+      color: #333333;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 20px;
+      margin: 0 0 20px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__map{
+    height: 100%;
+    max-width: 320px;
+    width: 100%;
+    img{
+      max-width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  &__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: 540px;
+    li{
+      font-size: 15px;
+      line-height: 20px;
+      color: #333333;
+      margin-bottom: 20px;
+      display: flex;
+      .icon{
+        flex-shrink: 0;
+        width: 21px;
+        height: 21px;
+      }
+    }
+  }
+}

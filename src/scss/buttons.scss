@@ -1,3 +1,9 @@
+.btn-group {
+	margin: 0 -10px;
+	.btn{
+		margin: .25rem 10px;
+	}
+}
 .btn{
 	display: inline-block;
 	font-weight: 400;
@@ -13,6 +19,7 @@
 	cursor: pointer;
 	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	text-decoration: none;
+
 	&:focus,
 	&:hover {
 		text-decoration: none;
@@ -63,6 +70,11 @@
 		color: #212529;
 		background-color: #f8f9fa;
 		border-color: #f8f9fa;
+		&:hover {
+			color: #fff;
+			background-color: #343a40;
+			border-color: #343a40;
+		}
 	}
 	&.btn-dark{
 		color: #fff;
@@ -73,6 +85,9 @@
 		font-weight: 400;
 		color: #324C9A;
 		background-color: transparent;
+		&.text-muted{
+			color: #A4A9BB;
+		}
 	}
 
 	&.btn-outline-primary{

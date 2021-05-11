@@ -85,7 +85,7 @@ function css() {
             })
         )
         .pipe(dest(path.build.css))
-        .pipe(clean_css())
+        .pipe(clean_css( { level: { 1: { specialComments: 0 } }/* , format: 'beautify' */ }))
         .pipe(
             rename({
                 extname: '.min.css'

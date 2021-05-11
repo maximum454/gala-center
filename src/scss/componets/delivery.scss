@@ -1,0 +1,123 @@
+.delivery{
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  &__list{
+    margin: 0 0 30px;
+    padding: 0;
+    list-style: none;
+    max-width: 540px;
+    li{
+      font-size: 15px;
+      line-height: 20px;
+      color: #333333;
+      margin-bottom: 20px;
+      display: flex;
+      .icon{
+        flex-shrink: 0;
+        width: 44px;
+        height: 44px;
+        background-color: #DDE8F4;
+        border-radius: 5px;
+        background-size: 24px;
+      }
+    }
+  }
+  &__caption{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    li{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 24px;
+      color: #324C9A;
+      padding: 5px 12px;
+      cursor: pointer;
+      transition: all .3s ease;
+      &.active{
+        background: rgba(68, 121, 163, 0.12);
+        border-radius: 4px;
+        color: #333;
+      }
+      &:hover{
+        transition: all .3s ease;
+        opacity: .7;
+      }
+    }
+  }
+  &__content {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(445px,1fr));
+    grid-gap: 37px;
+  }
+  &__img{
+    max-width: 640px;
+    width: 100%;
+    img{
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+  }
+  &__row{
+    display: flex;
+
+  }
+  &__item{
+    background: #EFF8FF;
+    border-radius: 5px;
+    padding: 24px;
+    margin-right: 130px;
+    &:last-of-type{
+      margin-right: 0;
+    }
+    ul{
+      padding-left: 15px;
+      li{
+        margin-bottom: 5px;
+      }
+    }
+  }
+  &__name{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+    margin-bottom: 18px;
+  }
+  p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
+  }
+  .table{
+    tbody{
+      th{
+        &:first-child{
+          max-width: 200px;
+        }
+      }
+
+    }
+  }
+}

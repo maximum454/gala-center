@@ -1,0 +1,44 @@
+.federal-districts{
+  margin: 32px 0;
+  background: #F1F5F9;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  &__txt{
+    padding: 35px 26px;
+  }
+  &__img{
+    max-width: 578px;
+    width: 100%;
+    img{
+      max-width: 100%;
+      object-fit: cover;
+      display: block;
+      height: auto;
+    }
+  }
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    color: #324C9A;
+  }
+  &__subtitle{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
+    margin: 0 0 20px;
+  }
+}

@@ -1,0 +1,17 @@
+.faq{
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+    margin-bottom: 20px;
+    max-width: 945px;
+  }
+  &__accordeon{
+    max-width: 774px;
+  }
+  &__form{
+    max-width: 420px;
+  }
+}

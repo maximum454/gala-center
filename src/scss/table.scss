@@ -1,0 +1,38 @@
+.table {
+	width: 100%;
+	margin-bottom: 1rem;
+	color: #212529;
+	vertical-align: top;
+	border-color: #dee2e6;
+	background-color: transparent;
+	caption-side: bottom;
+	border-collapse: collapse;
+}
+.table>thead {
+	vertical-align: bottom;
+}
+tbody, td, tfoot, th, thead, tr {
+	border-color: inherit;
+	border-style: solid;
+	border-width: 0;
+}
+.table>tbody {
+	vertical-align: inherit;
+}
+tbody, td, tfoot, th, thead, tr {
+	border-color: inherit;
+	border-style: solid;
+	border-width: 0;
+}
+.table>:not(:last-child)>:last-child>* {
+	border-bottom-color: transparent;
+}
+th {
+	text-align: inherit;
+	text-align: -webkit-match-parent;
+}
+.table>:not(caption)>*>* {
+	padding: 19px .5rem 28px;
+	border-bottom-width: 1px;
+	font-weight: normal;
+}

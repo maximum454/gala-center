@@ -1,0 +1,95 @@
+.materials {
+	&__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        color: #333333;
+        margin-bottom: 40px;
+	}
+
+	&__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+        grid-gap: 32px;
+        margin-bottom: 40px;
+        .materials__items{
+
+            grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+            grid-gap: 32px;
+            width: 100%;
+            grid-column: 1/5;
+            display: none;
+            &.show{
+                display: grid;
+            }
+        }
+	}
+    &__more{
+        grid-column: 1/5;
+        margin-top: 20px;
+        text-align: center;
+    }
+    &__item{
+        position: relative;
+        display: block;
+        text-decoration: none;
+        border: 1px solid rgba(68, 121, 163, 0.12);
+        border-radius: 5px;
+        padding: 20px 50px;
+        text-align: center;
+        overflow: hidden;
+        transition: all .3s ease;
+        &:hover{
+            transition: all .3s ease;
+            .btn-group{
+                bottom: 0;
+                transition: all .3s ease;
+            }
+        }
+    }
+
+	&__img{
+        margin-bottom: 15px;
+        img {
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+    }
+    &__txt{
+
+    }
+    &__name{
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color: #333333;
+    }
+    &__anons{
+        font-size: 17px;
+        line-height: 23px;
+        text-align: center;
+        color: #333333;
+    }
+    .btn-group{
+        display: flex;
+        align-items: center;
+        padding: 10px 14px;
+        background-color: #fff;
+        border-top: 1px solid rgba(68, 121, 163, 0.12);
+        position: absolute;
+        bottom: -100%;
+        left: 10px;
+        width: 100%;
+        transition: all .3s ease;
+        .btn{
+            width: 100%;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 23px;
+        }
+    }
+}

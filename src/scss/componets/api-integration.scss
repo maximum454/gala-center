@@ -12,6 +12,7 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
 		grid-gap: 22px;
+		margin-bottom: 35px;
 	}
 	&__item{
 		border: 1px solid rgba(68, 121, 163, 0.12);
@@ -31,5 +32,25 @@
 		font-size: 17px;
 		line-height: 23px;
 		color: #333333;
+	}
+	&__form{
+		max-width: 420px;
+		a{
+			text-decoration: none;
+			transition: all .3s ease;
+			&:hover{
+				text-decoration: underline;
+				transition: all .3s ease;
+			}
+		}
+
+	}
+	.mb-20{
+		margin-bottom: 20px;
+	}
+	.btn-light{
+		padding: 2px 12px;
+		font-size: 17px;
+		line-height: 24px;
 	}
 }

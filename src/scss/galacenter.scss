@@ -9,6 +9,8 @@
 @import 'icon';
 @import 'buttons';
 @import 'form';
+@import 'table';
+@import "tabs";
 
 
 @import 'remodal';
@@ -107,6 +109,13 @@ body {
 	width: 100%;
 }
 
+.mb-80{
+	margin-bottom: 80px;
+}
+.mb-60{
+	margin-bottom: 60px;
+}
+
 .swiper-button-next:after,
 .swiper-button-prev:after {
 	content: '';
@@ -118,7 +127,28 @@ body {
 	background-position: center;
 	background-size: 18px;
 }
-
+ul{
+	padding-left: 18px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	li{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 20px;
+		color: #333333;
+		margin-bottom: 10px;
+	}
+}
+.text-warning{
+	color: #EB5757;
+}
+.text-success{
+	color: #6FCF97;
+}
+.text-muted{
+	color: #A4A9BB;
+}
 
 //Шапка
 @import "componets/header";
@@ -200,3 +230,54 @@ body {
 
 //Сервисы интеграция с api
 @import "componets/api-integration";
+
+//Партнерам
+@import "componets/partners";
+
+//Блок сотрудничества
+@import "componets/cooperation";
+
+//FAQ
+@import "componets/faq";
+
+//Аккордион
+@import "componets/accordeon";
+
+//Материалы
+@import "componets/materials";
+
+//Прайс лист
+@import "componets/price-list";
+
+//Прайс лист блок для слайдера
+@import "componets/slider-price-list";
+
+//Контакты
+@import "componets/contacts";
+
+//Оплата и доставка
+@import "componets/delivery";
+
+//Карточки с картой
+@import "componets/card-maps";
+
+//О компании
+@import "componets/about-us";
+
+//9 Федеральных округов
+@import "componets/federal-districts";
+
+//Сервисные центры
+@import "componets/service-centres";
+
+//Блок специолистов
+@import "componets/specialist";
+
+//Аккаунт
+@import "componets/account";
+
+//Состояние аккаунта
+@import "componets/state-account";
+
+//магазин аккаунта
+@import "componets/card-shop";
