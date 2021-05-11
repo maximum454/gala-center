@@ -11,6 +11,7 @@
 @import 'form';
 @import 'table';
 @import "tabs";
+@import "alert";
 
 
 @import 'remodal';
@@ -148,6 +149,14 @@ ul{
 }
 .text-muted{
 	color: #A4A9BB;
+}
+
+p{
+	color: #333;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 20px;
 }
 
 //Шапка
