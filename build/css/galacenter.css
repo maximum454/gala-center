@@ -2743,6 +2743,10 @@ html.remodal-is-locked {
   background-image: url("../img/icons-sprite.svg#icon-ruble");
 }
 
+.icon-basket-delete {
+  background-image: url("../img/icons-sprite.svg#icon-basket-delete");
+}
+
 .btn-group {
   margin: 0 -10px;
 }
@@ -3294,7 +3298,7 @@ html.remodal-is-locked {
 
 .table {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 40px;
   color: #212529;
   vertical-align: top;
   border-color: #dee2e6;
@@ -3488,6 +3492,10 @@ th {
   border-color: #c6c8ca;
 }
 
+.remodal {
+  text-align: left;
+}
+
 .remodal .remodal-close {
   right: 22px;
   top: 24px;
@@ -3517,6 +3525,7 @@ th {
   line-height: 28px;
   color: #000000;
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .remodal.delivery .select {
@@ -3702,6 +3711,10 @@ body.bg-16 {
 
 .w100 {
   width: 100%;
+}
+
+.w860 {
+  max-width: 860px;
 }
 
 .mb-80 {
@@ -6939,6 +6952,40 @@ p {
 
 .account P {
   max-width: 740px;
+}
+
+.account__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #333333;
+  margin-bottom: 4px;
+}
+
+.account__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 23px;
+  color: #333;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.account__subtitle a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #324C9A;
+  margin-left: 30px;
+}
+
+.account__subtitle a:last-of-type {
+  margin-left: 0;
 }
 
 .state-account {
