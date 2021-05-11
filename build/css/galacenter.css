@@ -3408,6 +3408,7 @@ th {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
+  margin: 0;
 }
 
 .tabs__caption li.active {
@@ -3429,6 +3430,62 @@ th {
 
 .tabs__content.active {
   display: block;
+}
+
+.alert {
+  position: relative;
+  padding: 20px 14px;
+  margin-bottom: 1rem;
+  border: 1px solid #0000;
+  border-radius: 5px;
+}
+
+.alert-primary {
+  color: #333;
+  background-color: #F1F5F9;
+  border-color: #F1F5F9;
+}
+
+.alert-secondary {
+  color: #383d41;
+  background-color: #e2e3e5;
+  border-color: #d6d8db;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.alert-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+
+.alert-light {
+  color: #818182;
+  background-color: #fefefe;
+  border-color: #fdfdfe;
+}
+
+.alert-dark {
+  color: #1b1e21;
+  background-color: #d6d8d9;
+  border-color: #c6c8ca;
 }
 
 .remodal .remodal-close {
@@ -3692,6 +3749,14 @@ ul li {
 
 .text-muted {
   color: #A4A9BB;
+}
+
+p {
+  color: #333;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .header {
