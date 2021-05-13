@@ -153,6 +153,9 @@ ul{
 .text-muted{
 	color: #A4A9BB;
 }
+.text-center{
+	text-align: center;
+}
 
 p{
 	color: #333;
@@ -293,3 +296,13 @@ p{
 
 //магазин аккаунта
 @import "componets/card-shop";
+
+//Блок для слайдера
+@import "componets/slider-block";
+
+
+//Ссылки навигации
+@import "componets/nav-link";
+
+//Блоки для статей
+@import "componets/articles-block";
