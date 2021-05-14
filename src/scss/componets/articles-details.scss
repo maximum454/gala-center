@@ -3,10 +3,10 @@
     border-radius: 5px;
     overflow: hidden;
     position: relative;
+    margin-bottom: 60px;
     img{
       object-fit: cover;
       height: auto;
-      width: 100%;
       max-width: 100%;
       display: block;
     }
@@ -25,6 +25,15 @@
     border-radius: 4px 0px;
     padding: 4px 8px;
     z-index: 10;
+  }
+  &__arrow{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 55px;
+    height: 47px;
+    background: rgba(221, 232, 244, 0.5);
+    border-radius: 5px 0px;
   }
   &__body{
     display: grid;
@@ -74,5 +83,8 @@
   }
   .slider-collection{
     margin: 40px 0;
+  }
+  .articles-block__item {
+    height: auto;
   }
 }

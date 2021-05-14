@@ -49,6 +49,9 @@
 
 # Статьи
 * https://maximum454.github.io/gala-center/build/artıcles.html
+* https://maximum454.github.io/gala-center/build/artıcles-detail.html
+* https://maximum454.github.io/gala-center/build/artıcles-detail2.html
+* https://maximum454.github.io/gala-center/build/artıcles-detail3.html
 
 # Каталог
 * https://maximum454.github.io/gala-center/build/category.html
