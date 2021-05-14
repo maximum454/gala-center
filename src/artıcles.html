@@ -11,68 +11,615 @@
     @@include('./template/_header.html')
 
     <main class="main container">
-        <h1 class="main__title">FAQ </h1>
+        <h1 class="main__title">Cтатьи</h1>
+        
+        <div class="nav-link">
+            <a class="nav-link__item" href="#">Электроника</a>
+            <a class="nav-link__item" href="#">Обзор товаров</a>
+            <a class="nav-link__item" href="#">Бизнес</a>
+            <a class="nav-link__item" href="#">Хозтовары</a>
+            <a class="nav-link__item" href="#">Бытовая техника</a>
+            <a class="nav-link__item" href="#">Дача и сад</a>
+            <a class="nav-link__item" href="#">Авто </a>
+            <a class="nav-link__item" href="#">Бытовая химия</a>
+            <a class="nav-link__item" href="#">Подарки</a>
+            <a class="nav-link__item" href="#">Галантерея</a>
+            <a class="nav-link__item" href="#">Туризм и рыбалка</a>
+            <a class="nav-link__item" href="#">Посуда</a>
+            <a class="nav-link__item" href="#">Бытовая химия</a>
+            <a class="nav-link__item" href="#">Ароматизаторы</a>
+            <a class="nav-link__item" href="#">Инструменты</a>
+            <a class="nav-link__item" href="#">Хозтовары</a>
+        </div>
 
-        <section class="articles">
-            <header class="articles__header">
-                <div class="articles__title">Cтатьи</div>
-            </header>
-            <div class="articles__body">
-                <article class="articles__item">
-                    <a href="" class="articles__img">
-                        <img src="./img/articles/image1.png" width="310" height="195" alt="">
-                    </a>
-                    <a href="" class="articles__txt">
-                        <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
-                        <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
-                            обожают голливудские звезды....» </p>
-                        <div class="articles__time">
-                            <i class="icon icon-time"></i>5 минут
+        <div class="articles-block">
+            <div class="articles-block__body">
+            <article class="articles-block__item">
+                <div class="articles-block__img">
+                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                    <a href="#" class="articles-block__txt">
+                        <div class="articles-block__name">Какие товары лучше всего продаются в Instagram согласно Google Trends</div>
+                        <div class="articles-block__arrow">
+
                         </div>
                     </a>
-                </article>
-                <article class="articles__item">
-                    <a href="" class="articles__img">
-                        <img src="./img/articles/image2.png" width="310" height="195" alt="">
+                </div>
+            </article>
+            <article class="articles-block__item">
+                <div class="articles-block__img">
+                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                    <a href="#" class="articles-block__txt">
+                        <div class="articles-block__name">Какие товары лучше всего продаются в Instagram согласно Google Trends</div>
                     </a>
-                    <a href="" class="articles__txt">
-                        <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
-                        <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
-                            обожают голливудские звезды....» </p>
-                        <div class="articles__time">
-                            <i class="icon icon-time"></i>5 минут
-                        </div>
+                </div>
+            </article>
+            <article class="articles-block__item">
+                <div class="articles-block__img">
+                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                    <a href="#" class="articles-block__txt">
+                        <div class="articles-block__name">Какие товары лучше всего продаются в Instagram согласно Google Trends</div>
                     </a>
-                </article>
-                <article class="articles__item">
-                    <a href="" class="articles__img">
-                        <img src="./img/articles/image3.png" width="310" height="195" alt="">
-                    </a>
-                    <a href="" class="articles__txt">
-                        <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
-                        <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
-                            обожают голливудские звезды....» </p>
-                        <div class="articles__time">
-                            <i class="icon icon-time"></i>5 минут
-                        </div>
-                    </a>
-                </article>
-                <article class="articles__item">
-                    <a href="" class="articles__img">
-                        <img src="./img/articles/image4.png" width="310" height="195" alt="">
-                    </a>
-                    <a href="" class="articles__txt">
-                        <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
-                        <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
-                            обожают голливудские звезды....» </p>
-                        <div class="articles__time">
-                            <i class="icon icon-time"></i>5 минут
-                        </div>
-                    </a>
-                </article>
+                </div>
+            </article>
             </div>
-            <div class="articles__more">
-                <a href="#" class="btn btn-outline-secondary">Больше статей про бизнес</a>
+        </div>
+
+
+
+        <div class="subscribe">
+            <div class="subscribe__title"><i class="icon icon-email"></i>Будьте в курсе наших акций и новостей</div>
+            <form class="subscribe__form">
+                <input class="form-control-plaintext" type="text" placeholder="Email">
+                <input class="btn btn-primary" type="submit" value="Подписаться">
+            </form>
+        </div>
+
+        <section class="slider-block">
+            <header class="slider-block__header">
+                <div class="slider-block__title">Электроника</div>
+                <a href="#" class="btn btn-outline-secondary">Смотреть все</a>
+                <div class="slider-block__nav">
+                    <div class="swiper-button-prev block-prev"></div>
+                    <div class="swiper-button-next block-next"></div>
+                </div>
+            </header>
+            <div class="slider-block__body">
+                <div class="swiper-container-block">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider-block">
+            <header class="slider-block__header">
+                <div class="slider-block__title">Бизнес</div>
+                <a href="#" class="btn btn-outline-secondary">Смотреть все</a>
+                <div class="slider-block__nav">
+                    <div class="swiper-button-prev block-prev"></div>
+                    <div class="swiper-button-next block-next"></div>
+                </div>
+            </header>
+            <div class="slider-block__body">
+                <div class="swiper-container-block">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="articles-block">
+            <div class="articles-block__title">Дача и сад</div>
+            <div class="articles-block__body articles-block__body--secondary">
+            <article class="articles-block__item">
+                <div class="articles-block__img">
+                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                    <a href="#" class="articles-block__txt">
+                        <div class="articles-block__name">Какие и с помощью каких приспособлений прорастить стручковую фасоль?</div>
+                        <div class="articles-block__time">
+                            <i class="icon icon-time"></i>5 минут
+                        </div>
+                    </a>
+                </div>
+            </article>
+            <article class="articles-block__item">
+                <div class="articles-block__img">
+                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                    <a href="#" class="articles-block__txt">
+                        <div class="articles-block__name">Какие и с помощью каких приспособлений прорастить стручковую фасоль?</div>
+                        <div class="articles-block__time">
+                            <i class="icon icon-time"></i>5 минут
+                        </div>
+                    </a>
+                </div>
+            </article>
+            <article class="articles-block__item">
+                <div class="articles-block__img">
+                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                    <a href="#" class="articles-block__txt">
+                        <div class="articles-block__name">Какие и с помощью каких приспособлений прорастить стручковую фасоль?</div>
+                        <div class="articles-block__time">
+                            <i class="icon icon-time"></i>5 минут
+                        </div>
+                    </a>
+                </div>
+            </article>
+            <article class="articles-block__item">
+                <div class="articles-block__img">
+                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                    <a href="#" class="articles-block__txt">
+                        <div class="articles-block__name">Какие и с помощью каких приспособлений прорастить стручковую фасоль?</div>
+                        <div class="articles-block__time">
+                            <i class="icon icon-time"></i>5 минут
+                        </div>
+                    </a>
+                </div>
+            </article>
+            <article class="articles-block__item">
+                <div class="articles-block__img">
+                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                    <a href="#" class="articles-block__txt">
+                        <div class="articles-block__name">Какие и с помощью каких приспособлений прорастить стручковую фасоль?</div>
+                        <div class="articles-block__time">
+                            <i class="icon icon-time"></i>5 минут
+                        </div>
+                    </a>
+                </div>
+            </article>
+            </div>
+        </div>
+
+        <section class="slider-block">
+            <header class="slider-block__header">
+                <div class="slider-block__title">Электроника</div>
+                <a href="#" class="btn btn-outline-secondary">Смотреть все</a>
+                <div class="slider-block__nav">
+                    <div class="swiper-button-prev block-prev"></div>
+                    <div class="swiper-button-next block-next"></div>
+                </div>
+            </header>
+            <div class="slider-block__body">
+                <div class="swiper-container-block">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider-block">
+            <header class="slider-block__header">
+                <div class="slider-block__title">Бизнес</div>
+                <a href="#" class="btn btn-outline-secondary">Смотреть все</a>
+                <div class="slider-block__nav">
+                    <div class="swiper-button-prev block-prev"></div>
+                    <div class="swiper-button-next block-next"></div>
+                </div>
+            </header>
+            <div class="slider-block__body">
+                <div class="swiper-container-block">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="articles__item">
+                                <a href="" class="articles__img">
+                                    <img src="./img/articles/image1.png" width="310" height="195" alt="">
+                                </a>
+                                <a href="" class="articles__txt">
+                                    <div class="articles__name">Какой лучше всего открывать магазин в 2021 году ?</div>
+                                    <p class="articles__anons">«Сухой массаж тела щеткой — многовековой ритуал красоты, который
+                                        обожают голливудские звезды....» </p>
+                                    <div class="articles__time">
+                                        <i class="icon icon-time"></i>5 минут
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

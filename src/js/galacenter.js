@@ -10,6 +10,7 @@
 @@include('./components/slider-tabs.js')
 @@include('./components/slider-collection.js')
 @@include('./components/slider-price-list.js')
+@@include('./components/slider-block.js')
 @@include('./components/nav.js')
 @@include('./components/delivery-modal.js')
 @@include('./components/accordeon.js')

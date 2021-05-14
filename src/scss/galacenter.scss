@@ -26,19 +26,19 @@ body {
 	&.lock {
 		overflow: hidden;
 	}
-	&.bg-1{
+	.bg-1{
 		background: #F1F5F9;
 	}
-	&.bg-2{
+	.bg-2{
 		background: #FFF8DB;
 	}
-	&.bg-3{
+	.bg-3{
 		background: #FFF0F9;
 	}
-	&.bg-4{
+	.bg-4{
 		background: #FFF0F9;
 	}
-	&.bg-5{
+	.bg-5{
 		background: #FFF5E5;
 	}
 	&.bg-6{
@@ -109,6 +109,9 @@ body {
 .w100 {
 	width: 100%;
 }
+.w860{
+	max-width: 860px;
+}
 
 .mb-80{
 	margin-bottom: 80px;
@@ -149,6 +152,9 @@ ul{
 }
 .text-muted{
 	color: #A4A9BB;
+}
+.text-center{
+	text-align: center;
 }
 
 p{
@@ -290,3 +296,22 @@ p{
 
 //магазин аккаунта
 @import "componets/card-shop";
+
+//Блок для слайдера
+@import "componets/slider-block";
+
+
+//Ссылки навигации
+@import "componets/nav-link";
+
+//Блоки для статей
+@import "componets/articles-block";
+
+//Пагинация
+@import "componets/pagination";
+
+//Фильтр
+@import "componets/filter";
+
+//Информация от таваре
+@import "componets/information";

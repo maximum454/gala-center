@@ -46,3 +46,12 @@
 
 # Личный кабинет история заказов
 * https://maximum454.github.io/gala-center/build/account-history-order.html
+
+# Статьи
+* https://maximum454.github.io/gala-center/build/artıcles.html
+
+# Каталог
+* https://maximum454.github.io/gala-center/build/category.html
+* https://maximum454.github.io/gala-center/build/catalog-detail.html
+* https://maximum454.github.io/gala-center/build/catalog-detail-no-sp.html
+* https://maximum454.github.io/gala-center/build/catalog-detail-no.html

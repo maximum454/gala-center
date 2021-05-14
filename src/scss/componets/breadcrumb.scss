@@ -1,21 +1,24 @@
 .breadcrumb{
 	display: flex;
-	margin: 0;
+	margin: 10px 0;
 	padding: 0;
 	list-style: none;
 	li{
-		font-family: Circe;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 20px;
-		line-height: 32px;
-		color: #888E94;
+		font-size: 17px;
+		line-height: 24px;
+		color: #A4A9BB;
 		position: relative;
 		white-space: nowrap;
 		&:after{
-			content: '/';
+			content: '';
 			display: inline-block;
 			margin: 0 10px;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background-color: #A4A9BB;
 		}
 		&:last-child{
 			&:after{
@@ -23,7 +26,7 @@
 			}
 		}
 		a,span{
-			color: #888E94;
+			color: #A4A9BB;
 			text-decoration: none;
 		}
 	}

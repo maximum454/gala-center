@@ -1,0 +1,117 @@
+.slider-block{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding-bottom: 40px;
+  margin-bottom: 32px;
+  overflow: hidden;
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    color: #000000;
+    a{
+      color: #324C9A;
+      text-decoration: none;
+    }
+  }
+  &__body{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(203px, 1fr));
+    grid-gap: 30px 28px;
+  }
+  &__item{
+    max-width: 203px;
+    transition: all .3s ease;
+    &:hover{
+      transition: all .3s ease;
+      opacity: .7;
+    }
+  }
+  &__img{
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    position: relative;
+    img{
+      display: block;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__txt{
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    padding: 12px;
+
+  }
+  &__name{
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+  &__count{
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+  &__nav{
+    position: relative;
+    width: 88px;
+    margin-left: 32px;
+  }
+  .btn{
+    max-width: 178px;
+    width: 100%;
+    margin-left: auto;
+    padding: .688rem .75rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+    border: 1px solid #A4A9BB;
+  }
+
+  .swiper-button-prev {
+    right: 44px;
+    left: auto;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .swiper-button-next {
+    right: 0;
+    transform: rotate(180deg);
+    border-radius: 4px 0 0 4px;
+  }
+  @include r(1023){
+
+    .btn{
+      display: none;
+    }
+    &__nav{
+      display: none;
+    }
+  }
+  @include r(767){
+    &__title{
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
