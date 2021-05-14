@@ -4495,7 +4495,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 250px;
+  max-width: 200px;
 }
 
 .breadcrumb-catalog__img {
@@ -4530,6 +4530,41 @@ p {
 .breadcrumb-catalog__txt a {
   color: #324C9A;
   text-decoration: none;
+  white-space: normal;
+}
+
+.breadcrumb-catalog__dropdown {
+  z-index: 100;
+  background-color: #fff;
+  right: 0;
+  margin: 0;
+  padding: 20px;
+  list-style: none;
+}
+
+.breadcrumb-catalog__dropdown-toggle {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid transparent;
+  padding: .563rem 1.4rem;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .page404 {
