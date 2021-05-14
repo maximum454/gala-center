@@ -225,10 +225,11 @@
                         <option value="">В наличии: много</option>
                         <option value="">В наличии: много</option>
                     </select>
-                    <div>
-                        <div>Стоимость (1 шт.)</div>
-                        <input type="text" placeholder="от">
-                        <input type="text" placeholder="до">
+                    <div class="filter__cost">
+                        <div class="filter__cost-title">Стоимость (1 шт.)</div>
+                        <input type="text" placeholder="от" class="form-control">
+                        <div class="filter__cost-dif">–</div>
+                        <input type="text" placeholder="до" class="form-control">
                     </div>
                     <div class="stick">
                         <div class="stick__item hit disabled">ХИТ</div>
@@ -236,7 +237,10 @@
                         <div class="stick__item new">NEW</div>
                         <div class="stick__item spec">Спец</div>
                     </div>
-                    <div></div>
+                    <div class="switch-mode">
+                        <div class="switch-mode__item block"></div>
+                        <div class="switch-mode__item list"></div>
+                    </div>
                 </div>
             </div>
         </div>

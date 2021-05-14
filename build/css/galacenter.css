@@ -7685,10 +7685,14 @@ p {
 
 .filter__item {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 16px 20px;
   background-color: #f1f5f9;
   border-radius: 4px;
@@ -7699,6 +7703,9 @@ p {
   grid-column-end: -1;
   grid-row-start: 2;
   grid-row-end: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .filter__item.general .jq-selectbox__select {
@@ -7712,12 +7719,50 @@ p {
   text-shadow: none;
 }
 
-.filter__item > div {
-  margin-right: 20px;
+.filter .switch-mode {
+  margin-right: 0;
+  margin-left: auto;
 }
 
-.filter__item > div:last-of-type {
-  margin-right: 0;
+.filter__cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter__cost-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: #333333;
+  margin-right: 9px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.filter__cost-dif {
+  margin: 0 5px;
+}
+
+.filter__cost .form-control {
+  max-width: 120px;
+  position: relative;
+}
+
+.filter__cost .form-control:after {
+  content: '₽';
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 17px;
+  line-height: 24px;
+  color: #A4A9BB;
+  width: 10px;
+  height: 24px;
 }
 
 .filter .jq-selectbox__select {
@@ -7844,6 +7889,35 @@ p {
 
 .information li span:last-of-type {
   margin-right: 0;
+}
+
+.switch-mode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.switch-mode__item {
+  width: 44px;
+  height: 44px;
+  margin-right: 5px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.switch-mode__item:last-of-type {
+  margin-right: 0;
+}
+
+.switch-mode__item.block {
+  background-image: url("../img/icons-sprite.svg#icon-view-block");
+}
+
+.switch-mode__item.list {
+  background-image: url("../img/icons-sprite.svg#icon-view-list");
 }
 
 @media only screen and (min-width: 641px) {

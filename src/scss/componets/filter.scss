@@ -7,8 +7,10 @@
   }
   &__item{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+    grid-gap: 20px;
     align-items: center;
+    justify-content: space-between;
     padding: 16px 20px;
     background-color: #f1f5f9;
     border-radius: 4px;
@@ -17,6 +19,7 @@
       grid-column-end: -1;
       grid-row-start: 2;
       grid-row-end: 2;
+      display: flex;
       .jq-selectbox__select {
         height: 40px;
         padding: 0 45px 0 16px;
@@ -28,10 +31,39 @@
         text-shadow: none;
       }
     }
-    &>div{
-      margin-right: 20px;
-      &:last-of-type{
-        margin-right: 0;
+  }
+  .switch-mode{
+    margin-right: 0;
+    margin-left: auto;
+  }
+  &__cost{
+    display: flex;
+    align-items: center;
+    &-title{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 24px;
+      color: #333333;
+      margin-right: 9px;
+      flex-shrink: 0;
+    }
+    &-dif{
+      margin: 0 5px;
+    }
+    .form-control{
+      max-width: 120px;
+      position: relative;
+      &:after{
+        content: '₽';
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 17px;
+        line-height: 24px;
+        color: #A4A9BB;
+        width: 10px;
+        height: 24px;
       }
     }
   }
