@@ -36,12 +36,18 @@
 }
 
 .breadcrumb-catalog{
-	ul{
+	&__ul{
 		margin: 0;
 		padding: 0;
 		list-style: none;
 		li{
 			display: inline-block;
+			margin-bottom: 0;
+			vertical-align: middle;
+			margin-right: 32px;
+			&:last-of-type{
+				margin-right: 0;
+			}
 		}
 	}
 	&__item{
@@ -72,5 +78,11 @@
 			color: #324C9A;
 			text-decoration: none;
 		}
+	}
+	&__dropdown{
+
+	}
+	&__dropdown-toggle{
+
 	}
 }

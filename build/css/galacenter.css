@@ -2389,6 +2389,48 @@ html.remodal-is-locked {
   width: 700px;
 }
 
+.priority-nav {
+  white-space: nowrap;
+}
+
+.priority-nav > ul {
+  display: inline-block;
+}
+
+.priority-nav > ul > li {
+  display: inline-block;
+}
+
+.priority-nav-has-dropdown .priority-nav__dropdown-toggle {
+  position: relative;
+}
+
+.priority-nav__wrapper {
+  position: relative;
+}
+
+.priority-nav__dropdown {
+  position: absolute;
+  visibility: hidden;
+}
+
+.priority-nav__dropdown.show {
+  visibility: visible;
+}
+
+.priority-nav__dropdown-toggle {
+  visibility: hidden;
+  position: absolute;
+}
+
+.priority-nav-is-visible {
+  visibility: visible;
+}
+
+.priority-nav-is-hidden {
+  visibility: hidden;
+}
+
 /*
 * @include triangle within a pseudo element and add positioning properties (ie. top, left)
 * $direction: up, down, left, right
@@ -4429,14 +4471,21 @@ p {
   text-decoration: none;
 }
 
-.breadcrumb-catalog ul {
+.breadcrumb-catalog__ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.breadcrumb-catalog ul li {
+.breadcrumb-catalog__ul li {
   display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  margin-right: 32px;
+}
+
+.breadcrumb-catalog__ul li:last-of-type {
+  margin-right: 0;
 }
 
 .breadcrumb-catalog__item {
