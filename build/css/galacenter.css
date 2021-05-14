@@ -4429,6 +4429,60 @@ p {
   text-decoration: none;
 }
 
+.breadcrumb-catalog ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumb-catalog ul li {
+  display: inline-block;
+}
+
+.breadcrumb-catalog__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 250px;
+}
+
+.breadcrumb-catalog__img {
+  margin-right: 10px;
+  width: 42px;
+  height: 42px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.breadcrumb-catalog__img img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+}
+
+.breadcrumb-catalog__txt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.breadcrumb-catalog__txt a {
+  color: #324C9A;
+  text-decoration: none;
+}
+
 .page404 {
   margin-bottom: 80px;
 }

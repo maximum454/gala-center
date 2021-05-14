@@ -34,3 +34,43 @@
 		overflow-x: scroll;
 	}
 }
+
+.breadcrumb-catalog{
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li{
+			display: inline-block;
+		}
+	}
+	&__item{
+		display: flex;
+		align-items: center;
+		max-width: 250px;
+	}
+	&__img{
+		margin-right: 10px;
+		width: 42px;
+		height: 42px;
+		flex-shrink: 0;
+		img{
+			display: block;
+			max-width: 100%;
+			object-fit: cover;
+			height: auto;
+		}
+	}
+	&__txt{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		line-height: 24px;
+		display: flex;
+		align-items: center;
+		a{
+			color: #324C9A;
+			text-decoration: none;
+		}
+	}
+}
