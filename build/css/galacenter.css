@@ -8236,7 +8236,7 @@ p {
 
 .slider-preview-product__thumbs .swiper-slide-thumb-active {
   opacity: 1;
-  border: 3px solid #D5C9EC;
+  border: 2px solid #D5C9EC;
 }
 
 .slider-preview-product img {
