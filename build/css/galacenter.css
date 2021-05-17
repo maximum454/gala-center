@@ -2801,6 +2801,10 @@ html.remodal-is-locked {
   background-image: url("../img/icons-sprite.svg#like-red");
 }
 
+.icon-add {
+  background-image: url("../img/icons-sprite.svg#icon-add");
+}
+
 .btn-group {
   margin: 0 -10px;
 }
@@ -3675,12 +3679,11 @@ body.lock {
   overflow: hidden;
 }
 
-body .bg-1 {
-  background: #F1F5F9;
-}
-
-body .bg-2 {
-  background: #FFF8DB;
+body.bg-2 .header,
+body.bg-2 .footer,
+body.bg-2 .filter__item,
+body.bg-2 .btn-secondary {
+  background: #F1EDF9;
 }
 
 body .bg-3 {
@@ -5751,6 +5754,27 @@ p {
   left: 0;
 }
 
+.products__date {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products__date .icon-add {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
 .products .icon-city {
   width: 10px;
   height: 10px;
@@ -5764,7 +5788,7 @@ p {
   line-height: 24px;
   text-align: center;
   color: #324C9A;
-  padding: 3px 10px;
+  padding: 3px 25px;
   max-width: 164px;
   width: 100%;
 }

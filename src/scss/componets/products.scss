@@ -170,6 +170,21 @@
 		top: 0;
 		left: 0;
 	}
+    &__date{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        color: #333333;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        .icon-add{
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+        }
+    }
 
 	.icon-city {
 		width: 10px;
@@ -184,7 +199,7 @@
 		line-height: 24px;
 		text-align: center;
 		color: #324C9A;
-		padding: 3px 10px;
+		padding: 3px 25px;
 		max-width: 164px;
 		width: 100%;
 

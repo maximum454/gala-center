@@ -27,11 +27,17 @@ body {
 	&.lock {
 		overflow: hidden;
 	}
-	.bg-1{
-		background: #F1F5F9;
+	&.bg-1{
+        
 	}
-	.bg-2{
-		background: #FFF8DB;
+	&.bg-2{
+		.header,
+        .footer,
+        .filter__item,
+        .btn-secondary{
+            background: #F1EDF9;
+        }
+
 	}
 	.bg-3{
 		background: #FFF0F9;
