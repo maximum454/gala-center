@@ -1,82 +1,101 @@
-.filter{
-  margin: 20px 0;
-  &__body{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-  }
-  &__item{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
-    grid-gap: 20px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 20px;
-    background-color: #f1f5f9;
-    border-radius: 4px;
-    &.general{
-      grid-column-start: 1;
-      grid-column-end: -1;
-      grid-row-start: 2;
-      grid-row-end: 2;
-      display: flex;
-      .jq-selectbox__select {
+.filter {
+    margin: 20px 0;
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        margin-bottom: 20px;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 20px;
+        background-color: #F1EDF9;
+        border-radius: 4px;
+        &.general {
+            grid-column-start: 1;
+            grid-column-end: -1;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            display: flex;
+            .jq-selectbox__select {
+                height: 40px;
+                padding: 0 45px 0 16px;
+                border-radius: 4px;
+                background: transparent;
+                border: none;
+                font: 17px/40px HelveticaNeueCyr, sans-serif;
+                color: #333;
+                text-shadow: none;
+            }
+        }
+    }
+    .switch-mode {
+        margin-right: 0;
+        margin-left: auto;
+    }
+    &__cost {
+        display: flex;
+        align-items: center;
+        &-title {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 24px;
+            color: #333333;
+            margin-right: 9px;
+            flex-shrink: 0;
+        }
+        &-dif {
+            margin: 0 5px;
+        }
+        .form-control {
+            max-width: 120px;
+            position: relative;
+            &:after {
+                content: "₽";
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 17px;
+                line-height: 24px;
+                color: #a4a9bb;
+                width: 10px;
+                height: 24px;
+            }
+        }
+    }
+    &__count {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 24px;
+        color: #333333;
+        a{
+            margin-left: 20px;
+        }
+    }
+    a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 24px;
+        color: #324c9a;
+        text-decoration: none;
+    }
+    .jq-selectbox__select {
         height: 40px;
         padding: 0 45px 0 16px;
         border-radius: 4px;
-        background: transparent;
-        border: none;
-        font: 17px/40px HelveticaNeueCyr, sans-serif;
+        background: #ffffff;
+        border: 1px solid #dde8f4;
+        box-sizing: border-box;
+        box-shadow: none;
+        font: 13px/40px HelveticaNeueCyr, sans-serif;
         color: #333;
         text-shadow: none;
-      }
     }
-  }
-  .switch-mode{
-    margin-right: 0;
-    margin-left: auto;
-  }
-  &__cost{
-    display: flex;
-    align-items: center;
-    &-title{
-      font-style: normal;
-      font-weight: normal;
-      font-size: 17px;
-      line-height: 24px;
-      color: #333333;
-      margin-right: 9px;
-      flex-shrink: 0;
-    }
-    &-dif{
-      margin: 0 5px;
-    }
-    .form-control{
-      max-width: 120px;
-      position: relative;
-      &:after{
-        content: '₽';
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 17px;
-        line-height: 24px;
-        color: #A4A9BB;
-        width: 10px;
-        height: 24px;
-      }
-    }
-  }
-  .jq-selectbox__select {
-    height: 40px;
-    padding: 0 45px 0 16px;
-    border-radius: 4px;
-    background: #FFFFFF;
-    border: 1px solid #DDE8F4;
-    box-sizing: border-box;
-    box-shadow: none;
-    font: 13px/40px HelveticaNeueCyr, sans-serif;
-    color: #333;
-    text-shadow: none;
-  }
 }
