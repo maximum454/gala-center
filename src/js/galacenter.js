@@ -16,6 +16,7 @@
 @@include('./components/delivery-modal.js')
 @@include('./components/accordeon.js')
 @@include('./components/tabs.js')
+@@include('./components/slider-preview-product.js')
 
 $(function () {
     var nav = priorityNav.init({

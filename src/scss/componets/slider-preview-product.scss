@@ -1,0 +1,37 @@
+.slider-preview-product{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(50, 76, 154, 0.25);
+    border-radius: 4px;
+    padding: 20px;
+    &__body{
+        display: flex;
+    }
+    &__img{
+        width: 320px;
+        height: 320px;
+        flex-shrink: 0;
+    }
+    &__thumbs{
+        width: 65px;
+        height: 320px;
+        margin-left: 20px;
+        .swiper-slide {
+            border-radius: 5px;
+            &-active {
+              opacity: 0.9;
+            }
+        
+            &-thumb-active {
+              opacity: 1;
+              border:3px solid #D5C9EC;
+            }
+          }
+    }
+    img{
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        object-fit: cover;
+        height: 100%;
+    }
+}
