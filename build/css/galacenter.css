@@ -3841,6 +3841,11 @@ p {
   line-height: 20px;
 }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 .header {
   position: relative;
   background-color: #F1F5F9;
