@@ -1,0 +1,44 @@
+.count-number{
+    &__body{
+		background: #FFFFFF;
+		border: 1px solid rgba(0, 0, 0, 0.12);
+		box-sizing: border-box;
+		border-radius: 2px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding:10px 12px;
+		margin-right: 8px;
+		input{
+			border: none;
+			text-align: center;
+		}
+		.minus,.plus{
+			visibility: hidden;
+		}
+		.minus{
+			width: 10px;
+			height: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-image: url("../img/icons-sprite.svg#icon-minus");
+			background-size: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			cursor: pointer;
+		}
+		.plus{
+			width: 10px;
+			height: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-image: url("../img/icons-sprite.svg#icon-plus");
+			background-size: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			cursor: pointer;
+		}
+	}
+}

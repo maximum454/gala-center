@@ -333,3 +333,9 @@ p{
 
 //При на ведение на картинку продукта
 @import "componets/slider-preview-product";
+
+//Добавьте нужное количество в выбранный магазин
+@import "componets/add-quantity-store";
+
+//Колличество товаров плюс минус
+@import "componets/count-number";
