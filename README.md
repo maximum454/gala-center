@@ -55,6 +55,7 @@
 
 # Каталог
 * https://maximum454.github.io/gala-center/build/category.html
+* https://maximum454.github.io/gala-center/build/category-plitka.html
 * https://maximum454.github.io/gala-center/build/catalog-detail.html
 * https://maximum454.github.io/gala-center/build/catalog-detail-no-sp.html
 * https://maximum454.github.io/gala-center/build/catalog-detail-no.html

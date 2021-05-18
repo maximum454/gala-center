@@ -5705,10 +5705,14 @@ p {
 
 .products {
   margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 230px));
+  grid-gap: 45px;
 }
 
 .products--list {
   max-width: 1060px;
+  display: block;
 }
 
 .products--list .products__item {
