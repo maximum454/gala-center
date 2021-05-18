@@ -13,9 +13,9 @@
         @@include('./template/_header.html')
 
         <main class="main container">
-            <section class="slider-season">
+            <section class="slider-season slider-season--catalog">
                 <header class="slider-season__header">
-                    <div class="slider-season__title">Сезонные предложения</div>
+                    <div class="slider-season__title"><span>Сезонные предложения</span></div>
                 </header>
                 <div class="slider-season__body">
                     <div class="swiper-container-season">
@@ -110,6 +110,14 @@
             </section>
             <ul class="breadcrumb">
                 <li><span>Все автотовары</span></li>
+                <li class="breadcrumb__menu"><span>Техника для дома</span>
+                    <ul class="breadcrumb__down">
+                        <li><a href="#">Климатическая техника</a></li>
+                        <li class="active"><a href="#">Техника для дома</a></li>
+                        <li><a href="#">Техника для здоровья и красоты</a></li>
+                        <li><a href="#">Телевизоры и аксессуары</a></li>
+                    </ul>
+                </li>
             </ul>
             <h1 class="main__title">Щетки стеклоочистителя</h1>
 
@@ -248,7 +256,7 @@
                 <div class="filter__count">345 товаров <a href="#">Сбросить фильтр</a></div>
             </div>
 
-            <div class="">
+            <div class="catalog">
                 <div class="products products--list">
                     <div class="products__item">
                         <a href="#" class="products__img">
@@ -325,7 +333,7 @@
                                             <option value=""><i class="icon icon-city"></i> Ирк</option>
                                         </select>
                                     </div>
-                                    <div class="products__date"><i class="icon icon-add"></i> 12.12.2020</div>
+                                    <div class="products__date js-add-quantity-store"><i class="icon icon-add"></i> 12.12.2020</div>
                                 </div>
                                 <div class="products__name">
                                     <div class="products__articul">854-124</div> MILLIMI Роскошь Набор чайный 14 пр.,
@@ -340,52 +348,99 @@
                                     <span>мин. 4</span>
                                 </a>
                             </div>
-                            <div class="products__like"></div>
+                            <div class="products__like js-products-like"></div>
                         </div>
-                    </div>
-                    <div class="products__item">
-                        <a href="#" class="products__img">
-                            <img src="./img/products/image4.png" width="236" height="236" alt="">
-                        </a>
-                        <div class="products__txt">
-                            <div>
-                                <div class="products__stick stick">
-                                    <div class="stick__item hit ">ХИТ</div>
-                                    <div class="stick__item fix disabled">FIX</div>
-                                    <div class="stick__item new">NEW</div>
-                                    <div class="stick__item spec disabled">Спец</div>
-                                </div>
-                                <div class="products__info">
-
-                                    <div class="products__city"><i class="icon icon-city"></i> Екб</div>
-                                    <div class="products__store">
-                                        <select name="" id="" data-placeholder="Другие склады">
-                                            <option value=""></option>
-                                            <option value=""><i class="icon icon-city"></i> Мск</option>
-                                            <option value=""><i class="icon icon-city"></i> Нск</option>
-                                            <option value=""><i class="icon icon-city"></i> Влд</option>
-                                            <option value=""><i class="icon icon-city"></i> Клн</option>
-                                            <option value=""><i class="icon icon-city"></i> Прм</option>
-                                            <option value=""><i class="icon icon-city"></i> Кзн</option>
-                                            <option value=""><i class="icon icon-city"></i> Ирк</option>
-                                        </select>
+                        <div class="products__add-quantity-store add-quantity-store">
+                            <div class="add-quantity-store__header">
+                                <div class="add-quantity-store__title">Добавьте нужное количество в выбранный магазин</div>
+                            </div>
+                            <div class="add-quantity-store__body">
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
                                     </div>
-                                    <div class="products__date"><i class="icon icon-add"></i> 12.12.2020</div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="0" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
-                                <div class="products__name">
-                                    <div class="products__articul">854-124</div> MILLIMI Роскошь Набор чайный 14 пр.,
-                                    чашка
-                                    290мл...
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
-                            <div class="products__price">3132,76 р <span>/шт.</span></div>
-                            <div>
-                                <a href="#" class="btn btn-secondary">
-                                    <div>В корзину</div>
-                                    <span>мин. 4</span>
-                                </a>
-                            </div>
-                            <div class="products__like active"></div>
+                            
                         </div>
                     </div>
                     <div class="products__item">
@@ -396,9 +451,9 @@
                             <div>
                                 <div class="products__stick stick">
                                     <div class="stick__item hit disabled">ХИТ</div>
-                                    <div class="stick__item fix">FIX</div>
+                                    <div class="stick__item fix disabled">FIX</div>
                                     <div class="stick__item new">NEW</div>
-                                    <div class="stick__item spec disabled">Спец</div>
+                                    <div class="stick__item spec">Спец</div>
                                 </div>
                                 <div class="products__info">
 
@@ -415,7 +470,7 @@
                                             <option value=""><i class="icon icon-city"></i> Ирк</option>
                                         </select>
                                     </div>
-                                    <div class="products__date"><i class="icon icon-add"></i> 12.12.2020</div>
+                                    <div class="products__date js-add-quantity-store"><i class="icon icon-add"></i> 12.12.2020</div>
                                 </div>
                                 <div class="products__name">
                                     <div class="products__articul">854-124</div> MILLIMI Роскошь Набор чайный 14 пр.,
@@ -430,7 +485,99 @@
                                     <span>мин. 4</span>
                                 </a>
                             </div>
-                            <div class="products__like"></div>
+                            <div class="products__like js-products-like"></div>
+                        </div>
+                        <div class="products__add-quantity-store add-quantity-store">
+                            <div class="add-quantity-store__header">
+                                <div class="add-quantity-store__title">Добавьте нужное количество в выбранный магазин</div>
+                            </div>
+                            <div class="add-quantity-store__body">
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="0" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="products__item">
@@ -439,6 +586,12 @@
                         </a>
                         <div class="products__txt">
                             <div>
+                                <div class="products__stick stick">
+                                    <div class="stick__item hit disabled">ХИТ</div>
+                                    <div class="stick__item fix disabled">FIX</div>
+                                    <div class="stick__item new">NEW</div>
+                                    <div class="stick__item spec">Спец</div>
+                                </div>
                                 <div class="products__info">
 
                                     <div class="products__city"><i class="icon icon-city"></i> Екб</div>
@@ -454,7 +607,7 @@
                                             <option value=""><i class="icon icon-city"></i> Ирк</option>
                                         </select>
                                     </div>
-                                    <div class="products__date"><i class="icon icon-add"></i> 12.12.2020</div>
+                                    <div class="products__date js-add-quantity-store"><i class="icon icon-add"></i> 12.12.2020</div>
                                 </div>
                                 <div class="products__name">
                                     <div class="products__articul">854-124</div> MILLIMI Роскошь Набор чайный 14 пр.,
@@ -469,7 +622,99 @@
                                     <span>мин. 4</span>
                                 </a>
                             </div>
-                            <div class="products__like"></div>
+                            <div class="products__like js-products-like"></div>
+                        </div>
+                        <div class="products__add-quantity-store add-quantity-store">
+                            <div class="add-quantity-store__header">
+                                <div class="add-quantity-store__title">Добавьте нужное количество в выбранный магазин</div>
+                            </div>
+                            <div class="add-quantity-store__body">
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="0" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="products__item">
@@ -478,6 +723,12 @@
                         </a>
                         <div class="products__txt">
                             <div>
+                                <div class="products__stick stick">
+                                    <div class="stick__item hit disabled">ХИТ</div>
+                                    <div class="stick__item fix disabled">FIX</div>
+                                    <div class="stick__item new">NEW</div>
+                                    <div class="stick__item spec">Спец</div>
+                                </div>
                                 <div class="products__info">
 
                                     <div class="products__city"><i class="icon icon-city"></i> Екб</div>
@@ -493,7 +744,7 @@
                                             <option value=""><i class="icon icon-city"></i> Ирк</option>
                                         </select>
                                     </div>
-                                    <div class="products__date"><i class="icon icon-add"></i> 12.12.2020</div>
+                                    <div class="products__date js-add-quantity-store"><i class="icon icon-add"></i> 12.12.2020</div>
                                 </div>
                                 <div class="products__name">
                                     <div class="products__articul">854-124</div> MILLIMI Роскошь Набор чайный 14 пр.,
@@ -508,15 +759,113 @@
                                     <span>мин. 4</span>
                                 </a>
                             </div>
-                            <div class="products__like active"></div>
+                            <div class="products__like js-products-like"></div>
+                        </div>
+                        <div class="products__add-quantity-store add-quantity-store">
+                            <div class="add-quantity-store__header">
+                                <div class="add-quantity-store__title">Добавьте нужное количество в выбранный магазин</div>
+                            </div>
+                            <div class="add-quantity-store__body">
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="0" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="products__item">
                         <a href="#" class="products__img">
-                            <img src="./img/products/image4.png" width="236" height="236" alt="">
+                            <img src="./img/products/image3.png" width="236" height="236" alt="">
                         </a>
                         <div class="products__txt">
                             <div>
+                                <div class="products__stick stick">
+                                    <div class="stick__item hit disabled">ХИТ</div>
+                                    <div class="stick__item fix disabled">FIX</div>
+                                    <div class="stick__item new">NEW</div>
+                                    <div class="stick__item spec">Спец</div>
+                                </div>
                                 <div class="products__info">
 
                                     <div class="products__city"><i class="icon icon-city"></i> Екб</div>
@@ -532,7 +881,7 @@
                                             <option value=""><i class="icon icon-city"></i> Ирк</option>
                                         </select>
                                     </div>
-                                    <div class="products__date"><i class="icon icon-add"></i> 12.12.2020</div>
+                                    <div class="products__date js-add-quantity-store"><i class="icon icon-add"></i> 12.12.2020</div>
                                 </div>
                                 <div class="products__name">
                                     <div class="products__articul">854-124</div> MILLIMI Роскошь Набор чайный 14 пр.,
@@ -547,41 +896,374 @@
                                     <span>мин. 4</span>
                                 </a>
                             </div>
-                            <div class="products__like"></div>
+                            <div class="products__like js-products-like"></div>
                         </div>
-                    </div>
-                    <div class="pagination">
-                        <div class="pagination__count">24 из 31 акции</div>
-                        <a class="pagination__more btn btn-outline-secondary" href="#">Показать еще</a>
-                        <ul class="pagination__list">
-                            <li><span class="cur">1</span></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="add-quantity-store">
-                        <div class="add-quantity-store__header">
-                            <div class="add-quantity-store__title"></div>
-                        </div>
-                        <div class="add-quantity-store__body">
-                            <div class="add-quantity-store__item">
-                                <div class="add-quantity-store__">
-                                    <div class="add-quantity-store__name">Богатырский</div>
-                                    <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
-                                </div>
-                                <div class="count-number">
-                                    <div class="count-number__body">
-                                        <span class="minus"></span>
-                                        <input type="text" value="1" size="4"/>
-                                        <span class="plus"></span>
-                                    </div>
-                                </div>
-                                
+                        <div class="products__add-quantity-store add-quantity-store">
+                            <div class="add-quantity-store__header">
+                                <div class="add-quantity-store__title">Добавьте нужное количество в выбранный магазин</div>
                             </div>
+                            <div class="add-quantity-store__body">
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="0" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
                         </div>
-                        
+                    </div>
+                    <div class="products__item">
+                        <a href="#" class="products__img">
+                            <img src="./img/products/image2.png" width="236" height="236" alt="">
+                        </a>
+                        <div class="products__txt">
+                            <div>
+                                <div class="products__stick stick">
+                                    <div class="stick__item hit disabled">ХИТ</div>
+                                    <div class="stick__item fix disabled">FIX</div>
+                                    <div class="stick__item new">NEW</div>
+                                    <div class="stick__item spec">Спец</div>
+                                </div>
+                                <div class="products__info">
+
+                                    <div class="products__city"><i class="icon icon-city"></i> Екб</div>
+                                    <div class="products__store">
+                                        <select name="" id="" data-placeholder="Другие склады">
+                                            <option value=""></option>
+                                            <option value=""><i class="icon icon-city"></i> Мск</option>
+                                            <option value=""><i class="icon icon-city"></i> Нск</option>
+                                            <option value=""><i class="icon icon-city"></i> Влд</option>
+                                            <option value=""><i class="icon icon-city"></i> Клн</option>
+                                            <option value=""><i class="icon icon-city"></i> Прм</option>
+                                            <option value=""><i class="icon icon-city"></i> Кзн</option>
+                                            <option value=""><i class="icon icon-city"></i> Ирк</option>
+                                        </select>
+                                    </div>
+                                    <div class="products__date js-add-quantity-store"><i class="icon icon-add"></i> 12.12.2020</div>
+                                </div>
+                                <div class="products__name">
+                                    <div class="products__articul">854-124</div> MILLIMI Роскошь Набор чайный 14 пр.,
+                                    чашка
+                                    290мл...
+                                </div>
+                            </div>
+                            <div class="products__price">3132,76 р <span>/шт.</span></div>
+                            <div>
+                                <a href="#" class="btn btn-secondary">
+                                    <div>В корзину</div>
+                                    <span>мин. 4</span>
+                                </a>
+                            </div>
+                            <div class="products__like js-products-like"></div>
+                        </div>
+                        <div class="products__add-quantity-store add-quantity-store">
+                            <div class="add-quantity-store__header">
+                                <div class="add-quantity-store__title">Добавьте нужное количество в выбранный магазин</div>
+                            </div>
+                            <div class="add-quantity-store__body">
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="0" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <a href="#" class="products__img">
+                            <img src="./img/products/image1.png" width="236" height="236" alt="">
+                        </a>
+                        <div class="products__txt">
+                            <div>
+                                <div class="products__stick stick">
+                                    <div class="stick__item hit disabled">ХИТ</div>
+                                    <div class="stick__item fix disabled">FIX</div>
+                                    <div class="stick__item new">NEW</div>
+                                    <div class="stick__item spec">Спец</div>
+                                </div>
+                                <div class="products__info">
+
+                                    <div class="products__city"><i class="icon icon-city"></i> Екб</div>
+                                    <div class="products__store">
+                                        <select name="" id="" data-placeholder="Другие склады">
+                                            <option value=""></option>
+                                            <option value=""><i class="icon icon-city"></i> Мск</option>
+                                            <option value=""><i class="icon icon-city"></i> Нск</option>
+                                            <option value=""><i class="icon icon-city"></i> Влд</option>
+                                            <option value=""><i class="icon icon-city"></i> Клн</option>
+                                            <option value=""><i class="icon icon-city"></i> Прм</option>
+                                            <option value=""><i class="icon icon-city"></i> Кзн</option>
+                                            <option value=""><i class="icon icon-city"></i> Ирк</option>
+                                        </select>
+                                    </div>
+                                    <div class="products__date js-add-quantity-store"><i class="icon icon-add"></i> 12.12.2020</div>
+                                </div>
+                                <div class="products__name">
+                                    <div class="products__articul">854-124</div> MILLIMI Роскошь Набор чайный 14 пр.,
+                                    чашка
+                                    290мл...
+                                </div>
+                            </div>
+                            <div class="products__price">3132,76 р <span>/шт.</span></div>
+                            <div>
+                                <a href="#" class="btn btn-secondary">
+                                    <div>В корзину</div>
+                                    <span>мин. 4</span>
+                                </a>
+                            </div>
+                            <div class="products__like js-products-like"></div>
+                        </div>
+                        <div class="products__add-quantity-store add-quantity-store">
+                            <div class="add-quantity-store__header">
+                                <div class="add-quantity-store__title">Добавьте нужное количество в выбранный магазин</div>
+                            </div>
+                            <div class="add-quantity-store__body">
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="0" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="add-quantity-store__item">
+                                    <div class="add-quantity-store__">
+                                        <div class="add-quantity-store__name">Богатырский</div>
+                                        <div class="add-quantity-store__anons">г. КЛН, ул. Полоцкая, д. 1</div>
+                                    </div>
+                                    <div class="count-number">
+                                        <div class="count-number__body">
+                                            <span class="count-number__minus js-minus"></span>
+                                            <input type="text" value="1" size="4"/>
+                                            <span class="count-number__plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>

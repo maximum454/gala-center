@@ -1,19 +1,37 @@
-.add-quantity-store{
-    &__header{
+.add-quantity-store {
+    padding: 20px;
+    &__header {
         margin: 8px 0px;
     }
-    &__title{
+    &__title {
         font-style: normal;
         font-weight: bold;
         font-size: 17px;
         line-height: 23px;
         color: #000000;
     }
-    &__body{
-
+    &__body {
+        
     }
-    &__item{
-
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(68, 121, 163, 0.12);
     }
-    
+    &__name {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        color: #000000;
+    }
+    &__anons {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+    }
 }

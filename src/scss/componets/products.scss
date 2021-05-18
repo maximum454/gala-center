@@ -10,6 +10,13 @@
                 background-color: #f1edf9;
                 opacity: 1;
             }
+            &.active{
+                border-right: 1px solid rgba(68, 121, 163, 0.12);
+                .products__add-quantity-store{
+                    display: block;
+                    
+                }
+            }
         }
         .products__img {
             border-radius: 0;
@@ -66,16 +73,12 @@
                     background-image: url("../img/icons-sprite.svg#like-red");
                 }
             }
-            &:hover {
-                &::before {
-                    background-image: url("../img/icons-sprite.svg#like-blue");
-                }
-            }
         }
         .products__stick {
             margin-bottom: 10px;
             position: relative;
         }
+        
     }
     &__item {
         max-width: 236px;
@@ -94,12 +97,9 @@
         margin-bottom: 13px;
         text-decoration: none;
         height: 236px;
-        transition: all 0.3s ease;
         &:hover {
             .products__preview {
                 transition: all 0.3s ease;
-                opacity: 1;
-                visibility: visible;
                 display: block;
             }
         }
@@ -199,6 +199,16 @@
         left: 0;
         display: none;
     }
+    &__add-quantity-store{
+        max-width: 300px;
+        position: absolute;
+        top: 0;
+        right: -301px;
+        display: none;
+        background-color: #fff;
+        z-index: 10;
+    }
+    
 
     .icon-city {
         width: 10px;

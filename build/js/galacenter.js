@@ -1950,19 +1950,28 @@ $(function () {
        $('.materials__more').addClass('show');
     })
 
-    $('.minus').on('click',function () {
+    $('.js-minus').on('click',function () {
         var $input = $(this).parent().find('input');
         var count = parseInt($input.val()) - 1;
-        count = count < 1 ? 1 : count;
+        count = count < 1 ? 0 : count;
         $input.val(count);
         $input.change();
         return false;
     });
-    $('.plus').on('click',function () {
+    $('.js-plus').on('click',function () {
         var $input = $(this).parent().find('input');
         $input.val(parseInt($input.val()) + 1);
         $input.change();
         return false;
+    });
+
+    $('.js-add-quantity-store').on('click', function(){
+        $(this).parents('.products__item').toggleClass('active').siblings().removeClass('active');
+        $('.products--list').toggleClass('active');
+    });
+
+    $('.js-products-like').on('click', function(){
+        $(this).toggleClass('active');
     });
 
 
