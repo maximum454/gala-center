@@ -5820,7 +5820,7 @@ p {
   z-index: 100;
   bottom: 140px;
   left: 0;
-  display: block;
+  display: none;
 }
 
 .products .icon-city {
