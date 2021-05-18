@@ -1,19 +1,19 @@
-.main{
-	position: relative;
-	&__title{
-		font-style: normal;
-		font-weight: bold;
-		font-size: 28px;
-		line-height: 36px;
-		color: #333333;
-		margin-bottom: 20px;
-	}
-	&__subtitle{
-		font-style: normal;
-		font-weight: bold;
-		font-size: 28px;
-		line-height: 36px;
-		color: #333333;
-		margin:0 0 25px;
-	}
+.main {
+    position: relative;
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+        color: #333333;
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        color: #333333;
+        margin: 0 0 25px;
+    }
 }

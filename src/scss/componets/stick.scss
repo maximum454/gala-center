@@ -8,6 +8,10 @@
 		border-radius: 4px;
 		padding: 3px 7px 1px;
 		margin-right: 6px;
+        cursor: pointer;
+        &:hover{
+            opacity: .7;
+        }
 		&:last-of-type{
 			margin-right: 0;
 		}
@@ -19,6 +23,13 @@
 		}
 		&.spec{
 			background: #6FCF97;
+		}
+		&.fix{
+			background: #F2994A;
+		}
+		&.disabled{
+			background: rgba(68, 121, 163, 0.12);
+			color: #A4A9BB;
 		}
 	}
 }

@@ -3,6 +3,7 @@
 @@include('./partials/swiper-bundle.min.js')
 @@include('./partials/jquery.formstyler.min.js')
 @@include('./partials/remodal.js')
+@@include('./partials/priority-nav.js')
 @@include('./components/slider-banners.js')
 @@include('./components/slider-brands.js')
 @@include('./components/slider-season.js')
@@ -15,8 +16,15 @@
 @@include('./components/delivery-modal.js')
 @@include('./components/accordeon.js')
 @@include('./components/tabs.js')
+@@include('./components/slider-preview-product.js')
 
 $(function () {
+    var nav = priorityNav.init({
+        navDropdownLabel: "еще",
+        navDropdownClassName: "breadcrumb-catalog__dropdown",
+        navDropdownToggleClassName: "breadcrumb-catalog__dropdown-toggle",
+    });
+
     setTimeout(function() {
         $('select').styler();
     }, 100)
@@ -40,6 +48,30 @@ $(function () {
     $('.js-materials-more').on('click', function (){
        $('.materials__more').addClass('show');
     })
+
+    $('.js-minus').on('click',function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 0 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.js-plus').on('click',function () {
+        var $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+    });
+
+    $('.js-add-quantity-store').on('click', function(){
+        $(this).parents('.products__item').toggleClass('active').siblings().removeClass('active');
+        $('.products--list').toggleClass('active');
+    });
+
+    $('.js-products-like').on('click', function(){
+        $(this).toggleClass('active');
+    });
 
 
 

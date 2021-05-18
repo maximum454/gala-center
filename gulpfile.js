@@ -38,6 +38,7 @@ let {src, dest} = require('gulp'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify-es').default,
     imagemin = require('gulp-imagemin'),
+    changed = require('gulp-changed'),
     webp = require('gulp-webp'),
     webphtml = require('gulp-webp-html'),
     svgSprite = require('gulp-svg-sprite'),
@@ -114,8 +115,7 @@ function js() {
 
 function images() {
     return src(path.src.img)
-        .pipe(dest(path.build.img))
-        .pipe(src(path.src.img))
+        .pipe(changed(path.build.img))
         .pipe(
             imagemin({
                 interlaced: true,
@@ -228,7 +228,7 @@ function clean() {
 
 function watchFiles() {
     gulp.watch([path.watch.html], html);
-    gulp.watch([path.watch.css], css);
+    gulp.watch([path.watch.css], {usePolling: true},css);
     gulp.watch([path.watch.js], js);
     gulp.watch([path.watch.img], images);
 }

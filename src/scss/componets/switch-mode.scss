@@ -1,0 +1,24 @@
+.switch-mode{
+  display: flex;
+  align-items: center;
+  &__item{
+    width: 44px;
+    height: 44px;
+    margin-right: 5px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    &:hover{
+        opacity: .7;
+    }
+    &:last-of-type{
+      margin-right: 0;
+    }
+    &.block{
+      background-image: url("../img/icons-sprite.svg#icon-view-block");
+    }
+    &.list{
+      background-image: url("../img/icons-sprite.svg#icon-view-list");
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.count-number {
+    &__body {
+        background: #ffffff;
+        border: 1px solid #a4a9bb;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 12px;
+        margin: 0 10px;
+        min-width: 112px;
+        max-width: 204px;
+        input {
+            border: none;
+            text-align: center;
+        } 
+    }
+    &__minus,
+    &__plus {
+        width: 12px;
+        height: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    &__minus {
+        background-image: url("../img/icons-sprite.svg#icon-minus");
+    
+    }
+    &__plus {
+        
+        background-image: url("../img/icons-sprite.svg#icon-plus");
+    }
+}

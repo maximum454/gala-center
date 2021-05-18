@@ -4,6 +4,7 @@
 @import 'partials/formstyler.theme';
 @import 'partials/remodal';
 @import 'partials/remodal-default-theme';
+@import 'partials/priority-nav-core';
 @import 'mixin';
 @import 'fonts';
 @import 'icon';
@@ -26,11 +27,19 @@ body {
 	&.lock {
 		overflow: hidden;
 	}
-	.bg-1{
-		background: #F1F5F9;
+	&.bg-1{
+        
 	}
-	.bg-2{
-		background: #FFF8DB;
+	&.bg-2{
+		.header,
+        .footer,
+        .filter__item,
+        .btn-secondary,
+        .btn-light,
+        .breadcrumb-catalog__dropdown-toggle{
+            background: #F1EDF9;
+        }
+
 	}
 	.bg-3{
 		background: #FFF0F9;
@@ -163,6 +172,11 @@ p{
 	font-weight: normal;
 	font-size: 15px;
 	line-height: 20px;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
 }
 
 //Шапка
@@ -307,6 +321,9 @@ p{
 //Блоки для статей
 @import "componets/articles-block";
 
+//Статья детально
+@import "componets/articles-details";
+
 //Пагинация
 @import "componets/pagination";
 
@@ -315,3 +332,15 @@ p{
 
 //Информация от таваре
 @import "componets/information";
+
+//Переключение
+@import "componets/switch-mode";
+
+//При на ведение на картинку продукта
+@import "componets/slider-preview-product";
+
+//Добавьте нужное количество в выбранный магазин
+@import "componets/add-quantity-store";
+
+//Колличество товаров плюс минус
+@import "componets/count-number";
