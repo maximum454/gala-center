@@ -3846,6 +3846,10 @@ p {
   height: auto;
 }
 
+.d-block {
+  display: block;
+}
+
 .header {
   position: relative;
   background-color: #F1F5F9;
@@ -8638,6 +8642,14 @@ p {
   line-height: 24px;
   color: #324c9a;
   text-decoration: none;
+}
+
+.catalog-detail .btn {
+  margin-bottom: 10px;
+  display: block;
+  padding: 21px 38px;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .price-special {
