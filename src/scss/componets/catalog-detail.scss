@@ -15,4 +15,12 @@
         justify-content: space-between;
         gap: 20px;
     }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        gap: 91px;
+    }
+    &__photo{
+        min-width: 640px;
+    }
 }

@@ -7,7 +7,9 @@
     }
     &__body {
         background: rgba(201, 67, 84, 0.08);
-    
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
         padding: 20px;
     }
     &__price {
