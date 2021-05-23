@@ -11,6 +11,20 @@
 		align-items: center;
 		justify-content: space-between;
 		border-bottom: 1px solid rgba(68, 121, 163, 0.12);
+        .header-delivery{
+            font-family: $font1;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 20px;
+            color: #A4A9BB;
+            cursor: pointer;
+            display: none;
+            span {
+                color: #324C9A;
+                margin-left: 8px;
+            }
+        }
 	}
 	&__logo{
 		max-width: 294px;
@@ -137,24 +151,12 @@
 		align-items: center;
 		justify-content: space-between;
 		.header__search,
-		.header__auth{
+		.header__auth,
+        .header-delivery{
 			display: none;
 		}
 	}
-	.header-delivery{
-		font-family: $font1;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 15px;
-		line-height: 20px;
-		color: #A4A9BB;
-		cursor: pointer;
-		display: none;
-		span {
-			color: #324C9A;
-			margin-left: 8px;
-		}
-	}
+	
 	.btn{
 		max-width: 223px;
 		width: 100%;
@@ -166,17 +168,19 @@
 		&__auth{
 			display: none;
 		}
-		.header-delivery {
-			display: block;
-			.icon-delivery{
-				top: 10px;
-			}
-			span{
-				display: block;
-				margin-left: 38px;
-				font-size: 17px;
-			}
-		}
+		&__top{
+            .header-delivery {
+                display: block;
+                .icon-delivery{
+                    top: 10px;
+                }
+                span{
+                    display: block;
+                    margin-left: 38px;
+                    font-size: 17px;
+                }
+            }
+        }
 		&__search{
 			display: none;
 		}
@@ -201,6 +205,45 @@
 					}
 				}
 			}
+            .header-delivery{
+                display: none;
+            }
 		}
 	}
+    @include r(767){
+        &__phone{
+           display: none;
+        }
+        &__top{
+            display: none;
+        }
+        &__bottom{
+			.btn{
+				margin-right: 36px;
+                .icon{
+                    display: none;
+                }
+			}
+            .nav{
+                display: none;
+            }
+			.header__search{
+				display: none;
+			}
+			.header__auth{
+				display: none;
+			}
+            .header-delivery {
+                display: block;
+                .icon-delivery{
+                    top: 10px;
+                }
+                span{
+                    display: block;
+                    margin-left: 38px;
+                    font-size: 17px;
+                }
+            }
+		}
+    }
 }
