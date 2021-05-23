@@ -16,7 +16,7 @@
 		background: #FFFFFF;
 		box-shadow: 0px 4px 14px rgba(50, 76, 154, 0.25);
 		border-radius: 4px;
-		max-width: 370px;
+		max-width: 100%;
 		padding: 24px 24px 10px;
 		.title{
 			font-style: normal;
@@ -54,9 +54,7 @@
 		}
 		.jq-selectbox__trigger-arrow{
 			top: 20px;
-			border-top: 5px solid #000;
-			border-right: 3px solid transparent;
-			border-left: 3px solid transparent;
+			
 		}
 	}
 
@@ -95,4 +93,12 @@
 			margin-left: -24px;
 		}
 	}
+    @include r(767){
+        &.delivery{
+            border-radius: 0;
+        }
+    }
+}
+.remodal-wrapper{
+    padding: 0;
 }

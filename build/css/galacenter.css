@@ -3089,6 +3089,18 @@ html.remodal-is-locked {
   margin-bottom: 60px;
 }
 
+.form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-dif {
+  margin: 0 5px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
 .form-group .form-label {
   display: inline-block;
   margin-bottom: 6px;
@@ -3631,7 +3643,7 @@ th {
   -webkit-box-shadow: 0px 4px 14px rgba(50, 76, 154, 0.25);
           box-shadow: 0px 4px 14px rgba(50, 76, 154, 0.25);
   border-radius: 4px;
-  max-width: 370px;
+  max-width: 100%;
   padding: 24px 24px 10px;
 }
 
@@ -3678,9 +3690,6 @@ th {
 
 .remodal.delivery .jq-selectbox__trigger-arrow {
   top: 20px;
-  border-top: 5px solid #000;
-  border-right: 3px solid transparent;
-  border-left: 3px solid transparent;
 }
 
 .remodal.auth {
@@ -3724,6 +3733,10 @@ th {
   margin-left: -24px;
 }
 
+.remodal-wrapper {
+  padding: 0;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -3750,6 +3763,7 @@ body.bg-2 .btn-primary {
 
 body.bg-2 .btn-primary {
   border-color: #F1EDF9;
+  color: #333;
 }
 
 body .bg-3 {
@@ -3922,6 +3936,10 @@ p {
 
 .overdraw.open {
   display: block;
+}
+
+hr {
+  border-color: rgba(0, 0, 0, 0.08);
 }
 
 .header {
@@ -9567,6 +9585,10 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
+  .remodal.delivery {
+    border-radius: 0;
+  }
+
   .d-desktop-none {
     display: block;
   }

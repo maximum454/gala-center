@@ -9,6 +9,13 @@
 		margin-bottom: 60px;
 	}
 }
+.form-row{
+    display: flex;
+}
+.form-dif{
+    margin: 0 5px;
+    align-self: center;
+}
 .form-group .form-label {
 	display: inline-block;
 	margin-bottom: 6px;

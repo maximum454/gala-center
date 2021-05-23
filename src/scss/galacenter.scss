@@ -42,6 +42,7 @@ body {
         }
         .btn-primary{
             border-color: #F1EDF9;
+            color: #333;
         }
 
 	}
@@ -199,6 +200,9 @@ p{
     &.open{
         display: block
     }
+}
+hr{
+    border-color: rgba(0, 0, 0, 0.08);
 }
 
 //Шапка

@@ -51,7 +51,8 @@
                         <p>Выберите город, в котором осуществаляется отгрузка. Это важно, чтобы увидеть наличие цены и
                             сроки
                             доставки.</p>
-                        <a href="#" class="btn btn-primary">Все верно</a> <a href="#" class="btn btn-link"
+                        <a href="#" class="btn btn-primary">Все верно</a> 
+                        <a href="#" class="btn btn-link"
                             data-remodal-target="delivery">Выбрать
                             город</a>
                     </div>
@@ -906,7 +907,7 @@
 
     <form action="">
         <div class="form-group">
-            <label class="form-label"  for="">Email</label>
+            <label class="form-label" for="">Email</label>
             <input type="text" class="form-control">
         </div>
     </form>
@@ -934,15 +935,15 @@
     <div class="title">Магазин</div>
     <form action="">
         <div class="form-group">
-            <label class="form-label"  for="">Название магазина</label>
+            <label class="form-label" for="">Название магазина</label>
             <input type="text" class="form-control" placeholder="Богатырский">
         </div>
         <div class="form-group">
-            <label class="form-label"  for="">Адрес магазина</label>
+            <label class="form-label" for="">Адрес магазина</label>
             <input type="text" class="form-control" placeholder="г. Калининград, ул. Полоцкая, д. 1">
         </div>
         <div class="form-group">
-            <label class="form-label"  for="">Комментарий</label>
+            <label class="form-label" for="">Комментарий</label>
             <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
         </div>
     </form>
@@ -958,11 +959,11 @@
     <div class="title">Новая ценовая группа</div>
     <form action="">
         <div class="form-group">
-            <label class="form-label"  for="">Название группы</label>
+            <label class="form-label" for="">Название группы</label>
             <input type="text" class="form-control" placeholder="">
         </div>
         <div class="form-group">
-            <label class="form-label"  for="">Скидка в процентах</label>
+            <label class="form-label" for="">Скидка в процентах</label>
             <input type="text" class="form-control" placeholder="">
         </div>
     </form>
@@ -982,23 +983,23 @@
             <input type="text" class="form-control" placeholder="Егор">
         </div>
         <div class="form-group">
-            <label class="form-label"  for="">Email</label>
+            <label class="form-label" for="">Email</label>
             <input type="text" class="form-control" placeholder="info@mail.ru">
         </div>
         <div class="form-group">
-            <label class="form-label"  for="">Логин</label>
+            <label class="form-label" for="">Логин</label>
             <input type="text" class="form-control" placeholder="bbq">
         </div>
         <div class="form-group">
-            <label class="form-label"  for="">Пароль</label>
+            <label class="form-label" for="">Пароль</label>
             <input type="password" class="form-control" placeholder="">
         </div>
         <div class="form-group">
-            <label class="form-label"  for="">Повторите пароль</label>
+            <label class="form-label" for="">Повторите пароль</label>
             <input type="password" class="form-control" placeholder="">
         </div>
         <div class="form-group">
-            <label class="form-label"  for="">Выберите ценовую группу</label>
+            <label class="form-label" for="">Выберите ценовую группу</label>
             <select name="" id="">
                 <option value="">Новогодняя -10%</option>
                 <option value="">Новогодняя -10%</option>
@@ -1010,6 +1011,113 @@
     <div>
         <button data-remodal-action="confirm" class="btn btn-primary">Добавить</button>
         <button data-remodal-action="cancel" class="btn btn-outline-primary">Отмена</button>
+    </div>
+</div>
+
+<!--Фильтр-->
+<div class="remodal delivery" data-remodal-id="filter">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="title">Фильтр</div>
+    <form action="">
+        <div class="form-group">
+            <label class="form-label" for="">Тип</label>
+            <select name="" id="">
+                <option value="">Бескаркасные</option>
+                <option value="">Бескаркасные</option>
+                <option value="">Бескаркасные</option>
+                <option value="">Бескаркасные</option>
+                <option value="">Бескаркасные</option>
+
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="">Стоимость (1 шт.)</label>
+            <div class="form-row">
+                <input type="text" class="form-control" placeholder="от">
+                <div class="form-dif">–</div>
+                <input type="text" class="form-control" placeholder="до">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="">Сортировка</label>
+            <select name="" id="">
+                <option value="">Все</option>
+                <option value="">Все</option>
+                <option value="">Все</option>
+                <option value="">Все</option>
+                <option value="">Все</option>
+
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="">Наличие</label>
+            <select name="" id="">
+                <option value="">Не имеет значения</option>
+                <option value="">Не имеет значения</option>
+                <option value="">Не имеет значения</option>
+                <option value="">Не имеет значения</option>
+                <option value="">Не имеет значения</option>
+
+            </select>
+        </div>
+        <hr>
+        <div class="title">Подбор по авто</div>
+        <div class="form-group">
+            <label class="form-label" for="">Марка</label>
+            <select name="" id="">
+                <option value="">Все</option>
+                <option value="">Все</option>
+                <option value="">Все</option>
+                <option value="">Все</option>
+                <option value="">Все</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="">Модель</label>
+            <select name="" id="">
+                <option value="">Все</option>
+                <option value="">Все</option>
+                <option value="">Все</option>
+                <option value="">Все</option>
+                <option value="">Все</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="">Модификация</label>
+            <select name="" id="">
+                <option value="">Все</option>
+                <option value="">Все</option>
+                <option value="">Все</option>
+                <option value="">Все</option>
+                <option value="">Все</option>
+            </select>
+        </div>
+        <hr>
+        <div class="title">Подбор по параметрам</div>
+        <div class="form-group">
+            <label class="form-label" for="">Крепление</label>
+            <select name="" id="">
+                <option value="">Все</option>
+                <option value="">Все</option>
+                <option value="">Все</option>
+                <option value="">Все</option>
+                <option value="">Все</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="">Размер</label>
+            <select name="" id="">
+                <option value="">Все</option>
+                <option value="">Все</option>
+                <option value="">Все</option>
+                <option value="">Все</option>
+                <option value="">Все</option>
+            </select>
+        </div>
+    </form>
+    <div>
+        <button data-remodal-action="confirm" class="btn btn-primary w100">Показать 192 товара</button>
+        <button data-remodal-action="cancel" class="btn btn-link w100">Сбросить фильтр</button>
     </div>
 </div>
 </div>
