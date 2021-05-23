@@ -47,11 +47,12 @@
                     <i class="icon icon-delivery"></i>Город отгрузки <span>Екатеринбург</span>
                     <div class="header-delivery__modal">
                         <div class="header-delivery__close"></div>
-                        <p>Выберите город, в котором осуществаляется отгрузка. Это важно, чтобы увидеть наличие цены и сроки
+                        <p>Выберите город, в котором осуществаляется отгрузка. Это важно, чтобы увидеть наличие цены и
+                            сроки
                             доставки.</p>
                         <a href="#" class="btn btn-primary">Все верно</a> <a href="#" class="btn btn-link"
-                                                                             data-remodal-target="delivery">Выбрать
-                        город</a>
+                            data-remodal-target="delivery">Выбрать
+                            город</a>
                     </div>
                 </div>
                 <div class="nav-scroller__app">
@@ -156,8 +157,8 @@
                     <p>Выберите город, в котором осуществаляется отгрузка. Это важно, чтобы увидеть наличие цены и сроки
                         доставки.</p>
                     <a href="#" class="btn btn-primary">Все верно</a> <a href="#" class="btn btn-link"
-                                                                         data-remodal-target="delivery">Выбрать
-                    город</a>
+                        data-remodal-target="delivery">Выбрать
+                        город</a>
                 </div>
             </div>
             <div class="header__phone">
@@ -195,35 +196,127 @@
             </div>
         </div>
     </div>
-    <div class="menu-big d-none">
+
+    <div class="menu">
         <div class="container">
-            <div class="menu-big__body">
-                <ul>
-                    <li><a href=""><i class="icon icon-avto"></i> Авто</a></li>
-                    <li><a href=""><i class="icon icon"></i> Ароматизаторы</a></li>
-                    <li><a href=""><i class="icon icon"></i> Бытовая техника</a></li>
-                    <li><a href=""><i class="icon icon"></i> Бытовая химия</a></li>
-                    <li><a href=""><i class="icon icon"></i> Галантерея</a></li>
-                    <li><a href=""><i class="icon icon"></i> Дача и сад</a></li>
-                    <li><a href=""><i class="icon icon"></i> Домашний текстиль</a></li>
-                    <li><a href=""><i class="icon icon"></i> Инструменты</a></li>
-                    <li><a href=""><i class="icon icon"></i> Канцтовары</a></li>
-                    <li><a href=""><i class="icon icon"></i> Электроника</a></li>
-                    <li><a href=""><i class="icon icon"></i> Подарки</a></li>
-                    <li><a href=""><i class="icon icon"></i> Посуда </a></li>
-                    <li><a href=""><i class="icon icon"></i> Сантехника</a></li>
-                    <li><a href=""><i class="icon icon"></i> Товары для детей</a></li>
-                    <li><a href=""><i class="icon icon"></i> Туризм и рыбалка</a></li>
-                    <li><a href=""><i class="icon icon"></i> Спорт и отдых</a></li>
-                    <li><a href=""><i class="icon icon"></i> Хозтовары</a></li>
+            <div class="tabs tabs--menu">
+                <ul class="tabs__caption">
+                    <li class="active"><a href="#"><i class="icon icon-avto"></i> Авто</a></li>
+                    <li><a href="#"><i class="icon icon-aromatizatory"></i> Ароматизаторы</a></li>
+                    <li><a href="#"><i class="icon icon-bytovaya-tekhnika"></i> Бытовая техника</a></li>
+                    <li><a href="#"><i class="icon icon-bytovaya-khimiya"></i> Бытовая химия</a></li>
+                    <li><a href="#"><i class="icon icon-galantereya"></i> Галантерея</a></li>
+                    <li><a href="#"><i class="icon icon-dacha-i-sad"></i> Дача и сад</a></li>
+                    <li><a href="#"><i class="icon icon-domashniy-tekstil"></i> Домашний текстиль</a></li>
+                    <li><a href="#"><i class="icon icon-instrumenty"></i> Инструменты</a></li>
+                    <li><a href="#"><i class="icon icon-kantselyarskie-tovary"></i> Канцтовары</a></li>
+                    <li><a href="#"><i class="icon icon-elektrotekhnika"></i> Электроника</a></li>
+                    <li><a href="#"><i class="icon icon-podarki"></i> Подарки</a></li>
+                    <li><a href="#"><i class="icon icon-posuda"></i> Посуда</a></li>
+                    <li><a href="#"><i class="icon icon-santehnika"></i> Сантехника</a></li>
+                    <li><a href="#"><i class="icon icon-tovary-dlya-detey"></i> Товары для детей</a></li>
+                    <li><a href="#"><i class="icon icon-turizm"></i> Туризм и рыбалка</a></li>
+                    <li><a href="#"><i class="icon icon-sport"></i> Спорт и отдых</a></li>
+                    <li><a href="#"><i class="icon icon-khoztovary"></i> Хозтовары</a></li>
                 </ul>
+
+                <div class="tabs__content active">
+                    <header class="menu__header">
+                        <a class="menu__link menu__link--stocked" href="#"><div class="stick__item new">NEW</div> Акции</a>
+                        <a class="menu__link menu__link--action" href="#"><div class="stick__item hit">ХИТ</div>Хиты</a>
+                        <a class="menu__link menu__link--action" href="#"><div class="stick__item sale"> sale</div>Распродажа</a>
+                        <button class="menu__close js-menu-close"></button>
+                    </header>
+                    <main>
+                        <ul class="menu__list">
+                            <li class="menu-big__item"><a href="">Источники света</a>
+                                <ul>
+                                    <li><a href="#">Лампы накаливая</a></li>
+                                    <li><a href="#">Лампы энергосберегающие 
+                                        и светодиодные</a></li>
+                                    <li><a href="#">Лента светодиодная</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-big__item"><a href="">Электротехника</a>
+                                <ul>
+                                    <li><a href="" class="active">Батарейки и аккумуляторы</a></li>
+                                    <li><a href="" class="active">Розетки, выключатели, патроны</a></li>
+                                    <li><a href="" class="active">Удлинители и сетевые 
+                                        фильтры,</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-big__item"><a href="">Мобильные и компьютерные
+                                аксессуары</a>
+                                <ul>
+                                    <li class="active"><a href="">Аксессуары для телефона</a></li>
+                                    <li><a href="">Зарядные устройства</a></li>
+                                    <li><a href="">Кабели</a></li>
+                                    <li><a href="">Компьютерные аксессуары</a></li>
+                                    <li><a href="">Мобильные аккумуляторы</a></li>
+                                    <li><a href="">Наушники</a></li>
+                                    <li><a href="">Портативная акустика</a></li>
+                                    <li><a href="">Электронные устройства</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-big__item"><a href="">Освещение</a>
+                                <ul>
+                                    <li><a href="">Настольные лампы</a></li>
+                                    <li><a href="">Ночники</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </main>
+                </div>
+                <div class="tabs__content">
+                    <header class="menu__header">
+                        <a class="menu__link menu__link--stocked" href="#">Акции</a>
+                        <a class="menu__link menu__link--action" href="#">Товары со скидкой</a>
+                        <button class="menu__close"></button>
+                    </header>
+                    <main>
+                        <ul class="menu__list">
+                            <li class="menu-big__item"><a href="">Источники света</a>
+                                <ul>
+                                    <li><a href="#">Лампы накаливая</a></li>
+                                    <li><a href="#">Лампы энергосберегающие 
+                                        и светодиодные</a></li>
+                                    <li><a href="#">Лента светодиодная</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-big__item"><a href="">Электротехника</a>
+                                <ul>
+                                    <li><a href="" class="active">Батарейки и аккумуляторы</a></li>
+                                    <li><a href="" class="active">Розетки, выключатели, патроны</a></li>
+                                    <li><a href="" class="active">Удлинители и сетевые 
+                                        фильтры,</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-big__item"><a href="">Мобильные и компьютерные
+                                аксессуары</a>
+                                <ul>
+                                    <li class="active"><a href="">Аксессуары для телефона</a></li>
+                                    <li><a href="">Зарядные устройства</a></li>
+                                    <li><a href="">Кабели</a></li>
+                                    <li><a href="">Компьютерные аксессуары</a></li>
+                                    <li><a href="">Мобильные аккумуляторы</a></li>
+                                    <li><a href="">Наушники</a></li>
+                                    <li><a href="">Портативная акустика</a></li>
+                                    <li><a href="">Электронные устройства</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-big__item"><a href="">Освещение</a>
+                                <ul>
+                                    <li><a href="">Настольные лампы</a></li>
+                                    <li><a href="">Ночники</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </main>
+                </div>
             </div>
         </div>
     </div>
 </header>
-
-
-
 
     <main class="main container">
         <h1 class="main__title">Материлы</h1>

@@ -9,6 +9,7 @@
 		padding: 3px 7px 1px;
 		margin-right: 6px;
         cursor: pointer;
+        width: fit-content;
         &:hover{
             opacity: .7;
         }
@@ -26,6 +27,9 @@
 		}
 		&.fix{
 			background: #F2994A;
+		}
+        &.sale{
+			background: #EB5757;
 		}
 		&.disabled{
 			background: rgba(68, 121, 163, 0.12);
