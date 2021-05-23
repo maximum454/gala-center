@@ -28,7 +28,7 @@
             margin-bottom: 0;
             width: 120px;
             height: 120px;
-            
+
             flex-shrink: 0;
         }
         .products__txt {
@@ -40,7 +40,7 @@
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            max-width: 395px;
+
             margin-right: 90px;
         }
         .products__articul {
@@ -80,6 +80,17 @@
         .products__stick {
             margin-bottom: 10px;
             position: relative;
+        }
+        .products__delete{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 20px;
+            color: #A4A9BB;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            margin-top: 6px;
         }
     }
     &__item {
@@ -167,7 +178,7 @@
         line-height: 28px;
         color: #333333;
         margin-bottom: 14px;
-
+        flex-shrink: 0;
         span {
             color: #a4a9bb;
             font-size: 13px;
@@ -187,6 +198,7 @@
         margin-left: 20px;
         display: flex;
         align-items: center;
+        cursor: pointer;
         .icon-add {
             width: 16px;
             height: 16px;
@@ -230,6 +242,22 @@
 
         span {
             color: #a4a9bb;
+        }
+        &.active {
+            position: relative;
+            padding-left: 48px;
+            text-align: left;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                margin-top: -12px;
+                background-image: url(../img/icons-sprite.svg#basket-btn);
+                background-repeat: no-repeat;
+                width: 24px;
+                height: 24px;
+            }
         }
     }
 
@@ -281,27 +309,25 @@
                     background-color: #f1edf9;
                     opacity: 1;
                 }
-            
             }
             .products__img {
                 margin-right: 15px;
             }
             .products__txt {
-            
-                &--width{
+                &--width {
                     max-width: 260px;
                 }
             }
             .products__name {
-               display: block;
-               max-width: 100%;
-               margin-right: 0;
+                display: block;
+                max-width: 100%;
+                margin-right: 0;
             }
             .products__articul {
                 margin-right: 5px;
                 display: inline;
             }
-        .products__price {
+            .products__price {
                 font-size: 17px;
                 line-height: 28px;
             }
@@ -309,7 +335,7 @@
                 flex-shrink: 0;
                 width: 24px;
                 height: 24px;
-                margin-left:0;
+                margin-left: 0;
                 position: relative;
                 cursor: pointer;
                 &::before {
@@ -341,7 +367,6 @@
             }
         }
         &__preview {
-           
             display: none;
         }
         .btn {
@@ -355,38 +380,34 @@
             max-width: 164px;
         }
     }
-    @include r(767){
+    @include r(767) {
         &--list {
             .products__item {
-                
                 display: flex;
-        
+
                 align-items: center;
                 padding: 20px 0;
-            
             }
             .products__img {
-                margin-right:0;
+                margin-right: 0;
                 text-align: center;
             }
             .products__txt {
                 flex-wrap: wrap;
-                &--width{
+                &--width {
                     max-width: 260px;
                 }
             }
             .products__name {
-               display: block;
-               max-width: 100%;
-               margin-right: 0;
-               margin-bottom: 0;
+                display: block;
+                max-width: 100%;
+                margin-right: 0;
+                margin-bottom: 0;
             }
-           
         }
     }
-    @include r(500){
+    @include r(500) {
         &--list {
-           
             .products__price {
                 width: 100%;
             }

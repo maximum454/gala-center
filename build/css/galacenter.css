@@ -5878,7 +5878,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 395px;
   margin-right: 90px;
 }
 
@@ -5923,6 +5922,18 @@ p {
 .products--list .products__stick {
   margin-bottom: 10px;
   position: relative;
+}
+
+.products--list .products__delete {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #A4A9BB;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  margin-top: 6px;
 }
 
 .products__item {
@@ -6022,6 +6033,8 @@ p {
   line-height: 28px;
   color: #333333;
   margin-bottom: 14px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .products__price span {
@@ -6048,6 +6061,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .products__date .icon-add {
@@ -6095,6 +6109,24 @@ p {
 
 .products .btn span {
   color: #a4a9bb;
+}
+
+.products .btn.active {
+  position: relative;
+  padding-left: 48px;
+  text-align: left;
+}
+
+.products .btn.active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -12px;
+  background-image: url(../img/icons-sprite.svg#basket-btn);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
 }
 
 .products .jq-selectbox__select-text {
