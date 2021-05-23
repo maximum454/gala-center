@@ -188,6 +188,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        flex-wrap: wrap;
     }
     &__date {
         font-style: normal;
@@ -407,10 +408,16 @@
         }
     }
     @include r(500) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
         &--list {
             .products__price {
                 width: 100%;
             }
         }
+        &__articul {
+            display: none;
+        }
+        
     }
 }

@@ -1,5 +1,6 @@
 .stick{
 	display: flex;
+    gap: 6px;
 	&__item{
 		text-transform: uppercase;
 		font-size: 15px;
@@ -7,21 +8,20 @@
 		color: #FFFFFF;
 		border-radius: 4px;
 		padding: 3px 7px 1px;
-		margin-right: 6px;
+	
         cursor: pointer;
         width: fit-content;
         text-align: center;
         display: inline-flex;
         align-items: center;
         justify-content: center;
+       
         min-width: 40px;
         text-decoration: none!important;
         &:hover{
             opacity: .7;
         }
-		&:last-of-type{
-			margin-right: 0;
-		}
+		
 		&.hit{
 			background: #F2C94C;
 		}
@@ -47,4 +47,14 @@
             margin: auto;
         }
 	}
+    @include r(767){
+        &__item{
+            
+            font-size: 13px;
+
+            
+            padding: 3px 4px 1px;
+        
+        } 
+    }
 }
