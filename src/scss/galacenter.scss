@@ -36,8 +36,12 @@ body {
         .filter__item,
         .btn-secondary,
         .btn-light,
-        .breadcrumb-catalog__dropdown-toggle{
+        .breadcrumb-catalog__dropdown-toggle,
+        .btn-primary{
             background: #F1EDF9;
+        }
+        .btn-primary{
+            border-color: #F1EDF9;
         }
 
 	}

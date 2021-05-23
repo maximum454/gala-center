@@ -1,7 +1,7 @@
 .products {
     margin-bottom: 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(200px,230px));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 230px));
     grid-gap: 45px;
     &--list {
         max-width: 1060px;
@@ -11,15 +11,15 @@
             display: flex;
             padding: 20px;
             border-bottom: 1px solid rgba(68, 121, 163, 0.12);
+            gap: 45px;
             &:hover {
                 background-color: #f1edf9;
                 opacity: 1;
             }
-            &.active{
+            &.active {
                 border-right: 1px solid rgba(68, 121, 163, 0.12);
-                .products__add-quantity-store{
+                .products__add-quantity-store {
                     display: block;
-                    
                 }
             }
         }
@@ -28,13 +28,13 @@
             margin-bottom: 0;
             width: 120px;
             height: 120px;
-            margin-right: 45px;
+            
             flex-shrink: 0;
         }
         .products__txt {
             display: flex;
-            flex-wrap: wrap;
             align-items: center;
+            gap: 20px;
         }
         .products__name {
             display: flex;
@@ -53,13 +53,11 @@
             line-height: 28px;
             color: #333333;
             margin-bottom: 0;
-            margin-right: 20px;
         }
         .products__like {
             flex-shrink: 0;
             width: 24px;
             height: 24px;
-            margin-left: 36px;
             position: relative;
             cursor: pointer;
             &::before {
@@ -83,7 +81,6 @@
             margin-bottom: 10px;
             position: relative;
         }
-        
     }
     &__item {
         max-width: 236px;
@@ -204,7 +201,7 @@
         left: 0;
         display: none;
     }
-    &__add-quantity-store{
+    &__add-quantity-store {
         max-width: 300px;
         position: absolute;
         top: 0;
@@ -213,7 +210,6 @@
         background-color: #fff;
         z-index: 10;
     }
-    
 
     .icon-city {
         width: 10px;
@@ -271,6 +267,96 @@
                 background-size: 100%;
                 background-repeat: no-repeat;
             }
+        }
+    }
+    @include r(1023) {
+        &--list {
+            .products__item {
+                max-width: 100%;
+                display: flex;
+                padding: 20px;
+                border-bottom: 1px solid rgba(68, 121, 163, 0.12);
+                gap: 15px;
+                &:hover {
+                    background-color: #f1edf9;
+                    opacity: 1;
+                }
+            
+            }
+            .products__img {
+                margin-right: 15px;
+            }
+            .products__txt {
+            
+                &--width{
+                    max-width: 260px;
+                }
+            }
+            .products__name {
+               display: block;
+               max-width: 100%;
+               margin-right: 0;
+            }
+            .products__articul {
+                margin-right: 5px;
+                display: inline;
+            }
+            .products__price {
+                font-size: 17px;
+                line-height: 28px;
+            }
+            .products__like {
+                flex-shrink: 0;
+                width: 24px;
+                height: 24px;
+                margin-left:0;
+                position: relative;
+                cursor: pointer;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url("../img/icons-sprite.svg#like-gray");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                &.active {
+                    &::before {
+                        background-image: url("../img/icons-sprite.svg#like-red");
+                    }
+                }
+            }
+            .products__stick {
+                margin-bottom: 10px;
+                position: relative;
+            }
+        }
+        &__date {
+            font-size: 13px;
+            line-height: 16px;
+            margin-left: 15px;
+            .icon-add {
+                width: 12px;
+                height: 12px;
+                margin-right: 5px;
+            }
+        }
+        &__preview {
+           
+            display: none;
+        }
+        .btn {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 20px;
+            text-align: center;
+            color: #324c9a;
+            padding: 3px 25px;
+            max-width: 164px;
         }
     }
 }

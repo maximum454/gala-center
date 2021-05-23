@@ -119,7 +119,7 @@
 
 .breadcrumb-catalog {
     position: relative;
-
+    min-height: 44px;
     &__ul {
         margin: 0;
         padding: 0;
@@ -202,5 +202,8 @@
         position: absolute;
         top: 0;
         right: 0;
+    }
+    @include r(767){
+        display: none;
     }
 }
