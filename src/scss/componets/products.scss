@@ -301,7 +301,7 @@
                 margin-right: 5px;
                 display: inline;
             }
-            .products__price {
+        .products__price {
                 font-size: 17px;
                 line-height: 28px;
             }
@@ -329,10 +329,6 @@
                     }
                 }
             }
-            .products__stick {
-                margin-bottom: 10px;
-                position: relative;
-            }
         }
         &__date {
             font-size: 13px;
@@ -357,6 +353,43 @@
             color: #324c9a;
             padding: 3px 25px;
             max-width: 164px;
+        }
+    }
+    @include r(767){
+        &--list {
+            .products__item {
+                
+                display: flex;
+        
+                align-items: center;
+                padding: 20px 0;
+            
+            }
+            .products__img {
+                margin-right:0;
+                text-align: center;
+            }
+            .products__txt {
+                flex-wrap: wrap;
+                &--width{
+                    max-width: 260px;
+                }
+            }
+            .products__name {
+               display: block;
+               max-width: 100%;
+               margin-right: 0;
+               margin-bottom: 0;
+            }
+           
+        }
+    }
+    @include r(500){
+        &--list {
+           
+            .products__price {
+                width: 100%;
+            }
         }
     }
 }

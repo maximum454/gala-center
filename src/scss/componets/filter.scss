@@ -146,4 +146,25 @@
             justify-content: space-between;
         }
     }
+    @include r(767){
+        &__body {
+            flex-wrap: wrap;
+        }
+        &__adap {
+            display: flex;
+            gap: 20px;
+           
+            align-items: center;
+            .jq-selectbox__select {
+                height: 40px;
+                padding: 0 35px 0 0;
+                border-radius: 4px;
+                background: transparent;
+                border: none;
+                font: 15px/40px HelveticaNeueCyr, sans-serif;
+                color: #333;
+                text-shadow: none;
+            }
+        }
+    }
 }
