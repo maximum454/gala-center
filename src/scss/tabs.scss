@@ -48,7 +48,7 @@
                 }
             }
         }
-        .tabs__content{
+        .tabs__content {
             padding: 24px;
             width: 100%;
         }
@@ -62,7 +62,6 @@
         padding: 0;
         list-style: none;
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
         li {
             font-style: normal;
@@ -74,6 +73,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             margin: 0;
+            flex-shrink: 0;
             &.active {
                 background: rgba(68, 121, 163, 0.12);
                 border-radius: 4px;
@@ -89,6 +89,14 @@
         display: none;
         &.active {
             display: block;
+        }
+    }
+    @include r(1023) {
+        &__caption {
+            overflow-x: scroll;
+        }
+        &__content {
+            overflow-x: scroll;
         }
     }
 }

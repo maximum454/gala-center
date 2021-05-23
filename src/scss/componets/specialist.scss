@@ -1,13 +1,13 @@
 .specialist{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 20px;
+  display: flex;
+  gap: 20px;
   margin: 20px 0 50px;
   &__item{
     border: 1px solid rgba(68, 121, 163, 0.12);
     border-radius: 10px;
     padding: 16px;
     position: relative;
+    flex-shrink: 0;
   }
   &__title{
     font-style: normal;
@@ -53,5 +53,9 @@
     line-height: 20px;
     text-decoration: none;
     color: #324C9A;
+  }
+  @include r(1023){
+    overflow-x: scroll;
+    overflow-y: hidden;
   }
 }
