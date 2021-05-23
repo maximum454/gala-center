@@ -10,6 +10,12 @@
 		margin-right: 6px;
         cursor: pointer;
         width: fit-content;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 40px;
+        text-decoration: none!important;
         &:hover{
             opacity: .7;
         }
@@ -35,5 +41,10 @@
 			background: rgba(68, 121, 163, 0.12);
 			color: #A4A9BB;
 		}
+        .icon{
+            width: 15px;
+            height: 15px;
+            margin: auto;
+        }
 	}
 }

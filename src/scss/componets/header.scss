@@ -2,6 +2,9 @@
 	position: relative;
 	background-color: #F1F5F9;
 	margin-bottom: 40px;
+    &.open{
+        z-index: 100;
+    }
 	&__top{
 		padding: 20px 0;
 		display: flex;

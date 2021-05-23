@@ -74,6 +74,12 @@ $(function () {
         $(this).toggleClass('active');
     });
 
+    $('.js-catalog-menu').on('click', function(){
+        $('.menu, .header, .overdraw').toggleClass('open');
+    })
+    $('.js-menu-close').on('click', function(){
+        $('.menu, .header, .overdraw').toggleClass('open');
+    })
 
 
 })
