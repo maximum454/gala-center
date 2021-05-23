@@ -5818,7 +5818,7 @@ p {
 .products {
   margin-bottom: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 230px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 45px;
 }
 
@@ -8437,8 +8437,6 @@ p {
 
 .filter__item.general .jq-selectbox__select {
   height: 40px;
-  padding: 0 45px 0 16px;
-  border-radius: 4px;
   background: transparent;
   border: none;
   font: 17px/40px HelveticaNeueCyr, sans-serif;
@@ -8523,7 +8521,7 @@ p {
 
 .filter .jq-selectbox__select {
   height: 40px;
-  padding: 0 45px 0 16px;
+  padding: 0 45px 0 0;
   border-radius: 4px;
   background: #ffffff;
   border: 1px solid #dde8f4;

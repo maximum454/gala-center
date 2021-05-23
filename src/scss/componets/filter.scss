@@ -23,8 +23,8 @@
             display: flex;
             .jq-selectbox__select {
                 height: 40px;
-                padding: 0 45px 0 16px;
-                border-radius: 4px;
+        
+                
                 background: transparent;
                 border: none;
                 font: 17px/40px HelveticaNeueCyr, sans-serif;
@@ -94,7 +94,7 @@
     }
     .jq-selectbox__select {
         height: 40px;
-        padding: 0 45px 0 16px;
+        padding: 0 45px 0 0;
         border-radius: 4px;
         background: #ffffff;
         border: 1px solid #dde8f4;
