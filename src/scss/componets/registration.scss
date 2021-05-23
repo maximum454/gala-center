@@ -3,6 +3,7 @@
 		display: grid;
 		grid-template-columns: 420px 1fr;
 		justify-content: space-between;
+        grid-gap: 20px;
 	}
 	&__form{
 
@@ -14,6 +15,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 30px 90px;
+        padding-left: 48px;
 	}
 	&__item{
 		border-bottom: 1px solid #E0E0E0;
@@ -68,4 +70,15 @@
 			text-decoration: none;
 		}
 	}
+    @include r(1023){
+        &__body{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: space-between;
+            grid-gap: 20px;
+        }
+        &__items{
+            display: none;
+        }
+    }
 }
