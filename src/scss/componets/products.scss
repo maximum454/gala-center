@@ -81,12 +81,12 @@
             margin-bottom: 10px;
             position: relative;
         }
-        .products__delete{
+        .products__delete {
             font-style: normal;
             font-weight: normal;
             font-size: 15px;
             line-height: 20px;
-            color: #A4A9BB;
+            color: #a4a9bb;
             text-align: center;
             display: block;
             text-decoration: none;
@@ -408,16 +408,17 @@
         }
     }
     @include r(500) {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
         &--list {
             .products__price {
                 width: 100%;
             }
         }
+        &--plitka {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
         &__articul {
             display: none;
         }
-        
     }
 }
