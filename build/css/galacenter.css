@@ -3752,6 +3752,18 @@ body.lock {
   overflow: hidden;
 }
 
+body.haberdashery .header,
+body.haberdashery .footer,
+body.haberdashery .filter__item,
+body.haberdashery .btn-secondary,
+body.haberdashery .btn-light,
+body.haberdashery .breadcrumb-catalog__dropdown-toggle,
+body.haberdashery .slider-tabs__caption li.active,
+body.haberdashery .catalog-section__item,
+body.haberdashery .subscribe {
+  background: #FFF8DB;
+}
+
 body.bg-2 .header,
 body.bg-2 .footer,
 body.bg-2 .filter__item,
@@ -4805,11 +4817,11 @@ hr {
   padding: 0.563rem 1.4rem;
   border-radius: 4px;
   cursor: pointer;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   text-decoration: none;
   font-style: normal;
   font-weight: normal;
@@ -9159,6 +9171,186 @@ hr {
   font-size: 20px;
 }
 
+.seo-text {
+  max-width: 1008px;
+}
+
+.seo-text p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.seo-text ul ::marker {
+  color: #888e94;
+  font-size: 30px;
+}
+
+.seo-text ul li {
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.seo-text a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #324c9a;
+  text-decoration: none;
+}
+
+.seo-text a:hover {
+  text-decoration: underline;
+}
+
+.selections-goods {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding-bottom: 40px;
+  margin-bottom: 32px;
+  overflow: hidden;
+  position: relative;
+}
+
+.selections-goods__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.selections-goods__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.selections-goods__title a {
+  color: #324c9a;
+  text-decoration: none;
+}
+
+.selections-goods__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(203px, 1fr));
+  grid-gap: 30px 28px;
+}
+
+.selections-goods__item {
+  max-width: 250px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.selections-goods__item:hover {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.selections-goods__img {
+  display: block;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+.selections-goods__img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.selections-goods__txt {
+  display: block;
+  text-decoration: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 12px;
+  background: -o-linear-gradient(291.37deg, rgba(255, 255, 255, 0) 34.21%, rgba(139, 118, 31, 0.6) 81.63%);
+  background: linear-gradient(158.63deg, rgba(255, 255, 255, 0) 34.21%, rgba(139, 118, 31, 0.6) 81.63%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.selections-goods__name {
+  font-size: 17px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.selections-goods__count {
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.selections-goods__nav {
+  position: relative;
+  width: 88px;
+  margin-left: 32px;
+}
+
+.selections-goods .btn {
+  max-width: 178px;
+  width: 100%;
+  margin-left: auto;
+  padding: 0.688rem 0.75rem;
+}
+
+.selections-goods .swiper-button-next,
+.selections-goods .swiper-button-prev {
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border: 1px solid #a4a9bb;
+}
+
+.selections-goods .swiper-button-prev {
+  right: 44px;
+  left: auto;
+  border-radius: 4px 0 0 4px;
+}
+
+.selections-goods .swiper-button-next {
+  right: 0;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  border-radius: 4px 0 0 4px;
+}
+
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 700px;
@@ -9613,6 +9805,14 @@ hr {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+
+  .selections-goods .btn {
+    display: none;
+  }
+
+  .selections-goods__nav {
+    display: none;
   }
 }
 
@@ -10089,6 +10289,11 @@ hr {
     font-size: 15px;
     line-height: 20px;
     color: #222222;
+  }
+
+  .selections-goods__title {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 

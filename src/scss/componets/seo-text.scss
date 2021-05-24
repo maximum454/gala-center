@@ -1,0 +1,36 @@
+.seo-text {
+    max-width: 1008px;
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        color: #333333;
+    }
+    ul {
+        ::marker {
+            color: #888e94;
+            font-size: 30px;
+        }
+        li {
+            margin-bottom: 30px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 20px;
+            color: #333333;
+        }
+    }
+    a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        color: #324c9a;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+
+    }
+}

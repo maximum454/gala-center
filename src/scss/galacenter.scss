@@ -27,7 +27,18 @@ body {
 	&.lock {
 		overflow: hidden;
 	}
-	&.bg-1{
+	&.haberdashery{
+        .header,
+        .footer,
+        .filter__item,
+        .btn-secondary,
+        .btn-light,
+        .breadcrumb-catalog__dropdown-toggle,
+        .slider-tabs__caption li.active,
+        .catalog-section__item,
+        .subscribe{
+            background: #FFF8DB;
+        }
         
 	}
 	&.bg-2{
@@ -382,3 +393,9 @@ hr{
 
 // Каталог информация о цене количестве и тд
 @import "componets/catalog-info";
+
+// Сео текст 
+@import "componets/seo-text";
+
+// Подборки товаров
+@import "componets/selections-goods";
