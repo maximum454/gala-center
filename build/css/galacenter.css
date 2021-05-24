@@ -5198,6 +5198,65 @@ hr {
   border-color: rgba(0, 0, 0, 0.08);
 }
 
+.fancybox-bg {
+  background: rgba(1, 14, 61, 0.7);
+}
+
+.fancybox-button--arrow_left {
+  background-color: transparent;
+  width: 22px !important;
+  height: 44px !important;
+  position: relative;
+  padding: 0 !important;
+  left: 20px !important;
+}
+
+.fancybox-button--arrow_left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/icons-sprite.svg#icon-arrow-funcy");
+  background-size: 100%;
+}
+
+.fancybox-button--arrow_left > div {
+  display: none;
+}
+
+.fancybox-button--arrow_right {
+  background-color: transparent;
+  width: 22px !important;
+  height: 44px !important;
+  position: relative;
+  padding: 0 !important;
+  right: 20px !important;
+}
+
+.fancybox-button--arrow_right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/icons-sprite.svg#icon-arrow-funcy");
+  background-size: 100%;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fancybox-button--arrow_right > div {
+  display: none;
+}
+
 .header {
   position: relative;
   background-color: #F1F5F9;
@@ -10291,6 +10350,14 @@ hr {
   line-height: 24px;
 }
 
+.catalog-detail .information {
+  max-width: 400px;
+}
+
+.catalog-detail .tabs__content p {
+  max-width: 647px;
+}
+
 .price-special {
   background-color: rgba(111, 207, 151, 0.1);
   border-radius: 4px;
@@ -10697,16 +10764,12 @@ hr {
 }
 
 .sertificat {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 256px));
+  grid-gap: 20px;
 }
 
 .sertificat__img {
-  max-width: 256;
   display: block;
   text-decoration: none;
 }
@@ -11715,9 +11778,33 @@ hr {
     color: #222222;
   }
 
+  .catalog-detail__izbranoe {
+    display: none;
+  }
+
+  .catalog-detail__add-review {
+    display: none;
+  }
+
+  .catalog-detail__articul {
+    color: #A4A9BB;
+  }
+
+  .catalog-detail__rating {
+    color: #A4A9BB;
+  }
+
+  .catalog-detail__header {
+    text-align: center;
+  }
+
   .selections-goods__title {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .sertificat {
+    grid-template-columns: 1fr 1fr;
   }
 }
 

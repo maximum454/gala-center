@@ -1,9 +1,8 @@
 .sertificat{
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(160px,256px));
+    grid-gap: 20px;
     &__img{
-        max-width: 256;
         display: block;
         text-decoration: none;
         img{
@@ -12,5 +11,8 @@
             object-fit: cover;
             display: block;
         }
+    }
+    @include r(767){
+        grid-template-columns: 1fr 1fr;
     }
 }

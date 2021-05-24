@@ -95,6 +95,14 @@
         font-size: 17px;
         line-height: 24px;
     }
+    .information{
+        max-width: 400px;
+    }
+    .tabs__content{
+        p{
+            max-width: 647px;
+        }
+    }
     @include r(1023){
         &__row {
             display: block;
@@ -136,6 +144,23 @@
         }
         &__right{
             max-width: 100%;
+        }
+    }
+    @include r(767){
+        &__izbranoe{
+            display: none;
+        }
+        &__add-review{
+            display: none;
+        }
+        &__articul{
+            color: #A4A9BB;
+        }
+        &__rating{
+            color: #A4A9BB;
+        }
+        &__header{
+            text-align: center;
         }
     }
 

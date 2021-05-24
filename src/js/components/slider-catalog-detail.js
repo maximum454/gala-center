@@ -21,12 +21,14 @@ var galleryThumbs = new Swiper(".gallery-thumbs", {
     },
     breakpoints: {
         320: {
-            slidesPerView: 1.5,
+            slidesPerView: 1,
         },
         450: {
+            slidesPerView: 1.5,
+        },
+        768: {
             slidesPerView: 2.5,
-        }
-        ,
+        },
         1024: {
             slidesPerView: 1,
         }
