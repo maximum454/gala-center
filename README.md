@@ -7,6 +7,9 @@
 # Регистрации
 * https://maximum454.github.io/gala-center/build/registration.html
 
+# Когда авторизован
+* https://maximum454.github.io/gala-center/build/auth.html
+
 # Пользовательское соглашение
 * https://maximum454.github.io/gala-center/build/agreement.html
 

@@ -69,7 +69,7 @@
             display: none;
         }
         .header__auth {
-            display: block;
+            display: flex;
             margin: 0 0 0 auto;
             a{
                 margin: 0;
@@ -78,6 +78,7 @@
         }
         .header__logo {
             display: block;
+            flex-shrink: 1;
         }
         .nav {
             display: block;

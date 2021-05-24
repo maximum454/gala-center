@@ -5460,6 +5460,9 @@ hr {
 .header__auth {
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header__auth a {
@@ -5473,6 +5476,12 @@ hr {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__auth a:hover {
@@ -5484,6 +5493,10 @@ hr {
 
 .header__auth a:last-of-type {
   margin-right: 0;
+}
+
+.header__auth-basket {
+  background: rgba(68, 121, 163, 0.12);
 }
 
 .header__bottom {
@@ -7955,6 +7968,11 @@ hr {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #324C9A;
+  text-decoration: none;
+}
+
+.registration a:hover {
+  text-decoration: underline;
 }
 
 .registration .form-title {
@@ -10845,7 +10863,9 @@ hr {
   }
 
   .header__bottom .header__auth {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin: 0 12px;
   }
 
@@ -11505,7 +11525,9 @@ hr {
   }
 
   .nav-scroller .header__auth {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin: 0 0 0 auto;
   }
 
@@ -11515,6 +11537,8 @@ hr {
 
   .nav-scroller .header__logo {
     display: block;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
   }
 
   .nav-scroller .nav {

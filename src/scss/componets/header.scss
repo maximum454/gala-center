@@ -127,6 +127,7 @@
 	}
 	&__auth{
 		flex-shrink: 0;
+        display: flex;
 		a{
 			font-style: normal;
 			font-weight: normal;
@@ -136,6 +137,8 @@
 			text-decoration: none;
 			margin-right: 32px;
 			transition: all .3s ease;
+            display: flex;
+            align-items: center;
 			&:hover{
 				transition: all .3s ease;
 				opacity: .7;
@@ -145,6 +148,9 @@
 			}
 		}
 	}
+    &__auth-basket{
+        background: rgba(68, 121, 163, 0.12);
+    }
 	&__bottom{
 		padding: 20px 0;
 		display: flex;
@@ -192,7 +198,7 @@
 				display: block;
 			}
 			.header__auth{
-				display: block;
+				display: flex;
 				margin: 0 12px;
 				.icon-basket-btn,
 				.icon-login{
