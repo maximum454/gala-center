@@ -3796,6 +3796,23 @@ body.presents .selections-goods__txt {
   background: linear-gradient(158.63deg, #fff0 34.21%, #FFF0F999 81.63%);
 }
 
+body.posuda .header,
+body.posuda .footer,
+body.posuda .filter__item,
+body.posuda .btn-secondary,
+body.posuda .btn-light,
+body.posuda .breadcrumb-catalog__dropdown-toggle,
+body.posuda .slider-tabs__caption li.active,
+body.posuda .catalog-section__item,
+body.posuda .subscribe {
+  background: #FFF0F9;
+}
+
+body.posuda .selections-goods__txt {
+  background: -o-linear-gradient(291.37deg, #fff0 34.21%, #FFF0F999 81.63%);
+  background: linear-gradient(158.63deg, #fff0 34.21%, #FFF0F999 81.63%);
+}
+
 body .bg-4 {
   background: #FFF0F9;
 }

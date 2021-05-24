@@ -62,3 +62,8 @@
 
 # Результат поиска
 * https://maximum454.github.io/gala-center/build/result-search.html
+
+# Цвета главной
+* https://maximum454.github.io/gala-center/build/haberdashery.html
+* https://maximum454.github.io/gala-center/build/presents.html
+* https://maximum454.github.io/gala-center/build/posuda.html
