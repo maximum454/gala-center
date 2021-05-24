@@ -59,6 +59,7 @@
 * https://maximum454.github.io/gala-center/build/catalog-detail.html
 * https://maximum454.github.io/gala-center/build/catalog-detail-no-sp.html
 * https://maximum454.github.io/gala-center/build/catalog-detail-no.html
+* https://maximum454.github.io/gala-center/build/catalog-detail-reviews.html
 
 # Результат поиска
 * https://maximum454.github.io/gala-center/build/result-search.html

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    @@include('./template/_meta.html')
+    <title>Щетки стеклоочистителя</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/galacenter.min.css">
+</head>
+
+<body>
+    <div class="wrp">
+        @@include('./template/_header.html')
+
+        <main class="main container">
+            <section class="slider-season slider-season--catalog">
+                <header class="slider-season__header ">
+                    <div class="slider-season__title"><span>Сезонные предложения</span></div>
+
+                </header>
+                <div class="slider-season__body">
+                    <div class="swiper-container-season">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-season__item">
+                                    <a href="" class="slider-season__img">
+                                        <img src="./img/slider-season/image1.png" width="203" height="203" alt="">
+                                        <div class="slider-season__txt">
+                                            <div class="slider-season__name">Новый год</div>
+                                            <div class="slider-season__count">134 товара</div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-season__item">
+                                    <a href="" class="slider-season__img">
+                                        <img src="./img/slider-season/image2.png" width="203" height="203" alt="">
+                                        <div class="slider-season__txt">
+                                            <div class="slider-season__name">Посуда</div>
+                                            <div class="slider-season__count">134 товара</div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-season__item">
+                                    <a href="" class="slider-season__img">
+                                        <img src="./img/slider-season/image3.png" width="203" height="203" alt="">
+                                        <div class="slider-season__txt">
+                                            <div class="slider-season__name">Хозтовары</div>
+                                            <div class="slider-season__count">134 товара</div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-season__item">
+                                    <a href="" class="slider-season__img">
+                                        <img src="./img/slider-season/image4.png" width="203" height="203" alt="">
+                                        <div class="slider-season__txt">
+                                            <div class="slider-season__name">Подарки</div>
+                                            <div class="slider-season__count">134 товара</div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-season__item">
+                                    <a href="" class="slider-season__img">
+                                        <img src="./img/slider-season/image5.png" width="203" height="203" alt="">
+                                        <div class="slider-season__txt">
+                                            <div class="slider-season__name">Домашний текстиль</div>
+                                            <div class="slider-season__count">134 товара</div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-season__item">
+                                    <a href="" class="slider-season__img">
+                                        <img src="./img/slider-season/image6.png" width="203" height="203" alt="">
+                                        <div class="slider-season__txt">
+                                            <div class="slider-season__name">Сантехника</div>
+                                            <div class="slider-season__count">134 товара</div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-season__item">
+                                    <a href="" class="slider-season__img">
+                                        <img src="./img/slider-season/image1.png" width="203" height="203" alt="">
+                                        <div class="slider-season__txt">
+                                            <div class="slider-season__name">Новый год</div>
+                                            <div class="slider-season__count">134 товара</div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <ul class="breadcrumb">
+                <li><span>LEBEN Утюг с отпаривателем 2600 Вт, подошва - керамическое покрытие, сенсор</span></li>
+            
+            </ul>
+            <h1 class="main__title">Новый отзыв</h1>
+            <form class="reviews">
+                <div class="form-group">
+                    <label class="form-label" for="">Ваше имя</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="">Email</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="">Оценка</label>
+                    <div class="reviews__stars">
+                        <div class="reviews__star select"></div>
+                        <div class="reviews__star select"></div>
+                        <div class="reviews__star select"></div>
+                        <div class="reviews__star"></div>
+                        <div class="reviews__star"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Код с картинки</label>
+                    <div class="form-captcha">
+                        <input type="text" class="form-control">
+                        <img src="./img/articles/images-capcha.png" width="73" height="38" alt="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary">Опубликовать</button>
+                </div>
+            </form>
+
+            
+        </main>
+
+        @@include('./template/_footer.html')
+        @@include('./template/_modal.html')
+    </div>
+
+    <script src="js/galacenter.min.js"></script>
+</body>
+
+</html>
