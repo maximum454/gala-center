@@ -19,6 +19,9 @@
 .icon-burger-dark {
   background-image: url("../img/icons-sprite.svg#icon-burger-dark");
 }
+.icon-burger-blue {
+    background-image: url("../img/icons-sprite.svg#icon-burger-blue");
+  }
 .icon-login{
   background-image: url("../img/icons-sprite.svg#login");
 }
@@ -37,6 +40,12 @@
   margin-right: 10px;
   background-image: url("../img/icons-sprite.svg#time");
 }
+.icon-time-green{
+    width: 21px;
+    height: 21px;
+    margin-right: 10px;
+    background-image: url("../img/icons-sprite.svg#time-green");
+  }
 
 .icon-email{
   background-image: url("../img/icons-sprite.svg#email");
@@ -204,4 +213,8 @@
 
 .icon-filter{
     background-image: url("../img/icons-sprite.svg#icon-filter");
+}
+
+.icon-login-white{
+    background-image: url("../img/icons-sprite.svg#icon-login-white");
 }

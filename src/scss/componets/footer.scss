@@ -89,15 +89,27 @@
         }
         .facebook {
             background-image: url("../img/social-sprite.svg#facebook");
+            &.white{
+                background-image: url("../img/social-sprite.svg#facebook-white");
+            }
         }
         .vkontakte {
             background-image: url("../img/social-sprite.svg#vkontakte");
+            &.white{
+                background-image: url("../img/social-sprite.svg#vkontakte-white");
+            }
         }
         .instagram {
             background-image: url("../img/social-sprite.svg#instagram");
+            &.white{
+                background-image: url("../img/social-sprite.svg#instagram-white");
+            }
         }
         .youtube {
             background-image: url("../img/social-sprite.svg#youtube");
+            &.white{
+                background-image: url("../img/social-sprite.svg#youtube-white");
+            }
         }
     }
     &__app {
