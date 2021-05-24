@@ -1,4 +1,5 @@
 @import "partials/normalize";
+@import "partials/jquery.fancybox";
 @import "partials/swiper-bundle";
 @import "partials/formstyler";
 @import "partials/formstyler.theme";
@@ -13,7 +14,6 @@
 @import "table";
 @import "tabs";
 @import "alert";
-
 @import "remodal";
 
 * {
@@ -690,3 +690,6 @@ hr {
 
 // Отзывы
 @import "componets/reviews";
+
+// Сертификаты
+@import "componets/sertificat";

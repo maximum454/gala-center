@@ -4,6 +4,8 @@
 @@include('./partials/jquery.formstyler.min.js')
 @@include('./partials/remodal.js')
 @@include('./partials/priority-nav.js')
+@@include('./partials/jquery.fancybox.min.js')
+
 @@include('./components/slider-banners.js')
 @@include('./components/slider-brands.js')
 @@include('./components/slider-season.js')

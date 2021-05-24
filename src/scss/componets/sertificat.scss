@@ -1,0 +1,16 @@
+.sertificat{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    &__img{
+        max-width: 256;
+        display: block;
+        text-decoration: none;
+        img{
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+    }
+}
