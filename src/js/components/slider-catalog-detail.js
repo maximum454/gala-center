@@ -2,6 +2,7 @@ var galleryThumbs = new Swiper(".gallery-thumbs", {
     centeredSlides: true,
     centeredSlidesBounds: true,
     slidesPerView: 5,
+    spaceBetween: 20,
     watchOverflow: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
@@ -9,12 +10,27 @@ var galleryThumbs = new Swiper(".gallery-thumbs", {
   });
   
   var galleryMain = new Swiper(".gallery-main", {
+    slidesPerView: 1,
+    spaceBetween: 20,
     watchOverflow: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
     preventInteractionOnTransition: true,
     thumbs: {
       swiper: galleryThumbs
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1.5,
+        },
+        450: {
+            slidesPerView: 2.5,
+        }
+        ,
+        1024: {
+            slidesPerView: 1,
+        }
+
     }
   });
   

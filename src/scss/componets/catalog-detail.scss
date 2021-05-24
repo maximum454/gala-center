@@ -1,8 +1,9 @@
 .catalog-detail {
     margin: 20px 0;
     &__promotion {
-        display: flex;
-        gap: 20px;
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        grid-gap: 20px;
         margin: 20px 0;
     }
     &__about-company {
@@ -18,10 +19,11 @@
     &__row {
         display: flex;
         justify-content: space-between;
-        gap: 91px;
+        gap: 20px;
     }
     &__photo {
-        min-width: 640px;
+        max-width: 604px;
+        flex: 1 0 0;
         .gallery-container {
             width: 100%;
             display: flex;
@@ -31,7 +33,7 @@
         .gallery-main {
             width: 450px;
             height: 450px;
-            margin-left: auto;
+            margin-left: 20px;
             margin-right: 0;
         }
 
@@ -54,6 +56,15 @@
                 }
             }
         }
+        img{
+            max-width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+    }
+    &__right{
+        max-width: 630px;
     }
     &__rating {
         display: flex;
@@ -84,4 +95,48 @@
         font-size: 17px;
         line-height: 24px;
     }
+    @include r(1023){
+        &__row {
+            display: block;
+        }
+        &__photo {
+            max-width: 100%;
+            flex: 1 0 0;
+            margin-bottom: 20px;
+            .gallery-container {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+    
+            .gallery-main {
+                width: 100%;
+                height: 320px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+    
+            .gallery-thumbs {
+                display: none;
+    
+                .swiper-slide {
+                    img {
+                        transition: 0.3s;
+                    }
+    
+                    &-active {
+                        opacity: 0.9;
+                    }
+    
+                    &-thumb-active {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        &__right{
+            max-width: 100%;
+        }
+    }
+
 }
