@@ -48,8 +48,13 @@
 	}
 	&.btn-success{
 		color: #fff;
-		background-color: #28a745;
-		border-color: #28a745;
+		background-color: #6FCF97;
+		border-color: #6FCF97;
+        &:hover {
+            color: #333;
+            background-color: transparent;
+            border-color: #6FCF97;
+		}
 	}
 	&.btn-danger{
 		color: #fff;
@@ -119,14 +124,14 @@
 		}
 	}
 	&.btn-outline-success{
-		color: #28a745;
+		color: #6FCF97;
 		background-color: transparent;
 		background-image: none;
-		border-color: #28a745;
+		border-color: #6FCF97;
 		&:hover {
 			color: #fff;
-			background-color: #28a745;
-			border-color: #28a745;
+			background-color: #6FCF97;
+			border-color: #6FCF97;
 		}
 		&:focus {
 			box-shadow: 0 0 0 0.2rem rgb(40 ,167,69 / 50%);
