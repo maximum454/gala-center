@@ -4042,6 +4042,7 @@ html.remodal-is-locked {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 10px;
 }
 
 .form-dif {
@@ -4639,6 +4640,64 @@ th {
 }
 
 .remodal.delivery .jq-selectbox__trigger-arrow {
+  top: 20px;
+}
+
+.remodal.select-shop {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 14px rgba(50, 76, 154, 0.25);
+          box-shadow: 0px 4px 14px rgba(50, 76, 154, 0.25);
+  border-radius: 4px;
+  max-width: 370px;
+  padding: 24px 24px 10px;
+}
+
+.remodal.select-shop .title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.remodal.select-shop .select {
+  width: 100%;
+  margin: 24px 0;
+}
+
+.remodal.select-shop .add-quantity-store__item:nth-child(even) {
+  background: #F9F1F2;
+}
+
+.remodal.select-shop .jq-selectbox li {
+  text-align: left;
+}
+
+.remodal.select-shop .jq-selectbox__select {
+  height: 44px;
+  line-height: 44px;
+  background: #FFFFFF;
+  border: 1px solid rgba(1, 14, 61, 0.32);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.remodal.select-shop .jq-selectbox__select-text {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #333333;
+}
+
+.remodal.select-shop .jq-selectbox__trigger {
+  border-left: none;
+}
+
+.remodal.select-shop .jq-selectbox__trigger-arrow {
   top: 20px;
 }
 
