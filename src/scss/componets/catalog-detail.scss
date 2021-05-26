@@ -33,37 +33,31 @@
         .gallery-main {
             width: 450px;
             height: 450px;
-            margin-left: 20px;
+            margin-left: 0;
             margin-right: 0;
         }
 
         .gallery-thumbs {
-            order: -1;
             width: 74px;
             height: 450px;
-
-            .swiper-slide {
-                img {
-                    transition: 0.3s;
-                }
-
-                &-active {
-                    opacity: 0.9;
-                }
-
-                &-thumb-active {
-                    opacity: 1;
-                }
-            }
+            margin: 0;
         }
-        img{
+        img {
             max-width: 100%;
             height: 100%;
             display: block;
             object-fit: cover;
         }
+
+        .swiper-container-vertical > .swiper-wrapper {
+            flex-direction: column;
+        }
+        .swiper-container-free-mode>.swiper-wrapper {
+            transition-timing-function: ease-out;
+            margin: 0 auto;
+        }
     }
-    &__right{
+    &__right {
         max-width: 630px;
         width: 100%;
     }
@@ -85,8 +79,8 @@
             text-decoration: none;
         }
     }
-    a{
-        color: #324C9A;
+    a {
+        color: #324c9a;
         text-decoration: none;
     }
     .btn.no {
@@ -96,15 +90,15 @@
         font-size: 17px;
         line-height: 24px;
     }
-    .information{
+    .information {
         max-width: 400px;
     }
-    .tabs__content{
-        p{
+    .tabs__content {
+        p {
             max-width: 647px;
         }
     }
-    @include r(1023){
+    @include r(1023) {
         &__row {
             display: block;
         }
@@ -117,52 +111,51 @@
                 display: flex;
                 justify-content: space-between;
             }
-    
+
             .gallery-main {
                 width: 100%;
                 height: 320px;
                 margin-left: 0;
                 margin-right: 0;
             }
-    
+
             .gallery-thumbs {
                 display: none;
-    
+
                 .swiper-slide {
                     img {
                         transition: 0.3s;
                     }
-    
+
                     &-active {
                         opacity: 0.9;
                     }
-    
+
                     &-thumb-active {
                         opacity: 1;
                     }
                 }
             }
         }
-        &__right{
+        &__right {
             max-width: 100%;
         }
     }
-    @include r(767){
-        &__izbranoe{
+    @include r(767) {
+        &__izbranoe {
             display: none;
         }
-        &__add-review{
+        &__add-review {
             display: none;
         }
-        &__articul{
-            color: #A4A9BB;
+        &__articul {
+            color: #a4a9bb;
         }
-        &__rating{
-            color: #A4A9BB;
+        &__rating {
+            color: #a4a9bb;
         }
-        &__header{
+        &__header {
             text-align: center;
         }
     }
-
 }

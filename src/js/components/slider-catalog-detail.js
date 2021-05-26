@@ -1,4 +1,4 @@
-var galleryThumbs = new Swiper(".gallery-thumbs", {
+const galleryThumbs = new Swiper(".gallery-thumbs", {
     centeredSlides: true,
     centeredSlidesBounds: true,
     slidesPerView: 5,
@@ -6,16 +6,23 @@ var galleryThumbs = new Swiper(".gallery-thumbs", {
     watchOverflow: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-    direction: 'vertical'
+    mousewheel: false,
+    freeMode: true,
+    direction: 'vertical',
+    initialSlide:0,
   });
   
-  var galleryMain = new Swiper(".gallery-main", {
+  const galleryMain = new Swiper(".gallery-main", {
     slidesPerView: 1,
     spaceBetween: 20,
     watchOverflow: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
     preventInteractionOnTransition: true,
+    freeMode: true,
+    initialSlide:0,
+    centeredSlides: true,
+    centeredSlidesBounds: true,
     thumbs: {
       swiper: galleryThumbs
     },
