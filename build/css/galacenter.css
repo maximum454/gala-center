@@ -10369,10 +10369,7 @@ hr {
 }
 
 .catalog-detail__photo {
-  max-width: 604px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 0px;
-          flex: 1 0 0;
+  width: 100%;
 }
 
 .catalog-detail__photo .gallery-container {
@@ -10388,8 +10385,6 @@ hr {
 .catalog-detail__photo .gallery-main {
   width: 450px;
   height: 450px;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .catalog-detail__photo .gallery-thumbs {

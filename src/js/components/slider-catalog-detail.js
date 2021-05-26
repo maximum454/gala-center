@@ -1,15 +1,12 @@
 const galleryThumbs = new Swiper(".gallery-thumbs", {
-    centeredSlides: true,
-    centeredSlidesBounds: true,
+    direction: 'vertical',
     slidesPerView: 5,
     spaceBetween: 20,
+    freeMode: true,
+    initialSlide:0,
     watchOverflow: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-    mousewheel: false,
-    freeMode: true,
-    direction: 'vertical',
-    initialSlide:0,
   });
   
   const galleryMain = new Swiper(".gallery-main", {
@@ -23,6 +20,7 @@ const galleryThumbs = new Swiper(".gallery-thumbs", {
     initialSlide:0,
     centeredSlides: true,
     centeredSlidesBounds: true,
+    observer: true,
     thumbs: {
       swiper: galleryThumbs
     },
@@ -42,11 +40,10 @@ const galleryThumbs = new Swiper(".gallery-thumbs", {
 
     }
   });
-  
-  galleryMain.on('slideChangeTransitionStart', function() {
-    galleryThumbs.slideTo(galleryMain.activeIndex);
-  });
-  
-  galleryThumbs.on('transitionStart', function(){
-    galleryMain.slideTo(galleryThumbs.activeIndex);
-  });
+  galleryThumbs.on('slideChange', function (){
+    galleryThumbs.update();
+})
+
+galleryMain.on('slideChange', function (){
+    galleryMain .update();
+})
