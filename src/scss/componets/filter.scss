@@ -13,7 +13,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 16px 20px;
-        background-color: #f1edf9;
+        background-color: #4479a31f;
         border-radius: 4px;
         &.general {
             grid-column-start: 1;
@@ -23,7 +23,7 @@
             display: flex;
             .jq-selectbox__select {
                 height: 40px;
-        
+                padding: 0 45px 0 0;
                 
                 background: transparent;
                 border: none;
@@ -94,7 +94,7 @@
     }
     .jq-selectbox__select {
         height: 40px;
-        padding: 0 45px 0 0;
+    
         border-radius: 4px;
         background: #ffffff;
         border: 1px solid #dde8f4;

@@ -83,6 +83,10 @@ $(function () {
     $('.js-menu-close').on('click', function(){
         $('.menu, .header, .overdraw').toggleClass('open');
     })
+    
+    $('.js-other-store').on('click', function(){
+        $(this).toggleClass('open');
+    })
 
 
 })
