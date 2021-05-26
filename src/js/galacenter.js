@@ -88,5 +88,12 @@ $(function () {
         $(this).toggleClass('open');
     })
 
+    $('.slider-preview-product__img').on('click', function(){
+        $(this).addClass('active').siblings().removeClass('active')
+        let src = $(this).find('img').attr('src');
+        $('.slider-preview-product__big').css({'background-image':'url('+src+')'});
+    
+    })
+
 
 })

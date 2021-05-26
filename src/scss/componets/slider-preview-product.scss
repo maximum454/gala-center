@@ -1,33 +1,66 @@
-.slider-preview-product{
-    background: #FFFFFF;
+.slider-preview-product {
+    background: #ffffff;
     box-shadow: 0px 4px 14px rgba(50, 76, 154, 0.25);
     border-radius: 4px;
     padding: 20px;
-    &__body{
+    &__body {
         display: flex;
     }
-    &__img{
+    &__big {
         width: 320px;
         height: 320px;
-        flex-shrink: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
-    &__thumbs{
+    &__img {
         width: 65px;
+        height: 65px;
+        flex-shrink: 0;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        overflow: hidden;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        &.active{
+            border: 2px solid rgba(79, 30, 177, 0.24);
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+    &__thumbs {
+        width: 70px;
         height: 320px;
         margin-left: 20px;
-        .swiper-slide {
-            border-radius: 5px;
-            &-active {
-              opacity: 0.9;
-            }
-        
-            &-thumb-active {
-              opacity: 1;
-              border:2px solid #D5C9EC;
-            }
-          }
+        overflow-y: scroll;
+        overflow-x: hidden;
+         /* width */
+         &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #fff;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #D5C9EC;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
     }
-    img{
+    &__scroll {
+        
+       
+    }
+    img {
         width: 100%;
         max-width: 100%;
         display: block;
