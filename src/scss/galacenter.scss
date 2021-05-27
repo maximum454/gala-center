@@ -460,8 +460,15 @@ ul {
     }
 }
 .text-warning {
+    color: #F2994A;
+}
+.text-danger{
     color: #eb5757;
 }
+.text-link{
+    color: #324c9a;
+}
+
 .text-success {
     color: #6fcf97;
 }
@@ -750,3 +757,6 @@ hr {
 
 // Другие склады
 @import "componets/other-store";
+
+// API
+@import "componets/api";

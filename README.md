@@ -67,8 +67,12 @@
 
 # Избранные товары
 * https://maximum454.github.io/gala-center/build/selected-products.html
+
 # Результат поиска
 * https://maximum454.github.io/gala-center/build/result-search.html
+
+# Выгрузка товаров через API
+* https://maximum454.github.io/gala-center/build/api.html
 
 # Цвета главной
 * https://maximum454.github.io/gala-center/build/haberdashery.html

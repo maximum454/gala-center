@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    @@include('./template/_meta.html')
+    <title>Выгрузка товаров через API</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/galacenter.min.css">
+</head>
+
+<body>
+    <div class="wrp">
+        @@include('./template/_header.html')
+
+        <main class="main container">
+            <h1 class="main__title">Выгрузка товаров через API</h1>
+            <div class="api">
+                <p>API galacentre.ru обеспечивает возможность автоматизированного получения информации о товарах
+                    торговой платформы.
+                    API построен на концепции REST. </p>
+                <p>Вся документация по старому API доступна <a href="#">здесь</a></p>
+
+                <div class="api__title">Выгрузки в формате <a href=""><b> YML</b></a></div>
+
+                <div class="api__vigruzka">
+                    <ul>
+                        <li>
+                            <i class="icon icon-ylm"></i>
+                            <div class="title">Полная выгрузка товаров из <a href=""> всех разделов</a></div>
+                            <p> в наличии по городам отгрузки: <a href=""> Екатеринбург</a>, <a href=""> Москва</a>, <a
+                                    href=""> Новосибирск</a>, <a href=""> Владивосток</a></p>
+                        </li>
+                        <li>
+                            <i class="icon icon-avto"></i>
+                            <div class="title"> <a href="#">Авто </a></div>
+                            <p> в наличии по городам отгрузки: <a href=""> Екатеринбург</a>, <a href=""> Москва</a>, <a
+                                    href=""> Новосибирск</a>, <a href=""> Владивосток</a></p>
+                        </li>
+                        <li>
+                            <i class="icon icon-aromatizatory"></i>
+                            <div class="title"> <a href="#">Ароматизаторы</a></div>
+                            <p> в наличии по городам отгрузки: <a href=""> Екатеринбург</a>, <a href=""> Москва</a>, <a
+                                    href=""> Новосибирск</a>, <a href=""> Владивосток</a></p>
+                        </li>
+                        <li>
+                            <i class="icon icon-bytovaya-khimiya"></i>
+                            <div class="title"> <a href="#">Бытовая химия</a></div>
+                            <p> в наличии по городам отгрузки: <a href=""> Екатеринбург</a>, <a href=""> Москва</a>, <a
+                                    href=""> Новосибирск</a>, <a href=""> Владивосток</a></p>
+                        </li>
+                        <li>
+                            <i class="icon icon-galantereya"></i>
+                            <div class="title"> <a href="#">Галантерея</a></div>
+                            <p> в наличии по городам отгрузки: <a href=""> Екатеринбург</a>, <a href=""> Москва</a>, <a
+                                    href=""> Новосибирск</a>, <a href=""> Владивосток</a></p>
+                        </li>
+                        <li>
+                            <i class="icon icon-domashniy-tekstil"></i>
+                            <div class="title"> <a href="#">Домашний текстиль</a></div>
+                            <p> в наличии по городам отгрузки: <a href=""> Екатеринбург</a>, <a href=""> Москва</a>, <a
+                                    href=""> Новосибирск</a>, <a href=""> Владивосток</a></p>
+                        </li>
+                        <li>
+                            <i class="icon icon-podarki"></i>
+                            <div class="title"> <a href="#">Подарки</a></div>
+                            <p> в наличии по городам отгрузки: <a href=""> Екатеринбург</a>, <a href=""> Москва</a>, <a
+                                    href=""> Новосибирск</a>, <a href=""> Владивосток</a></p>
+                        </li>
+                        <li>
+                            <i class="icon icon-posuda"></i>
+                            <div class="title"> <a href="#">Посуда</a></div>
+                            <p> в наличии по городам отгрузки: <a href=""> Екатеринбург</a>, <a href=""> Москва</a>, <a
+                                    href=""> Новосибирск</a>, <a href=""> Владивосток</a></p>
+                        </li>
+                        <li>
+                            <i class="icon icon-santehnika"></i>
+                            <div class="title"> <a href="#">Сантехника</a></div>
+                            <p> в наличии по городам отгрузки: <a href=""> Екатеринбург</a>, <a href=""> Москва</a>, <a
+                                    href=""> Новосибирск</a>, <a href=""> Владивосток</a></p>
+                        </li>
+                        <li>
+                            <i class="icon icon-turizm"></i>
+                            <div class="title"> <a href="#">Туризм и рыбалка</a></div>
+                            <p> в наличии по городам отгрузки: <a href=""> Екатеринбург</a>, <a href=""> Москва</a>, <a
+                                    href=""> Новосибирск</a>, <a href=""> Владивосток</a></p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <i class="icon icon-khoztovary"></i>
+                            <div class="title"> <a href="#">Хозтовары</a></div>
+                            <p> в наличии по городам отгрузки: <a href=""> Екатеринбург</a>, <a href=""> Москва</a>, <a
+                                    href=""> Новосибирск</a>, <a href=""> Владивосток</a></p>
+                        </li>
+                        <li>
+                            <i class="icon icon-elektrotekhnika"></i>
+                            <div class="title"> <a href="#">Электрика</a></div>
+                            <p> в наличии по городам отгрузки: <a href=""> Екатеринбург</a>, <a href=""> Москва</a>, <a
+                                    href=""> Новосибирск</a>, <a href=""> Владивосток</a></p>
+                        </li>
+                        <li>
+                            <i class="icon icon-bytovaya-tekhnika"></i>
+                            <div class="title"> <a href="#">Бытовая техника</a></div>
+                            <p> в наличии по городам отгрузки: <a href=""> Екатеринбург</a>, <a href=""> Москва</a>, <a
+                                    href=""> Новосибирск</a>, <a href=""> Владивосток</a></p>
+                        </li>
+                        <li>
+                            <i class="icon icon-instrumenty"></i>
+                            <div class="title"> <a href="#">Инструменты</a></div>
+                            <p> в наличии по городам отгрузки: <a href=""> Екатеринбург</a>, <a href=""> Москва</a>, <a
+                                    href=""> Новосибирск</a>, <a href=""> Владивосток</a></p>
+                        </li>
+                        <li>
+                            <i class="icon icon-dacha-i-sad"></i>
+                            <div class="title"> <a href="#">Дача и сад</a></div>
+                            <p> в наличии по городам отгрузки: <a href=""> Екатеринбург</a>, <a href=""> Москва</a>, <a
+                                    href=""> Новосибирск</a>, <a href=""> Владивосток</a></p>
+                        </li>
+                        <li>
+                            <i class="icon icon-kantselyarskie-tovary"></i>
+                            <div class="title"> <a href="#">Канцтовары</a></div>
+                            <p> в наличии по городам отгрузки: <a href=""> Екатеринбург</a>, <a href=""> Москва</a>, <a
+                                    href=""> Новосибирск</a>, <a href=""> Владивосток</a></p>
+                        </li>
+                        <li>
+                            <i class="icon icon-sport"></i>
+                            <div class="title"> <a href="#">Спорт и отдых</a></div>
+                            <p> в наличии по городам отгрузки: <a href=""> Екатеринбург</a>, <a href=""> Москва</a>, <a
+                                    href=""> Новосибирск</a>, <a href=""> Владивосток</a></p>
+                        </li>
+                        <li>
+                            <i class="icon icon-tovary-dlya-detey"></i>
+                            <div class="title"> <a href="#">Товары для детей</a></div>
+                            <p> в наличии по городам отгрузки: <a href=""> Екатеринбург</a>, <a href=""> Москва</a>, <a
+                                    href=""> Новосибирск</a>, <a href=""> Владивосток</a></p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="api__title">Вызов ресурсов</div>
+                <p>Формат запроса:<br>
+                    <span class="text-link">http://www.galacentre.ru/api/v2/ <span class="text-warning">
+                            <метод>/<формат_ответа>/?<параметры>
+                        </span></span>
+                </p>
+                <div class="api__title">Ключ доступа</div>
+                <p>Для использования API, необходимо получить ключ авторизации. После этого можно при помощи метода GET
+                    выполнять вызов ресурсов для получения необходимой информации или при помощи метода POST отправлять
+                    заказы.
+                    Ключ доступа можно самостоятельно получить в разделе «Интеграция».</p>
+
+                <div class="api__title">Формат данных</div>
+                <p><span class="text-warning"><b>
+                            <формат_ответа>
+                        </b></span> — это обязательная часть запроса которая влияет на способ<br>
+                    представления ответа.<br>
+                    Возможные форматы ответа: <span class="text-warning">csv, xml, json</span></p>
+
+                <div class="api__title">Методы</div>
+                <p>[GET] <span class="text-warning">sections</span> — возвращает список разделов<br>
+                    [GET] <span class="text-warning">catalog</span> — возвращает список товаров<br>
+                    [POST] <span class="text-warning">order</span> — создаёт заказ из списка товаров</p>
+
+                <div class="api__title">Входные параметры</div>
+                <p><b>Основные параметры:</b></p>
+                <p><span class="text-warning">key</span> (строка)<br>
+                    ключ доступа к API (обязательный).</p>
+                <p><span class="text-warning">dateupdate</span> (дата/время в формате Unix Timestamp)<br>
+                    При передаче данного параметра отбираются элементы измененные после этой даты. Удобно для получения
+                    обновлений товаров.</p>
+                <p><b>Параметры фильтрации:</b></p>
+                <p><span class="text-warning"> section</span> (число)<br>
+                    ID раздела каталога, которым ограничивается выборка. Работает так же и при запросе разделов.</p>
+                <div class="api__param">
+                    <ul>
+                        <li>14 — Посуда и кухонные принадлежности;</li>
+                        <li>18 — Авто;</li>
+                        <li>20 — Галантерея;</li>
+                        <li>21 — Дача и Сад;</li>
+                        <li>22 — Детство;</li>
+                        <li>23 — Инструменты;</li>
+                        <li>25 — Новогодние товары;</li>
+                        <li>26 — Сантехника и товары для ванной комнаты;</li>
+                        <li>27 — Спорт и отдых;</li>
+                        <li>28 — Подарки;</li>
+                    </ul>
+                    <ul>
+                        <li>30 — Хозтовары;</li>
+                        <li>114 — Бытовая химия. Уход и красота. Гигиена;</li>
+                        <li>117 — Товары для животных;</li>
+                        <li>124 — Бытовая техника;</li>
+                        <li>130 — Домашний текстиль;</li>
+                        <li>141 — Канцтовары;</li>
+                        <li>170 — Ароматизаторы;</li>
+                        <li>171 — Туризм и рыбалка;</li>
+                        <li>182 — Мобильные аксессуары и электротехника;</li>
+                    </ul>
+                </div>
+
+                <p><span class="text-warning"> active</span> (число)<br>
+                    При указании active=1 будут выбраны только активные элементы. Работает так же и при запросе
+                    разделов.</p>
+                <p><span class="text-warning"> section</span> (строка)<br>
+                    Склад отгрузки. Данным параметром ограничивается выборка до товаров, присутствующих только на
+                    выбранном складе.</p>
+
+                <p><b>Возможные значения:</b></p>
+                <div class="api__param">
+                    <ul>
+                        <li>ekb — Екатеринбург;</li>
+                        <li>msk — Москва;</li>
+                        <li>nsk — Новосибирск;</li>
+                        <li>vld — Владивосток;</li>
+                    </ul>
+
+                </div>
+
+                <p><span class="text-warning"> price_from</span> (число)<br>
+                    Минимальная стоимость товаров в выборке</p>
+
+                <p><span class="text-warning"> price_to</span> (число)<br>
+                    Максимальная стоимость товаров в выборке</p>
+
+                <p><span class="text-warning"> brand</span> (строка)<br>
+                    Бренд товаров в выборке</p>
+
+                <p><span class="text-warning"> min </span>(число)<br>
+                    Минимальная партия</p>
+
+
+                <div class="api__title">Параметры для выборки</div>
+
+                <p><span class="text-warning">select</span> (список через запятую)<br>
+                    Список выгружаемых параметров товара</p>
+
+                <div class="api__param">
+                    <ul>
+                        <li>active — активность товара (Y/N);</li>
+                        <li>date_update — дата последнего обновления в формате UNIX;</li>
+                        <li>articul — артикул товара;</li>
+                        <li>name — название товара;</li>
+                        <li>about — описание товара;</li>
+                        <li>section — раздел;</li>
+                        <li>image — основная фотография товара;</li>
+                        <li>images — дополнительные фотографии товара;</li>
+                        <li>price_base — основная цена;</li>
+                        <li>price_old — старая цена;</li>
+                        <li>price_sp — цена СП;</li>
+                        <li>min — минимальная партия (параметр min=1 для того, чтобы получить товары только с
+                            минимальной</li>
+                        <li>партией 1 шт.)</li>
+                        <li>box — количество в коробке;</li>
+                        <li>fix — фиксированная цена (1/0);</li>
+                    </ul>
+                    <ul>
+                        <li>new — новинка (1/0);</li>
+                        <li>hit — хит продаж (1/0);</li>
+                        <li>brand — бренд товара;</li>
+                        <li>store_ekb — наличие на складе в Екатеринбурге (0 - Нет в наличии, 1 - Мало, 2 - Много);</li>
+                        <li>store_msk — наличие на складе в Москве;</li>
+                        <li>store_nsk — наличие на складе в Новосибирске;</li>
+                        <li>store_vld — наличие на складе в Владивостоке;</li>
+                        <li>way — дата доставки;</li>
+                        <li>sert — сертификаты;</li>
+                        <li>props — основные свойства товара;</li>
+                        <li>specifications — характеристики товара;</li>
+                        <li>includes — комплектация.</li>
+                        <li>barcode — штрихкод;</li>
+                        <li>marked — маркированный товар (1/0).</li>
+                    </ul>
+                </div>
+
+                <p><span class="text-warning"> separator</span> (строка)<br>
+                    Разделитель в CSV выгрузке.</p>
+
+                <p><b>Возможные значения:</b></p>
+                <div class="api__param">
+                    <ul>
+                        <li> semicolon — точка с запятой (по умолчанию);</li>
+                        <li>tab — знак табуляции;</li>
+                    </ul>
+                </div>
+                <p><span class="text-warning">codepage</span> (строка)<br>
+                    Кодировка CSV выгрузки.</p>
+                <p><b>Возможные значения:</b></p>
+                <div class="api__param">
+                    <ul>
+                        <li> utf8 — UTF-8 (по умолчанию);</li>
+                        <li>cp1251 — Windows-1251;</li>
+                    </ul>
+                </div>
+                <p><span class="text-warning">jsonincell </span><br>
+                    Списочные данные в ячейках при выгрузке в CSV будут представлены в виде JSON массива</p>
+
+
+
+                <p><span class="text-warning">serialize </span> <br>
+                    Списочные данные в ячейках при выгрузке в CSV будут представлены в виде сериализованного массива<br>
+                </p>
+
+                <p><span class="text-warning">props_slash_separator</span><br>
+                    Списочные данные в ячейках при выгрузке в CSV будут разделены тремя знаками слеш - ///</p>
+
+                <p><span class="text-warning">withsections</span><br>
+                    При выгрузке в CSV будут добавлены 3 столбца с разделами - первый, второй, третий уровень</p>
+
+                <p><span class="text-warning">ownprice</span><br>
+                    При наличии в запросе данного параметра цены будут выгружены с учетом вашего ценового коэффициента.
+                </p>
+
+                <div class="api__title">Параметры для создания заказа</div>
+
+                <p><span class="text-warning">external_id</span> (строка)<br>
+                    Номер заказа в вашем магазине (не обязательный)</p>
+
+                <p><span class="text-warning">price_to</span> (массив)<br>
+                    Массив товаров в заказе, где ключом является артикул товара, а значением - количество товара в
+                    заказе</p>
+                (обязательный)
+
+                <p><span class="text-warning">comment</span> (строка)<br>
+                    Комментарий к заказу</p>
+
+                <p><b>Пример для PHP:</b></p>
+
+                <p>
+                    <img src="./img/code.png" width="664" height="430" alt="">
+                </p>
+
+                <div class="api__title">Параметры ответа для создания заказа</div>
+
+                <p><span class="text-warning">date</span> (ДД.ММ.ГГГГ)<br>
+                    Дата операции</p>
+
+                <p><span class="text-warning">status</span> (SUCCESS успешно / ERROR - ошибка)<br>
+                    Статус операции</p>
+
+                <p><span class="text-warning">error_message</span> (текст)<br>
+                    Описание ошибки</p>
+
+                <p><span class="text-warning">order</span> (массив)<br>
+                    Массив с параметрами созданного заказа:<br>
+                    <b>id:</b> (число) Номер созданного заказа<br>
+                    <b>date:</b> (ДД.ММ.ГГГГ ЧЧ:ММ:СС)Дата и время заказа<br>
+                    <b>price:</b> (число) Стоимость заказа с учетом вашей цены<br>
+                    <b>items_count:</b> (число) Количество товаров в заказе
+                </p>
+
+                <div class="api__title">По вопросам подключения и интеграции</div>
+
+                <form class="api__form" action="">
+                    <div class="form-group">
+                        <label class="form-label" for="">Контактное лицо</label>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="">Email</label>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="">Email</label>
+                        <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                            <label class="form-check-label" for="defaultCheck4">
+                                Я принимаю условия <a href="">«Политики обработки персональных данных»</a> и <a
+                                    href="">«Пользовательского
+                                    соглашения»</a> и даю своё согласие на хранение и обработку мои данных.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary">Отправить завку</button>
+                    </div>
+                </form>
+            </div>
+
+        </main>
+
+        @@include('./template/_footer.html')
+        @@include('./template/_modal.html')
+    </div>
+
+    <script src="js/galacenter.min.js"></script>
+</body>
+
+</html>
