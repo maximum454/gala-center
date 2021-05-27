@@ -43,11 +43,7 @@
   @include r(767){
     flex-wrap: wrap;
     &__img {
-      overflow: hidden;
-      margin-left: 0;
-      margin-top: 30px;
-      min-width: 360px;
-      width: 100%;
+      display: none;
     }
   }
 }
