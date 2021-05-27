@@ -65,6 +65,8 @@
 * https://maximum454.github.io/gala-center/build/catalog-detail-reviews.html
 * https://maximum454.github.io/gala-center/build/catalog-detail-add.html
 
+# Избранные товары
+* https://maximum454.github.io/gala-center/build/selected-products.html
 # Результат поиска
 * https://maximum454.github.io/gala-center/build/result-search.html
 
