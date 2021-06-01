@@ -17,6 +17,7 @@
         border-bottom: 1px solid #e0e0e0;
         position: relative;
         margin-bottom: 34px;
+        gap: 20px 30px;
     }
     &__close {
         width: 24px;
@@ -54,7 +55,6 @@
         text-decoration: none;
         display: flex;
         align-items: center;
-        margin-right: 30px;
         &:hover{
             span{
                 text-decoration: underline;
@@ -80,7 +80,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         column-count: 3;
-        column-gap: 0;
+        column-gap: 20px;
         & > li {
             break-inside: avoid;
             max-width: 280px;
@@ -126,6 +126,19 @@
                     }
                 }
             }
+        }
+    }
+    @include r(1023){
+        &__list {
+            margin: 0 -20px;
+            padding: 0;
+            list-style: none;
+            position: relative;
+            width: 100%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            column-count: 2;
+            column-gap: 20px;
         }
     }
    
