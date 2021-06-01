@@ -8946,7 +8946,7 @@ hr {
       flex-shrink: 0;
   width: 44px;
   height: 44px;
-  background-color: #DDE8F4;
+  background-color: #dde8f4;
   border-radius: 5px;
   background-size: 24px;
 }
@@ -8970,12 +8970,12 @@ hr {
   font-weight: normal;
   font-size: 17px;
   line-height: 24px;
-  color: #324C9A;
+  color: #324c9a;
   padding: 5px 12px;
   cursor: pointer;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .delivery__caption li.active {
@@ -8985,10 +8985,10 @@ hr {
 }
 
 .delivery__caption li:hover {
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
-  opacity: .7;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.7;
 }
 
 .delivery__content {
@@ -9025,7 +9025,7 @@ hr {
 }
 
 .delivery__item {
-  background: #EFF8FF;
+  background: #eff8ff;
   border-radius: 5px;
   padding: 24px;
   margin-right: 130px;
@@ -9060,8 +9060,13 @@ hr {
   color: #333333;
 }
 
+.delivery .table {
+  white-space: normal;
+}
+
 .delivery .table tbody th:first-child {
   max-width: 200px;
+  min-width: 200px;
 }
 
 .card-maps {
@@ -11304,10 +11309,51 @@ hr {
 @media only screen and (max-width: 1023px) {
   .tabs__caption {
     overflow-x: scroll;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+
+  .tabs__caption::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  .tabs__caption::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .tabs__caption::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  .tabs__caption::-webkit-scrollbar-thumb:hover {
+    background: #555;
   }
 
   .tabs__content {
     overflow-x: scroll;
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+
+  .tabs__content::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  .tabs__content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .tabs__content::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  .tabs__content::-webkit-scrollbar-thumb:hover {
+    background: #555;
   }
 
   .header__logo {
@@ -11727,6 +11773,31 @@ hr {
 
   .slider-price-list .btn {
     display: none;
+  }
+
+  .delivery__img {
+    display: none;
+  }
+
+  .delivery__row {
+    display: block;
+  }
+
+  .delivery__item {
+    background: #eff8ff;
+    border-radius: 5px;
+    padding: 24px;
+    margin-right: 0;
+    margin-bottom: 30px;
+    max-width: 550px;
+  }
+
+  .delivery__item ul {
+    padding-left: 15px;
+  }
+
+  .delivery__item ul li {
+    margin-bottom: 5px;
   }
 
   .federal-districts {
@@ -12167,6 +12238,24 @@ hr {
 
   .partners__img {
     display: none;
+  }
+
+  .delivery__name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 18px;
+  }
+
+  .delivery__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 20px;
   }
 
   .about-us__title {
