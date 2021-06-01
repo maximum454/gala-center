@@ -2058,7 +2058,7 @@ $(function () {
     })
 
     $('.js-materials-more').on('click', function (){
-       $('.materials__more').addClass('show');
+       $('.materials__items').addClass('show');
     })
 
     $('.js-minus').on('click',function () {
