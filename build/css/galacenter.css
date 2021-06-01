@@ -3754,6 +3754,10 @@ html.remodal-is-locked {
   background-image: url("../img/icons-sprite.svg#icon-filter");
 }
 
+.icon-filter-blue {
+  background-image: url("../img/icons-sprite.svg#icon-filter-blue");
+}
+
 .icon-login-white {
   background-image: url("../img/icons-sprite.svg#icon-login-white");
 }
@@ -9613,6 +9617,11 @@ hr {
 }
 
 .nav-link {
+  position: relative;
+  margin: 36px 0;
+}
+
+.nav-link__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9621,27 +9630,27 @@ hr {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 36px -8px;
+  margin: 0 -8px;
   /* width */
   /* Track */
   /* Handle */
   /* Handle on hover */
 }
 
-.nav-link::-webkit-scrollbar {
+.nav-link__body::-webkit-scrollbar {
   width: 5px;
   height: 5px;
 }
 
-.nav-link::-webkit-scrollbar-track {
+.nav-link__body::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-.nav-link::-webkit-scrollbar-thumb {
+.nav-link__body::-webkit-scrollbar-thumb {
   background: #324c9a;
 }
 
-.nav-link::-webkit-scrollbar-thumb:hover {
+.nav-link__body::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
@@ -9660,6 +9669,23 @@ hr {
   background: rgba(68, 121, 163, 0.12);
   border-radius: 4px;
   padding: 5px 10px;
+}
+
+.nav-link__filter {
+  background-color: transparent;
+  background-image: url("../img/icons-sprite.svg#icon-filter-blue");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: -70px;
+  right: 0;
+  cursor: pointer;
+  display: none;
 }
 
 .articles-block {
@@ -11899,7 +11925,7 @@ hr {
     display: none;
   }
 
-  .nav-link {
+  .nav-link__body {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     overflow: hidden;
@@ -12434,6 +12460,14 @@ hr {
   .slider-block__title {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .nav-link__body {
+    display: none;
+  }
+
+  .nav-link__filter {
+    display: block;
   }
 
   .articles-block__body {
