@@ -52,4 +52,13 @@
       height: 40px;
     }
   }
+  @include r(767){
+    &__title{
+        
+        font-size: 15px;
+        line-height: 20px;
+
+
+      }
+  }
 }

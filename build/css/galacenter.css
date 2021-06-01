@@ -9209,7 +9209,7 @@ hr {
 
 .federal-districts {
   margin: 32px 0;
-  background: #F1F5F9;
+  background: #f1f5f9;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9242,7 +9242,7 @@ hr {
   font-weight: bold;
   font-size: 28px;
   line-height: 36px;
-  color: #324C9A;
+  color: #324c9a;
 }
 
 .federal-districts__subtitle {
@@ -11729,6 +11729,14 @@ hr {
     display: none;
   }
 
+  .federal-districts {
+    display: block;
+  }
+
+  .federal-districts__img {
+    display: none;
+  }
+
   .specialist {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -12159,6 +12167,36 @@ hr {
 
   .partners__img {
     display: none;
+  }
+
+  .about-us__title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .federal-districts {
+    background: transparent;
+  }
+
+  .federal-districts__txt {
+    padding: 0;
+  }
+
+  .federal-districts__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    color: #324c9a;
+  }
+
+  .federal-districts__subtitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    color: #333;
   }
 
   .slider-block__title {

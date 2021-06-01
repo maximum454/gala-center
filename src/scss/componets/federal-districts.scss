@@ -1,44 +1,72 @@
-.federal-districts{
-  margin: 32px 0;
-  background: #F1F5F9;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  &__txt{
-    padding: 35px 26px;
-  }
-  &__img{
-    max-width: 578px;
-    width: 100%;
-    img{
-      max-width: 100%;
-      object-fit: cover;
-      display: block;
-      height: auto;
+.federal-districts {
+    margin: 32px 0;
+    background: #f1f5f9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    &__txt {
+        padding: 35px 26px;
     }
-  }
-  &__title{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 36px;
-    color: #324C9A;
-  }
-  &__subtitle{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  p{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 20px;
-    color: #333333;
-    margin: 0 0 20px;
-  }
+    &__img {
+        max-width: 578px;
+        width: 100%;
+        img {
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
+            height: auto;
+        }
+    }
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+        color: #324c9a;
+    }
+    &__subtitle {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        color: #333333;
+        margin: 0 0 20px;
+    }
+
+    @include r(1023) {
+        display: block;
+        &__img {
+            display: none;
+        }
+    }
+    @include r(767) {
+        background: transparent;
+        &__txt {
+            padding: 0;
+        }
+        &__title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 24px;
+            color: #324c9a;
+        }
+        &__subtitle {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 20px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+    }
 }
