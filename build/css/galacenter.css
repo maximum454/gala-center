@@ -12258,6 +12258,45 @@ hr {
     margin-bottom: 20px;
   }
 
+  .card-maps {
+    grid-gap: 12px;
+  }
+
+  .card-maps__item {
+    border: 1px solid rgba(68, 121, 163, 0.12);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 5px;
+    display: block;
+    max-width: 670px;
+  }
+
+  .card-maps__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 12px;
+  }
+
+  .card-maps__map {
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 208px;
+  }
+
+  .card-maps__map img,
+  .card-maps__map iframe {
+    max-width: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
   .about-us__title {
     font-size: 15px;
     line-height: 20px;
