@@ -3558,6 +3558,14 @@ html.remodal-is-locked {
   background-image: url("../img/icons-sprite.svg#anticrisis");
 }
 
+.icon-fixed {
+  background-image: url("../img/icons-sprite.svg#icon-fixed");
+}
+
+.icon-specredlozhenie {
+  background-image: url("../img/icons-sprite.svg#icon-specredlozhenie");
+}
+
 .icon-delivery {
   background-image: url("../img/icons-sprite.svg#delivery");
 }
@@ -8420,6 +8428,10 @@ hr {
   margin: 0 0 32px;
 }
 
+.cooperation {
+  overflow: hidden;
+}
+
 .cooperation__title {
   font-style: normal;
   font-weight: bold;
@@ -11663,6 +11675,50 @@ hr {
 
   .registration__items {
     display: none;
+  }
+
+  .cooperation__list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-x: scroll;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+
+  .cooperation__list::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  .cooperation__list::-webkit-scrollbar-track {
+    background: #D1DBE2;
+  }
+
+  .cooperation__list::-webkit-scrollbar-thumb {
+    background: #324C9A;
+  }
+
+  .cooperation__list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .cooperation__list li {
+    width: 245px;
+  }
+
+  .cooperation__list li a {
+    font-size: 17px;
+    line-height: 23px;
+    color: #333333;
+    text-decoration: none;
   }
 
   .slider-price-list__nav {

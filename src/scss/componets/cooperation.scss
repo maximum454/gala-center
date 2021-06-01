@@ -1,32 +1,73 @@
-.cooperation{
-  &__title{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 28px;
-    color: #333333;
-    max-width: 655px;
-    margin-bottom: 50px;
-  }
-  &__list{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(130px,245px));
-    grid-gap: 30px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    li{
-      margin-bottom: 26px;
-      a{
-        font-size: 17px;
-        line-height: 23px;
+.cooperation {
+    overflow: hidden;
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
         color: #333333;
-        text-decoration: none;
-      }
+        max-width: 655px;
+        margin-bottom: 50px;
     }
-  }
-  &__group{
+    &__list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(130px, 245px));
+        grid-gap: 30px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            margin-bottom: 26px;
+            a {
+                font-size: 17px;
+                line-height: 23px;
+                color: #333333;
+                text-decoration: none;
+            }
+        }
+    }
+    &__group {
+    }
+    @include r(1023) {
+        &__list {
+            width: 100%;
+            display: flex;
 
-  }
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            overflow-x: scroll;
+            /* width */
+            &::-webkit-scrollbar {
+                width: 5px;
+                height: 5px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #D1DBE2;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #324C9A;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+            li {
+                width: 245px;
+                a {
+                    font-size: 17px;
+                    line-height: 23px;
+                    color: #333333;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
