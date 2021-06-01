@@ -45,4 +45,35 @@
 		color: #333333;
 		margin: 0 0 20px;
 	}
+    @include r(1023){
+        &__item{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap:0;
+            margin-bottom: 86px;
+            align-items: center;
+            &:nth-child(even){
+                grid-auto-flow: revert;
+                .services__img{
+                    grid-row: 1 /1;
+                }
+                .services__txt{
+                    grid-column: 2 / 3;
+    
+                }
+    
+            }
+        }
+        &__img{
+            overflow: hidden;
+            height: 232px;
+            img{
+                max-width: 100%;
+                width: 100%;
+                object-fit: cover;
+                height: 100%;
+                border-radius: 5px;
+            }
+        }  
+    }
 }
