@@ -12133,6 +12133,24 @@ hr {
     color: #324c9a;
   }
 
+  .main__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+
+  .main__subtitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
+    margin: 0 0 25px;
+  }
+
   .breadcrumb-catalog {
     display: none;
   }
@@ -12238,6 +12256,16 @@ hr {
 
   .partners__img {
     display: none;
+  }
+
+  .contacts__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 20px;
+    max-width: 776px;
   }
 
   .delivery__name {
