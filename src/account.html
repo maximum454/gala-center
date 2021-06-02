@@ -1,1302 +1,1555 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     @@include('./template/_meta.html')
     <title>Личный кабинет</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/galacenter.min.css">
 </head>
+
 <body>
-<div class="wrp">
-    @@include('./template/_header.html')
+    <div class="wrp">
+        @@include('./template/_header.html')
 
-    <main class="main container">
-        <h1 class="main__title">Личный кабинет</h1>
+        <main class="main container">
+            <h1 class="main__title">Личный кабинет</h1>
 
-        <div class="account">
-            <div class="tabs">
-                <ul class="tabs__caption">
-                    <li class="active">История заказов</li>
-                    <li>Профиль</li>
-                    <li>Оплата</li>
-                    <li>Индивидуальный Гала-каталог</li>
-                    <li>Магазины</li>
-                </ul>
+            <div class="account">
+                <div class="tabs">
+                    <ul class="tabs__caption">
+                        <li class="active">История заказов</li>
+                        <li>Профиль</li>
+                        <li>Оплата</li>
+                        <li>Индивидуальный Гала-каталог</li>
+                        <li>Магазины</li>
+                    </ul>
 
-                <div class="tabs__content active">
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th scope="col">Номер счёта</th>
-                            <th scope="col">Дата</th>
-                            <th scope="col">Сумма</th>
-                            <th scope="col">Статус</th>
-                            <th scope="col"></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row"><a href="#">MSK/9268</a></th>
-                            <td>10/12/2015</td>
-                            <td><b>80 000 ₽</b></td>
-                            <td>
-                                <p class="text-success">Оплачен</p>
-                                <p class="text-muted">Отправлен</p>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                            <td>10/12/2015</td>
-                            <td><b>80 000 ₽</b></td>
-                            <td>
-                                <p class="text-success">Оплачен</p>
-                                <p class="text-muted">Идет сборка</p>
+                    <div class="tabs__content active">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Номер счёта</th>
+                                    <th scope="col">Дата</th>
+                                    <th scope="col">Сумма</th>
+                                    <th scope="col">Статус</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><a href="#">MSK/9268</a></th>
+                                    <td>10/12/2015</td>
+                                    <td><b>80 000 ₽</b></td>
+                                    <td>
+                                        <p class="text-success">Оплачен</p>
+                                        <p class="text-muted">Отправлен</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                    <td>10/12/2015</td>
+                                    <td><b>80 000 ₽</b></td>
+                                    <td>
+                                        <p class="text-success">Оплачен</p>
+                                        <p class="text-muted">Идет сборка</p>
 
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                            <td>10/12/2015</td>
-                            <td><b>80 000 ₽</b></td>
-                            <td class="text-danger">Не оплачен</td>
-                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                            <td>10/12/2015</td>
-                            <td><b>80 000 ₽</b></td>
-                            <td><p class="text-success">Оплачен</p></td>
-                            <td></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tabs__content">
-                    <p>Пожалуйста, поддерживайте актуальной информацию о вашей компании.</p>
-                    <div class="account__grid">
-                        <div>
-                            <p><b>Данные о компании</b></p>
-                            <form action="">
-                                <div class="form-group">
-                                    <label class="form-label" for="">Страна</label>
-                                    <select name="" id="">
-                                        <option value="">Россия</option>
-                                        <option value="">Россия</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label" for="">Название организации</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label" for="">Город</label>
-                                    <select name="" id="">
-                                        <option value="">Санкт-Петербург</option>
-                                        <option value="">Санкт-Петербург</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label" for="">ИНН</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label" for="">Контактный телефон</label>
-                                    <input type="tel" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label" for="">Контактное лицо</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <input type="submit" class="btn btn-primary" value="Сохранить изменения">
-                            </form>
-                        </div>
-                        <div>
-                            <p><b>Данные для авторизации</b></p>
-                            <form class="form form-bg" action="">
-                                <div class="form-group">
-                                    <label class="form-label" for="">Логин</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label" for="">Email</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <a href="#">Изменить пароль</a>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label" for="">Филиал отгрузки</label>
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                               id="inlineRadio1"
-                                               value="option1">
-                                        <label class="form-check-label" for="inlineRadio1">Екатеринбург</label>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                    <td>10/12/2015</td>
+                                    <td><b>80 000 ₽</b></td>
+                                    <td class="text-danger">Не оплачен</td>
+                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                    <td>10/12/2015</td>
+                                    <td><b>80 000 ₽</b></td>
+                                    <td>
+                                        <p class="text-success">Оплачен</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tabs__content">
+                        <p>Пожалуйста, поддерживайте актуальной информацию о вашей компании.</p>
+                        <div class="account__grid">
+                            <div>
+                                <p><b>Данные о компании</b></p>
+                                <form action="">
+                                    <div class="form-group">
+                                        <label class="form-label" for="">Страна</label>
+                                        <select name="" id="">
+                                            <option value="">Россия</option>
+                                            <option value="">Россия</option>
+                                        </select>
                                     </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                               id="inlineRadio2"
-                                               value="option2">
-                                        <label class="form-check-label" for="inlineRadio2">Москва</label>
+                                    <div class="form-group">
+                                        <label class="form-label" for="">Название организации</label>
+                                        <input type="text" class="form-control">
                                     </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                               id="inlineRadio3"
-                                               value="option3">
-                                        <label class="form-check-label" for="inlineRadio3">Новосибирск</label>
+                                    <div class="form-group">
+                                        <label class="form-label" for="">Город</label>
+                                        <select name="" id="">
+                                            <option value="">Санкт-Петербург</option>
+                                            <option value="">Санкт-Петербург</option>
+                                        </select>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                               id="inlineRadio1"
-                                               value="option1">
-                                        <label class="form-check-label" for="inlineRadio1">Владивосток</label>
+                                    <div class="form-group">
+                                        <label class="form-label" for="">ИНН</label>
+                                        <input type="text" class="form-control">
                                     </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                               id="inlineRadio2"
-                                               value="option2">
-                                        <label class="form-check-label" for="inlineRadio2">Находка</label>
+                                    <div class="form-group">
+                                        <label class="form-label" for="">Контактный телефон</label>
+                                        <input type="tel" class="form-control">
                                     </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                               id="inlineRadio3"
-                                               value="option3">
-                                        <label class="form-check-label" for="inlineRadio3">Уссурийск</label>
+                                    <div class="form-group">
+                                        <label class="form-label" for="">Контактное лицо</label>
+                                        <input type="text" class="form-control">
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                               id="inlineRadio3"
-                                               value="option3">
-                                        <label class="form-check-label" for="inlineRadio3">Красноярск</label>
+                                    <input type="submit" class="btn btn-primary" value="Сохранить изменения">
+                                </form>
+                            </div>
+                            <div>
+                                <p><b>Данные для авторизации</b></p>
+                                <form class="form form-bg" action="">
+                                    <div class="form-group">
+                                        <label class="form-label" for="">Логин</label>
+                                        <input type="text" class="form-control">
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-                                        <label class="form-check-label" for="defaultCheck4">
-                                            Хочу получать новости и предложения на почту
-                                        </label>
+                                    <div class="form-group">
+                                        <label class="form-label" for="">Email</label>
+                                        <input type="text" class="form-control">
                                     </div>
-                                </div>
+                                    <div class="form-group">
+                                        <a href="#">Изменить пароль</a>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="">Филиал отгрузки</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">Екатеринбург</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">Москва</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio3" value="option3">
+                                            <label class="form-check-label" for="inlineRadio3">Новосибирск</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">Владивосток</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">Находка</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio3" value="option3">
+                                            <label class="form-check-label" for="inlineRadio3">Уссурийск</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio3" value="option3">
+                                            <label class="form-check-label" for="inlineRadio3">Красноярск</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                            <label class="form-check-label" for="defaultCheck4">
+                                                Хочу получать новости и предложения на почту
+                                            </label>
+                                        </div>
+                                    </div>
 
-                                <input type="submit" class="btn btn-primary" value="Сохранить изменения">
-                            </form>
+                                    <input type="submit" class="btn btn-primary" value="Сохранить изменения">
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="tabs__content">
-                    <div class="account__grid">
-                        <div>
-                            <p>Уважаемые клиенты, с помощью пластиковой карты Вы можете оплатить:</p>
-                            <ul>
-                                <li>Заказ товара к отгрузке, согласованный и подтвержденный с менеджером по работе с
-                                    клиентам
-                                </li>
-                                <li> Оплатить уже отгруженный товар</li>
-                                <li>Внести предоплату за поставку товара</li>
+                    <div class="tabs__content">
+                        <div class="account__grid">
+                            <div>
+                                <p>Уважаемые клиенты, с помощью пластиковой карты Вы можете оплатить:</p>
+                                <ul>
+                                    <li>Заказ товара к отгрузке, согласованный и подтвержденный с менеджером по работе с
+                                        клиентам
+                                    </li>
+                                    <li> Оплатить уже отгруженный товар</li>
+                                    <li>Внести предоплату за поставку товара</li>
+                                </ul>
+                                <p>При оплате пластиковой картой проверьте правильность ИНН Вашей организации в Личном
+                                    кабинете,
+                                    иначе оплата будет невозможна.</p>
+                                <p>Для оплаты Вы используете только именную пластиковую карту для ИП, либо корпаративную
+                                    карту
+                                    организации для ООО, ОАО</p>
+                            </div>
+                            <div class="account__state-account">
+                                <div class="state-account">
+                                    <header class="state-account__header">
+                                        <div class="state-account__title">Состояние счета - ИП Моисеев В.В.</div>
+                                    </header>
+                                    <div class="state-account__body">
+                                        <p class="text-danger">4 счёта требуют оплаты</p>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" value="84 500 ₽">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" class="btn btn-primary" value="Пополнить счёт">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="main__subtitle">Платежи</div>
+                        <div class="tabs">
+                            <ul class="tabs__caption">
+                                <li class="active">Январь</li>
+                                <li>Февраль</li>
+                                <li>Март</li>
+                                <li>Апрель</li>
+                                <li>Май</li>
+                                <li>Июнь</li>
+                                <li>Июль</li>
+                                <li>Август</li>
+                                <li>Сентябрь</li>
+                                <li>Октябрь</li>
+                                <li>Ноябрь</li>
+                                <li>Декабрь</li>
                             </ul>
-                            <p>При оплате пластиковой картой проверьте правильность ИНН Вашей организации в Личном
-                                кабинете,
-                                иначе оплата будет невозможна.</p>
-                            <p>Для оплаты Вы используете только именную пластиковую карту для ИП, либо корпаративную
-                                карту
-                                организации для ООО, ОАО</p>
+                            <div class="tabs__content active">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Номер счёта</th>
+                                            <th scope="col">Дата</th>
+                                            <th scope="col">Сумма</th>
+                                            <th scope="col">Статус</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-success">Оплачен</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tabs__content">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Номер счёта</th>
+                                            <th scope="col">Дата</th>
+                                            <th scope="col">Сумма</th>
+                                            <th scope="col">Статус</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-success">Оплачен</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tabs__content">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Номер счёта</th>
+                                            <th scope="col">Дата</th>
+                                            <th scope="col">Сумма</th>
+                                            <th scope="col">Статус</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-success">Оплачен</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tabs__content">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Номер счёта</th>
+                                            <th scope="col">Дата</th>
+                                            <th scope="col">Сумма</th>
+                                            <th scope="col">Статус</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-success">Оплачен</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tabs__content">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Номер счёта</th>
+                                            <th scope="col">Дата</th>
+                                            <th scope="col">Сумма</th>
+                                            <th scope="col">Статус</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-success">Оплачен</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tabs__content">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Номер счёта</th>
+                                            <th scope="col">Дата</th>
+                                            <th scope="col">Сумма</th>
+                                            <th scope="col">Статус</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-success">Оплачен</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tabs__content">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Номер счёта</th>
+                                            <th scope="col">Дата</th>
+                                            <th scope="col">Сумма</th>
+                                            <th scope="col">Статус</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-success">Оплачен</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tabs__content">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Номер счёта</th>
+                                            <th scope="col">Дата</th>
+                                            <th scope="col">Сумма</th>
+                                            <th scope="col">Статус</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-success">Оплачен</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tabs__content">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Номер счёта</th>
+                                            <th scope="col">Дата</th>
+                                            <th scope="col">Сумма</th>
+                                            <th scope="col">Статус</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-success">Оплачен</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tabs__content">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Номер счёта</th>
+                                            <th scope="col">Дата</th>
+                                            <th scope="col">Сумма</th>
+                                            <th scope="col">Статус</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-success">Оплачен</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tabs__content">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Номер счёта</th>
+                                            <th scope="col">Дата</th>
+                                            <th scope="col">Сумма</th>
+                                            <th scope="col">Статус</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-success">Оплачен</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-success">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-success">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tabs__content">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Номер счёта</th>
+                                            <th scope="col">Дата</th>
+                                            <th scope="col">Сумма</th>
+                                            <th scope="col">Статус</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-success">Оплачен</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-success">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
+                                            <td>10/12/2015</td>
+                                            <td><b>80 000 ₽</b></td>
+                                            <td class="text-danger">Не оплачен</td>
+                                            <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                        <div class="account__state-account">
-                            <div class="state-account">
-                                <header class="state-account__header">
-                                    <div class="state-account__title">Состояние счета - ИП Моисеев В.В.</div>
-                                </header>
-                                <div class="state-account__body">
-                                    <p class="text-danger">4 счёта требуют оплаты</p>
+                    </div>
+                    <div class="tabs__content">
+                        <div class="tabs tabs-secondary">
+                            <ul class="tabs__caption">
+                                <li class="active">Настройки программы</li>
+                                <li>Ваш каталог товаров</li>
+                                <li>Пользователи и скидки</li>
+                            </ul>
+
+                            <div class="tabs__content active">
+                                <p>Заполнив нижеприведенную форму вы сможете скачать собранный индивидуально под Вас
+                                    Гала-Каталог, который вы сможете распространить среди своих клиентов.</p>
+
+                                <p>Стоимость использования Индивидуального Гала-Каталога составляет 5000 рублей в месяц.
+                                    После окончания оплаченного периода работа программы будет заблокирована.</p>
+                                <form class="form-w410" action="">
+                                    <div class="account__subtitle">Брендинг</div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" value="84 500 ₽">
+                                        <label for="" class="form-label">Название программы</label>
+                                        <input class="form-control" type="text">
+                                        <p>Название программы отображается в <a href="">заголовке программы</a></p>
                                     </div>
                                     <div class="form-group">
-                                        <input type="submit" class="btn btn-primary" value="Пополнить счёт">
+                                        <label for="" class="form-label">Логотип</label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Выберите файл</label>
+                                        </div>
+                                        <p>Логотип в <a href=""> заголовке программы</a><br>
+                                            Файл в формате PNG или JPG, размером 240px X 40px</p>
                                     </div>
+                                    <div class="form-group">
+                                        <label for="" class="form-label">Название программы</label>
+                                        <input class="form-control" type="text">
+                                        <p>Название программы отображается в <a href=""> подвале программы</a></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="form-label">Адрес и телефон</label>
+                                        <input class="form-control" type="text">
+                                        <p>Контактные данные компании в <a href=""> подвале программы</a></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="form-label">Электронная почта</label>
+                                        <input class="form-control" type="text">
+                                        <p>E-mail, отображаемый в <a href=""> подвале программы</a></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="form-label">Электронная почта</label>
+                                        <input class="form-control" type="text">
+                                        <p>E-mail, отображаемый в <a href=""> подвале программы</a></p>
+                                    </div>
+
+                                    <div class="account__subtitle">Помощь</div>
+
+                                    <div class="form-group">
+                                        <label for="" class="form-label">Инструкция по использованию программы для
+                                            клиентов</label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Выберите файл</label>
+                                        </div>
+                                        <p><a href=""> Справка по использованию программы</a> <br>
+                                            Файл в формате RTF, который вы можете подготовить в программе <br>
+                                            <a href=""> Microsoft Word</a>
+                                        </p>
+                                    </div>
+
+                                    <div class="account__subtitle">Ценообразование и остатки</div>
+
+                                    <div class="form-group">
+                                        <label for="" class="form-label">Наценка на стоимость в процентах</label>
+                                        <div class="form-group-simbol">
+                                            <input class="form-control" type="text">
+                                            <span class="simbol">%</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="form-label">Минимальная сумма наценки в рублях</label>
+                                        <div class="form-group-simbol">
+                                            <input class="form-control" type="text">
+                                            <span class="simbol">₽</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Да</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                value="option2">
+                                            <label class="form-check-label" for="inlineCheckbox2">Нет</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="form-label">Индивидуальная наценка на товары СП</label>
+                                        <div class="form-group-simbol">
+                                            <input class="form-control" type="text">
+                                            <span class="simbol">%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="" class="form-label">Товарные направления</label>
+                                        <div class="form-column">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="" value="">
+                                                <label class="form-check-label" for="">Авто</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="" value="">
+                                                <label class="form-check-label" for="">Ароматизаторы</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="" value="">
+                                                <label class="form-check-label" for="">Бытовая химия</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="" value="">
+                                                <label class="form-check-label" for="">Галантерея</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="" value="">
+                                                <label class="form-check-label" for="">Домашний текстиль</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="" value="">
+                                                <label class="form-check-label" for="">Подарки</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="" value="">
+                                                <label class="form-check-label" for="">Посуда</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="" value="">
+                                                <label class="form-check-label" for="">Сантехника</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="" value="">
+                                                <label class="form-check-label" for="">Туризм и рыбалка</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="" value="">
+                                                <label class="form-check-label" for="">Хозтовары</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="" value="">
+                                                <label class="form-check-label" for="">Электроника</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="form-label">Филиал отгрузки</label>
+                                        <div class="form-column">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Екатеринбург</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">Владивосток</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="option3" >
+                                                <label class="form-check-label" for="inlineRadio3">Москва</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="option4" >
+                                                <label class="form-check-label" for="inlineRadio4">Новосибирск</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="option5" >
+                                                <label class="form-check-label" for="inlineRadio5">Красноярск</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="option6" >
+                                                <label class="form-check-label" for="inlineRadio6">Находка</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="option7" >
+                                                <label class="form-check-label" for="inlineRadio7">Уссурийск</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="" class="form-label">Валюта</label>
+                                        <select name="" id="">
+                                            <option value="">Российский рубль (RUB)</option>
+                                            <option value="">Российский рубль (RUB)</option>
+                                            <option value="">Российский рубль (RUB)</option>
+                                            <option value="">Российский рубль (RUB)</option>
+                                            <option value="">Российский рубль (RUB)</option>
+                                            <option value="">Российский рубль (RUB)</option>
+                                            <option value="">Российский рубль (RUB)</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="" class="form-label">Курсы валют</label>
+                                        <div class="form-group-simbol">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="account__subtitle">Оформление заказов</div>
+
+                                    <div class="form-group">
+                                        <label for="" class="form-label">E-mail для заказов</label>
+                                    
+                                            <input type="email" class="form-control" id="">
+                            
+                                        <p>Электронная почта, на которую будет уходить информация о заказах от ваших клиентов</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-title">Автоматическое формирование заявки</div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox3">Да</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4"
+                                                value="option2">
+                                            <label class="form-check-label" for="inlineCheckbox4">Нет</label>
+                                        </div>
+                                        <p>При оформлении заказа вашим клиентом так же будет автоматически формироваться заявка в Гала-Центр от вас.
+                                        </p>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="form-title">Автоматическое формирование заявки</div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox3">Я согласен с условиями <a href=""> Договора публичной оферты</a></label>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <button class="btn btn-primary">Сохранить и создать дистрибутив</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tabs__content">
+                                Ваш каталог товаров
+                            </div>
+                            <div class="tabs__content w860">
+                                <p>В этом разделе вы можете создать группы пользователей с индивидуальными скидками.
+                                    Ваши клиенты смогут воспользоваться индвидуальными скидками.
+                                    Цены на товары будут рассчитаны исходя из цены на товар с учетом вашей наценки, а
+                                    так же с учетом скидки ценовой группы, к которой этот пользователь принадлежит. Вы
+                                    можете создать несколько различных ценовых групп (каждая с разным процентом скидки),
+                                    а затем добавить пользователей в эти группы.</p>
+
+                                <div class="account__subtitle">Новогодняя (-10%) <a href="#">Редактировать</a> <a
+                                        href="#"><i class="icon icon-basket-delete"></i></a></div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Имя</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Логин</th>
+                                            <th scope="col">Скидка</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Егор</th>
+                                            <td>info@mail.ru</td>
+                                            <td>bbq</td>
+                                            <td>-10%</td>
+                                            <td><a href="#">Редактировать</a> <a href="#"><i
+                                                        class="icon icon-basket-delete"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Егор</th>
+                                            <td>info@mail.ru</td>
+                                            <td>bbq</td>
+                                            <td>-10%</td>
+                                            <td><a href="#">Редактировать</a> <a href="#"><i
+                                                        class="icon icon-basket-delete"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Егор</th>
+                                            <td>info@mail.ru</td>
+                                            <td>bbq</td>
+                                            <td>-10%</td>
+                                            <td><a href="#">Редактировать</a> <a href="#"><i
+                                                        class="icon icon-basket-delete"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Егор</th>
+                                            <td>info@mail.ru</td>
+                                            <td>bbq</td>
+                                            <td>-10%</td>
+                                            <td><a href="#">Редактировать</a> <a href="#"><i
+                                                        class="icon icon-basket-delete"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="account__subtitle">Сад и огород (-10%) <a href="#">Редактировать</a> <a
+                                        href="#"><i class="icon icon-basket-delete"></i></a></div>
+
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Имя</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Логин</th>
+                                            <th scope="col">Скидка</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Егор</th>
+                                            <td>info@mail.ru</td>
+                                            <td>bbq</td>
+                                            <td>-10%</td>
+                                            <td><a href="#">Редактировать</a> <a href="#"><i
+                                                        class="icon icon-basket-delete"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Егор</th>
+                                            <td>info@mail.ru</td>
+                                            <td>bbq</td>
+                                            <td>-10%</td>
+                                            <td><a href="#">Редактировать</a> <a href="#"><i
+                                                        class="icon icon-basket-delete"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Егор</th>
+                                            <td>info@mail.ru</td>
+                                            <td>bbq</td>
+                                            <td>-10%</td>
+                                            <td><a href="#">Редактировать</a> <a href="#"><i
+                                                        class="icon icon-basket-delete"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Егор</th>
+                                            <td>info@mail.ru</td>
+                                            <td>bbq</td>
+                                            <td>-10%</td>
+                                            <td><a href="#">Редактировать</a> <a href="#"><i
+                                                        class="icon icon-basket-delete"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>
+                                    <a href="#" class="btn btn-primary" data-remodal-target="add-user">Добавить
+                                        пользователя</a>
+                                    <a href="#" class="btn btn-primary" data-remodal-target="price-group">Создать
+                                        группу</a>
+                                </p>
+
+                                <p><b>Краткая инструкция </b></p>
+                                <p>1. Добавьте ценовые группы. Для этого нажмите на кнопку "Создать группу". Укажите
+                                    название группы, например, "Золотые клиенты" или "Серебрянные клиент" или как-либо
+                                    иначе. Название необходимо только для того, чтобы вам было легче идентифицировать
+                                    группу. Укажите сумму скидки в процентах от вашей цены. Не пишите знак процента в
+                                    это поле. Нажмите на кнопку "Добавить". Вы можете создать неограниченное количество
+                                    ценовых групп.</p>
+
+                                <p>2. Добавьте пользователей. Для этого нажмите на кнопку "Добавить пользователя",
+                                    заполните форму и нажмите кнопку "Добавить". Пожалуйста, запомните введенные логины
+                                    и пароли. Их вам будет необходимо передать вашим клиентам.</p>
+
+                                <p class="alert alert-primary">Вам не нужно заново создавать дистрибутив программы при
+                                    добавлении, удалении или изменении пользователей или ценовых групп. Данные у ваших
+                                    клиентов обновятся автоматически. Так же при смене ценовой группы у какого-либо
+                                    пользователя, все цены у него в программе обновятся автоматически.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__content">
+
+                        <div class="card-shop">
+                            <div class="card-shop__item">
+                                <div class="card-shop__title">Богатырский</div>
+                                <p>г. Калининград, ул. Полоцкая, д. 1</p>
+                                <div class="card-shop__comment">
+                                    Комментарий:<br>
+                                    Въезд на склад с ул. Кирова
+                                </div>
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-link">Изменить данные</a>
+                                    <a href="#" class="btn btn-link text-muted">Удалить магазин</a>
+                                </div>
+                            </div>
+                            <div class="card-shop__item">
+                                <div class="card-shop__title">Меркурий</div>
+                                <p>г. Калининград, ул. Полоцкая, д. 1</p>
+                                <div class="card-shop__comment">
+                                    Комментарий:<br>
+                                    Приемка товара осуществляется после 12.00
+                                </div>
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-link">Изменить данные</a>
+                                    <a href="#" class="btn btn-link text-muted">Удалить магазин</a>
+                                </div>
+                            </div>
+                            <div class="card-shop__item">
+                                <div class="card-shop__title">Плаза</div>
+                                <p>г. Калининград, ул. Полоцкая, д. 1</p>
+                                <div class="card-shop__comment">
+                                    Комментарий:<br>
+                                    Въезд на склад с ул. Кирова
+                                </div>
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-link">Изменить данные</a>
+                                    <a href="#" class="btn btn-link text-muted">Удалить магазин</a>
+                                </div>
+                            </div>
+                            <div class="card-shop__item">
+                                <div class="card-shop__title">Меркурий</div>
+                                <p>г. Калининград, ул. Полоцкая, д. 1</p>
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-link">Изменить данные</a>
+                                    <a href="#" class="btn btn-link text-muted">Удалить магазин</a>
+                                </div>
+                            </div>
+                            <div class="card-shop__item">
+                                <div class="card-shop__title">Плаза</div>
+                                <p>г. Калининград, ул. Полоцкая, д. 1</p>
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-link">Изменить данные</a>
+                                    <a href="#" class="btn btn-link text-muted">Удалить магазин</a>
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="main__subtitle">Платежи</div>
-                    <div class="tabs">
-                        <ul class="tabs__caption">
-                            <li class="active">Январь</li>
-                            <li>Февраль</li>
-                            <li>Март</li>
-                            <li>Апрель</li>
-                            <li>Май</li>
-                            <li>Июнь</li>
-                            <li>Июль</li>
-                            <li>Август</li>
-                            <li>Сентябрь</li>
-                            <li>Октябрь</li>
-                            <li>Ноябрь</li>
-                            <li>Декабрь</li>
-                        </ul>
-                        <div class="tabs__content active">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Номер счёта</th>
-                                    <th scope="col">Дата</th>
-                                    <th scope="col">Сумма</th>
-                                    <th scope="col">Статус</th>
-                                    <th scope="col"></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-success">Оплачен</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="tabs__content">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Номер счёта</th>
-                                    <th scope="col">Дата</th>
-                                    <th scope="col">Сумма</th>
-                                    <th scope="col">Статус</th>
-                                    <th scope="col"></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-success">Оплачен</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="tabs__content">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Номер счёта</th>
-                                    <th scope="col">Дата</th>
-                                    <th scope="col">Сумма</th>
-                                    <th scope="col">Статус</th>
-                                    <th scope="col"></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-success">Оплачен</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="tabs__content">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Номер счёта</th>
-                                    <th scope="col">Дата</th>
-                                    <th scope="col">Сумма</th>
-                                    <th scope="col">Статус</th>
-                                    <th scope="col"></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-success">Оплачен</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="tabs__content">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Номер счёта</th>
-                                    <th scope="col">Дата</th>
-                                    <th scope="col">Сумма</th>
-                                    <th scope="col">Статус</th>
-                                    <th scope="col"></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-success">Оплачен</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="tabs__content">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Номер счёта</th>
-                                    <th scope="col">Дата</th>
-                                    <th scope="col">Сумма</th>
-                                    <th scope="col">Статус</th>
-                                    <th scope="col"></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-success">Оплачен</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="tabs__content">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Номер счёта</th>
-                                    <th scope="col">Дата</th>
-                                    <th scope="col">Сумма</th>
-                                    <th scope="col">Статус</th>
-                                    <th scope="col"></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-success">Оплачен</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="tabs__content">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Номер счёта</th>
-                                    <th scope="col">Дата</th>
-                                    <th scope="col">Сумма</th>
-                                    <th scope="col">Статус</th>
-                                    <th scope="col"></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-success">Оплачен</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="tabs__content">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Номер счёта</th>
-                                    <th scope="col">Дата</th>
-                                    <th scope="col">Сумма</th>
-                                    <th scope="col">Статус</th>
-                                    <th scope="col"></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-success">Оплачен</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="tabs__content">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Номер счёта</th>
-                                    <th scope="col">Дата</th>
-                                    <th scope="col">Сумма</th>
-                                    <th scope="col">Статус</th>
-                                    <th scope="col"></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-success">Оплачен</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="tabs__content">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Номер счёта</th>
-                                    <th scope="col">Дата</th>
-                                    <th scope="col">Сумма</th>
-                                    <th scope="col">Статус</th>
-                                    <th scope="col"></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-success">Оплачен</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-success">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-success">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="tabs__content">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Номер счёта</th>
-                                    <th scope="col">Дата</th>
-                                    <th scope="col">Сумма</th>
-                                    <th scope="col">Статус</th>
-                                    <th scope="col"></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-success">Оплачен</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-success">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">Аl-1/1012/6318</a></th>
-                                    <td>10/12/2015</td>
-                                    <td><b>80 000 ₽</b></td>
-                                    <td class="text-danger">Не оплачен</td>
-                                    <td><a href="#" class="btn btn-outline-secondary">Оплатить</a></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <p>Пожалуйста, заполните поля и добавьте магазин в список для доставки.
+                            Это позволит экономить ваше время и быстро добавлять нужное окличество товара
+                            в нужный магазин
+                        </p>
+                        <a href="#" class="btn btn-outline-secondary" data-remodal-target="score">Добавить магазин</a>
                     </div>
                 </div>
-                <div class="tabs__content">
-                    <div class="tabs tabs-secondary">
-                        <ul class="tabs__caption">
-                            <li class="active">Настройки программы</li>
-                            <li>Ваш каталог товаров</li>
-                            <li>Пользователи и скидки</li>
-                        </ul>
 
-                        <div class="tabs__content active">
-                            <p>Заполнив нижеприведенную форму вы сможете скачать собранный индивидуально под Вас Гала-Каталог, который вы сможете распространить среди своих клиентов.</p>
-
-                            <p>Стоимость использования Индивидуального Гала-Каталога составляет 5000 рублей в месяц. После окончания оплаченного периода работа программы будет заблокирована.</p>
-                            <div class="account__subtitle">Брендинг</div>
-                            <form action="">
-                                <div class="form-group">
-                                    <label for="" class="form-label">Название программы</label>
-                                    <input class="form-control" type="text">
-                                    <div id="emailHelp" class="form-text">Название программы отображается в заголовке программы</div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="tabs__content">
-                            Ваш каталог товаров
-                        </div>
-                        <div class="tabs__content w860">
-                            <p>В этом разделе вы можете создать группы пользователей с индивидуальными скидками.
-                                Ваши клиенты смогут воспользоваться индвидуальными скидками.
-                                Цены на товары будут рассчитаны исходя из цены на товар с учетом вашей наценки, а так же с учетом скидки ценовой группы, к которой этот пользователь принадлежит. Вы можете создать несколько различных ценовых групп (каждая с разным процентом скидки), а затем добавить пользователей в эти группы.</p>
-
-                            <div class="account__subtitle">Новогодняя (-10%) <a href="#">Редактировать</a> <a href="#"><i class="icon icon-basket-delete"></i></a></div>
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Имя</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Логин</th>
-                                    <th scope="col">Скидка</th>
-                                    <th scope="col"></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">Егор</th>
-                                    <td>info@mail.ru</td>
-                                    <td>bbq</td>
-                                    <td>-10%</td>
-                                    <td><a href="#">Редактировать</a> <a href="#"><i class="icon icon-basket-delete"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Егор</th>
-                                    <td>info@mail.ru</td>
-                                    <td>bbq</td>
-                                    <td>-10%</td>
-                                    <td><a href="#">Редактировать</a> <a href="#"><i class="icon icon-basket-delete"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Егор</th>
-                                    <td>info@mail.ru</td>
-                                    <td>bbq</td>
-                                    <td>-10%</td>
-                                    <td><a href="#">Редактировать</a> <a href="#"><i class="icon icon-basket-delete"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Егор</th>
-                                    <td>info@mail.ru</td>
-                                    <td>bbq</td>
-                                    <td>-10%</td>
-                                    <td><a href="#">Редактировать</a> <a href="#"><i class="icon icon-basket-delete"></i></a></td>
-                                </tr>
-                                </tbody>
-                            </table>
-
-                            <div class="account__subtitle">Сад и огород (-10%) <a href="#">Редактировать</a> <a href="#"><i class="icon icon-basket-delete"></i></a></div>
-
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Имя</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Логин</th>
-                                    <th scope="col">Скидка</th>
-                                    <th scope="col"></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">Егор</th>
-                                    <td>info@mail.ru</td>
-                                    <td>bbq</td>
-                                    <td>-10%</td>
-                                    <td><a href="#">Редактировать</a> <a href="#"><i class="icon icon-basket-delete"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Егор</th>
-                                    <td>info@mail.ru</td>
-                                    <td>bbq</td>
-                                    <td>-10%</td>
-                                    <td><a href="#">Редактировать</a> <a href="#"><i class="icon icon-basket-delete"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Егор</th>
-                                    <td>info@mail.ru</td>
-                                    <td>bbq</td>
-                                    <td>-10%</td>
-                                    <td><a href="#">Редактировать</a> <a href="#"><i class="icon icon-basket-delete"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Егор</th>
-                                    <td>info@mail.ru</td>
-                                    <td>bbq</td>
-                                    <td>-10%</td>
-                                    <td><a href="#">Редактировать</a> <a href="#"><i class="icon icon-basket-delete"></i></a></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            <p>
-                            <a href="#" class="btn btn-primary" data-remodal-target="add-user">Добавить пользователя</a>
-                            <a href="#" class="btn btn-primary" data-remodal-target="price-group">Создать группу</a>
-                            </p>
-
-                            <p><b>Краткая инструкция </b></p>
-                            <p>1. Добавьте ценовые группы. Для этого нажмите на кнопку "Создать группу". Укажите название группы, например, "Золотые клиенты" или "Серебрянные клиент" или как-либо иначе. Название необходимо только для того, чтобы вам было легче идентифицировать группу. Укажите сумму скидки в процентах от вашей цены. Не пишите знак процента в это поле. Нажмите на кнопку "Добавить". Вы можете создать неограниченное количество ценовых групп.</p>
-
-                            <p>2. Добавьте пользователей. Для этого нажмите на кнопку "Добавить пользователя", заполните форму и нажмите кнопку "Добавить". Пожалуйста, запомните введенные логины и пароли. Их вам будет необходимо передать вашим клиентам.</p>
-
-                            <p class="alert alert-primary">Вам не нужно заново создавать дистрибутив программы при добавлении, удалении или изменении пользователей или ценовых групп. Данные у ваших клиентов обновятся автоматически. Так же при смене ценовой группы у какого-либо пользователя, все цены у него в программе обновятся автоматически.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="tabs__content">
-
-                    <div class="card-shop">
-                        <div class="card-shop__item">
-                            <div class="card-shop__title">Богатырский</div>
-                            <p>г. Калининград, ул. Полоцкая, д. 1</p>
-                            <div class="card-shop__comment">
-                                Комментарий:<br>
-                                Въезд на склад с ул. Кирова
-                            </div>
-                            <div class="btn-group">
-                                <a href="#" class="btn btn-link">Изменить данные</a>
-                                <a href="#" class="btn btn-link text-muted">Удалить магазин</a>
-                            </div>
-                        </div>
-                        <div class="card-shop__item">
-                            <div class="card-shop__title">Меркурий</div>
-                            <p>г. Калининград, ул. Полоцкая, д. 1</p>
-                            <div class="card-shop__comment">
-                                Комментарий:<br>
-                                Приемка товара осуществляется после 12.00
-                            </div>
-                            <div class="btn-group">
-                                <a href="#" class="btn btn-link">Изменить данные</a>
-                                <a href="#" class="btn btn-link text-muted">Удалить магазин</a>
-                            </div>
-                        </div>
-                        <div class="card-shop__item">
-                            <div class="card-shop__title">Плаза</div>
-                            <p>г. Калининград, ул. Полоцкая, д. 1</p>
-                            <div class="card-shop__comment">
-                                Комментарий:<br>
-                                Въезд на склад с ул. Кирова
-                            </div>
-                            <div class="btn-group">
-                                <a href="#" class="btn btn-link">Изменить данные</a>
-                                <a href="#" class="btn btn-link text-muted">Удалить магазин</a>
-                            </div>
-                        </div>
-                        <div class="card-shop__item">
-                            <div class="card-shop__title">Меркурий</div>
-                            <p>г. Калининград, ул. Полоцкая, д. 1</p>
-                            <div class="btn-group">
-                                <a href="#" class="btn btn-link">Изменить данные</a>
-                                <a href="#" class="btn btn-link text-muted">Удалить магазин</a>
-                            </div>
-                        </div>
-                        <div class="card-shop__item">
-                            <div class="card-shop__title">Плаза</div>
-                            <p>г. Калининград, ул. Полоцкая, д. 1</p>
-                            <div class="btn-group">
-                                <a href="#" class="btn btn-link">Изменить данные</a>
-                                <a href="#" class="btn btn-link text-muted">Удалить магазин</a>
-                            </div>
-                        </div>
-                    </div>
-                    <p>Пожалуйста, заполните поля и добавьте магазин в список для доставки.
-                        Это позволит экономить ваше время и быстро добавлять нужное окличество товара
-                        в нужный магазин
-                    </p>
-                    <a href="#" class="btn btn-outline-secondary" data-remodal-target="score">Добавить магазин</a>
-                </div>
             </div>
+        </main>
 
-        </div>
-    </main>
+        @@include('./template/_footer.html')
+        @@include('./template/_modal.html')
+    </div>
 
-    @@include('./template/_footer.html')
-    @@include('./template/_modal.html')
-</div>
-
-<script src="js/galacenter.min.js"></script>
+    <script src="js/galacenter.min.js"></script>
 </body>
+
 </html>
