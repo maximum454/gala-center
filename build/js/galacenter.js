@@ -2033,11 +2033,21 @@ window.addEventListener("scroll", bringmenu);
 
 function bringmenu() {
     let headerH = document.getElementById('header').clientHeight;
+    let menu = document.getElementById('menu');
+    let headerFix = document.getElementById("header-fix");
 
     if (document.body.scrollTop > headerH || document.documentElement.scrollTop > headerH) {
-        document.getElementById("header-fix").style.top = "0";
+        headerFix.style.top = "0";
+        menu.style.cssText= `
+        position: fixed;
+        top: ${headerFix.clientHeight}px;
+    `
     } else {
-        document.getElementById("header-fix").style.top = "-100%";
+        headerFix.style.top = "-100%";
+        menu.style.cssText= `
+        position: releative;
+        top: auto;
+    `
     }
 }
 
