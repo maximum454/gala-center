@@ -11517,6 +11517,145 @@ hr {
   text-decoration: none;
 }
 
+.menu-mobile {
+  padding: 16px 18px;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+
+.menu-mobile__body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.menu-mobile__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.menu-mobile__close {
+  width: 24px;
+  height: 24px;
+  top: 12px;
+  right: 12px;
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: #0000;
+}
+
+.menu-mobile__close:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/icons-sprite.svg#close");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.menu-mobile__search {
+  margin-bottom: 30px;
+}
+
+.menu-mobile__ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-mobile__ul > li {
+  margin-bottom: 30px;
+}
+
+.menu-mobile__ul > li > span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.menu-mobile__ul > li > ul {
+  margin: 0;
+  padding: 0 0 0 38px;
+  list-style: none;
+  display: none;
+}
+
+.menu-mobile__ul > li > ul > li span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.menu-mobile__ul > li > ul > li ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+
+.menu-mobile__ul > li > ul > li ul li {
+  margin-bottom: 15px;
+}
+
+.menu-mobile__ul > li > ul > li a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #a4a9bb;
+  text-decoration: none;
+}
+
+.menu-mobile__ul .arrow-down {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-mobile__ul .arrow-down::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  background-image: url("../img/icons-sprite.svg#arrow-select-dark");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 10px;
+  height: 10px;
+}
+
+.menu-mobile__ul .show {
+  display: block;
+}
+
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 700px;

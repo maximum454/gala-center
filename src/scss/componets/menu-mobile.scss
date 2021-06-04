@@ -1,0 +1,120 @@
+.menu-mobile {
+    padding: 16px 18px;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: none;
+    &__body{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        color: #333333;
+        margin-bottom: 12px;
+    }
+    &__close {
+        width: 24px;
+        height: 24px;
+        top: 12px;
+        right: 12px;
+        position: absolute;
+        display: inline-block;
+        cursor: pointer;
+        padding: 0;
+        border: none;
+        background-color: #0000;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: url("../img/icons-sprite.svg#close");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+    }
+    &__search {
+        margin-bottom: 30px;
+    }
+    &__ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        & > li {
+            margin-bottom: 30px;
+            & > span {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 17px;
+                line-height: 24px;
+                color: #333333;
+                margin-bottom: 20px;
+                display: block;
+            }
+            & > ul {
+                margin: 0;
+                padding: 0 0 0 38px;
+                list-style: none;
+                display: none;
+                & > li {
+                    span {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 17px;
+                        line-height: 24px;
+                        display: flex;
+                        align-items: center;
+                        color: #333333;
+                        margin-bottom: 15px;
+                    }
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        display: none;
+                        li {
+                            margin-bottom: 15px;
+                        }
+                    }
+                    a {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 20px;
+                        color: #a4a9bb;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .arrow-down {
+            position: relative;
+            cursor: pointer;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                margin-top: -5px;
+                background-image: url("../img/icons-sprite.svg#arrow-select-dark");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+                width: 10px;
+                height: 10px;
+            }
+        }
+        .show{
+            display: block;
+        }
+    }
+}
