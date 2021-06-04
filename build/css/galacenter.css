@@ -3827,9 +3827,13 @@ html.remodal-is-locked {
 }
 
 .btn.btn-primary:hover {
-  color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  color: #324C9A;
+  background-color: #fff;
+  border-color: #324C9A;
+}
+
+.btn.btn-primary:hover .icon-burger-light {
+  background-image: url(../img/icons-sprite.svg#icon-burger-blue);
 }
 
 .btn.btn-secondary {
