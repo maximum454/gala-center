@@ -5281,6 +5281,12 @@ body.newyear .swiper-button-prev:after {
   display: none;
 }
 
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .d-desktop-none {
   display: none;
 }
@@ -5718,6 +5724,42 @@ hr {
 .header__bottom .header__auth,
 .header__bottom .header-delivery {
   display: none;
+}
+
+.header__fix {
+  background-color: #fff;
+  padding: 20px 0;
+  -webkit-box-shadow: 0px 2px 6px rgba(50, 76, 154, 0.18);
+          box-shadow: 0px 2px 6px rgba(50, 76, 154, 0.18);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  top: -100%;
+  -webkit-transition: top 0.3s ease;
+  -o-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+}
+
+.header__fix .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__fix .header-delivery {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.header__fix .btn {
+  margin-right: 40px;
 }
 
 .header .btn {

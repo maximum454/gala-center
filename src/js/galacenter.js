@@ -21,6 +21,7 @@
 @@include('./components/tabs.js')
 @@include('./components/slider-preview-product.js')
 @@include('./components/slider-catalog-detail.js')
+@@include('./components/header-fix.js')
 
 $(function () {
     var nav = priorityNav.init({

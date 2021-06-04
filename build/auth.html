@@ -34,7 +34,7 @@
 <body>
 <div class="wrp">
     <div class="overdraw"></div>
-<header class="header">
+<header id="header" class="header">
     <!-- TODO: меню при скролле -->
     <div class="nav-scroller">
         <div class="container">
@@ -374,6 +374,30 @@
                 <div class="tabs__content">
                     11
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="header-fix" class="header__fix">
+        <div class="container d-flex">
+            <button class="btn btn-primary js-menu-mobile"><i class="icon icon-burger-light"></i>Каталог
+                товаров</button>
+            <div class="header-delivery">
+                <i class="icon icon-delivery"></i>Город отгрузки <span>Екатеринбург</span>
+                <div class="header-delivery__modal">
+                    <div class="header-delivery__close"></div>
+                    <p>Выберите город, в котором осуществаляется отгрузка. Это важно, чтобы увидеть наличие цены и
+                        сроки
+                        доставки.</p>
+                    <a href="#" class="btn btn-primary">Все верно</a>
+                    <a href="#" class="btn btn-link" data-remodal-target="delivery">Выбрать
+                        город</a>
+                </div>
+            </div>
+            <div class="header__auth">
+                <a href="#" data-remodal-target="auth"><i class="icon icon-login"></i>Кабинет</a>
+                <a href="#"><i class="icon icon-like-blue"></i> пусто</a>
+                <a href="#" class="header__auth-basket btn"><i class="icon icon-basket-btn"></i> 356 678,53 ₽</a>
             </div>
         </div>
     </div>
