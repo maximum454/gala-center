@@ -3923,6 +3923,7 @@ html.remodal-is-locked {
   background-color: transparent;
   background-image: none;
   border-color: #A4A9BB;
+  text-decoration: none;
 }
 
 .btn.btn-outline-secondary:hover {

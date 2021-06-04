@@ -1856,7 +1856,7 @@
                                     Въезд на склад с ул. Кирова
                                 </div>
                                 <div class="btn-group">
-                                    <a href="#" class="btn btn-link">Изменить данные</a>
+                                    <a href="#" class="btn btn-link" data-remodal-target="score-change">Изменить данные</a>
                                     <a href="#" class="btn btn-link text-muted">Удалить магазин</a>
                                 </div>
                             </div>
@@ -1868,7 +1868,7 @@
                                     Приемка товара осуществляется после 12.00
                                 </div>
                                 <div class="btn-group">
-                                    <a href="#" class="btn btn-link">Изменить данные</a>
+                                    <a href="#" class="btn btn-link" data-remodal-target="score-change">Изменить данные</a>
                                     <a href="#" class="btn btn-link text-muted">Удалить магазин</a>
                                 </div>
                             </div>
@@ -1880,7 +1880,7 @@
                                     Въезд на склад с ул. Кирова
                                 </div>
                                 <div class="btn-group">
-                                    <a href="#" class="btn btn-link">Изменить данные</a>
+                                    <a href="#" class="btn btn-link" data-remodal-target="score-change">Изменить данные</a>
                                     <a href="#" class="btn btn-link text-muted">Удалить магазин</a>
                                 </div>
                             </div>
@@ -1888,7 +1888,7 @@
                                 <div class="card-shop__title">Меркурий</div>
                                 <p>г. Калининград, ул. Полоцкая, д. 1</p>
                                 <div class="btn-group">
-                                    <a href="#" class="btn btn-link">Изменить данные</a>
+                                    <a href="#" class="btn btn-link" data-remodal-target="score-change">Изменить данные</a>
                                     <a href="#" class="btn btn-link text-muted">Удалить магазин</a>
                                 </div>
                             </div>
@@ -1896,7 +1896,7 @@
                                 <div class="card-shop__title">Плаза</div>
                                 <p>г. Калининград, ул. Полоцкая, д. 1</p>
                                 <div class="btn-group">
-                                    <a href="#" class="btn btn-link">Изменить данные</a>
+                                    <a href="#" class="btn btn-link" data-remodal-target="score-change">Изменить данные</a>
                                     <a href="#" class="btn btn-link text-muted">Удалить магазин</a>
                                 </div>
                             </div>
@@ -2054,6 +2054,30 @@
 
 <!--Магазин -->
 <div class="remodal delivery" data-remodal-id="score">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="title">Магазин</div>
+    <form action="">
+        <div class="form-group">
+            <label class="form-label" for="">Название магазина</label>
+            <input type="text" class="form-control" placeholder="Богатырский">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="">Адрес магазина</label>
+            <input type="text" class="form-control" placeholder="г. Калининград, ул. Полоцкая, д. 1">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="">Комментарий</label>
+            <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+    </form>
+    <div>
+        <button data-remodal-action="confirm" class="btn btn-primary">Сохранить изменения</button>
+        <button data-remodal-action="cancel" class="btn btn-outline-primary">Отмена</button>
+    </div>
+</div>
+
+<!--Магазин изменение -->
+<div class="remodal delivery" data-remodal-id="score-change">
     <button data-remodal-action="close" class="remodal-close"></button>
     <div class="title">Магазин</div>
     <form action="">
