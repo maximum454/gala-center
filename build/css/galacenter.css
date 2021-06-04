@@ -5767,6 +5767,14 @@ hr {
   width: 100%;
 }
 
+.header .btn.d-desktop {
+  display: block;
+}
+
+.header .btn.d-mobile {
+  display: none;
+}
+
 .header-delivery {
   font-family: "HelveticaNeueCyr", sans-serif;
   font-style: normal;
@@ -11525,11 +11533,15 @@ hr {
   position: relative;
   overflow: hidden;
   display: none;
+  z-index: 100;
 }
 
-.menu-mobile__body {
+.menu-mobile.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
   overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 .menu-mobile__title {
@@ -12440,6 +12452,14 @@ hr {
     display: block;
     margin-left: 38px;
     font-size: 17px;
+  }
+
+  .header .btn.d-desktop {
+    display: none;
+  }
+
+  .header .btn.d-mobile {
+    display: block;
   }
 
   .footer__year {

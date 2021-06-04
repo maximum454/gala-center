@@ -190,6 +190,12 @@
 	.btn{
 		max-width: 223px;
 		width: 100%;
+        &.d-desktop{
+            display: block;
+        }
+        &.d-mobile{
+            display: none;
+        }
 	}
     
 	@include r(1023){
@@ -276,5 +282,13 @@
                 }
             }
 		}
+        .btn{            
+            &.d-desktop{
+                display: none;
+            }
+            &.d-mobile{
+                display: block;
+            }
+        }
     }
 }
