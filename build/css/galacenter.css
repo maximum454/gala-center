@@ -9613,6 +9613,17 @@ hr {
   gap: 20px;
 }
 
+.account__pay {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
 .state-account {
   background: #f1f5f9;
   border-radius: 4px;
@@ -12425,18 +12436,21 @@ hr {
   }
 
   .account__history {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 20px;
+  }
+
+  .account__pay .account__state-account {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    max-width: 340px;
+  }
+
+  .account__pay .state-account__body {
+    display: block;
   }
 
   .state-account__body {
@@ -13009,6 +13023,44 @@ hr {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+
+  .account__pay {
+    display: block;
+  }
+
+  .account__pay .account__state-account {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .account__pay .state-account {
+    background-color: #f1f5f9;
+  }
+
+  .account__pay .state-account__header {
+    display: block;
+  }
+
+  .account__pay .state-account__body {
+    display: block;
+    padding: 14px 32px;
+  }
+
+  .account__pay .state-account__body .form-group {
+    display: inline-block;
+  }
+
+  .account__pay .state-account__body .form-control {
+    max-width: 167px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color: #a4a9bb;
   }
 
   .state-account {
