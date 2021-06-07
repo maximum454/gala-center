@@ -1,47 +1,75 @@
-.account{
-  &__grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
-    justify-content: space-between;
-    grid-gap: 80px;
-  }
-  &__state-account{
-    max-width: 340px;
-    width: 100%;
-    margin-left: auto;
-  }
-  P{
-    max-width: 740px;
-  }
-  &__title{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 28px;
-    color: #333333;
-    margin-bottom: 4px;
-  }
-  &__subtitle{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 23px;
-    color: #333;
-    margin-top: 35px;
-    margin-bottom: 30px;
-    a{
-      font-style: normal;
-      font-weight: normal;
-      font-size: 13px;
-      line-height: 16px;
-      text-decoration-line: underline;
-      color: #324C9A;
-      margin-left: 30px;
-      &:last-of-type{
-        margin-left: 0;
-      }
-
-
+.account {
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        justify-content: space-between;
+        grid-gap: 80px;
     }
-  }
+    &__state-account {
+        max-width: 340px;
+        width: 100%;
+        margin-left: auto;
+        order: 2;
+    }
+    P {
+        max-width: 740px;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        color: #333333;
+        margin-bottom: 4px;
+    }
+    &__subtitle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 23px;
+        color: #333;
+        margin-top: 35px;
+        margin-bottom: 30px;
+        a {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 16px;
+            text-decoration-line: underline;
+            color: #324c9a;
+            margin-left: 30px;
+            &:last-of-type {
+                margin-left: 0;
+            }
+        }
+    }
+    &__history {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    @include r(1023){
+        &__state-account {
+            max-width: 100%;
+            width: 100%;
+            margin-left: auto;
+            order: -1;
+        }
+        &__history {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    @include r(767){
+        &__state-account {
+            max-width: 100%;
+            width: 100%;
+            margin-left: auto;
+            order: 2;
+        }
+    }
 }

@@ -9541,6 +9541,9 @@ hr {
   max-width: 340px;
   width: 100%;
   margin-left: auto;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .account P {
@@ -9573,7 +9576,7 @@ hr {
   line-height: 16px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  color: #324C9A;
+  color: #324c9a;
   margin-left: 30px;
 }
 
@@ -9581,8 +9584,19 @@ hr {
   margin-left: 0;
 }
 
+.account__history {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
 .state-account {
-  background: #F1F5F9;
+  background: #f1f5f9;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -9610,7 +9624,7 @@ hr {
   font-weight: normal;
   font-size: 22px;
   line-height: 36px;
-  color: #A4A9BB;
+  color: #a4a9bb;
 }
 
 .state-account__price {
@@ -9622,8 +9636,8 @@ hr {
   margin-bottom: 24px;
 }
 
-.state-account hr {
-  border-color: rgba(68, 121, 163, 0.12);
+.state-account__footer {
+  border-top: 1px solid rgba(68, 121, 163, 0.12);
   margin: 24px 0;
 }
 
@@ -9632,7 +9646,7 @@ hr {
   font-weight: normal;
   font-size: 15px;
   line-height: 20px;
-  color: #324C9A;
+  color: #324c9a;
   text-decoration: none;
 }
 
@@ -11673,6 +11687,141 @@ hr {
   display: block;
 }
 
+.account-history-order {
+  margin-bottom: 60px;
+  max-width: 960px;
+}
+
+.account-history-order__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 4px;
+  color: #333333;
+}
+
+.account-history-order__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.account-history-order__subtitle span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: right;
+  color: #a4a9bb;
+}
+
+.account-history-order__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(68, 121, 163, 0.12);
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.account-history-order__img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  width: 60px;
+}
+
+.account-history-order__name {
+  color: #324c9a;
+}
+
+.account-history-order__name span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.account-history-order__price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: right;
+  color: #333333;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.account-history-order__price span {
+  display: block;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: right;
+  color: #a4a9bb;
+}
+
+.account-history-order__delete {
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/icons-sprite.svg#icon-basket-delete");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.account-history-order__itog {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: #a4a9bb;
+}
+
+.account-history-order__footer {
+  padding: 20px 0;
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-history-order__footer-price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: right;
+  color: #333333;
+}
+
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 700px;
@@ -12244,6 +12393,45 @@ hr {
     overflow-y: hidden;
   }
 
+  .account__state-account {
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+
+  .account__history {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+
+  .state-account__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+
+  .state-account__footer {
+    border-top: none;
+    border-left: 1px solid rgba(68, 121, 163, 0.12);
+    margin: 24px 0;
+    padding-left: 50px;
+    margin-left: 50px;
+  }
+
   .slider-block .btn {
     display: none;
   }
@@ -12790,6 +12978,36 @@ hr {
     line-height: 20px;
     margin-bottom: 20px;
     color: #333;
+  }
+
+  .account__state-account {
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .state-account {
+    background: none;
+  }
+
+  .state-account__body {
+    display: block;
+    padding: 0;
+  }
+
+  .state-account__header {
+    display: none;
+  }
+
+  .state-account__footer {
+    border-top: 1px solid rgba(68, 121, 163, 0.12);
+    border-left: none;
+    margin: 24px 0;
+    padding-left: 0;
+    margin-left: 0;
   }
 
   .slider-block__title {

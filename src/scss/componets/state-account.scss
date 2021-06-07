@@ -1,48 +1,77 @@
-.state-account{
-  background: #F1F5F9;
-  border-radius: 4px;
-  overflow: hidden;
-  &__header{
-    background: rgba(93, 144, 184, 0.08);
-    padding: 14px 32px;
-  }
-  &__title{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 20px;
-    color: #333333;
-  }
-  &__body{
-    padding: 14px 32px;
-    .form-control{
-      max-width: 167px;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 22px;
-      line-height: 36px;
-      color: #A4A9BB;
+.state-account {
+    background: #f1f5f9;
+    border-radius: 4px;
+    overflow: hidden;
+    &__header {
+        background: rgba(93, 144, 184, 0.08);
+        padding: 14px 32px;
     }
-  }
-  &__price{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 36px;
-    color: #333333;
-    margin-bottom: 24px;
-  }
-  hr{
-    border-color: rgba(68, 121, 163, 0.12);
-    margin: 24px 0;
-  }
-  a{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 20px;
-    color: #324C9A;
-    text-decoration: none;
-  }
-
+    &__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        color: #333333;
+    }
+    &__body {
+        padding: 14px 32px;
+        .form-control {
+            max-width: 167px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 36px;
+            color: #a4a9bb;
+        }
+    }
+    &__price {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+        color: #333333;
+        margin-bottom: 24px;
+    }
+    &__footer{
+        border-top:1px solid rgba(68, 121, 163, 0.12);
+        margin: 24px 0;
+    }
+    a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        color: #324c9a;
+        text-decoration: none;
+    }
+    @include r(1023){
+        &__body {
+            display: flex;
+            gap: 20px;
+        }
+        &__footer{
+            border-top: none;
+            border-left:1px solid rgba(68, 121, 163, 0.12);
+            margin: 24px 0;
+            padding-left: 50px;
+            margin-left: 50px;
+        }
+    }
+    @include r(767){
+        background: none;
+        &__body {
+            display: block;
+            padding: 0;
+        }
+        &__header {
+            display: none;
+        }
+        &__footer{
+            border-top: 1px solid rgba(68, 121, 163, 0.12);
+            border-left:none;
+            margin: 24px 0;
+            padding-left: 0;
+            margin-left: 0;
+        }
+    }
 }
