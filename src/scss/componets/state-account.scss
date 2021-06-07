@@ -5,6 +5,16 @@
     &__header {
         background: rgba(93, 144, 184, 0.08);
         padding: 14px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 20px;
+            color: #a4a9bb;
+        }
     }
     &__title {
         font-style: normal;
@@ -23,7 +33,7 @@
             line-height: 36px;
             color: #a4a9bb;
         }
-        .btn-link{
+        .btn-link {
             display: none;
         }
     }
@@ -35,8 +45,8 @@
         color: #333333;
         margin-bottom: 24px;
     }
-    &__footer{
-        border-top:1px solid rgba(68, 121, 163, 0.12);
+    &__footer {
+        border-top: 1px solid rgba(68, 121, 163, 0.12);
         margin: 24px 0;
     }
     a {
@@ -47,42 +57,41 @@
         color: #324c9a;
         text-decoration: none;
     }
-    @include r(1023){
+    @include r(1023) {
         &__body {
             display: flex;
             gap: 20px;
         }
-        &__footer{
+        &__footer {
             border-top: none;
-            border-left:1px solid rgba(68, 121, 163, 0.12);
+            border-left: 1px solid rgba(68, 121, 163, 0.12);
             margin: 24px 0;
             padding-left: 50px;
             margin-left: 50px;
         }
     }
-    @include r(767){
+    @include r(767) {
         background: none;
         &__body {
             display: block;
             padding: 0;
-            .btn{
+            .btn {
                 max-width: 100%;
                 display: block;
             }
-            .btn-link{
+            .btn-link {
                 display: block;
             }
         }
         &__header {
             display: none;
         }
-        &__footer{
+        &__footer {
             border-top: 1px solid rgba(68, 121, 163, 0.12);
-            border-left:none;
+            border-left: none;
             margin: 24px 0;
             padding-left: 0;
             margin-left: 0;
         }
-        
     }
 }
