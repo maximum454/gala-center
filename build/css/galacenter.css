@@ -3928,8 +3928,8 @@ html.remodal-is-locked {
 
 .btn.btn-outline-secondary:hover {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #324C9A;
+  border-color: #324C9A;
 }
 
 .btn.btn-outline-secondary:focus {
@@ -4462,6 +4462,34 @@ html.remodal-is-locked {
   white-space: nowrap;
 }
 
+.table a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #324c9a;
+}
+
+.table.history a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #324c9a;
+}
+
+.table.history p {
+  margin: 0;
+}
+
+.table.history .btn {
+  text-decoration: none;
+}
+
 .table > thead {
   vertical-align: bottom;
 }
@@ -4505,16 +4533,6 @@ th {
   padding: 19px 0.5rem 28px;
   border-bottom-width: 1px;
   font-weight: normal;
-}
-
-.table a {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 16px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  color: #324c9a;
 }
 
 .tabs {
