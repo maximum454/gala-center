@@ -9627,6 +9627,10 @@ hr {
   color: #a4a9bb;
 }
 
+.state-account__body .btn-link {
+  display: none;
+}
+
 .state-account__price {
   font-style: normal;
   font-weight: bold;
@@ -12996,6 +13000,15 @@ hr {
   .state-account__body {
     display: block;
     padding: 0;
+  }
+
+  .state-account__body .btn {
+    max-width: 100%;
+    display: block;
+  }
+
+  .state-account__body .btn-link {
+    display: block;
   }
 
   .state-account__header {

@@ -23,6 +23,9 @@
             line-height: 36px;
             color: #a4a9bb;
         }
+        .btn-link{
+            display: none;
+        }
     }
     &__price {
         font-style: normal;
@@ -62,6 +65,13 @@
         &__body {
             display: block;
             padding: 0;
+            .btn{
+                max-width: 100%;
+                display: block;
+            }
+            .btn-link{
+                display: block;
+            }
         }
         &__header {
             display: none;
@@ -73,5 +83,6 @@
             padding-left: 0;
             margin-left: 0;
         }
+        
     }
 }
