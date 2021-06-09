@@ -3,7 +3,7 @@ $(function(){
         const div = $(".js-menu-dropdown");
         const popup = $('.dropdown-content');
         if (!div.is(e.target) && div.has(e.target).length === 0) {
-            popup.removeClass("active");
+            div.siblings(popup).removeClass("active");
         }else{
             popup.toggleClass("active");
         }

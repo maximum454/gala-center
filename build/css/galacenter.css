@@ -5905,7 +5905,9 @@ hr {
 }
 
 .nav ul.active {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nav ul li {
@@ -12060,8 +12062,16 @@ hr {
     width: 208px;
   }
 
+  .nav ul.active {
+    display: block;
+  }
+
   .nav ul li {
     margin: 0 0 10px;
+  }
+
+  .nav ul li:first-of-type {
+    margin-left: 0;
   }
 
   .footer__first {
@@ -12744,12 +12754,11 @@ hr {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 20px;
   }
 
   .nav ul.active {
@@ -12757,11 +12766,11 @@ hr {
   }
 
   .nav ul li {
-    margin-left: 42px;
+    margin-left: 0;
   }
 
   .nav ul li:first-of-type {
-    margin-left: 42px;
+    margin-left: 0;
   }
 
   .nav ul li a {
