@@ -1,6 +1,6 @@
 const swiperTabs = new Swiper('.swiper-container-tabs', {
     slidesPerView: 'auto',
-    spaceBetween: 60,
+    spaceBetween: 45,
     freeMode: true,
     navigation: {
         nextEl: '.tabs-next',
