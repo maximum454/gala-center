@@ -1800,20 +1800,16 @@ const swiperGoods = new Swiper('.swiper-container-goods', {
 })
 const swiperPopulary = new Swiper('.swiper-container-populary', {
     slidesPerView: 'auto',
-    spaceBetween: 60,
+    spaceBetween: 45,
     freeMode: true,
     navigation: {
         nextEl: '.populary-next',
         prevEl: '.populary-prev',
     },
 })
-swiperPopulary.on('slideChange', function (){
-    swiper.update();
-    console.log('sdd')
-})
 const swiperTabs = new Swiper('.swiper-container-tabs', {
     slidesPerView: 'auto',
-    spaceBetween: 60,
+    spaceBetween: 45,
     freeMode: true,
     navigation: {
         nextEl: '.tabs-next',
