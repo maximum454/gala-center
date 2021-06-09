@@ -1,6 +1,9 @@
-window.addEventListener("scroll", bringmenu);
+if(document.getElementById('header')){
+    window.addEventListener("scroll", bringmenu);
+}
 
 function bringmenu() {
+
     let headerH = document.getElementById('header').clientHeight;
     let menu = document.getElementById('menu');
     let headerFix = document.getElementById("header-fix");

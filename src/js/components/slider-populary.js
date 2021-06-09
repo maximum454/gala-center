@@ -7,3 +7,7 @@ const swiperPopulary = new Swiper('.swiper-container-populary', {
         prevEl: '.populary-prev',
     },
 })
+swiperPopulary.on('slideChange', function (){
+    swiper.update();
+    console.log('sdd')
+})

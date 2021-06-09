@@ -1807,6 +1807,10 @@ const swiperPopulary = new Swiper('.swiper-container-populary', {
         prevEl: '.populary-prev',
     },
 })
+swiperPopulary.on('slideChange', function (){
+    swiper.update();
+    console.log('sdd')
+})
 const swiperTabs = new Swiper('.swiper-container-tabs', {
     slidesPerView: 'auto',
     spaceBetween: 60,
@@ -2029,9 +2033,12 @@ galleryMain.on('slideChange', function (){
     galleryMain .update();
 })
 
-window.addEventListener("scroll", bringmenu);
+if(document.getElementById('header')){
+    window.addEventListener("scroll", bringmenu);
+}
 
 function bringmenu() {
+
     let headerH = document.getElementById('header').clientHeight;
     let menu = document.getElementById('menu');
     let headerFix = document.getElementById("header-fix");
