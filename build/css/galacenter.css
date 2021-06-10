@@ -5300,6 +5300,11 @@ body.lending1 .footer {
   background-color: #FFFEEC;
 }
 
+body.lending2 .header,
+body.lending2 .footer {
+  background-color: #F3FFD7;
+}
+
 .wrp {
   overflow: hidden;
   position: relative;
