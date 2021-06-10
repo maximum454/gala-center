@@ -97,3 +97,7 @@
 * https://maximum454.github.io/gala-center/build/tourism.html
 * https://maximum454.github.io/gala-center/build/electronics.html
 * https://maximum454.github.io/gala-center/build/newyear.html
+
+# Лендинги
+* https://maximum454.github.io/gala-center/build/landing.html
+* https://maximum454.github.io/gala-center/build/landing2.html
