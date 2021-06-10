@@ -1860,6 +1860,8 @@ if ($('.swiper-container-block').length > 0) { //some-slider-wrap-in
     let swiperInstances = [];
     $(".swiper-container-block").each(function(index, element){ //some-slider-wrap-in
         const $this = $(this);
+        let sliderCount = $this.data('slide-count');
+        console.log(sliderCount);
         $this.addClass("swiper-container-block-" + index); //instance need to be unique (ex: some-slider)
         $this.parents('.slider-block').find(".swiper-button-prev").addClass("block-prev-" + index); //prev must be unique (ex: some-slider-prev)
         $this.parents('.slider-block').find(".swiper-button-next").addClass("block-next-" + index); //next must be unique (ex: some-slider-next)
@@ -1886,7 +1888,7 @@ if ($('.swiper-container-block').length > 0) { //some-slider-wrap-in
                     slidesPerView: 3,
                 },
                 1023: {
-                    slidesPerView: 3,
+                    slidesPerView: !sliderCount ? 3: sliderCount,
                 },
 
             }

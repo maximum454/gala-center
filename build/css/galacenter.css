@@ -5295,6 +5295,11 @@ body.newyear .swiper-button-prev:after {
   background-size: 18px;
 }
 
+body.lending1 .header,
+body.lending1 .footer {
+  background-color: #FFFEEC;
+}
+
 .wrp {
   overflow: hidden;
   position: relative;
@@ -6192,6 +6197,16 @@ hr {
   margin: 0 0 25px;
 }
 
+.main__banner {
+  margin: 44px 0;
+}
+
+.main__banner img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
 .breadcrumb {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6425,11 +6440,11 @@ hr {
   padding: 0.563rem 1.4rem;
   border-radius: 4px;
   cursor: pointer;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   text-decoration: none;
   font-style: normal;
   font-weight: normal;
@@ -6579,6 +6594,16 @@ hr {
 
 .slider-banners {
   margin-bottom: 40px;
+}
+
+.slider-banners__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  margin-top: 40px;
+  max-width: 1023px;
 }
 
 .slider-banners img {
@@ -9867,6 +9892,7 @@ hr {
   position: relative;
   width: 88px;
   margin-left: 32px;
+  min-height: 45px;
 }
 
 .slider-block .btn {

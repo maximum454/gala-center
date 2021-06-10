@@ -1,5 +1,15 @@
 .slider-banners {
   margin-bottom: 40px;
+  &__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #000000;
+    margin-top: 40px;
+    max-width: 1023px;
+  }
   img{
     display: block;
   }
