@@ -12,3 +12,5 @@ const swiperPopulary = new Swiper('.swiper-container-populary', {
         }
     }
 })
+
+swiperPopulary.destroy()

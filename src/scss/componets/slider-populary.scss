@@ -72,4 +72,12 @@
 			display: none;
 		}
 	}
+    @include r(767){
+        .swiper-wrapper{
+            flex-wrap: wrap;
+        }
+        .swiper-slide{
+            height: auto;
+        }
+    }
 }

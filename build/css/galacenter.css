@@ -13008,6 +13008,15 @@ hr {
     line-height: 24px;
   }
 
+  .slider-populary .swiper-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .slider-populary .swiper-slide {
+    height: auto;
+  }
+
   .products--list .products__item {
     display: -webkit-box;
     display: -ms-flexbox;

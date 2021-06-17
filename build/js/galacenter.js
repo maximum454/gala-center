@@ -1813,6 +1813,8 @@ const swiperPopulary = new Swiper('.swiper-container-populary', {
     }
 })
 
+swiperPopulary.destroy()
+
 const swiperTabs = new Swiper('.swiper-container-tabs', {
     slidesPerView: 3,
     spaceBetween: 45,
