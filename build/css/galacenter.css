@@ -7971,7 +7971,7 @@ hr {
 .subscribe {
   background: #F1F5F9;
   border-radius: 4px;
-  padding: 30px 0;
+  padding: 30px 20px;
   margin: 0 0 58px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12392,6 +12392,7 @@ hr {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 20px;
+    margin-right: 0;
   }
 
   .subscribe__form {
@@ -13127,6 +13128,11 @@ hr {
     max-width: 100%;
     margin-right: 0;
     margin-bottom: 0;
+  }
+
+  .subscribe__title {
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .stick__item {
