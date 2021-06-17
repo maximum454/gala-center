@@ -7145,10 +7145,6 @@ hr {
   padding: .688rem .75rem;
 }
 
-.slider-populary .swiper-slide {
-  max-width: 236px;
-}
-
 .slider-populary .swiper-button-next,
 .slider-populary .swiper-button-prev {
   width: 44px;
@@ -7271,10 +7267,6 @@ hr {
   width: 100%;
   margin-left: auto;
   padding: .688rem .75rem;
-}
-
-.slider-tabs .swiper-slide {
-  max-width: 236px;
 }
 
 .slider-tabs .swiper-button-next,

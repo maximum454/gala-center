@@ -1,5 +1,5 @@
 const swiperTabs = new Swiper('.swiper-container-tabs', {
-    slidesPerView: 'auto',
+    slidesPerView: 3,
     spaceBetween: 45,
     freeMode: true,
     navigation: {
@@ -7,7 +7,12 @@ const swiperTabs = new Swiper('.swiper-container-tabs', {
         prevEl: '.tabs-prev',
     },
     observer: true,
-    observeParents: true
+    observeParents: true,
+    breakpoints: {
+        1024: {
+            slidesPerView: 5,
+        }
+    }
 })
 
 $(function () {
