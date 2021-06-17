@@ -1,24 +1,20 @@
-var swiperPopulary = swiperPopulary;
+var swiperPopulary= swiperPopulary;
 var swiperPopularyInit = false;
 
-function swiperMode() {
-    let mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
-    let tablet = window.matchMedia('(min-width: 769px) and (max-width: 1023px)');
+
+function swiperPopularyMode() {
+    let mobile = window.matchMedia('(min-width: 0px) and (max-width: 1023px)');
     let desktop = window.matchMedia('(min-width: 1024px)');
 
-     // Disable (for tablet)
     if (mobile.matches) {
-        swiperPopulary.destroy();
-        swiperPopularyInit = false;
+        if(swiperPopulary){
+            swiperPopulary.destroy();
+            swiperPopularyInit = false;
+        }
+        
 
     }
-
-    // Disable (for tablet)
-    else if (tablet.matches) {
-        swiperPopulary.destroy();
-        swiperPopularyInit = false;
-    }
-    // Enable (for mobile)
+    
     else if (desktop.matches) {
         if (!swiperPopularyInit) {
             swiperPopularyInit = true;
@@ -37,14 +33,16 @@ function swiperMode() {
                 }
 
             });
+
+            
         }
     }
 }
 
-window.addEventListener('load', function () {
-    swiperMode();
+window.addEventListener('load', function() {
+    swiperPopularyMode();
 });
 
-window.addEventListener('resize', function () {
-    swiperMode();
+window.addEventListener('resize', function() {
+    swiperPopularyMode();
 });

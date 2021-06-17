@@ -244,23 +244,23 @@
     &__info {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         margin-bottom: 5px;
         font-style: normal;
         font-weight: normal;
+        gap: 10px;
     }
 
     &__articul {
         font-size: 13px;
         line-height: 16px;
         color: #333333;
-        margin-right: 25px;
     }
 
     &__city {
         font-size: 13px;
         line-height: 16px;
         color: #333333;
-        margin-right: 10px;
     }
 
     &__price {
@@ -469,6 +469,16 @@
         }
         &__preview {
             display: none;
+        }
+        &__info {
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+        }
+        &__articul {
+
+            width: 100%;
+            flex-shrink: 0;
         }
         .btn {
             font-style: normal;
