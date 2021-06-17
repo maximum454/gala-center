@@ -38,6 +38,8 @@
 		}
 		.btn{
 			border-radius: 8px;
+            width: fit-content;
+            max-width: 100%;
 		}
 	}
 	&__close{
@@ -70,4 +72,20 @@
 			}
 		}
 	}
+    @include r(767){
+        &__modal{
+            width: 320px;
+            &.active{
+                display: block;
+                right: 0;
+                transform:translate(0,0);
+            }
+            .btn{
+               
+                width: 100%;
+                max-width: 100%;
+            }
+            
+        }
+    }
 }

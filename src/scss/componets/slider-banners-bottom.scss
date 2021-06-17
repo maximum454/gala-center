@@ -35,4 +35,7 @@
 			overflow-x: scroll;
 		}
 	}
+    @include r(767){
+        display: none;
+    }
 }

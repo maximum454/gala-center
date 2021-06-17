@@ -24,12 +24,7 @@
 		width: 88px;
 		margin-left: 32px;
 	}
-	.btn{
-		max-width: 178px;
-		width: 100%;
-		margin-left: auto;
-		padding: .688rem .75rem;
-	}
+
 	.swiper-slide{
 		
 	}
@@ -68,16 +63,29 @@
 		&__nav{
 			display: none;
 		}
-		.btn{
-			display: none;
-		}
-	}
-    @include r(767){
+        &__body{
+            display: block;
+        }
         .swiper-wrapper{
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(212px,1fr));
+            grid-gap: 34px;
         }
         .swiper-slide{
             height: auto;
+        }
+        .btn{
+            &--footer{
+                width: fit-content;
+                margin: auto;
+                display: block;
+            }
+        }
+	}
+    @include r(767){
+        .swiper-wrapper{
+            grid-template-columns:1fr 1fr;
+            grid-gap: 22px;
         }
     }
 }

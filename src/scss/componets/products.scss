@@ -1,8 +1,5 @@
 .products {
     margin-bottom: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 45px;
     &--list {
         max-width: 1060px;
         display: block;
@@ -189,7 +186,6 @@
         }
     }
     &__item {
-        max-width: 236px;
         transition: all 0.3s ease;
         position: relative;
         &:hover {
@@ -204,7 +200,7 @@
         border-radius: 2px;
         margin-bottom: 13px;
         text-decoration: none;
-        height: 236px;
+        height: 212px;
         &:hover {
             .products__preview {
                 transition: all 0.3s ease;
@@ -213,9 +209,10 @@
         }
         img {
             display: block;
+            width: 100%;
             max-width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
 
@@ -343,16 +340,24 @@
             position: relative;
             padding-left: 48px;
             text-align: left;
-            &::before {
-                content: "";
-                position: absolute;
-                top: 50%;
-                left: 10px;
-                margin-top: -12px;
-                background-image: url(../img/icons-sprite.svg#basket-btn);
-                background-repeat: no-repeat;
-                width: 24px;
-                height: 24px;
+            background-color: #fff;
+            border-color: #324C9A;
+            
+            .center{
+                width: fit-content;
+                margin: auto;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: -30px;
+                    margin-top: -12px;
+                    background-image: url(../img/icons-sprite.svg#basket-btn);
+                    background-repeat: no-repeat;
+                    width: 24px;
+                    height: 24px;
+                }
             }
         }
     }
@@ -473,7 +478,7 @@
             text-align: center;
             color: #324c9a;
             padding: 3px 25px;
-            max-width: 164px;
+            max-width: 100%;
         }
     }
     @include r(767) {
