@@ -4555,12 +4555,22 @@ th {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  position: relative;
 }
 
 .tabs-secondary > .tabs__caption li.active {
   background-color: transparent;
-  border-bottom: 2px solid #324c9a;
   border-radius: 0;
+}
+
+.tabs-secondary > .tabs__caption li.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #324c9a;
+  width: 100%;
+  height: 4px;
 }
 
 .tabs-secondary > .tabs__caption li:hover {
@@ -11971,43 +11981,43 @@ hr {
   }
 
   .tabs__caption::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+    width: 1px;
+    height: 1px;
   }
 
   .tabs__caption::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: rgba(136, 142, 148, 0.4);
   }
 
   .tabs__caption::-webkit-scrollbar-thumb {
-    background: #324c9a;
+    background: rgba(136, 142, 148, 0.4);
   }
 
   .tabs__caption::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
 
-  .tabs__content {
+  .tabs__content.active {
     overflow-x: scroll;
     /* Track */
     /* Handle */
     /* Handle on hover */
   }
 
-  .tabs__content::-webkit-scrollbar {
+  .tabs__content.active::-webkit-scrollbar {
     width: 5px;
     height: 5px;
   }
 
-  .tabs__content::-webkit-scrollbar-track {
+  .tabs__content.active::-webkit-scrollbar-track {
     background: #f1f1f1;
   }
 
-  .tabs__content::-webkit-scrollbar-thumb {
+  .tabs__content.active::-webkit-scrollbar-thumb {
     background: #888;
   }
 
-  .tabs__content::-webkit-scrollbar-thumb:hover {
+  .tabs__content.active::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
 
