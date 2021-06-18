@@ -3778,6 +3778,10 @@ html.remodal-is-locked {
   background-image: url("../img/icons-sprite.svg#icon-ylm");
 }
 
+.icon-search-blue {
+  background-image: url("../img/icons-sprite.svg#search-blue");
+}
+
 .btn-group {
   margin: 0 -10px;
 }
