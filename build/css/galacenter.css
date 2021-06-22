@@ -12861,6 +12861,7 @@ hr {
     border-radius: 0;
     max-width: 100%;
     margin-bottom: 0;
+    min-height: 100%;
   }
 
   .remodal.auth {
