@@ -23,6 +23,7 @@
 @@include('./components/slider-catalog-detail.js')
 @@include('./components/header-fix.js')
 @@include('./components/menu-mobile.js')
+@@include('./components/search-mob.js')
 
 $(function () {
     var nav = priorityNav.init({
@@ -97,5 +98,6 @@ $(function () {
     
     })
 
+   
 
 })

@@ -63,6 +63,7 @@
         max-width: 100%;
         padding: 24px 24px 10px;
         min-height: 100%;
+        margin-bottom: 0;
         .title {
             font-style: normal;
             font-weight: bold;
@@ -93,6 +94,9 @@
             &:before {
                 display: none;
             }
+        }
+        .products{
+            display: none;
         }
         .search-mob__form{
             

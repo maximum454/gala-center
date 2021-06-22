@@ -4817,6 +4817,7 @@ th {
   max-width: 100%;
   padding: 24px 24px 10px;
   min-height: 100%;
+  margin-bottom: 0;
 }
 
 .remodal.search-mob .title {
@@ -4853,6 +4854,10 @@ th {
 }
 
 .remodal.search-mob .remodal-close:before {
+  display: none;
+}
+
+.remodal.search-mob .products {
   display: none;
 }
 
@@ -13870,6 +13875,85 @@ hr {
 
   .slider-populary .swiper-wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .products--list {
+    max-width: 1060px;
+    display: block;
+  }
+
+  .products--list.select {
+    max-width: 100%;
+  }
+
+  .products--list .products__item {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 0;
+    gap: 20px;
+  }
+
+  .products--list .products__item:hover {
+    background-color: #4479a31f;
+    opacity: 1;
+  }
+
+  .products--list .products__item.active {
+    border-right: 1px solid rgba(68, 121, 163, 0.12);
+  }
+
+  .products--list .products__item.active .products__add-quantity-store {
+    display: block;
+  }
+
+  .products--list .products__img {
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 80px;
+    height: 80px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+
+  .products--list .products__txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .products--list .products__name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0;
+  }
+
+  .products--list .products__articul {
+    margin-right: 5px;
+  }
+
+  .products--list .products__price {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+    margin-bottom: 0;
   }
 }
 
