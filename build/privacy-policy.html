@@ -1415,15 +1415,29 @@
 
 <!--Поиск мобильный-->
 <div class="remodal search-mob" data-remodal-id="search-mob">
-    
-    <form action="">
+
+    <form class="search-mob__form" action="">
         <div class="form-group d-flex">
-            <div>
-                <input type="text" class="form-control" placeholder="">
+            <div class="search-mob__form-inner">
+                <input type="text" class="form-control" placeholder="Поиск">
+                <input type="submit" class="search-btn" value="">
+                <i class="icon icon-close"></i>
             </div>
             <button data-remodal-action="close" class="remodal-close">Отмена</button>
         </div>
     </form>
+
+    <div class="search-mob__header">
+        <div>Вы искали</div>
+        <div>Очистить</div>
+    </div>
+    <div class="search-mob__body">
+        <ul class="search-mob__often">
+            <li><a href=""></a>Утюг с отпаривателем <i class="icon icon-close"></i></li>
+            <li><a href=""></a>Чайник электрический <i class="icon icon-close"></i></li>
+            <li><a href=""></a>Чайный набор <i class="icon icon-close"></i></li>
+        </ul>
+    </div>
 
 </div>
 </div>
