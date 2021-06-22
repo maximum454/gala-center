@@ -71,15 +71,11 @@
                     <a href="#"><i class="icon icon-basket-btn"></i></a>
                 </div>
                 <div class="nav">
-                    <button class="nav__burger js-menu-dropdown"></button>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Поставщикам</a></li>
-                        <li><a href="#">Партнерам</a></li>
-                        <li><a href="#">Интеграция</a></li>
-                        <li><a href="#">Скачать</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#"><i class="icon icon-empire"></i>Империя МПР</a></li>
-                    </ul>
+                    <button class="nav__burger 1"></button>
+                    <!-- TODO: Тут мобильное меню пользователя -->
+                    <div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -193,7 +189,8 @@
             </div>
         </div>
         <div class="header__bottom">
-            <button class="btn btn-primary js-catalog-menu"><i class="icon icon-burger-light"></i>Каталог товаров</button>
+            <button class="btn btn-primary d-mobile-none js-catalog-menu"><i class="icon icon-burger-light"></i>Каталог товаров</button>
+            <button class="btn btn-primary d-desktop-none" data-remodal-target="menu-mob"><i class="icon icon-burger-light"></i>Каталог товаров</button>
             <div class="header__search">
                 <form action="">
                     <input type="text" class="form-control" placeholder="Поиск">
@@ -281,7 +278,7 @@
                 <a href="#"><i class="icon icon-basket-btn"></i></a>
             </div>
             <div class="nav">
-                <button class="nav__burger js-menu-dropdown"></button>
+                <button class="nav__burger js-menu-dropdown 2"></button>
                 <ul class="dropdown-content">
                     <li><a href="#">Поставщикам</a></li>
                     <li><a href="#">Партнерам</a></li>
@@ -304,7 +301,6 @@
             </div>
         </div>
     </div>
-    <!-- TODO: Нет мобильного меню каталога -->
     <div class="menu">
         <div class="container">
             <div class="tabs tabs--menu">
@@ -1538,7 +1534,7 @@
                             </div>
                         </div>
                         <div class="products__name">
-                             MILLIMI Роскошь Набор чайный 14 пр.,
+                            MILLIMI Роскошь Набор чайный 14 пр.,
                             чашка
                             290мл...
                         </div>
@@ -1549,7 +1545,7 @@
                             <div>145 шт.</div>
                             <span>в 4 магазина</span>
                         </a>
-                    </div>  
+                    </div>
                 </div>
             </div>
             <div class="products__item">
@@ -1574,7 +1570,7 @@
                             </div>
                         </div>
                         <div class="products__name">
-                             MILLIMI Роскошь Набор чайный 14 пр.,
+                            MILLIMI Роскошь Набор чайный 14 пр.,
                             чашка
                             290мл...
                         </div>
@@ -1585,7 +1581,7 @@
                             <div>145 шт.</div>
                             <span>в 4 магазина</span>
                         </a>
-                    </div>  
+                    </div>
                 </div>
             </div>
             <div class="products__item">
@@ -1610,7 +1606,7 @@
                             </div>
                         </div>
                         <div class="products__name">
-                             MILLIMI Роскошь Набор чайный 14 пр.,
+                            MILLIMI Роскошь Набор чайный 14 пр.,
                             чашка
                             290мл...
                         </div>
@@ -1621,7 +1617,7 @@
                             <div>145 шт.</div>
                             <span>в 4 магазина</span>
                         </a>
-                    </div>  
+                    </div>
                 </div>
             </div>
             <div class="products__item">
@@ -1646,7 +1642,7 @@
                             </div>
                         </div>
                         <div class="products__name">
-                             MILLIMI Роскошь Набор чайный 14 пр.,
+                            MILLIMI Роскошь Набор чайный 14 пр.,
                             чашка
                             290мл...
                         </div>
@@ -1657,13 +1653,129 @@
                             <div>145 шт.</div>
                             <span>в 4 магазина</span>
                         </a>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 </div>
+
+<!--Поиск мобильный-->
+<div class="remodal menu-mob" data-remodal-id="menu-mob">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="menu-mob__title">Каталог</div>
+    <form class="menu-mob__form" action="">
+        <input type="text" class="form-control" placeholder="Поиск">
+        <input type="submit" class="menu-mob__btn" value="">
+    </form>
+    <div class="menu-mobile">
+        <div class="menu-mobile__body">
+            <ul class="menu-mobile__ul">
+                <li class="active"><span class="arrow-down"><i class="icon icon-avto"></i> Авто</span>
+                    <ul>
+                        <li><span class="arrow-down">Источники света</span>
+                            <ul>
+                                <li><a href="">Лампы накаливания</a></li>
+                                <li><a href="">Лампы энергосберегающие и светодиодные</a></li>
+                                <li><a href="">Лента светодиодная</a></li>
+                            </ul>
+                        </li>
+                        <li>Электротехника</li>
+                        <li>Освещение</li>
+                    </ul>
+                </li>
+                <li><span class="arrow-down"><i class="icon icon-aromatizatory"></i> Ароматизаторы</span>
+                    <ul>
+                        <li><span class="arrow-down">Источники света</span>
+                            <ul>
+                                <li><a href="">Лампы накаливания</a></li>
+                                <li><a href="">Лампы энергосберегающие и светодиодные</a></li>
+                                <li><a href="">Лента светодиодная</a></li>
+                            </ul>
+                        </li>
+                        <li>Электротехника</li>
+                        <li>Освещение</li>
+                    </ul>
+                </li>
+                <li><span class="arrow-down"><i class="icon icon-bytovaya-tekhnika"></i> Бытовая техника</span>
+                    <ul>
+                        <li><span class="arrow-down">Источники света</span>
+                            <ul>
+                                <li><a href="">Лампы накаливания</a></li>
+                                <li><a href="">Лампы энергосберегающие и светодиодные</a></li>
+                                <li><a href="">Лента светодиодная</a></li>
+                            </ul>
+                        </li>
+                        <li>Электротехника</li>
+                        <li>Освещение</li>
+                    </ul>
+                </li>
+                <li><span class="arrow-down"><i class="icon icon-bytovaya-khimiya"></i> Бытовая химия</span>
+                    <ul>
+                        <li><span class="arrow-down">Источники света</span>
+                            <ul>
+                                <li><a href="">Лампы накаливания</a></li>
+                                <li><a href="">Лампы энергосберегающие и светодиодные</a></li>
+                                <li><a href="">Лента светодиодная</a></li>
+                            </ul>
+                        </li>
+                        <li>Электротехника</li>
+                        <li>Освещение</li>
+                    </ul>
+                </li>
+                <li><span class="arrow-down"><i class="icon icon-galantereya"></i> Галантерея</span></li>
+                <li><span class="arrow-down"><i class="icon icon-dacha-i-sad"></i> Дача и сад</span></li>
+                <li><span class="arrow-down"><i class="icon icon-domashniy-tekstil"></i> Домашний текстиль</span></li>
+                <li><span class="arrow-down"><i class="icon icon-instrumenty"></i> Инструменты</span></li>
+                <li><span class="arrow-down"><i class="icon icon-kantselyarskie-tovary"></i> Канцтовары</span></li>
+                <li><span class="arrow-down"><i class="icon icon-elektrotekhnika"></i> Электроника</span></li>
+                <li><span class="arrow-down"><i class="icon icon-podarki"></i> Подарки</span></li>
+                <li><span class="arrow-down"><i class="icon icon-posuda"></i> Посуда</span></li>
+                <li><span class="arrow-down"><i class="icon icon-santehnika"></i> Сантехника</span></li>
+                <li><span class="arrow-down"><i class="icon icon-tovary-dlya-detey"></i> Товары для детей</span></li>
+                <li><span class="arrow-down"><i class="icon icon-turizm"></i> Туризм и рыбалка</span></li>
+                <li><span class="arrow-down"><i class="icon icon-sport"></i> Спорт и отдых</span></li>
+                <li><span class="arrow-down"><i class="icon icon-khoztovary"></i> Хозтовары</span></li>
+            </ul>
+        </div>
+    </div>
+    <ul class="menu-mob__ul" style="display: none;">
+        <li class="active">
+            <div class="name"><i class="icon icon-avto"></i> Авто</div>
+            <ul class="menu-mob__ul-level">
+                <li>
+                    <div class="name"> Источники света</div>
+                    <ul class="menu-mob__ul-level2">
+                        <li><a href="">Лампы накаливания</a></li>
+                        <li><a href="">Лампы энергосберегающие 
+                            и светодиодные</a></li>
+                        <li><a href="">Лента светодиодная</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-aromatizatory"></i> Ароматизаторы</a></li>
+        <li><a href="#"><i class="icon icon-bytovaya-tekhnika"></i> Бытовая техника</a></li>
+        <li><a href="#"><i class="icon icon-bytovaya-khimiya"></i> Бытовая химия</a></li>
+        <li><a href="#"><i class="icon icon-galantereya"></i> Галантерея</a></li>
+        <li><a href="#"><i class="icon icon-dacha-i-sad"></i> Дача и сад</a></li>
+        <li><a href="#"><i class="icon icon-domashniy-tekstil"></i> Домашний текстиль</a></li>
+        <li><a href="#"><i class="icon icon-instrumenty"></i> Инструменты</a></li>
+        <li><a href="#"><i class="icon icon-kantselyarskie-tovary"></i> Канцтовары</a></li>
+        <li><a href="#"><i class="icon icon-elektrotekhnika"></i> Электроника</a></li>
+        <li><a href="#"><i class="icon icon-podarki"></i> Подарки</a></li>
+        <li><a href="#"><i class="icon icon-posuda"></i> Посуда</a></li>
+        <li><a href="#"><i class="icon icon-santehnika"></i> Сантехника</a></li>
+        <li><a href="#"><i class="icon icon-tovary-dlya-detey"></i> Товары для детей</a></li>
+        <li><a href="#"><i class="icon icon-turizm"></i> Туризм и рыбалка</a></li>
+        <li><a href="#"><i class="icon icon-sport"></i> Спорт и отдых</a></li>
+        <li><a href="#"><i class="icon icon-khoztovary"></i> Хозтовары</a></li>
+    </ul>
+
+
+</div>
+
 </div>
 
 <script src="js/galacenter.min.js"></script>

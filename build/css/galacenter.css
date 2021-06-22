@@ -5025,6 +5025,54 @@ th {
   top: 20px;
 }
 
+.remodal.menu-mob {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 14px rgba(50, 76, 154, 0.25);
+          box-shadow: 0px 4px 14px rgba(50, 76, 154, 0.25);
+  border-radius: 0;
+  max-width: 100%;
+  padding: 24px 24px 10px;
+  min-height: 100%;
+  margin-bottom: 0;
+}
+
+.remodal.menu-mob .menu-mob__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.remodal.menu-mob .menu-mob__form {
+  position: relative;
+  height: 44px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.remodal.menu-mob .menu-mob__form .form-control {
+  height: 100%;
+  padding: 13px 10px 11px 48px;
+}
+
+.remodal.menu-mob .menu-mob__form .menu-mob__btn {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  margin-top: -12px;
+  display: block;
+  border: none;
+  background-color: transparent;
+  background-image: url(../img/icons-sprite.svg#search-gray);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+
 .remodal.auth {
   text-align: left;
   background: #ffffff;
@@ -11863,13 +11911,11 @@ hr {
 }
 
 .menu-mobile {
-  padding: 16px 18px;
   background-color: #fff;
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
-  display: none;
   z-index: 100;
 }
 
