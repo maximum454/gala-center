@@ -1762,7 +1762,7 @@ const swiperBrands = new Swiper('.swiper-container-brands', {
     },
     breakpoints: {
         320: {
-            slidesPerView: 2.5,
+            slidesPerView: 2,
         },
         450: {
             slidesPerView: 3.5,

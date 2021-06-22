@@ -291,4 +291,42 @@
             }
         }
     }
+    @include r(374){
+    
+        &__bottom{
+            gap: 20px;
+			.btn{
+				margin-right: 0;
+                .icon{
+                    display: none;
+                }
+			}
+            .nav{
+                display: none;
+            }
+			.header__search{
+				display: none;
+			}
+			.header__auth{
+				display: none;
+			}
+            .header-delivery {
+                display: block;
+                .icon-delivery{
+                    display: none;
+                }
+                span{
+                    margin-left: 0;
+                }
+            }
+		}
+        .btn{            
+            &.d-desktop{
+                display: none;
+            }
+            &.d-mobile{
+                display: block;
+            }
+        }
+    }
 }
