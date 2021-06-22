@@ -402,6 +402,22 @@ body {
         }
         
     }
+    &.catalog-table{
+        .filter__btn{
+            background-color: #F1EDF9;
+            border-color: #F1EDF9;
+        }
+        .breadcrumb-catalog__dropdown-toggle{
+            background-color: #F1EDF9;
+        }
+        .btn.btn-light,
+        .products .btn{
+            background-color: #F1EDF9;
+        }
+        .btn.btn-outline-primary.active{
+            background-color: #fff;
+        }
+    }
 }
 
 .wrp {
