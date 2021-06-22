@@ -50,4 +50,9 @@
 			line-height: 24px;
 		}
 	}
+    @include r(374) {
+        .swiper-wrapper{
+            text-align: center;
+        }
+    }
 }

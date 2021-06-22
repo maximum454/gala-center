@@ -119,4 +119,9 @@
             grid-gap: 22px;
         }
     }
+    @include r(767){
+        .swiper-wrapper{
+            grid-template-columns:1fr;
+        }
+    }
 }

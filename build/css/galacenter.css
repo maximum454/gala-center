@@ -4752,7 +4752,7 @@ th {
 }
 
 .remodal.delivery {
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 0px 4px 14px rgba(50, 76, 154, 0.25);
           box-shadow: 0px 4px 14px rgba(50, 76, 154, 0.25);
   border-radius: 4px;
@@ -4782,7 +4782,7 @@ th {
 .remodal.delivery .jq-selectbox__select {
   height: 44px;
   line-height: 44px;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(1, 14, 61, 0.32);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -4805,8 +4805,84 @@ th {
   top: 20px;
 }
 
+.remodal.search-mob {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 14px rgba(50, 76, 154, 0.25);
+          box-shadow: 0px 4px 14px rgba(50, 76, 154, 0.25);
+  border-radius: 4px;
+  max-width: 100%;
+  padding: 24px 24px 10px;
+  min-height: 100%;
+}
+
+.remodal.search-mob .title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.remodal.search-mob .select {
+  width: 100%;
+  margin: 24px 0;
+}
+
+.remodal.search-mob .remodal-close {
+  position: relative;
+  right: auto;
+  top: auto;
+  left: auto;
+  background-image: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.remodal.search-mob .remodal-close:before {
+  display: none;
+}
+
+.remodal.search-mob .jq-selectbox li {
+  text-align: left;
+}
+
+.remodal.search-mob .jq-selectbox__select {
+  height: 44px;
+  line-height: 44px;
+  background: #ffffff;
+  border: 1px solid rgba(1, 14, 61, 0.32);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.remodal.search-mob .jq-selectbox__select-text {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #333333;
+}
+
+.remodal.search-mob .jq-selectbox__trigger {
+  border-left: none;
+}
+
+.remodal.search-mob .jq-selectbox__trigger-arrow {
+  top: 20px;
+}
+
 .remodal.select-shop {
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 0px 4px 14px rgba(50, 76, 154, 0.25);
           box-shadow: 0px 4px 14px rgba(50, 76, 154, 0.25);
   border-radius: 4px;
@@ -4830,7 +4906,7 @@ th {
 }
 
 .remodal.select-shop .add-quantity-store__item:nth-child(even) {
-  background: #F9F1F2;
+  background: #f9f1f2;
 }
 
 .remodal.select-shop .jq-selectbox li {
@@ -4840,7 +4916,7 @@ th {
 .remodal.select-shop .jq-selectbox__select {
   height: 44px;
   line-height: 44px;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(1, 14, 61, 0.32);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -4865,7 +4941,7 @@ th {
 
 .remodal.auth {
   text-align: left;
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 0px 4px 14px rgba(50, 76, 154, 0.25);
           box-shadow: 0px 4px 14px rgba(50, 76, 154, 0.25);
   border-radius: 4px;
@@ -4887,19 +4963,19 @@ th {
   text-align: right;
   font-size: 13px;
   line-height: 20px;
-  color: #324C9A;
+  color: #324c9a;
   text-decoration: none;
   display: block;
 }
 
 .remodal.auth .forgot-password:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .remodal.auth .btn-registration {
   background: rgba(201, 67, 84, 0.08);
   border-radius: 4px;
-  color: #324C9A;
+  color: #324c9a;
   width: calc(100% + 48px);
   margin-left: -24px;
 }
@@ -6647,6 +6723,10 @@ hr {
   max-width: 1023px;
 }
 
+.slider-banners__btn {
+  display: none;
+}
+
 .slider-banners img {
   display: block;
 }
@@ -6676,7 +6756,7 @@ hr {
 
 .slider-banners .swiper-button-next:after,
 .slider-banners .swiper-button-prev:after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   color: #999;
@@ -6699,7 +6779,7 @@ hr {
 }
 
 .slider-banners .swiper-pagination-bullet {
-  background: #324C9A;
+  background: #324c9a;
   opacity: 0.3;
 }
 
@@ -12798,7 +12878,8 @@ hr {
   .remodal.delivery {
     border-radius: 0;
     max-width: 100%;
-    height: 100%;
+    margin-bottom: 0;
+    min-height: 100%;
   }
 
   .remodal.auth {
@@ -13102,6 +13183,40 @@ hr {
     display: block;
   }
 
+  .slider-banners__btn {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .slider-banners .swiper-container {
+    text-align: center;
+  }
+
+  .slider-banners .swiper-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .slider-banners img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .slider-banners .swiper-button-next,
+  .slider-banners .swiper-button-prev {
+    display: none;
+  }
+
+  .slider-banners .swiper-pagination {
+    display: none;
+  }
+
   .slider-banners-bottom {
     display: none;
   }
@@ -13129,6 +13244,10 @@ hr {
   .slider-tabs .swiper-wrapper {
     grid-template-columns: 1fr 1fr;
     grid-gap: 22px;
+  }
+
+  .slider-tabs .swiper-wrapper {
+    grid-template-columns: 1fr;
   }
 
   .products--list .products__item {
@@ -13616,6 +13735,60 @@ hr {
 
   .products__articul {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .header__bottom {
+    gap: 20px;
+  }
+
+  .header__bottom .btn {
+    margin-right: 0;
+  }
+
+  .header__bottom .btn .icon {
+    display: none;
+  }
+
+  .header__bottom .nav {
+    display: none;
+  }
+
+  .header__bottom .header__search {
+    display: none;
+  }
+
+  .header__bottom .header__auth {
+    display: none;
+  }
+
+  .header__bottom .header-delivery {
+    display: block;
+  }
+
+  .header__bottom .header-delivery .icon-delivery {
+    display: none;
+  }
+
+  .header__bottom .header-delivery span {
+    margin-left: 0;
+  }
+
+  .header .btn.d-desktop {
+    display: none;
+  }
+
+  .header .btn.d-mobile {
+    display: block;
+  }
+
+  .slider-brands .swiper-wrapper {
+    text-align: center;
+  }
+
+  .slider-populary .swiper-wrapper {
+    grid-template-columns: 1fr;
   }
 }
 
