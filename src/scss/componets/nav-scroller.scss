@@ -1,6 +1,17 @@
 .nav-scroller {
     background-color: #fff;
     padding: 16px 0;
+    &.active{
+        .header__logo,
+        .header__auth,
+        .nav__burger{
+            position: relative;
+            z-index: 1000;
+        }
+        .menu-user{
+            display: block;
+        }
+    }
     &__body {
         display: flex;
         align-items: center;

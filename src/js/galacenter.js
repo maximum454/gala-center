@@ -24,6 +24,7 @@
 @@include('./components/header-fix.js')
 @@include('./components/menu-mobile.js')
 @@include('./components/search-mob.js')
+@@include('./components/nav__burger.js')
 
 $(function () {
     var nav = priorityNav.init({

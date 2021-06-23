@@ -51,9 +51,8 @@
                         <p>Выберите город, в котором осуществаляется отгрузка. Это важно, чтобы увидеть наличие цены и
                             сроки
                             доставки.</p>
-                        <a href="#" class="btn btn-primary">Все верно</a> 
-                        <a href="#" class="btn btn-link"
-                            data-remodal-target="delivery">Выбрать
+                        <a href="#" class="btn btn-primary">Все верно</a>
+                        <a href="#" class="btn btn-link" data-remodal-target="delivery">Выбрать
                             город</a>
                     </div>
                 </div>
@@ -71,9 +70,40 @@
                     <a href="#"><i class="icon icon-basket-btn"></i></a>
                 </div>
                 <div class="nav">
-                    <button class="nav__burger 1"></button>
+                    <button class="nav__burger"></button>
                     <!-- TODO: Тут мобильное меню пользователя -->
-                    <div>
+                    <div class="menu-user">
+                        <ul class="menu-user__list">
+                            <li><a href="">О компании</a></li>
+                            <li><a href="">Доставка</a></li>
+                            <li><a href="">Прайс листы</a></li>
+                            <li><a href="">Избранные товары</a></li>
+                            <li><a href="">Статьи</a></li>
+                            <li><a href="">Сервисные центры</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Поставщикам</a></li>
+                            <li><a href="">Партнерам</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                        <div class="btn-group">
+                            <a href="" class="btn btn-primary">Войти</a>
+                            <a href="" class="btn btn-outline-primary">Регистрация</a>
+                        </div>
+                        <div class="menu-user__phone">
+                            <a href="tel:8-800-500-18-42">8-800-500-18-42</a> <a href="">Заказать звонок</a>
+                        </div>
+                        <div class="menu-user__social">
+                            <a href="#" class="menu-user__social-item facebook white"></a>
+                            <a href="#" class="menu-user__social-item vkontakte"></a>
+                            <a href="#" class="menu-user__social-item instagram"></a>
+                            <a href="#" class="menu-user__social-item youtube"></a>
+                        </div>
+                        <div class="menu-user__app">
+                            <div class="menu-user__app-title">Оформляйте заказы в приложении</div>
+                            <a href="#"><img src="./img/DownloadGalaCatalog.svg" width="119" height="32" alt=""></a>
+                            <a href="#"><img src="./img/DownloadAppStore.svg" width="96" height="32" alt=""></a>
+                            <a href="#"><img src="./img/DownloadGooglePlay.svg" width="96" height="32" alt=""></a>
+                        </div>
 
                     </div>
                 </div>
@@ -189,8 +219,10 @@
             </div>
         </div>
         <div class="header__bottom">
-            <button class="btn btn-primary d-mobile-none js-catalog-menu"><i class="icon icon-burger-light"></i>Каталог товаров</button>
-            <button class="btn btn-primary d-desktop-none" data-remodal-target="menu-mob"><i class="icon icon-burger-light"></i>Каталог товаров</button>
+            <button class="btn btn-primary d-mobile-none js-catalog-menu"><i class="icon icon-burger-light"></i>Каталог
+                товаров</button>
+            <button class="btn btn-primary d-desktop-none" data-remodal-target="menu-mob"><i
+                    class="icon icon-burger-light"></i>Каталог товаров</button>
             <div class="header__search">
                 <form action="">
                     <input type="text" class="form-control" placeholder="Поиск">
@@ -326,9 +358,16 @@
 
                 <div class="tabs__content active">
                     <header class="menu__header">
-                        <a class="menu__link menu__link--stocked" href="#"><div class="stick__item new">NEW</div> <span> Акции</span></a>
-                        <a class="menu__link menu__link--action" href="#"><div class="stick__item hit">ХИТ</div><span>Хиты</span></a>
-                        <a class="menu__link menu__link--action" href="#"><div class="stick__item sale"> <i class="icon icon-percent"></i> </div><span>Распродажа</span></a>
+                        <a class="menu__link menu__link--stocked" href="#">
+                            <div class="stick__item new">NEW</div> <span> Акции</span>
+                        </a>
+                        <a class="menu__link menu__link--action" href="#">
+                            <div class="stick__item hit">ХИТ</div><span>Хиты</span>
+                        </a>
+                        <a class="menu__link menu__link--action" href="#">
+                            <div class="stick__item sale"> <i class="icon icon-percent"></i> </div>
+                            <span>Распродажа</span>
+                        </a>
                         <button class="menu__close js-menu-close"></button>
                     </header>
                     <main>
@@ -336,8 +375,8 @@
                             <li class="menu-big__item"><a href="">Источники света</a>
                                 <ul>
                                     <li><a href="#">Лампы накаливая</a></li>
-                                    <li><a href="#">Лампы энергосберегающие 
-                                        и светодиодные</a></li>
+                                    <li><a href="#">Лампы энергосберегающие
+                                            и светодиодные</a></li>
                                     <li><a href="#">Лента светодиодная</a></li>
                                 </ul>
                             </li>
@@ -345,12 +384,12 @@
                                 <ul>
                                     <li><a href="" class="active">Батарейки и аккумуляторы</a></li>
                                     <li><a href="" class="active">Розетки, выключатели, патроны</a></li>
-                                    <li><a href="" class="active">Удлинители и сетевые 
-                                        фильтры,</a></li>
+                                    <li><a href="" class="active">Удлинители и сетевые
+                                            фильтры,</a></li>
                                 </ul>
                             </li>
                             <li class="menu-big__item"><a href="">Мобильные и компьютерные
-                                аксессуары</a>
+                                    аксессуары</a>
                                 <ul>
                                     <li class="active"><a href="">Аксессуары для телефона</a></li>
                                     <li><a href="">Зарядные устройства</a></li>
@@ -373,9 +412,16 @@
                 </div>
                 <div class="tabs__content">
                     <header class="menu__header">
-                        <a class="menu__link menu__link--stocked" href="#"><div class="stick__item new">NEW</div> <span> Акции</span></a>
-                        <a class="menu__link menu__link--action" href="#"><div class="stick__item hit">ХИТ</div><span>Хиты</span></a>
-                        <a class="menu__link menu__link--action" href="#"><div class="stick__item sale"> <i class="icon icon-percent"></i> </div><span>Распродажа</span></a>
+                        <a class="menu__link menu__link--stocked" href="#">
+                            <div class="stick__item new">NEW</div> <span> Акции</span>
+                        </a>
+                        <a class="menu__link menu__link--action" href="#">
+                            <div class="stick__item hit">ХИТ</div><span>Хиты</span>
+                        </a>
+                        <a class="menu__link menu__link--action" href="#">
+                            <div class="stick__item sale"> <i class="icon icon-percent"></i> </div>
+                            <span>Распродажа</span>
+                        </a>
                         <button class="menu__close js-menu-close"></button>
                     </header>
                     <main>
@@ -383,8 +429,8 @@
                             <li class="menu-big__item"><a href="">Источники света</a>
                                 <ul>
                                     <li><a href="#">Лампы накаливая</a></li>
-                                    <li><a href="#">Лампы энергосберегающие 
-                                        и светодиодные</a></li>
+                                    <li><a href="#">Лампы энергосберегающие
+                                            и светодиодные</a></li>
                                     <li><a href="#">Лента светодиодная</a></li>
                                 </ul>
                             </li>
@@ -392,12 +438,12 @@
                                 <ul>
                                     <li><a href="" class="active">Батарейки и аккумуляторы</a></li>
                                     <li><a href="" class="active">Розетки, выключатели, патроны</a></li>
-                                    <li><a href="" class="active">Удлинители и сетевые 
-                                        фильтры,</a></li>
+                                    <li><a href="" class="active">Удлинители и сетевые
+                                            фильтры,</a></li>
                                 </ul>
                             </li>
                             <li class="menu-big__item"><a href="">Мобильные и компьютерные
-                                аксессуары</a>
+                                    аксессуары</a>
                                 <ul>
                                     <li class="active"><a href="">Аксессуары для телефона</a></li>
                                     <li><a href="">Зарядные устройства</a></li>
