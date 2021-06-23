@@ -185,6 +185,11 @@
             margin-top: 6px;
         }
     }
+    &--piltka{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(236px,1fr));
+        grid-gap: 45px;
+    }
     &__item {
         transition: all 0.3s ease;
         position: relative;

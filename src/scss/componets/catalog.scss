@@ -1,0 +1,20 @@
+.catalog{
+    &--list{
+        &.hide{
+            display: none;
+        }
+        &.active{
+            display: block;
+        }
+    }
+    &--block{
+        display: none;
+        &.hide{
+            display: none;
+        }
+        &.active{
+            display: block;
+        }
+
+    }
+}

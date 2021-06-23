@@ -25,6 +25,7 @@
 @@include('./components/menu-mobile.js')
 @@include('./components/search-mob.js')
 @@include('./components/nav__burger.js')
+@@include('./components/switch-mode.js')
 
 $(function () {
     var nav = priorityNav.init({

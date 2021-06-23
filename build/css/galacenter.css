@@ -7981,6 +7981,12 @@ hr {
   margin-top: 6px;
 }
 
+.products--piltka {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+  grid-gap: 45px;
+}
+
 .products__item {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -12334,6 +12340,26 @@ hr {
           text-decoration-line: underline;
   color: #324c9a;
   padding-left: 20px;
+}
+
+.catalog--list.hide {
+  display: none;
+}
+
+.catalog--list.active {
+  display: block;
+}
+
+.catalog--block {
+  display: none;
+}
+
+.catalog--block.hide {
+  display: none;
+}
+
+.catalog--block.active {
+  display: block;
 }
 
 @media only screen and (min-width: 641px) {
