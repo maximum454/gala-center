@@ -1744,11 +1744,16 @@ function swiperMode() {
 }
 
 window.addEventListener('load', function () {
-    swiperMode();
+    
+    if($('.swiper-container').length){
+        swiperMode();
+    }
 });
 
 window.addEventListener('resize', function () {
-    swiperMode();
+    if($('.swiper-container').length){
+        swiperMode();
+    }
 });
 const swiperBrands = new Swiper('.swiper-container-brands', {
     slidesPerView: 3.5,
@@ -1874,11 +1879,15 @@ function swiperPopularyMode() {
 }
 
 window.addEventListener('load', function() {
-    swiperPopularyMode();
+    if($('.swiper-container-populary').length){
+        swiperPopularyMode();
+    }
 });
 
 window.addEventListener('resize', function() {
-    swiperPopularyMode();
+    if($('.swiper-container-populary').length){
+        swiperPopularyMode();
+    }
 });
 
 $(function () {
@@ -1934,11 +1943,16 @@ function swiperTabsMode() {
 
 
 window.addEventListener('load', function () {
-    swiperTabsMode();
+    if($('.swiper-container-tabs').length){
+        swiperTabsMode();
+    }
+    
 });
 
 window.addEventListener('resize', function () {
-    swiperTabsMode();
+    if($('.swiper-container-tabs').length){
+        swiperTabsMode();
+    }
 });
 
 const swiperCollection = new Swiper('.swiper-container-collection', {

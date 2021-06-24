@@ -40,9 +40,14 @@ function swiperMode() {
 }
 
 window.addEventListener('load', function () {
-    swiperMode();
+    
+    if($('.swiper-container').length){
+        swiperMode();
+    }
 });
 
 window.addEventListener('resize', function () {
-    swiperMode();
+    if($('.swiper-container').length){
+        swiperMode();
+    }
 });

@@ -5547,6 +5547,12 @@ body.catalog-table .btn.btn-outline-primary.active {
   background-color: #fff;
 }
 
+body.catalog-table .filter__item,
+body.catalog-table .header,
+body.catalog-table .footer {
+  background-color: #F1EDF9;
+}
+
 .wrp {
   overflow: hidden;
   position: relative;
