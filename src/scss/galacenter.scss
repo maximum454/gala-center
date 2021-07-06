@@ -423,6 +423,44 @@ body {
             background-color: #F1EDF9;
         }
     }
+
+    &.landing3 {
+        background-color: #046B72;
+        .header,
+        .footer,
+        .filter__item,
+        .btn-secondary,
+        .btn-light,
+        .breadcrumb-catalog__dropdown-toggle,
+        .slider-tabs__caption li.active,
+        .catalog-section__item,
+        .subscribe {
+            background: #40BEB7
+        }
+        .selections-goods__txt {
+            background: linear-gradient(158.63deg, rgba(242, 255, 224, 0) 40.03%, #aebb9c 81.63%);
+        }
+        .nav-scroller{
+            background-color: #046B72;
+        }
+        .nav-scroller__menu a,
+        .header-delivery span,
+        .header-delivery,
+        .header__phone a,
+        .header__phone span,
+        .header__auth a,
+        .nav ul li a,
+        .footer__copy p,
+        .footer__nav a,
+        .footer__social-title,
+        .footer__app-title,
+        .footer__copy a,
+        .footer__info span,
+        .footer__info a,
+        .footer__info p{
+            color: #fff;
+        }
+    }
 }
 
 .wrp {
@@ -810,3 +848,6 @@ hr {
 
 // Каталог
 @import "componets/catalog";
+
+// Каталог
+@import "componets/landing3";
