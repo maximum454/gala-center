@@ -5547,6 +5547,55 @@ body.catalog-table .btn.btn-outline-primary.active {
   background-color: #fff;
 }
 
+body.catalog-table .filter__item,
+body.catalog-table .header,
+body.catalog-table .footer {
+  background-color: #F1EDF9;
+}
+
+body.landing3 {
+  background-color: #046B72;
+}
+
+body.landing3 .header,
+body.landing3 .footer,
+body.landing3 .filter__item,
+body.landing3 .btn-secondary,
+body.landing3 .btn-light,
+body.landing3 .breadcrumb-catalog__dropdown-toggle,
+body.landing3 .slider-tabs__caption li.active,
+body.landing3 .catalog-section__item,
+body.landing3 .subscribe {
+  background: #40BEB7;
+}
+
+body.landing3 .selections-goods__txt {
+  background: -o-linear-gradient(291.37deg, rgba(242, 255, 224, 0) 40.03%, #aebb9c 81.63%);
+  background: linear-gradient(158.63deg, rgba(242, 255, 224, 0) 40.03%, #aebb9c 81.63%);
+}
+
+body.landing3 .nav-scroller {
+  background-color: #046B72;
+}
+
+body.landing3 .nav-scroller__menu a,
+body.landing3 .header-delivery span,
+body.landing3 .header-delivery,
+body.landing3 .header__phone a,
+body.landing3 .header__phone span,
+body.landing3 .header__auth a,
+body.landing3 .nav ul li a,
+body.landing3 .footer__copy p,
+body.landing3 .footer__nav a,
+body.landing3 .footer__social-title,
+body.landing3 .footer__app-title,
+body.landing3 .footer__copy a,
+body.landing3 .footer__info span,
+body.landing3 .footer__info a,
+body.landing3 .footer__info p {
+  color: #fff;
+}
+
 .wrp {
   overflow: hidden;
   position: relative;
@@ -12360,6 +12409,30 @@ hr {
 
 .catalog--block.active {
   display: block;
+}
+
+.landing3__title {
+  text-align: center;
+}
+
+.landing3__title img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+.landing3__elka {
+  background-image: url("../img/landing3/bg-landing3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.landing3 .img-elka {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 @media only screen and (min-width: 641px) {

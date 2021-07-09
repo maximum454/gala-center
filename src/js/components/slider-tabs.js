@@ -51,9 +51,14 @@ function swiperTabsMode() {
 
 
 window.addEventListener('load', function () {
-    swiperTabsMode();
+    if($('.swiper-container-tabs').length){
+        swiperTabsMode();
+    }
+    
 });
 
 window.addEventListener('resize', function () {
-    swiperTabsMode();
+    if($('.swiper-container-tabs').length){
+        swiperTabsMode();
+    }
 });

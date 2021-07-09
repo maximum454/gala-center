@@ -40,9 +40,13 @@ function swiperPopularyMode() {
 }
 
 window.addEventListener('load', function() {
-    swiperPopularyMode();
+    if($('.swiper-container-populary').length){
+        swiperPopularyMode();
+    }
 });
 
 window.addEventListener('resize', function() {
-    swiperPopularyMode();
+    if($('.swiper-container-populary').length){
+        swiperPopularyMode();
+    }
 });

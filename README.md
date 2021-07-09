@@ -100,4 +100,5 @@
 
 # Лендинги
 * https://maximum454.github.io/gala-center/build/landing.html
-* https://maximum454.github.io/gala-center/build/landing2.html
+* https://maximum454.github.io/gala-center/build/lending2.html
+* https://maximum454.github.io/gala-center/build/landing3.html
