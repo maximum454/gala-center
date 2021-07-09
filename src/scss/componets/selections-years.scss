@@ -1,0 +1,153 @@
+.selections-years {
+    padding: 105px 0;
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 60px;
+        color: #ffffff;
+        margin-bottom: 60px;
+        max-width: 523px;
+    }
+    &__body {
+        display: grid;
+        grid-template-areas: 'decoration1 decoration4 decoration5'
+                            'decoration1 decoration2 decoration3';
+                            grid-gap: 20px;
+                            margin-top: -150px;
+    }
+    &__item {
+        display: block;
+        text-decoration: none;
+        width: fit-content;
+        position: relative;
+       
+        
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0, 32, 26, 0) 66.89%, rgba(0, 32, 26, 0.81) 100%);
+        }
+        img{
+            display: block;
+            object-fit: cover;
+            max-width: 100%;
+            height: 100%;
+        }
+        &.decoration1{
+            grid-area: decoration1;
+            align-self: flex-end;
+            
+            
+            &::after{
+                content: '';
+                position: absolute;
+                top: -8px;
+                right: 30px;
+                left: auto;
+                background-image: url('../img/decoration-1.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+                width: 19%;
+                height: calc(100% + 16px);
+            }
+        }
+        &.decoration2{
+            grid-area: decoration2;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: auto;
+                background-image: url('../img/decoration-4.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &.decoration3{
+            grid-area: decoration3;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                left: auto;
+                background-image: url('../img/decoration-5.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+                width: 88px;
+                height: 70px;
+            }
+        }
+        &.decoration4{
+            grid-area: decoration4;
+            align-self: flex-end;
+            margin-right: 146px;
+            margin-left: auto;
+            &::after{
+                content: '';
+                position: absolute;
+                top: -70px;
+                right: 0;
+                left: 0;
+                background-image: url('../img/decoration-2.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+                width: 100%;
+                height: 86px;
+            }
+        }
+        &.decoration5{
+            grid-area: decoration5;
+            margin-left: -146px;
+            &::after{
+                content: '';
+                position: absolute;
+                top: -139px;
+                right: 0;
+                left: 0;
+                background-image: url('../img/decoration-3.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+                width: 100%;
+                height: 219px;
+            }
+        }
+    }
+    &__img{
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    &__txt {
+        position: absolute;
+        bottom: 0;
+        padding: 20px;
+        width: 100%;
+    }
+    &__name {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 24px;
+        color: #ffffff;
+    }
+    &__count {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        color: #ffffff;
+    }
+}
