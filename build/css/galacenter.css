@@ -7459,12 +7459,13 @@ hr {
 
 .slider-populary--landing3 .products {
   position: relative;
+  padding-bottom: 40px;
 }
 
 .slider-populary--landing3 .products::before {
   content: '';
   position: absolute;
-  top: 90px;
+  top: 40px;
   left: 0;
   width: 100%;
   height: 100%;
