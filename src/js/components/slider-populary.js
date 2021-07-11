@@ -28,6 +28,9 @@ function swiperPopularyMode() {
                     prevEl: '.populary-prev',
                 },
                 breakpoints: {
+                    768: {
+                        slidesPerView: 3,
+                    },
                     1024: {
                         slidesPerView: 5,
                     }

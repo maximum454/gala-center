@@ -6918,7 +6918,7 @@ hr {
 }
 
 .slider-banners--landing3 .slider-banners__body::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -193px;
   right: 90px;
@@ -13335,6 +13335,31 @@ hr {
     display: none;
   }
 
+  .slider-banners--landing3 {
+    margin-bottom: 87px;
+  }
+
+  .slider-banners--landing3 .slider-banners__body {
+    position: relative;
+  }
+
+  .slider-banners--landing3 .slider-banners__body::before {
+    content: "";
+    position: absolute;
+    top: -98px;
+    right: 90px;
+    background-image: url("../img/slider-banners-decor.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 80px;
+    height: 100px;
+  }
+
+  .slider-banners__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
   .slider-banners-bottom__body {
     grid-template-columns: repeat(5, minmax(250px, 1fr));
     overflow-x: scroll;
@@ -13365,6 +13390,138 @@ hr {
 
   .capability {
     display: none;
+  }
+
+  .slider-populary--landing3 {
+    margin-bottom: 97px;
+  }
+
+  .slider-populary--landing3 .slider-populary__title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .slider-populary--landing3 .products {
+    position: relative;
+    padding-bottom: 40px;
+  }
+
+  .slider-populary--landing3 .products::before {
+    display: none;
+  }
+
+  .slider-populary--landing3 .products__item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .slider-populary--landing3 .slider-populary__body {
+    position: relative;
+    background-image: url("../img/slider-populary-decor-line.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 20px;
+    padding-top: 40px;
+  }
+
+  .slider-populary--landing3 .btn.btn-outline-secondary {
+    color: #fff;
+  }
+
+  .slider-populary--landing3 .swiper-slide {
+    width: calc(100% + 20px);
+    padding: 0 10px;
+  }
+
+  .slider-populary--landing3 .swiper-slide:nth-child(5n + 1) {
+    margin-top: 0;
+    -webkit-transform: skew(0, 0);
+        -ms-transform: skew(0, 0);
+            transform: skew(0, 0);
+  }
+
+  .slider-populary--landing3 .swiper-slide:nth-child(5n + 2) {
+    margin-top: 0;
+    -webkit-transform: skew(0, 0);
+        -ms-transform: skew(0, 0);
+            transform: skew(0, 0);
+  }
+
+  .slider-populary--landing3 .swiper-slide:nth-child(5n + 3) {
+    margin-top: 0;
+    -webkit-transform: skew(0, 0);
+        -ms-transform: skew(0, 0);
+            transform: skew(0, 0);
+  }
+
+  .slider-populary--landing3 .swiper-slide:nth-child(5n + 4) {
+    margin-top: 0;
+    -webkit-transform: skew(0, 0);
+        -ms-transform: skew(0, 0);
+            transform: skew(0, 0);
+  }
+
+  .slider-populary--landing3 .swiper-slide:nth-child(5n + 5) {
+    margin-top: 0;
+    -webkit-transform: skew(0, 0);
+        -ms-transform: skew(0, 0);
+            transform: skew(0, 0);
+  }
+
+  .slider-populary--landing3 .swiper-slide:nth-child(3n + 1) {
+    -webkit-transform: skew(-3deg, 3deg);
+        -ms-transform: skew(-3deg, 3deg);
+            transform: skew(-3deg, 3deg);
+    margin-top: 0;
+  }
+
+  .slider-populary--landing3 .swiper-slide:nth-child(3n + 2) {
+    -webkit-transform: skew(0, 0);
+        -ms-transform: skew(0, 0);
+            transform: skew(0, 0);
+    margin-top: 8px;
+  }
+
+  .slider-populary--landing3 .swiper-slide:nth-child(3n + 3) {
+    -webkit-transform: skew(2deg, -2deg);
+        -ms-transform: skew(2deg, -2deg);
+            transform: skew(2deg, -2deg);
+    margin-top: 0;
+  }
+
+  .slider-populary--landing3 .swiper-slide:nth-child(3n + 4) {
+    -webkit-transform: skew(-2deg, 2deg);
+        -ms-transform: skew(-2deg, 2deg);
+            transform: skew(-2deg, 2deg);
+    margin-top: 0;
+  }
+
+  .slider-populary--landing3 .swiper-slide:nth-child(3n + 5) {
+    margin-top: 8px;
+    -webkit-transform: skew(0, 0);
+        -ms-transform: skew(0, 0);
+            transform: skew(0, 0);
+  }
+
+  .slider-populary--landing3 .swiper-button-next,
+  .slider-populary--landing3 .swiper-button-prev {
+    background-color: transparent !important;
+    border: 1px solid #fff !important;
+  }
+
+  .slider-populary--landing3 .swiper-button-next:after,
+  .slider-populary--landing3 .swiper-button-prev:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    color: #999;
+    background-image: url(../img/icons-sprite.svg#slider-arrow-light) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
   }
 
   .slider-populary__nav {
@@ -13909,7 +14066,7 @@ hr {
   }
 
   .landing3__elka {
-    height: 4100px;
+    height: 3858px;
   }
 
   .landing3__elka::before {
