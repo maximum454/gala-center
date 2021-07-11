@@ -5560,7 +5560,6 @@ body.landing3 {
 body.landing3 .header,
 body.landing3 .footer,
 body.landing3 .filter__item,
-body.landing3 .btn-secondary,
 body.landing3 .btn-light,
 body.landing3 .breadcrumb-catalog__dropdown-toggle,
 body.landing3 .slider-tabs__caption li.active,
@@ -5680,6 +5679,10 @@ ul li {
 
 .text-link {
   color: #324c9a;
+}
+
+.text-white {
+  color: #fff;
 }
 
 .text-success {
@@ -6907,6 +6910,31 @@ hr {
   margin-bottom: 40px;
 }
 
+.slider-banners--landing3 .slider-banners__body {
+  position: relative;
+}
+
+.slider-banners--landing3 .slider-banners__body::before {
+  content: '';
+  position: absolute;
+  top: -193px;
+  right: 90px;
+  background-image: url("../img/slider-banners-decor.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 156px;
+  height: 193px;
+}
+
+.slider-banners__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+
 .slider-banners__text {
   font-style: normal;
   font-weight: normal;
@@ -7413,6 +7441,16 @@ hr {
 .slider-populary {
   margin-bottom: 52px;
   overflow: hidden;
+}
+
+.slider-populary--landing3 .slider-populary__title {
+  color: #fff;
+}
+
+.slider-populary--landing3 .products__item {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .slider-populary__header {
@@ -10122,6 +10160,16 @@ hr {
   padding-bottom: 40px;
   margin-bottom: 32px;
   overflow: hidden;
+}
+
+.slider-block--landing3 .slider-block__title {
+  color: #fff;
+}
+
+.slider-block--landing3 .products__item {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .slider-block__header {

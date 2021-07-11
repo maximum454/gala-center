@@ -1,5 +1,30 @@
 .slider-banners {
     margin-bottom: 40px;
+    &--landing3{
+        
+        .slider-banners__body{
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: -193px;
+                right: 90px;
+                background-image: url('../img/slider-banners-decor.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 156px;
+                height: 193px;
+            } 
+        }
+    }
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 56px;
+        color: #ffffff;
+        margin-bottom: 35px;
+    }
     &__text {
         font-style: normal;
         font-weight: normal;
@@ -10,7 +35,7 @@
         margin-top: 40px;
         max-width: 1023px;
     }
-    &__btn{
+    &__btn {
         display: none;
     }
     img {
@@ -70,14 +95,14 @@
         margin: 0 10px;
     }
     @include r(767) {
-        &__btn{
+        &__btn {
             display: inline-block;
             margin: 0 auto;
         }
-        .swiper-container{
+        .swiper-container {
             text-align: center;
         }
-        .swiper-wrapper{
+        .swiper-wrapper {
             flex-direction: column;
             gap: 12px;
             margin-bottom: 12px;

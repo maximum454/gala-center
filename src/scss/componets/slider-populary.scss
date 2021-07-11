@@ -1,6 +1,17 @@
 .slider-populary{
 	margin-bottom: 52px;
 	overflow: hidden;
+    &--landing3{
+        .slider-populary__title{
+            color: #fff;
+    
+          }
+          .products__item {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;   
+        }
+    }
 	&__header{
 		display: flex;
 		align-items: center;
