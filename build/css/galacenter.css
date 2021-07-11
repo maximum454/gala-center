@@ -12769,7 +12769,9 @@ hr {
   position: relative;
 }
 
-.landing3__elka .elka-body {
+.landing3__elka .elka-inner {
+  position: relative;
+  z-index: 10;
   display: grid;
   grid-template-areas: ". . elka1 . ." ". elka2 elka3 elka4 ." "elka5 elka6 elka7 elka8 elka9" "elka10 elka11 elka12 elka13 elka14" ". . footer . .";
   grid-gap: 17px;
@@ -13910,11 +13912,56 @@ hr {
     height: 4100px;
   }
 
+  .landing3__elka::before {
+    display: none;
+  }
+
+  .landing3__elka .elka-header {
+    position: relative;
+    height: 1118px;
+  }
+
+  .landing3__elka .elka-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    background-image: url("../img/landing3/bg-landing3-1.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 2009px;
+    height: 1118px;
+  }
+
   .landing3__elka .elka-body {
+    position: relative;
+    height: 1969px;
+  }
+
+  .landing3__elka .elka-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    background-image: url("../img/landing3/bg-landing3-2.png");
+    background-repeat: repeat-y;
+    background-position: top;
+    width: 2009px;
+    height: 100%;
+  }
+
+  .landing3__elka .elka-inner {
     display: grid;
     grid-template-areas: ". elka1 ." "elka2 elka3 elka4" ". elka5 ." "elka6 elka7 elka8" ". elka9 ." "elka10 elka11 ." "elka12 elka13 elka14" ". footer .";
     grid-gap: 17px;
-    padding-top: 450px;
+    padding-top: 0;
+    top: -755px;
   }
 
   .landing3__elka .elka {
@@ -14024,6 +14071,26 @@ hr {
     -webkit-transform: skew(2deg, -2deg);
         -ms-transform: skew(2deg, -2deg);
             transform: skew(2deg, -2deg);
+  }
+
+  .landing3__elka .elka-footer {
+    position: relative;
+    height: 770px;
+  }
+
+  .landing3__elka .elka-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    background-image: url("../img/landing3/bg-landing3-3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 2009px;
+    height: 770px;
   }
 
   .selections-years__title {
@@ -15016,11 +15083,23 @@ hr {
     height: 5000px;
   }
 
+  .landing3__elka .elka-header {
+    position: relative;
+    height: 1118px;
+  }
+
   .landing3__elka .elka-body {
+    position: relative;
+    height: 3000px;
+  }
+
+  .landing3__elka .elka-inner {
     display: grid;
     grid-template-areas: "elka1 elka2" "elka3 elka4" "elka5 elka6" "elka7 elka8" "elka9 elka10" "elka11 elka12" "elka13 elka14" "footer footer";
     grid-gap: 5px;
-    padding-top: 450px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .landing3__elka .elka {
@@ -15131,6 +15210,11 @@ hr {
     -webkit-transform: skew(1deg, -1deg);
         -ms-transform: skew(1deg, -1deg);
             transform: skew(1deg, -1deg);
+  }
+
+  .landing3__elka .elka-footer {
+    position: relative;
+    height: 770px;
   }
 
   .selections-years__title {

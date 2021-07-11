@@ -32,7 +32,9 @@
             border-radius: 8px;
             position: relative;
         }
-        .elka-body {
+        .elka-inner {
+            position: relative;
+            z-index: 10;
             display: grid;
             grid-template-areas:
                 ". . elka1 . ."
@@ -137,7 +139,42 @@
     @include r(1023) {
         &__elka {
             height: 4100px;
-            .elka-body {
+            &::before {
+               display: none;
+            }
+            .elka-header{
+                position: relative;
+                height: 1118px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    background-image: url("../img/landing3/bg-landing3-1.png");
+                    background-repeat: no-repeat;
+                    background-position: top;
+                    width: 2009px;
+                    height: 1118px;
+                }
+            }
+            .elka-body{
+                position: relative;
+                height: 1969px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    background-image: url("../img/landing3/bg-landing3-2.png");
+                    background-repeat: repeat-y;
+                    background-position: top;
+                    width: 2009px;
+                    height: 100%;
+                }
+            }
+            .elka-inner {
                 display: grid;
                 grid-template-areas:
                     ". elka1 ."
@@ -149,7 +186,8 @@
                     "elka12 elka13 elka14"
                     ". footer .";
                 grid-gap: 17px;
-                padding-top: 450px;
+                padding-top: 0;
+                top: -755px;
             }
             .elka {
                 max-width: 260px;
@@ -222,13 +260,44 @@
                     transform: skew(2deg, -2deg);
                 }
             }
+            .elka-footer{
+                position: relative;
+                height: 770px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    background-image: url("../img/landing3/bg-landing3-3.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 2009px;
+                    height: 770px;
+                }
+            }
         }
     }
 
     @include r(767){
         &__elka {
             height: 5000px;
-            .elka-body {
+            .elka-header{
+                position: relative;
+                height: 1118px;
+                &::before {
+                   
+                   
+                }
+            }
+            .elka-body{
+                position: relative;
+                height: 3000px;
+                &::before {
+                   
+                }
+            }
+            .elka-inner {
                 display: grid;
                 grid-template-areas:
                     "elka1 elka2"
@@ -240,7 +309,7 @@
                     "elka13 elka14"
                     "footer footer";
                 grid-gap: 5px;
-                padding-top: 450px;
+                justify-content: center;
             } 
             .elka {
                 max-width: 260px;
@@ -311,6 +380,13 @@
                     margin-top: 0;
                     grid-area: elka14;
                     transform: skew(1deg, -1deg);
+                }
+            }
+            .elka-footer{
+                position: relative;
+                height: 770px;
+                &::before {
+                    
                 }
             }
         }
