@@ -6909,6 +6909,10 @@ hr {
   margin-bottom: 40px;
 }
 
+.slider-banners--landing3 {
+  margin-bottom: 87px;
+}
+
 .slider-banners--landing3 .slider-banners__body {
   position: relative;
 }
@@ -7442,6 +7446,10 @@ hr {
   overflow: hidden;
 }
 
+.slider-populary--landing3 {
+  margin-bottom: 97px;
+}
+
 .slider-populary--landing3 .slider-populary__title {
   color: #fff;
   font-weight: bold;
@@ -7563,6 +7571,10 @@ hr {
 .slider-tabs {
   margin-bottom: 52px;
   overflow: hidden;
+}
+
+.slider-tabs--landing3 {
+  margin-bottom: 87px;
 }
 
 .slider-tabs--landing3 .slider-block__header {
@@ -10340,31 +10352,17 @@ hr {
 .slider-block--note .swiper-slide::before {
   content: "";
   position: absolute;
-  top: -131px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  top: -152px;
+  left: -30px;
   background-image: url("../img/slider-block-item1.svg");
   background-size: 100%;
   background-repeat: no-repeat;
-  width: 100%;
+  width: calc(100% + 40px);
   height: 156px;
 }
 
 .slider-block--note .swiper-slide:nth-child(even)::before {
-  content: "";
-  position: absolute;
-  top: -131px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
   background-image: url("../img/slider-block-item2.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 156px;
 }
 
 .slider-block--note .btn.btn-outline-secondary {
@@ -12701,7 +12699,8 @@ hr {
 }
 
 .selections-years {
-  padding: 105px 0;
+  padding: 105px 0 0;
+  margin-bottom: 141px;
 }
 
 .selections-years__title {

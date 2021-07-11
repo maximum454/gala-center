@@ -83,27 +83,18 @@
             &::before {
                 content: "";
                 position: absolute;
-                top: -131px;
-                left: 50%;
-                transform: translate(-50%, 0);
+                top: -152px;
+                left: -30px;
                 background-image: url("../img/slider-block-item1.svg");
                 background-size: 100%;
                 background-repeat: no-repeat;
-                width: 100%;
+                width: calc(100% + 40px);
                 height: 156px;
             }
             &:nth-child(even) {
                 &::before {
-                    content: "";
-                    position: absolute;
-                    top: -131px;
-                    left: 50%;
-                    transform: translate(-50%, 0);
                     background-image: url("../img/slider-block-item2.svg");
-                    background-size: 100%;
-                    background-repeat: no-repeat;
-                    width: 100%;
-                    height: 156px;
+                    
                 }
             }
         }
