@@ -12786,54 +12786,99 @@ hr {
 
 .landing3__elka .elka.elka2 {
   grid-area: elka2;
+  margin-top: -120px;
+  -webkit-transform: skew(-2deg, 2deg);
+      -ms-transform: skew(-2deg, 2deg);
+          transform: skew(-2deg, 2deg);
 }
 
 .landing3__elka .elka.elka3 {
   grid-area: elka3;
+  -webkit-transform: skew(2deg, -2deg);
+      -ms-transform: skew(2deg, -2deg);
+          transform: skew(2deg, -2deg);
 }
 
 .landing3__elka .elka.elka4 {
   grid-area: elka4;
+  margin-top: -120px;
+  -webkit-transform: skew(2deg, -2deg);
+      -ms-transform: skew(2deg, -2deg);
+          transform: skew(2deg, -2deg);
 }
 
 .landing3__elka .elka.elka5 {
   grid-area: elka5;
+  -webkit-transform: skew(-2deg, 2deg);
+      -ms-transform: skew(-2deg, 2deg);
+          transform: skew(-2deg, 2deg);
 }
 
 .landing3__elka .elka.elka6 {
   grid-area: elka6;
+  margin-top: -120px;
+  -webkit-transform: skew(-2deg, 2deg);
+      -ms-transform: skew(-2deg, 2deg);
+          transform: skew(-2deg, 2deg);
 }
 
 .landing3__elka .elka.elka7 {
   grid-area: elka7;
+  -webkit-transform: skew(-2deg, 2deg);
+      -ms-transform: skew(-2deg, 2deg);
+          transform: skew(-2deg, 2deg);
 }
 
 .landing3__elka .elka.elka8 {
   grid-area: elka8;
+  margin-top: -120px;
+  -webkit-transform: skew(2deg, -2deg);
+      -ms-transform: skew(2deg, -2deg);
+          transform: skew(2deg, -2deg);
 }
 
 .landing3__elka .elka.elka9 {
   grid-area: elka9;
+  -webkit-transform: skew(2deg, -2deg);
+      -ms-transform: skew(2deg, -2deg);
+          transform: skew(2deg, -2deg);
 }
 
 .landing3__elka .elka.elka10 {
   grid-area: elka10;
+  -webkit-transform: skew(-2deg, 2deg);
+      -ms-transform: skew(-2deg, 2deg);
+          transform: skew(-2deg, 2deg);
 }
 
 .landing3__elka .elka.elka11 {
   grid-area: elka11;
+  margin-top: -120px;
+  -webkit-transform: skew(-2deg, 2deg);
+      -ms-transform: skew(-2deg, 2deg);
+          transform: skew(-2deg, 2deg);
 }
 
 .landing3__elka .elka.elka12 {
   grid-area: elka12;
+  -webkit-transform: skew(2deg, -2deg);
+      -ms-transform: skew(2deg, -2deg);
+          transform: skew(2deg, -2deg);
 }
 
 .landing3__elka .elka.elka13 {
   grid-area: elka13;
+  margin-top: -120px;
+  -webkit-transform: skew(2deg, -2deg);
+      -ms-transform: skew(2deg, -2deg);
+          transform: skew(2deg, -2deg);
 }
 
 .landing3__elka .elka.elka14 {
   grid-area: elka14;
+  -webkit-transform: skew(2deg, -2deg);
+      -ms-transform: skew(2deg, -2deg);
+          transform: skew(2deg, -2deg);
 }
 
 .landing3 .elka-img {

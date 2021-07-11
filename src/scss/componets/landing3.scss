@@ -49,43 +49,62 @@
             }
             &.elka2{
                 grid-area: elka2;
+                margin-top: -120px;
+                transform: skew(-2deg,2deg);
             }
             &.elka3{
                 grid-area: elka3;
+                transform: skew(2deg,-2deg);
             }
 
             &.elka4{
                 grid-area: elka4;
+                margin-top: -120px;
+                transform: skew(2deg,-2deg);
             }
             &.elka5{
                 grid-area: elka5;
+                transform: skew(-2deg,2deg);
             }
             &.elka6{
                 grid-area: elka6;
+                margin-top: -120px;
+                transform: skew(-2deg,2deg);
             }
             &.elka7{
                 grid-area: elka7;
+                transform: skew(-2deg,2deg);
             }
             &.elka8{
                 grid-area: elka8;
+                margin-top: -120px;
+                transform: skew(2deg,-2deg);
             }
             &.elka9{
                 grid-area: elka9;
+                transform: skew(2deg,-2deg);
             }
             &.elka10{
                 grid-area: elka10;
+                transform: skew(-2deg,2deg);
             }
             &.elka11{
                 grid-area: elka11;
+                margin-top: -120px;
+                transform: skew(-2deg,2deg);
             }
             &.elka12{
                 grid-area: elka12;
+                transform: skew(2deg,-2deg);
             }
             &.elka13{
                 grid-area: elka13;
+                margin-top: -120px;
+                transform: skew(2deg,-2deg);
             }
             &.elka14{
                 grid-area: elka14;
+                transform: skew(2deg,-2deg);
             }
         }
     }
