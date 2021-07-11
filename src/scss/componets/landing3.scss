@@ -13,6 +13,69 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
+        /*height: 1742px;*/
+        
+        .products__item {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            position: relative;
+        }
+        .elka-body{
+            display: grid;
+            grid-template-areas: '. . elka1 . .'
+                                 '. elka2 elka3 elka4 .'
+                                 'elka5 elka6 elka7 elka8 elka9'
+                                 'elka10 elka11 elka12 elka13 elka14';
+            grid-gap: 16px;
+        }
+        .elka{
+            max-width: 260px;
+           
+            &.elka1{
+                grid-area: elka1;
+            }
+            &.elka2{
+                grid-area: elka2;
+            }
+            &.elka3{
+                grid-area: elka3;
+            }
+
+            &.elka4{
+                grid-area: elka4;
+            }
+            &.elka5{
+                grid-area: elka5;
+            }
+            &.elka6{
+                grid-area: elka6;
+            }
+            &.elka7{
+                grid-area: elka7;
+            }
+            &.elka8{
+                grid-area: elka8;
+            }
+            &.elka9{
+                grid-area: elka9;
+            }
+            &.elka10{
+                grid-area: elka10;
+            }
+            &.elka11{
+                grid-area: elka11;
+            }
+            &.elka12{
+                grid-area: elka12;
+            }
+            &.elka13{
+                grid-area: elka13;
+            }
+            &.elka14{
+                grid-area: elka14;
+            }
+        }
     }
     .img-elka{
         display: block;
