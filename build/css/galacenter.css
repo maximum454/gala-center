@@ -7457,10 +7457,27 @@ hr {
   line-height: 36px;
 }
 
+.slider-populary--landing3 .products {
+  position: relative;
+}
+
+.slider-populary--landing3 .products::before {
+  content: '';
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/product-item-bg.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 .slider-populary--landing3 .products__item {
   background-color: #fff;
   padding: 10px;
   border-radius: 8px;
+  position: relative;
 }
 
 .slider-populary--landing3 .slider-populary__body {
@@ -7473,6 +7490,11 @@ hr {
 
 .slider-populary--landing3 .btn.btn-outline-secondary {
   color: #fff;
+}
+
+.slider-populary--landing3 .swiper-slide {
+  width: calc(100% + 20px);
+  padding: 0 10px;
 }
 
 .slider-populary--landing3 .swiper-slide:nth-child(5n+1) {

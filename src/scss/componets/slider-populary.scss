@@ -10,10 +10,25 @@
             line-height: 36px;
     
           }
+          .products{
+              position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 90px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url('../img/product-item-bg.svg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+          }
           .products__item {
             background-color: #fff;
             padding: 10px;
             border-radius: 8px;   
+            position: relative;
         }
         .slider-populary__body{
             position: relative;
@@ -25,8 +40,12 @@
         .btn.btn-outline-secondary {
             color: #fff;
         }
-        .swiper-slide{
+        .swiper-wrapper{
            
+        }
+        .swiper-slide{
+            width: calc(100% + 20px);
+            padding: 0 10px;
             &:nth-child(5n+1) {
                 transform: skew(-3deg,3deg);
                 margin-top: -5px;
