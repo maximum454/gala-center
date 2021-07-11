@@ -5562,7 +5562,6 @@ body.landing3 .footer,
 body.landing3 .filter__item,
 body.landing3 .btn-light,
 body.landing3 .breadcrumb-catalog__dropdown-toggle,
-body.landing3 .slider-tabs__caption li.active,
 body.landing3 .catalog-section__item,
 body.landing3 .subscribe {
   background: #40BEB7;
@@ -7456,6 +7455,36 @@ hr {
   border-radius: 8px;
 }
 
+.slider-populary--landing3 .slider-populary__body {
+  position: relative;
+  background-image: url("../img/slider-populary-decor-line.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 20px;
+  padding-top: 40px;
+}
+
+.slider-populary--landing3 .btn.btn-outline-secondary {
+  color: #fff;
+}
+
+.slider-populary--landing3 .swiper-button-next,
+.slider-populary--landing3 .swiper-button-prev {
+  background-color: transparent !important;
+  border: 1px solid #fff !important;
+}
+
+.slider-populary--landing3 .swiper-button-next:after,
+.slider-populary--landing3 .swiper-button-prev:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  color: #999;
+  background-image: url(../img/icons-sprite.svg#slider-arrow-light) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+}
+
 .slider-populary__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7536,6 +7565,57 @@ hr {
   overflow: hidden;
 }
 
+.slider-tabs--landing3 .slider-block__header {
+  margin-bottom: 45px;
+}
+
+.slider-tabs--landing3 .slider-block__title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 36px;
+}
+
+.slider-tabs--landing3 .slider-tabs__caption li.active {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.slider-tabs--landing3 .slider-tabs__caption li {
+  font-size: 48px;
+  line-height: 36px;
+  color: #fff;
+  padding: 10px 14px;
+}
+
+.slider-tabs--landing3 .products__item {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.slider-tabs--landing3 .btn.btn-outline-secondary {
+  color: #fff;
+}
+
+.slider-tabs--landing3 .swiper-button-next,
+.slider-tabs--landing3 .swiper-button-prev {
+  background-color: transparent !important;
+  border: 1px solid #fff !important;
+}
+
+.slider-tabs--landing3 .swiper-button-next:after,
+.slider-tabs--landing3 .swiper-button-prev:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  color: #999;
+  background-image: url(../img/icons-sprite.svg#slider-arrow-light) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+}
+
 .slider-tabs__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7593,9 +7673,9 @@ hr {
   color: #000000;
   padding: 5px 12px;
   cursor: pointer;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .slider-tabs__caption li.active {
@@ -7604,10 +7684,10 @@ hr {
 }
 
 .slider-tabs__caption li:hover {
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
-  opacity: .7;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.7;
 }
 
 .slider-tabs__content {
@@ -7623,7 +7703,7 @@ hr {
   width: 40px;
   height: 40px;
   background-color: #fff;
-  border: 1px solid #A4A9BB;
+  border: 1px solid #a4a9bb;
   margin: 0;
   top: 0;
 }
@@ -7644,7 +7724,7 @@ hr {
 
 .slider-tabs .swiper-button-next:after,
 .slider-tabs .swiper-button-prev:after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   color: #999;
@@ -10180,6 +10260,28 @@ hr {
   background-color: #fff;
   padding: 10px;
   border-radius: 8px;
+}
+
+.slider-block--landing3 .btn.btn-outline-secondary {
+  color: #fff;
+}
+
+.slider-block--landing3 .swiper-button-next,
+.slider-block--landing3 .swiper-button-prev {
+  background-color: transparent !important;
+  border: 1px solid #fff !important;
+}
+
+.slider-block--landing3 .swiper-button-next:after,
+.slider-block--landing3 .swiper-button-prev:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  color: #999;
+  background-image: url(../img/icons-sprite.svg#slider-arrow-light);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
 }
 
 .slider-block--note {

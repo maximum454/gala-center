@@ -14,6 +14,32 @@
             padding: 10px;
             border-radius: 8px;   
         }
+        .slider-populary__body{
+            position: relative;
+            background-image: url('../img/slider-populary-decor-line.svg');
+            background-repeat: no-repeat;
+            background-size: 100% 20px;
+            padding-top: 40px;
+        }
+        .btn.btn-outline-secondary {
+            color: #fff;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            
+            background-color: transparent!important;
+            border: 1px solid #fff!important;
+        }
+        .swiper-button-next:after, .swiper-button-prev:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            color: #999;
+            background-image: url(../img/icons-sprite.svg#slider-arrow-light)!important;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 18px;
+        }
     }
 	&__header{
 		display: flex;

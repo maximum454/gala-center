@@ -18,6 +18,25 @@
             padding: 10px;
             border-radius: 8px;
         }
+        .btn.btn-outline-secondary {
+            color: #fff;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            
+            background-color: transparent!important;
+            border: 1px solid #fff!important;
+        }
+        .swiper-button-next:after, .swiper-button-prev:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            color: #999;
+            background-image: url(../img/icons-sprite.svg#slider-arrow-light);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 18px;
+        }
     }
     &--note {
         margin-bottom: -60px;
