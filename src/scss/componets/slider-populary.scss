@@ -25,6 +25,29 @@
         .btn.btn-outline-secondary {
             color: #fff;
         }
+        .swiper-slide{
+           
+            &:nth-child(5n+1) {
+                transform: skew(-3deg,3deg);
+                margin-top: -5px;
+            }
+            &:nth-child(5n+2) {
+                transform: skew(-2deg,2deg);
+                margin-top: 5px;
+            }
+            &:nth-child(5n+3) {
+                margin-top: 10px;
+            }
+            &:nth-child(5n+4) {
+                transform: skew(2deg,-2deg);
+                margin-top: 5px;
+            }
+            &:nth-child(5n+5) {
+                margin-top: -5px;
+                transform: skew(3deg,-3deg);
+            }
+           
+        }
         .swiper-button-next,
         .swiper-button-prev {
             

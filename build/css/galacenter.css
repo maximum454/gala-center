@@ -7475,6 +7475,38 @@ hr {
   color: #fff;
 }
 
+.slider-populary--landing3 .swiper-slide:nth-child(5n+1) {
+  -webkit-transform: skew(-3deg, 3deg);
+      -ms-transform: skew(-3deg, 3deg);
+          transform: skew(-3deg, 3deg);
+  margin-top: -5px;
+}
+
+.slider-populary--landing3 .swiper-slide:nth-child(5n+2) {
+  -webkit-transform: skew(-2deg, 2deg);
+      -ms-transform: skew(-2deg, 2deg);
+          transform: skew(-2deg, 2deg);
+  margin-top: 5px;
+}
+
+.slider-populary--landing3 .swiper-slide:nth-child(5n+3) {
+  margin-top: 10px;
+}
+
+.slider-populary--landing3 .swiper-slide:nth-child(5n+4) {
+  -webkit-transform: skew(2deg, -2deg);
+      -ms-transform: skew(2deg, -2deg);
+          transform: skew(2deg, -2deg);
+  margin-top: 5px;
+}
+
+.slider-populary--landing3 .swiper-slide:nth-child(5n+5) {
+  margin-top: -5px;
+  -webkit-transform: skew(3deg, -3deg);
+      -ms-transform: skew(3deg, -3deg);
+          transform: skew(3deg, -3deg);
+}
+
 .slider-populary--landing3 .swiper-button-next,
 .slider-populary--landing3 .swiper-button-prev {
   background-color: transparent !important;
@@ -10322,8 +10354,6 @@ hr {
   width: 1040px;
   height: 1245px;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(203px, 1fr));
-  grid-gap: 30px 28px;
   position: relative;
   padding-top: 185px;
 }
