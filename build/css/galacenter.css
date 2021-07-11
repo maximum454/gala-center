@@ -13907,7 +13907,7 @@ hr {
   }
 
   .landing3__elka {
-    height: 3600px;
+    height: 4100px;
   }
 
   .landing3__elka .elka-body {
@@ -15010,6 +15010,127 @@ hr {
 
   .sertificat {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .landing3__elka {
+    height: 5000px;
+  }
+
+  .landing3__elka .elka-body {
+    display: grid;
+    grid-template-areas: "elka1 elka2" "elka3 elka4" "elka5 elka6" "elka7 elka8" "elka9 elka10" "elka11 elka12" "elka13 elka14" "footer footer";
+    grid-gap: 5px;
+    padding-top: 450px;
+  }
+
+  .landing3__elka .elka {
+    max-width: 260px;
+  }
+
+  .landing3__elka .elka.elka1 {
+    grid-area: elka1;
+  }
+
+  .landing3__elka .elka.elka2 {
+    grid-area: elka2;
+    margin-top: -120px;
+    -webkit-transform: skew(1deg, -1deg);
+        -ms-transform: skew(1deg, -1deg);
+            transform: skew(1deg, -1deg);
+  }
+
+  .landing3__elka .elka.elka3 {
+    grid-area: elka3;
+    -webkit-transform: skew(-1deg, 1deg);
+        -ms-transform: skew(-1deg, 1deg);
+            transform: skew(-1deg, 1deg);
+  }
+
+  .landing3__elka .elka.elka4 {
+    grid-area: elka4;
+    margin-top: 190px;
+    -webkit-transform: skew(1deg, -1deg);
+        -ms-transform: skew(1deg, -1deg);
+            transform: skew(1deg, -1deg);
+  }
+
+  .landing3__elka .elka.elka5 {
+    grid-area: elka5;
+    -webkit-transform: skew(-1deg, 1deg);
+        -ms-transform: skew(-1deg, 1deg);
+            transform: skew(-1deg, 1deg);
+    margin-top: 190px;
+  }
+
+  .landing3__elka .elka.elka6 {
+    grid-area: elka6;
+    margin-top: 0;
+    -webkit-transform: skew(1deg, -1deg);
+        -ms-transform: skew(1deg, -1deg);
+            transform: skew(1deg, -1deg);
+  }
+
+  .landing3__elka .elka.elka7 {
+    grid-area: elka7;
+    -webkit-transform: skew(-1deg, 1deg);
+        -ms-transform: skew(-1deg, 1deg);
+            transform: skew(-1deg, 1deg);
+  }
+
+  .landing3__elka .elka.elka8 {
+    grid-area: elka8;
+    margin-top: 190px;
+    -webkit-transform: skew(1deg, -1deg);
+        -ms-transform: skew(1deg, -1deg);
+            transform: skew(1deg, -1deg);
+  }
+
+  .landing3__elka .elka.elka9 {
+    grid-area: elka9;
+    -webkit-transform: skew(-1deg, 1deg);
+        -ms-transform: skew(-1deg, 1deg);
+            transform: skew(-1deg, 1deg);
+    margin-top: 190px;
+  }
+
+  .landing3__elka .elka.elka10 {
+    grid-area: elka10;
+    -webkit-transform: skew(1deg, -1deg);
+        -ms-transform: skew(1deg, -1deg);
+            transform: skew(1deg, -1deg);
+    margin-top: 0px;
+  }
+
+  .landing3__elka .elka.elka11 {
+    grid-area: elka11;
+    margin-top: 0;
+    -webkit-transform: skew(-1deg, 1deg);
+        -ms-transform: skew(-1deg, 1deg);
+            transform: skew(-1deg, 1deg);
+  }
+
+  .landing3__elka .elka.elka12 {
+    margin-top: 190px;
+    grid-area: elka12;
+    -webkit-transform: skew(1deg, -1deg);
+        -ms-transform: skew(1deg, -1deg);
+            transform: skew(1deg, -1deg);
+  }
+
+  .landing3__elka .elka.elka13 {
+    grid-area: elka13;
+    margin-top: 190px;
+    -webkit-transform: skew(-1deg, 1deg);
+        -ms-transform: skew(-1deg, 1deg);
+            transform: skew(-1deg, 1deg);
+  }
+
+  .landing3__elka .elka.elka14 {
+    margin-top: 0;
+    grid-area: elka14;
+    -webkit-transform: skew(1deg, -1deg);
+        -ms-transform: skew(1deg, -1deg);
+            transform: skew(1deg, -1deg);
   }
 
   .selections-years__title {

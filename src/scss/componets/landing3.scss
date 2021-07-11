@@ -136,7 +136,7 @@
 
     @include r(1023) {
         &__elka {
-            height: 3600px;
+            height: 4100px;
             .elka-body {
                 display: grid;
                 grid-template-areas:
@@ -223,5 +223,98 @@
                 }
             }
         }
+    }
+
+    @include r(767){
+        &__elka {
+            height: 5000px;
+            .elka-body {
+                display: grid;
+                grid-template-areas:
+                    "elka1 elka2"
+                    "elka3 elka4"
+                    "elka5 elka6"
+                    "elka7 elka8"
+                    "elka9 elka10"
+                    "elka11 elka12"
+                    "elka13 elka14"
+                    "footer footer";
+                grid-gap: 5px;
+                padding-top: 450px;
+            } 
+            .elka {
+                max-width: 260px;
+    
+                &.elka1 {
+                    grid-area: elka1;
+                }
+                &.elka2 {
+                    grid-area: elka2;
+                    margin-top: -120px;
+                    transform: skew(1deg, -1deg);
+                }
+                &.elka3 {
+                    grid-area: elka3;
+                    transform: skew(-1deg, 1deg);
+                }
+    
+                &.elka4 {
+                    grid-area: elka4;
+                    margin-top: 190px;
+                    transform: skew(1deg, -1deg);
+                }
+                &.elka5 {
+                    grid-area: elka5;
+                    transform: skew(-1deg, 1deg);
+                    margin-top: 190px;
+                }
+                &.elka6 {
+                    grid-area: elka6;
+                    margin-top: 0;
+                    transform: skew(1deg, -1deg);
+                }
+                &.elka7 {
+                    grid-area: elka7;
+                    transform: skew(-1deg, 1deg);
+                }
+                &.elka8 {
+                    grid-area: elka8;
+                    margin-top: 190px;
+                    transform: skew(1deg, -1deg);
+                }
+                &.elka9 {
+                    grid-area: elka9;
+                    transform: skew(-1deg, 1deg);
+                    margin-top: 190px;
+                }
+                &.elka10 {
+                    grid-area: elka10;
+                    transform: skew(1deg, -1deg);
+                    margin-top: 0px;
+                }
+                &.elka11 {
+                    grid-area: elka11;
+                    margin-top: 0;
+                    transform: skew(-1deg, 1deg);
+                }
+                &.elka12 {
+                    margin-top: 190px;
+                    grid-area: elka12;
+                    transform: skew(1deg, -1deg);
+                }
+                &.elka13 {
+                    grid-area: elka13;
+                    margin-top: 190px;
+                    transform: skew(-1deg, 1deg);
+                }
+                &.elka14 {
+                    margin-top: 0;
+                    grid-area: elka14;
+                    transform: skew(1deg, -1deg);
+                }
+            }
+        }
+
+        
     }
 }
