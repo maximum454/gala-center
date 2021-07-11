@@ -9,12 +9,23 @@
         }
     }
     &__elka{
-        background-image: url("../img/landing3/bg-landing3.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        /*height: 1742px;*/
-        
+        position: relative;
+        height: 2600px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%,0);
+            background-image: url("../img/landing3/bg-landing3.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 2009px;
+            height: 2592px;
+        }
+        .products{
+            margin-bottom: 0;
+        }
         .products__item {
             background-color: #fff;
             padding: 10px;
@@ -27,7 +38,8 @@
                                  '. elka2 elka3 elka4 .'
                                  'elka5 elka6 elka7 elka8 elka9'
                                  'elka10 elka11 elka12 elka13 elka14';
-            grid-gap: 16px;
+            grid-gap: 17px;
+            padding-top: 450px;
         }
         .elka{
             max-width: 260px;
@@ -77,7 +89,7 @@
             }
         }
     }
-    .img-elka{
+    .elka-img{
         display: block;
         max-width: 100%;
         height: auto;

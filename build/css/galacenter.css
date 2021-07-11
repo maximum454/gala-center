@@ -12739,11 +12739,27 @@ hr {
 }
 
 .landing3__elka {
+  position: relative;
+  height: 2600px;
+}
+
+.landing3__elka::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   background-image: url("../img/landing3/bg-landing3.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
-  /*height: 1742px;*/
+  width: 2009px;
+  height: 2592px;
+}
+
+.landing3__elka .products {
+  margin-bottom: 0;
 }
 
 .landing3__elka .products__item {
@@ -12756,7 +12772,8 @@ hr {
 .landing3__elka .elka-body {
   display: grid;
   grid-template-areas: '. . elka1 . .' '. elka2 elka3 elka4 .' 'elka5 elka6 elka7 elka8 elka9' 'elka10 elka11 elka12 elka13 elka14';
-  grid-gap: 16px;
+  grid-gap: 17px;
+  padding-top: 450px;
 }
 
 .landing3__elka .elka {
@@ -12819,7 +12836,7 @@ hr {
   grid-area: elka14;
 }
 
-.landing3 .img-elka {
+.landing3 .elka-img {
   display: block;
   max-width: 100%;
   height: auto;
