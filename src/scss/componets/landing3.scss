@@ -1,29 +1,29 @@
-.landing3{
-    &__title{
+.landing3 {
+    &__title {
         text-align: center;
-        img{
+        img {
             max-width: 100%;
             display: block;
             height: auto;
             margin: 0 auto;
         }
     }
-    &__elka{
+    &__elka {
         position: relative;
         height: 2600px;
-        &::before{
-            content: '';
+        &::before {
+            content: "";
             position: absolute;
             top: 0;
             left: 50%;
-            transform: translate(-50%,0);
+            transform: translate(-50%, 0);
             background-image: url("../img/landing3/bg-landing3.png");
             background-repeat: no-repeat;
             background-position: center;
             width: 2009px;
             height: 2592px;
         }
-        .products{
+        .products {
             margin-bottom: 0;
         }
         .products__item {
@@ -32,83 +32,104 @@
             border-radius: 8px;
             position: relative;
         }
-        .elka-body{
+        .elka-body {
             display: grid;
-            grid-template-areas: '. . elka1 . .'
-                                 '. elka2 elka3 elka4 .'
-                                 'elka5 elka6 elka7 elka8 elka9'
-                                 'elka10 elka11 elka12 elka13 elka14';
+            grid-template-areas:
+                ". . elka1 . ."
+                ". elka2 elka3 elka4 ."
+                "elka5 elka6 elka7 elka8 elka9"
+                "elka10 elka11 elka12 elka13 elka14"
+                ". . footer . .";
             grid-gap: 17px;
             padding-top: 450px;
         }
-        .elka{
+        .elka {
             max-width: 260px;
-           
-            &.elka1{
+
+            &.elka1 {
                 grid-area: elka1;
             }
-            &.elka2{
+            &.elka2 {
                 grid-area: elka2;
                 margin-top: -120px;
-                transform: skew(-2deg,2deg);
+                transform: skew(-2deg, 2deg);
             }
-            &.elka3{
+            &.elka3 {
                 grid-area: elka3;
-                transform: skew(2deg,-2deg);
+                transform: skew(2deg, -2deg);
             }
 
-            &.elka4{
+            &.elka4 {
                 grid-area: elka4;
                 margin-top: -120px;
-                transform: skew(2deg,-2deg);
+                transform: skew(2deg, -2deg);
             }
-            &.elka5{
+            &.elka5 {
                 grid-area: elka5;
-                transform: skew(-2deg,2deg);
+                transform: skew(-2deg, 2deg);
             }
-            &.elka6{
+            &.elka6 {
                 grid-area: elka6;
                 margin-top: -120px;
-                transform: skew(-2deg,2deg);
+                transform: skew(-2deg, 2deg);
             }
-            &.elka7{
+            &.elka7 {
                 grid-area: elka7;
-                transform: skew(-2deg,2deg);
+                transform: skew(-2deg, 2deg);
             }
-            &.elka8{
+            &.elka8 {
                 grid-area: elka8;
                 margin-top: -120px;
-                transform: skew(2deg,-2deg);
+                transform: skew(2deg, -2deg);
             }
-            &.elka9{
+            &.elka9 {
                 grid-area: elka9;
-                transform: skew(2deg,-2deg);
+                transform: skew(2deg, -2deg);
             }
-            &.elka10{
+            &.elka10 {
                 grid-area: elka10;
-                transform: skew(-2deg,2deg);
+                transform: skew(-2deg, 2deg);
             }
-            &.elka11{
+            &.elka11 {
                 grid-area: elka11;
                 margin-top: -120px;
-                transform: skew(-2deg,2deg);
+                transform: skew(-2deg, 2deg);
             }
-            &.elka12{
+            &.elka12 {
                 grid-area: elka12;
-                transform: skew(2deg,-2deg);
+                transform: skew(2deg, -2deg);
             }
-            &.elka13{
+            &.elka13 {
                 grid-area: elka13;
                 margin-top: -120px;
-                transform: skew(2deg,-2deg);
+                transform: skew(2deg, -2deg);
             }
-            &.elka14{
+            &.elka14 {
                 grid-area: elka14;
-                transform: skew(2deg,-2deg);
+                transform: skew(2deg, -2deg);
             }
         }
+        .elka-footer{
+            grid-area: footer;
+            display: flex;
+            height: 348px;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .btn-link {
+            color: #fff;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #ffffff;
+            position: relative;
+           
+        }
     }
-    .elka-img{
+    .elka-img {
         display: block;
         max-width: 100%;
         height: auto;

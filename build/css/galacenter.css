@@ -12744,7 +12744,7 @@ hr {
 }
 
 .landing3__elka::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
@@ -12771,7 +12771,7 @@ hr {
 
 .landing3__elka .elka-body {
   display: grid;
-  grid-template-areas: '. . elka1 . .' '. elka2 elka3 elka4 .' 'elka5 elka6 elka7 elka8 elka9' 'elka10 elka11 elka12 elka13 elka14';
+  grid-template-areas: ". . elka1 . ." ". elka2 elka3 elka4 ." "elka5 elka6 elka7 elka8 elka9" "elka10 elka11 elka12 elka13 elka14" ". . footer . .";
   grid-gap: 17px;
   padding-top: 450px;
 }
@@ -12879,6 +12879,32 @@ hr {
   -webkit-transform: skew(2deg, -2deg);
       -ms-transform: skew(2deg, -2deg);
           transform: skew(2deg, -2deg);
+}
+
+.landing3__elka .elka-footer {
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 348px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landing3__elka .btn-link {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #ffffff;
+  position: relative;
 }
 
 .landing3 .elka-img {
