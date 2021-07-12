@@ -10352,6 +10352,7 @@ hr {
 }
 
 .slider-block--note {
+  overflow: visible;
   margin-bottom: -60px;
   padding-bottom: 0;
 }
@@ -13911,6 +13912,34 @@ hr {
     margin: 24px 0;
     padding-left: 50px;
     margin-left: 50px;
+  }
+
+  .slider-block--note .slider-block__title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .slider-block--note .slider-block__body {
+    width: 704px;
+    height: 941px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 185px;
+  }
+
+  .slider-block--note .slider-block__body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    background-image: url("../img/slider-block-note-table.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 704px;
+    height: 941px;
   }
 
   .slider-block .btn {
