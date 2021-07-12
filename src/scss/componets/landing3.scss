@@ -135,6 +135,25 @@
         height: auto;
     }
 
+    .other-store{
+        font-size: 13px;
+        line-height: 16px;
+        color: #A4A9BB;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin-top: -3px;
+            background-image: url(../img/icons-sprite.svg#arrow-select-gray);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 6px;
+            height: 6px;
+        }
+    }
+
     @include r(1023) {
         &__elka {
             height: 3858px;
