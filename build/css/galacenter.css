@@ -10358,7 +10358,6 @@ hr {
 }
 
 .slider-block--note {
-  overflow: visible;
   margin-bottom: -60px;
   padding-bottom: 0;
 }
@@ -10381,7 +10380,7 @@ hr {
 }
 
 .slider-block--note .slider-block__body {
-  width: 1040px;
+  width: 100%;
   height: 1245px;
   margin: 0 auto;
   position: relative;
@@ -10401,6 +10400,13 @@ hr {
   background-repeat: no-repeat;
   width: 1360px;
   height: 1245px;
+}
+
+.slider-block--note .swiper-container-block {
+  width: 1070px;
+  margin: 0 auto;
+  padding-top: 160px;
+  overflow: hidden;
 }
 
 .slider-block--note .swiper-slide {
