@@ -38,6 +38,7 @@
             padding-top: 40px;
         }
         .btn.btn-outline-secondary {
+            border-color: #fff;
             color: #fff;
         }
         .swiper-wrapper {
@@ -159,7 +160,7 @@
                 position: relative;
                 padding-bottom: 40px;
                 &::before {
-                   display: none;
+                    display: none;
                 }
             }
             .products__item {
@@ -271,7 +272,6 @@
             grid-gap: 22px;
         }
         &--landing3 {
-
             .swiper-slide {
                 width: calc(100% + 20px);
                 padding: 0 10px;
@@ -296,7 +296,6 @@
                     margin-top: 0;
                 }
             }
-
         }
     }
     @include r(374) {

@@ -7494,6 +7494,7 @@ hr {
 }
 
 .slider-populary--landing3 .btn.btn-outline-secondary {
+  border-color: #fff;
   color: #fff;
 }
 
@@ -7667,6 +7668,7 @@ hr {
 
 .slider-tabs--landing3 .btn.btn-outline-secondary {
   color: #fff;
+  border-color: #fff;
 }
 
 .slider-tabs--landing3 .swiper-button-next,
@@ -10425,6 +10427,7 @@ hr {
 
 .slider-block--note .btn.btn-outline-secondary {
   color: #fff;
+  border-color: #fff;
 }
 
 .slider-block--note .swiper-button-next,
