@@ -7499,7 +7499,6 @@ hr {
 }
 
 .slider-populary--landing3 .swiper-slide {
-  width: calc(100% + 20px);
   padding: 0 10px;
 }
 
@@ -13567,8 +13566,26 @@ hr {
 
   .slider-populary .swiper-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(212px, 1fr));
-    grid-gap: 34px;
+    grid-template-columns: repeat(auto-fit, minmax(212px, 236px));
+    grid-gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .slider-populary .swiper-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    background-image: url(../img/slider-populary-decor-line.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 20px;
+    width: 100%;
+    height: 40px;
   }
 
   .slider-populary .swiper-slide {

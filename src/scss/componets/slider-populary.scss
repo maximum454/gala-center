@@ -44,7 +44,7 @@
         .swiper-wrapper {
         }
         .swiper-slide {
-            width: calc(100% + 20px);
+            
             padding: 0 10px;
             &:nth-child(5n + 1) {
                 transform: skew(-3deg, 3deg);
@@ -252,9 +252,23 @@
         }
         .swiper-wrapper {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(212px, 1fr));
-            grid-gap: 34px;
+            grid-template-columns: repeat(auto-fit, minmax(212px, 236px));
+            grid-gap: 30px;
+            justify-content: center;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translate(0, -50%);
+                background-image: url(../img/slider-populary-decor-line.svg);
+                background-repeat: no-repeat;
+                background-size: 100% 20px;
+                width: 100%;
+                height: 40px;
+            }
         }
+        
         .swiper-slide {
             height: auto;
         }
