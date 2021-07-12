@@ -429,10 +429,9 @@ body {
         .header,
         .footer,
         .filter__item,
-        .btn-secondary,
+        
         .btn-light,
         .breadcrumb-catalog__dropdown-toggle,
-        .slider-tabs__caption li.active,
         .catalog-section__item,
         .subscribe {
             background: #40BEB7
@@ -543,6 +542,9 @@ ul {
 }
 .text-link{
     color: #324c9a;
+}
+.text-white{
+    color: #fff;
 }
 
 .text-success {
@@ -849,5 +851,8 @@ hr {
 // Каталог
 @import "componets/catalog";
 
-// Каталог
+// landing3
 @import "componets/landing3";
+
+// Подборки товаров 2022 года!
+@import "componets/selections-years";

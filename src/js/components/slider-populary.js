@@ -18,23 +18,25 @@ function swiperPopularyMode() {
     else if (desktop.matches) {
         if (!swiperPopularyInit) {
             swiperPopularyInit = true;
+            let sliderSpaceBetween = document.querySelector('.swiper-container-populary').getAttribute('data-spacebetween');
             swiperPopulary = new Swiper('.swiper-container-populary', {
                 slidesPerView: 3,
-                spaceBetween: 45,
+                spaceBetween: !sliderSpaceBetween ? 45: sliderSpaceBetween,
                 freeMode: true,
                 navigation: {
                     nextEl: '.populary-next',
                     prevEl: '.populary-prev',
                 },
                 breakpoints: {
+                    768: {
+                        slidesPerView: 3,
+                    },
                     1024: {
                         slidesPerView: 5,
                     }
                 }
 
             });
-
-            
         }
     }
 }

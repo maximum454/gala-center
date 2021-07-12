@@ -21,16 +21,16 @@ if ($('.swiper-container-block').length > 0) { //some-slider-wrap-in
             speed: 300,
             breakpoints: {
                 320: {
-                    slidesPerView: 1.5,
+                    slidesPerView: 1,
                 },
                 450: {
-                    slidesPerView: 2.5,
+                    slidesPerView: 2,
                 },
                 640: {
                     slidesPerView: 3,
                 },
                 1023: {
-                    slidesPerView: !sliderCount ? 3: sliderCount,
+                    slidesPerView: !sliderCount ? 4: sliderCount,
                 },
 
             }

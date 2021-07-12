@@ -1857,23 +1857,25 @@ function swiperPopularyMode() {
     else if (desktop.matches) {
         if (!swiperPopularyInit) {
             swiperPopularyInit = true;
+            let sliderSpaceBetween = document.querySelector('.swiper-container-populary').getAttribute('data-spacebetween');
             swiperPopulary = new Swiper('.swiper-container-populary', {
                 slidesPerView: 3,
-                spaceBetween: 45,
+                spaceBetween: !sliderSpaceBetween ? 45: sliderSpaceBetween,
                 freeMode: true,
                 navigation: {
                     nextEl: '.populary-next',
                     prevEl: '.populary-prev',
                 },
                 breakpoints: {
+                    768: {
+                        slidesPerView: 3,
+                    },
                     1024: {
                         slidesPerView: 5,
                     }
                 }
 
             });
-
-            
         }
     }
 }
@@ -2008,16 +2010,16 @@ if ($('.swiper-container-block').length > 0) { //some-slider-wrap-in
             speed: 300,
             breakpoints: {
                 320: {
-                    slidesPerView: 1.5,
+                    slidesPerView: 1,
                 },
                 450: {
-                    slidesPerView: 2.5,
+                    slidesPerView: 2,
                 },
                 640: {
                     slidesPerView: 3,
                 },
                 1023: {
-                    slidesPerView: !sliderCount ? 3: sliderCount,
+                    slidesPerView: !sliderCount ? 4: sliderCount,
                 },
 
             }
