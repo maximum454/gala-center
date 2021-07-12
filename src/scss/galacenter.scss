@@ -459,6 +459,11 @@ body {
         .footer__info p{
             color: #fff;
         }
+        @include r(767){
+            .nav-scroller{
+                background-color: #40BEB7;
+            }
+        }
     }
 }
 

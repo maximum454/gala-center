@@ -2009,7 +2009,7 @@ if ($('.swiper-container-block').length > 0) { //some-slider-wrap-in
             initialSlide: 0,
             speed: 300,
             breakpoints: {
-                320: {
+                400: {
                     slidesPerView: 1,
                 },
                 450: {

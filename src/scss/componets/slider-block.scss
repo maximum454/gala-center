@@ -229,8 +229,8 @@
                     content: "";
                     position: absolute;
                     top: 0;
-                    left: 50%;
-                    transform: translate(-50%, 0);
+                    left: -50%;
+                    transform: translate(50%, 0);
                     background-image: url("../img/slider-block-note-table.svg");
                     background-size: 100%;
                     background-repeat: no-repeat;

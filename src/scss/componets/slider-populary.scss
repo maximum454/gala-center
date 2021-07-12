@@ -270,6 +270,34 @@
             grid-template-columns: 1fr 1fr;
             grid-gap: 22px;
         }
+        &--landing3 {
+
+            .swiper-slide {
+                width: calc(100% + 20px);
+                padding: 0 10px;
+                &:nth-child(5n + 1) {
+                    transform: skew(0, 0);
+                    margin-top: 0;
+                }
+                &:nth-child(5n + 2) {
+                    transform: skew(0, 0);
+                    margin-top: 0;
+                }
+                &:nth-child(5n + 3) {
+                    transform: skew(0, 0);
+                    margin-top: 0;
+                }
+                &:nth-child(5n + 4) {
+                    transform: skew(0, 0);
+                    margin-top: 0;
+                }
+                &:nth-child(5n + 5) {
+                    transform: skew(0, 0);
+                    margin-top: 0;
+                }
+            }
+
+        }
     }
     @include r(374) {
         .swiper-wrapper {
