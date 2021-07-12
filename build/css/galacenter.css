@@ -10404,7 +10404,7 @@ hr {
 
 .slider-block--note .swiper-container-block {
   width: 1070px;
-  margin: 0 auto;
+  margin: -160px auto 0;
   padding-top: 160px;
   overflow: hidden;
 }
@@ -10418,12 +10418,12 @@ hr {
 .slider-block--note .swiper-slide::before {
   content: "";
   position: absolute;
-  top: -152px;
-  left: -30px;
+  top: -141px;
+  left: -20px;
   background-image: url("../img/slider-block-item1.svg");
   background-size: 100%;
   background-repeat: no-repeat;
-  width: calc(100% + 40px);
+  width: calc(100% + 20px);
   height: 156px;
 }
 
