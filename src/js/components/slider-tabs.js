@@ -14,7 +14,7 @@ var swiperTabsInit = false;
 function swiperTabsMode() {
     let mobile = window.matchMedia('(min-width: 0px) and (max-width: 1023px)');
     let desktop = window.matchMedia('(min-width: 1024px)');
-
+    let slidesPerColumn = document.querySelector('.swiper-container-tabs').getAttribute('data-slidesPerColumn');
     if (mobile.matches) {
         if(swiperTabs){
             for(const swiperTab of swiperTabs){
@@ -28,9 +28,15 @@ function swiperTabsMode() {
         if (!swiperTabsInit) {
             swiperTabsInit = true;
             swiperTabs = new Swiper('.swiper-container-tabs', {
+               
+                slidesPerColumnFill: 'row',
+                slidesPerColumn: !slidesPerColumn ? 1 : +slidesPerColumn,
                 slidesPerView: 3,
                 spaceBetween: 45,
+                slidesPerGroup: 3,
                 freeMode: true,
+                watchSlidesProgress: true,
+                watchSlidesVisibility: true,
                 navigation: {
                     nextEl: '.tabs-next',
                     prevEl: '.tabs-prev',
@@ -40,6 +46,7 @@ function swiperTabsMode() {
                 breakpoints: {
                     1024: {
                         slidesPerView: 5,
+                        slidesPerGroup: 5,
                     }
                 }
 
