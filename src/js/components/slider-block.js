@@ -3,6 +3,8 @@ if ($('.swiper-container-block').length > 0) { //some-slider-wrap-in
     $(".swiper-container-block").each(function(index, element){ //some-slider-wrap-in
         const $this = $(this);
         let sliderCount = $this.data('slide-count');
+        let sliderCountTable = $this.data('slide-table');
+
         $this.addClass("swiper-container-block-" + index); //instance need to be unique (ex: some-slider)
         $this.parents('.slider-block').find(".swiper-button-prev").addClass("block-prev-" + index); //prev must be unique (ex: some-slider-prev)
         $this.parents('.slider-block').find(".swiper-button-next").addClass("block-next-" + index); //next must be unique (ex: some-slider-next)
@@ -26,7 +28,7 @@ if ($('.swiper-container-block').length > 0) { //some-slider-wrap-in
                     slidesPerView: 2,
                 },
                 640: {
-                    slidesPerView: 3,
+                    slidesPerView: !sliderCountTable ? 3: sliderCountTable,
                 },
                 1023: {
                     slidesPerView: !sliderCount ? 4: sliderCount,
