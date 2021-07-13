@@ -7702,6 +7702,38 @@ hr {
   height: 40px;
 }
 
+.slider-tabs--landing3 .swiper-slide:nth-child(5n + 1) {
+  -webkit-transform: skew(-3deg, 3deg);
+      -ms-transform: skew(-3deg, 3deg);
+          transform: skew(-3deg, 3deg);
+  margin-top: -5px;
+}
+
+.slider-tabs--landing3 .swiper-slide:nth-child(5n + 2) {
+  -webkit-transform: skew(-2deg, 2deg);
+      -ms-transform: skew(-2deg, 2deg);
+          transform: skew(-2deg, 2deg);
+  margin-top: 5px;
+}
+
+.slider-tabs--landing3 .swiper-slide:nth-child(5n + 3) {
+  margin-top: 10px;
+}
+
+.slider-tabs--landing3 .swiper-slide:nth-child(5n + 4) {
+  -webkit-transform: skew(2deg, -2deg);
+      -ms-transform: skew(2deg, -2deg);
+          transform: skew(2deg, -2deg);
+  margin-top: 5px;
+}
+
+.slider-tabs--landing3 .swiper-slide:nth-child(5n + 5) {
+  margin-top: -5px;
+  -webkit-transform: skew(3deg, -3deg);
+      -ms-transform: skew(3deg, -3deg);
+          transform: skew(3deg, -3deg);
+}
+
 .slider-tabs--landing3 .swiper-button-next,
 .slider-tabs--landing3 .swiper-button-prev {
   background-color: transparent !important;
@@ -13671,6 +13703,41 @@ hr {
     display: none;
   }
 
+  .slider-tabs--landing3 .swiper-wrapper .swiper-slide:nth-child(5n + 1) {
+    margin-top: 0;
+    -webkit-transform: skew(0, 0);
+        -ms-transform: skew(0, 0);
+            transform: skew(0, 0);
+  }
+
+  .slider-tabs--landing3 .swiper-wrapper .swiper-slide:nth-child(5n + 2) {
+    margin-top: 0;
+    -webkit-transform: skew(0, 0);
+        -ms-transform: skew(0, 0);
+            transform: skew(0, 0);
+  }
+
+  .slider-tabs--landing3 .swiper-wrapper .swiper-slide:nth-child(5n + 3) {
+    margin-top: 0;
+    -webkit-transform: skew(0, 0);
+        -ms-transform: skew(0, 0);
+            transform: skew(0, 0);
+  }
+
+  .slider-tabs--landing3 .swiper-wrapper .swiper-slide:nth-child(5n + 4) {
+    margin-top: 0;
+    -webkit-transform: skew(0, 0);
+        -ms-transform: skew(0, 0);
+            transform: skew(0, 0);
+  }
+
+  .slider-tabs--landing3 .swiper-wrapper .swiper-slide:nth-child(5n + 5) {
+    margin-top: 0;
+    -webkit-transform: skew(0, 0);
+        -ms-transform: skew(0, 0);
+            transform: skew(0, 0);
+  }
+
   .slider-tabs--landing3 .swiper-wrapper .swiper-slide:nth-child(3n + 1) {
     -webkit-transform: skew(-3deg, 3deg);
         -ms-transform: skew(-3deg, 3deg);
@@ -15050,9 +15117,74 @@ hr {
     grid-gap: 22px;
   }
 
+  .slider-tabs--landing3 .slider-tabs__caption {
+    border-bottom: 1px solid #40BEB7;
+    width: 100%;
+  }
+
   .slider-tabs--landing3 .slider-tabs__caption li {
     font-size: 24px;
     line-height: 32px;
+    border-radius: 0 !important;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .slider-tabs--landing3 .slider-tabs__caption li.active {
+    background-color: transparent;
+  }
+
+  .slider-tabs--landing3 .slider-tabs__caption li.active:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+  }
+
+  .slider-tabs--landing3 .swiper-wrapper {
+    grid-gap: 10px;
+  }
+
+  .slider-tabs--landing3 .swiper-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 460px;
+    left: 0;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    background-image: url(../img/slider-populary-decor-line.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 20px;
+    width: 100%;
+    height: 40px;
+  }
+
+  .slider-tabs--landing3 .swiper-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 948px;
+    left: 0;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    background-image: url(../img/slider-populary-decor-line.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 20px;
+    width: 100%;
+    height: 40px;
+  }
+
+  .slider-tabs--landing3 .swiper-wrapper .swiper-slide {
+    margin: 0 auto;
+    max-width: 260px;
+  }
+
+  .slider-tabs--landing3 .swiper-wrapper .swiper-slide:nth-child(n+7) {
+    display: none;
   }
 
   .products--list .products__item {
