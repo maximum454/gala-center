@@ -179,6 +179,13 @@
                 font-size: 40px;
                 line-height: 50px;
             }
+            .swiper-wrapper{
+                .swiper-slide{
+                    &:nth-child(n+10){
+                        display: none;
+                    }
+                }
+            }
 
         }
         &__nav {
