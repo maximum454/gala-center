@@ -208,6 +208,26 @@
                     &:nth-child(n+10){
                         display: none;
                     }
+                    &:nth-child(3n + 1) {
+                        transform: skew(-3deg, 3deg);
+                        margin-top: 0;
+                    }
+                    &:nth-child(3n + 2) {
+                        transform: skew(0, 0);
+                        margin-top: 8px;
+                    }
+                    &:nth-child(3n + 3) {
+                        transform: skew(2deg, -2deg);
+                        margin-top: 0;
+                    }
+                    &:nth-child(3n + 4) {
+                        transform: skew(-2deg, 2deg);
+                        margin-top: 0;
+                    }
+                    &:nth-child(3n + 5) {
+                        margin-top: 8px;
+                        transform: skew(0, 0);
+                    }
                 }
             }
             .btn {

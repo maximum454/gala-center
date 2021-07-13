@@ -13671,6 +13671,41 @@ hr {
     display: none;
   }
 
+  .slider-tabs--landing3 .swiper-wrapper .swiper-slide:nth-child(3n + 1) {
+    -webkit-transform: skew(-3deg, 3deg);
+        -ms-transform: skew(-3deg, 3deg);
+            transform: skew(-3deg, 3deg);
+    margin-top: 0;
+  }
+
+  .slider-tabs--landing3 .swiper-wrapper .swiper-slide:nth-child(3n + 2) {
+    -webkit-transform: skew(0, 0);
+        -ms-transform: skew(0, 0);
+            transform: skew(0, 0);
+    margin-top: 8px;
+  }
+
+  .slider-tabs--landing3 .swiper-wrapper .swiper-slide:nth-child(3n + 3) {
+    -webkit-transform: skew(2deg, -2deg);
+        -ms-transform: skew(2deg, -2deg);
+            transform: skew(2deg, -2deg);
+    margin-top: 0;
+  }
+
+  .slider-tabs--landing3 .swiper-wrapper .swiper-slide:nth-child(3n + 4) {
+    -webkit-transform: skew(-2deg, 2deg);
+        -ms-transform: skew(-2deg, 2deg);
+            transform: skew(-2deg, 2deg);
+    margin-top: 0;
+  }
+
+  .slider-tabs--landing3 .swiper-wrapper .swiper-slide:nth-child(3n + 5) {
+    margin-top: 8px;
+    -webkit-transform: skew(0, 0);
+        -ms-transform: skew(0, 0);
+            transform: skew(0, 0);
+  }
+
   .slider-tabs--landing3 .btn {
     display: block !important;
     margin: 0 auto;
