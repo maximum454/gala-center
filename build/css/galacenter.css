@@ -12837,121 +12837,155 @@ hr {
 
 .landing3__elka .products {
   margin-bottom: 0;
+  max-width: 180px;
+  margin: 0 auto;
 }
 
 .landing3__elka .products__item {
-  background-color: #fff;
+  background-color: transparent;
   padding: 10px;
   border-radius: 8px;
   position: relative;
+  text-align: center;
+}
+
+.landing3__elka .products__item::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background-color: #fff;
+  width: 6px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.landing3__elka .products__img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 8px;
+}
+
+.landing3__elka .products__name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .landing3__elka .elka-inner {
   position: relative;
   z-index: 10;
-  display: grid;
-  grid-template-areas: ". . elka1 . ." ". elka2 elka3 elka4 ." "elka5 elka6 elka7 elka8 elka9" "elka10 elka11 elka12 elka13 elka14" ". . footer . .";
-  grid-gap: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  grid-template-areas: ". . elka1 . ." ". elka2 elka3 . ." "elka4 elka5 . elka6 elka7" "elka8 elka9 elka10 elka11 elka12" "elka13 elka14 elka15 elka16 elka17" ". . footer . .";
+  grid-gap: 60px 20px;
   padding-top: 450px;
-}
-
-.landing3__elka .elka {
-  max-width: 260px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .landing3__elka .elka.elka1 {
   grid-area: elka1;
+  width: 100%;
 }
 
 .landing3__elka .elka.elka2 {
   grid-area: elka2;
-  -webkit-transform: skew(-2deg, 2deg);
-      -ms-transform: skew(-2deg, 2deg);
-          transform: skew(-2deg, 2deg);
+  width: 45%;
+}
+
+.landing3__elka .elka.elka2 .products {
+  margin: 0 0 0 auto;
 }
 
 .landing3__elka .elka.elka3 {
   grid-area: elka3;
-  -webkit-transform: skew(2deg, -2deg);
-      -ms-transform: skew(2deg, -2deg);
-          transform: skew(2deg, -2deg);
+  width: 45%;
+}
+
+.landing3__elka .elka.elka3 .products {
+  margin: 0 auto 0 0;
 }
 
 .landing3__elka .elka.elka4 {
   grid-area: elka4;
-  -webkit-transform: skew(2deg, -2deg);
-      -ms-transform: skew(2deg, -2deg);
-          transform: skew(2deg, -2deg);
+  width: 23%;
 }
 
 .landing3__elka .elka.elka5 {
   grid-area: elka5;
-  -webkit-transform: skew(-2deg, 2deg);
-      -ms-transform: skew(-2deg, 2deg);
-          transform: skew(-2deg, 2deg);
+  width: 23%;
 }
 
 .landing3__elka .elka.elka6 {
   grid-area: elka6;
-  -webkit-transform: skew(-2deg, 2deg);
-      -ms-transform: skew(-2deg, 2deg);
-          transform: skew(-2deg, 2deg);
+  width: 23%;
 }
 
 .landing3__elka .elka.elka7 {
   grid-area: elka7;
-  -webkit-transform: skew(-2deg, 2deg);
-      -ms-transform: skew(-2deg, 2deg);
-          transform: skew(-2deg, 2deg);
+  width: 23%;
 }
 
 .landing3__elka .elka.elka8 {
   grid-area: elka8;
-  -webkit-transform: skew(2deg, -2deg);
-      -ms-transform: skew(2deg, -2deg);
-          transform: skew(2deg, -2deg);
+  width: 18%;
 }
 
 .landing3__elka .elka.elka9 {
   grid-area: elka9;
-  -webkit-transform: skew(2deg, -2deg);
-      -ms-transform: skew(2deg, -2deg);
-          transform: skew(2deg, -2deg);
+  width: 18%;
 }
 
 .landing3__elka .elka.elka10 {
   grid-area: elka10;
-  -webkit-transform: skew(-2deg, 2deg);
-      -ms-transform: skew(-2deg, 2deg);
-          transform: skew(-2deg, 2deg);
+  width: 18%;
 }
 
 .landing3__elka .elka.elka11 {
   grid-area: elka11;
-  -webkit-transform: skew(-2deg, 2deg);
-      -ms-transform: skew(-2deg, 2deg);
-          transform: skew(-2deg, 2deg);
+  width: 18%;
 }
 
 .landing3__elka .elka.elka12 {
   grid-area: elka12;
-  -webkit-transform: skew(2deg, -2deg);
-      -ms-transform: skew(2deg, -2deg);
-          transform: skew(2deg, -2deg);
+  width: 18%;
 }
 
 .landing3__elka .elka.elka13 {
   grid-area: elka13;
-  -webkit-transform: skew(2deg, -2deg);
-      -ms-transform: skew(2deg, -2deg);
-          transform: skew(2deg, -2deg);
+  width: 18%;
 }
 
 .landing3__elka .elka.elka14 {
   grid-area: elka14;
-  -webkit-transform: skew(2deg, -2deg);
-      -ms-transform: skew(2deg, -2deg);
-          transform: skew(2deg, -2deg);
+  width: 18%;
+}
+
+.landing3__elka .elka.elka15 {
+  grid-area: elka15;
+  width: 18%;
+}
+
+.landing3__elka .elka.elka16 {
+  grid-area: elka16;
+  width: 18%;
+}
+
+.landing3__elka .elka.elka17 {
+  grid-area: elka17;
+  width: 18%;
 }
 
 .landing3__elka .elka-footer {
@@ -12988,11 +13022,11 @@ hr {
 .landing3 .other-store {
   font-size: 13px;
   line-height: 16px;
-  color: #A4A9BB;
+  color: #a4a9bb;
 }
 
 .landing3 .other-store::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: 0;
