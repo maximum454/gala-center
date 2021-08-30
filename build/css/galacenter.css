@@ -7471,7 +7471,7 @@ hr {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 101%;
   height: 100%;
   background-image: url("../img/product-item-bg.svg");
   background-size: 100%;
@@ -7499,10 +7499,10 @@ hr {
 }
 
 .slider-populary--landing3 .swiper-slide {
-  padding: 0 10px;
+  padding: 0 13px;
 }
 
-.slider-populary--landing3 .swiper-slide:nth-child(5n + 1) {
+.slider-populary--landing3 .swiper-slide:nth-child(5n + 1) .products {
   -webkit-transform: skew(-3deg, 3deg);
       -ms-transform: skew(-3deg, 3deg);
           transform: skew(-3deg, 3deg);
@@ -7516,18 +7516,18 @@ hr {
   margin-top: 5px;
 }
 
-.slider-populary--landing3 .swiper-slide:nth-child(5n + 3) {
+.slider-populary--landing3 .swiper-slide:nth-child(5n + 3) .products {
   margin-top: 10px;
 }
 
-.slider-populary--landing3 .swiper-slide:nth-child(5n + 4) {
+.slider-populary--landing3 .swiper-slide:nth-child(5n + 4) .products {
   -webkit-transform: skew(2deg, -2deg);
       -ms-transform: skew(2deg, -2deg);
           transform: skew(2deg, -2deg);
   margin-top: 5px;
 }
 
-.slider-populary--landing3 .swiper-slide:nth-child(5n + 5) {
+.slider-populary--landing3 .swiper-slide:nth-child(5n + 5) .products {
   margin-top: -5px;
   -webkit-transform: skew(3deg, -3deg);
       -ms-transform: skew(3deg, -3deg);
@@ -7702,32 +7702,36 @@ hr {
   height: 40px;
 }
 
-.slider-tabs--landing3 .swiper-slide:nth-child(5n + 1) {
+.slider-tabs--landing3 .swiper-slide {
+  padding: 0 10px;
+}
+
+.slider-tabs--landing3 .swiper-slide:nth-child(5n + 1) .products {
   -webkit-transform: skew(-3deg, 3deg);
       -ms-transform: skew(-3deg, 3deg);
           transform: skew(-3deg, 3deg);
   margin-top: -5px;
 }
 
-.slider-tabs--landing3 .swiper-slide:nth-child(5n + 2) {
+.slider-tabs--landing3 .swiper-slide:nth-child(5n + 2) .products {
   -webkit-transform: skew(-2deg, 2deg);
       -ms-transform: skew(-2deg, 2deg);
           transform: skew(-2deg, 2deg);
   margin-top: 5px;
 }
 
-.slider-tabs--landing3 .swiper-slide:nth-child(5n + 3) {
+.slider-tabs--landing3 .swiper-slide:nth-child(5n + 3) .products {
   margin-top: 10px;
 }
 
-.slider-tabs--landing3 .swiper-slide:nth-child(5n + 4) {
+.slider-tabs--landing3 .swiper-slide:nth-child(5n + 4) .products {
   -webkit-transform: skew(2deg, -2deg);
       -ms-transform: skew(2deg, -2deg);
           transform: skew(2deg, -2deg);
   margin-top: 5px;
 }
 
-.slider-tabs--landing3 .swiper-slide:nth-child(5n + 5) {
+.slider-tabs--landing3 .swiper-slide:nth-child(5n + 5) .products {
   margin-top: -5px;
   -webkit-transform: skew(3deg, -3deg);
       -ms-transform: skew(3deg, -3deg);
@@ -15258,6 +15262,7 @@ hr {
   .slider-populary--landing3 .swiper-slide {
     width: calc(100% + 20px);
     padding: 0 10px;
+    max-width: 100%;
   }
 
   .slider-populary--landing3 .swiper-slide:nth-child(5n + 1) {

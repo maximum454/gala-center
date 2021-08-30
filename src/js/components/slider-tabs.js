@@ -15,6 +15,7 @@ function swiperTabsMode() {
     let mobile = window.matchMedia('(min-width: 0px) and (max-width: 1023px)');
     let desktop = window.matchMedia('(min-width: 1024px)');
     let slidesPerColumn = document.querySelector('.swiper-container-tabs').getAttribute('data-slidesPerColumn');
+    let slidesspaceBetween = document.querySelector('.swiper-container-tabs').getAttribute('data-slidesSpaceBetween');
     if (mobile.matches) {
         if(swiperTabs){
             for(const swiperTab of swiperTabs){
@@ -32,7 +33,7 @@ function swiperTabsMode() {
                 slidesPerColumnFill: 'row',
                 slidesPerColumn: !slidesPerColumn ? 1 : +slidesPerColumn,
                 slidesPerView: 3,
-                spaceBetween: 45,
+                spaceBetween: !slidesspaceBetween ? 45 : +slidesspaceBetween,
                 slidesPerGroup: 3,
                 freeMode: true,
                 watchSlidesProgress: true,

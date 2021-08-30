@@ -17,7 +17,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 100%;
+                width: 101%;
                 height: 100%;
                 background-image: url("../img/product-item-bg.svg");
                 background-size: 100%;
@@ -45,25 +45,38 @@
         }
         .swiper-slide {
             
-            padding: 0 10px;
+            padding: 0 13px;
             &:nth-child(5n + 1) {
-                transform: skew(-3deg, 3deg);
-                margin-top: -5px;
+                .products{
+                    transform: skew(-3deg, 3deg);
+                    margin-top: -5px;
+                }
+                
             }
             &:nth-child(5n + 2) {
+                .products{}
                 transform: skew(-2deg, 2deg);
                 margin-top: 5px;
             }
             &:nth-child(5n + 3) {
-                margin-top: 10px;
+                 .products{
+                    margin-top: 10px;
+                 }
+               
             }
             &:nth-child(5n + 4) {
-                transform: skew(2deg, -2deg);
-                margin-top: 5px;
+                 .products{
+                    transform: skew(2deg, -2deg);
+                    margin-top: 5px;
+                 }
+               
             }
             &:nth-child(5n + 5) {
-                margin-top: -5px;
-                transform: skew(3deg, -3deg);
+                 .products{
+                    margin-top: -5px;
+                    transform: skew(3deg, -3deg);
+                 }
+                
             }
         }
         .swiper-button-next,
@@ -289,6 +302,7 @@
             .swiper-slide {
                 width: calc(100% + 20px);
                 padding: 0 10px;
+                max-width: 100%;
                 &:nth-child(5n + 1) {
                     transform: skew(0, 0);
                     margin-top: 0;
