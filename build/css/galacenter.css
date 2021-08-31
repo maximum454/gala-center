@@ -12825,7 +12825,7 @@ hr {
 
 .landing3__elka {
   position: relative;
-  height: 1725px;
+  height: 1856px;
 }
 
 .landing3__elka::before {
@@ -12992,6 +12992,8 @@ hr {
   top: -140px;
   left: 0;
   background-image: url("../img/landing3/fai1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 479px;
   height: 507px;
   pointer-events: none;
@@ -12999,9 +13001,11 @@ hr {
 
 .landing3__elka .elka-fai2 {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 36px;
+  left: 638px;
   background-image: url("../img/landing3/fai2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 735px;
   height: 740px;
   z-index: -1;
@@ -13015,9 +13019,41 @@ hr {
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   background-image: url("../img/landing3/fai3.png");
+  background-size: contain;
   width: 100%;
   height: 890px;
   z-index: -1;
+}
+
+.landing3__elka .elka-footer {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  bottom: -30px;
+  text-align: center;
+  background-image: url(../img/landing3/elka-footer.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+  max-width: 429px;
+  width: 100%;
+  height: 172px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.landing3__elka .elka-footer a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .landing3__elka .btn-link {
@@ -14415,14 +14451,6 @@ hr {
         flex-wrap: wrap;
   }
 
-  .landing3__elka {
-    height: 3858px;
-  }
-
-  .landing3__elka::before {
-    display: none;
-  }
-
   .landing3__elka .elka-header {
     position: relative;
     height: 1118px;
@@ -14448,179 +14476,78 @@ hr {
     height: 1969px;
   }
 
-  .landing3__elka .elka-body::before {
-    content: "";
+  .landing3__elka .elka {
     position: absolute;
-    top: 0;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
-    background-image: url("../img/landing3/bg-landing3-2.png");
-    background-repeat: repeat-y;
-    background-position: top;
-    width: 2009px;
-    height: 100%;
-  }
-
-  .landing3__elka .elka-inner {
-    grid-template-areas: ". elka1 ." "elka2 elka3 elka4" ". elka5 ." "elka6 elka7 elka8" ". elka9 ." "elka10 elka11 ." "elka12 elka13 elka14" ". footer .";
-    grid-gap: 180px 20px;
-    padding-top: 0;
-    top: -755px;
   }
 
   .landing3__elka .elka.elka1 {
-    grid-area: elka1;
-    width: 100%;
+    top: 235px;
   }
 
   .landing3__elka .elka.elka2 {
-    grid-area: elka2;
-    width: 45%;
-  }
-
-  .landing3__elka .elka.elka2 .products {
-    margin: 0 0 0 auto;
+    top: 475px;
+    margin-left: -163px;
   }
 
   .landing3__elka .elka.elka3 {
-    grid-area: elka3;
-    width: 45%;
-  }
-
-  .landing3__elka .elka.elka3 .products {
-    margin: 0 auto 0 0;
+    top: 475px;
+    margin-left: 163px;
   }
 
   .landing3__elka .elka.elka4 {
-    grid-area: elka4;
-    width: 29%;
-    margin-left: 0;
+    top: 735px;
+    margin-left: -269px;
   }
 
   .landing3__elka .elka.elka5 {
-    grid-area: elka5;
-    width: 29%;
-    margin-top: 50px;
+    top: 700px;
   }
 
   .landing3__elka .elka.elka6 {
-    grid-area: elka6;
-    width: 29%;
-    margin-top: 0;
+    top: 735px;
+    margin-left: 273px;
   }
 
   .landing3__elka .elka.elka7 {
-    grid-area: elka7;
-    width: 29%;
-    margin-right: 0;
-    margin-top: 80px;
+    top: 1034px;
+    margin-left: -290px;
   }
 
   .landing3__elka .elka.elka8 {
-    grid-area: elka8;
-    width: 29%;
-    position: relative;
-  }
-
-  .landing3__elka .elka.elka8:before {
-    content: '';
-    display: none;
+    top: 1215px;
+    margin-left: -152px;
   }
 
   .landing3__elka .elka.elka9 {
-    grid-area: elka9;
-    width: 29%;
-    margin-top: 80px;
+    top: 1034px;
   }
 
   .landing3__elka .elka.elka10 {
-    grid-area: elka10;
-    width: 29%;
-    margin-top: 80px;
+    top: 1215px;
+    margin-left: 156px;
   }
 
   .landing3__elka .elka.elka11 {
-    grid-area: elka11;
-    width: 29%;
-    margin-top: 0;
+    top: 1034px;
+    margin-left: 289px;
   }
 
   .landing3__elka .elka.elka12 {
-    grid-area: elka12;
-    width: 29%;
-    position: relative;
-    margin-top: 80px;
-  }
-
-  .landing3__elka .elka.elka12:before {
-    content: '';
-    display: none;
+    top: 1440px;
+    margin-left: -290px;
   }
 
   .landing3__elka .elka.elka13 {
-    grid-area: elka13;
-    width: 29%;
-    position: relative;
-  }
-
-  .landing3__elka .elka.elka13:before {
-    content: '';
-    display: none;
+    top: 1440px;
   }
 
   .landing3__elka .elka.elka14 {
-    grid-area: elka14;
-    width: 29%;
-    margin-top: 50px;
-  }
-
-  .landing3__elka .elka.elka15 {
-    grid-area: elka15;
-    width: 29%;
-    margin-top: 0;
-  }
-
-  .landing3__elka .elka.elka16 {
-    grid-area: elka16;
-    width: 45%;
-    margin-top: 0;
-    position: relative;
-  }
-
-  .landing3__elka .elka.elka16:before {
-    content: '';
-    position: absolute;
-    top: 160px;
-    left: 0;
-    background-image: url(../img/landing3/elka-decor-3.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 94px;
-    height: 206px;
-    pointer-events: none;
-  }
-
-  .landing3__elka .elka.elka17 {
-    grid-area: elka17;
-    width: 45%;
-    position: relative;
-  }
-
-  .landing3__elka .elka.elka17:before {
-    content: '';
-    position: absolute;
-    top: 160px;
-    right: -50px;
-    background-image: url(../img/landing3/elka-decor-4.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 94px;
-    height: 206px;
-    pointer-events: none;
+    top: 1440px;
+    margin-left: 289px;
   }
 
   .selections-years__title {
@@ -15752,17 +15679,137 @@ hr {
   }
 
   .landing3__elka {
-    height: 5000px;
+    height: 2196px;
   }
 
-  .landing3__elka .elka-header {
-    position: relative;
-    height: 1118px;
+  .landing3__elka::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    background-image: url("../img/landing3/elka.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 767px;
+    height: 100%;
   }
 
-  .landing3__elka .elka-body {
-    position: relative;
-    height: 3000px;
+  .landing3__elka::after {
+    display: none;
+  }
+
+  .landing3__elka .elka {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+
+  .landing3__elka .elka.elka1 {
+    top: 235px;
+  }
+
+  .landing3__elka .elka.elka2 {
+    top: 459px;
+    margin-left: -90px;
+  }
+
+  .landing3__elka .elka.elka3 {
+    top: 459px;
+    margin-left: 90px;
+  }
+
+  .landing3__elka .elka.elka4 {
+    top: 684px;
+    margin-left: -90px;
+  }
+
+  .landing3__elka .elka.elka5 {
+    top: 684px;
+    margin-left: 90px;
+  }
+
+  .landing3__elka .elka.elka6 {
+    top: 908px;
+    margin-left: -90px;
+  }
+
+  .landing3__elka .elka.elka7 {
+    top: 908px;
+    margin-left: 90px;
+  }
+
+  .landing3__elka .elka.elka8 {
+    top: 1131px;
+    margin-left: -90px;
+  }
+
+  .landing3__elka .elka.elka9 {
+    top: 1131px;
+    margin-left: 90px;
+  }
+
+  .landing3__elka .elka.elka10 {
+    top: 1355px;
+    margin-left: -90px;
+  }
+
+  .landing3__elka .elka.elka11 {
+    top: 1355px;
+    margin-left: 90px;
+  }
+
+  .landing3__elka .elka.elka12 {
+    top: 1580px;
+    margin-left: -90px;
+  }
+
+  .landing3__elka .elka.elka13 {
+    top: 1580px;
+    margin-left: 90px;
+  }
+
+  .landing3__elka .elka.elka14 {
+    top: 1804px;
+    margin-left: 0;
+  }
+
+  .landing3__elka .elka-fai1 {
+    top: 50px;
+    left: -150px;
+    width: 280px;
+    height: 283px;
+  }
+
+  .landing3__elka .elka-fai2 {
+    top: 36px;
+    left: 228px;
+    width: 439px;
+    height: 439px;
+  }
+
+  .landing3__elka .elka-fai3 {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    background-image: url("../img/landing3/fai3.png");
+    width: 100%;
+    height: 890px;
+    z-index: -1;
+  }
+
+  .landing3__elka .products {
+    margin-bottom: 0;
+    max-width: 180px;
+    margin: 0 auto;
   }
 
   .landing3__elka .products__item {
@@ -15771,179 +15818,30 @@ hr {
     border-radius: 8px;
     position: relative;
     text-align: center;
-    background-color: #fff;
   }
 
   .landing3__elka .products__item::before {
     content: '';
-    display: none;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    background-color: #fff;
+    width: 3px;
+    height: 60px;
+    border-radius: 10px;
   }
 
   .landing3__elka .products__img {
-    border-radius: 0;
-    overflow: hidden;
-    width: 160px;
-    height: 160px;
-    margin: 0 auto 8px;
+    width: 100px;
+    height: 100px;
   }
 
   .landing3__elka .products__name {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 20px;
-    text-align: center;
-    color: #324C9A;
-  }
-
-  .landing3__elka .elka-inner {
-    display: grid;
-    grid-template-areas: "elka1 elka2" "elka3 elka4" "elka5 elka6" "elka7 elka8" "elka9 elka10" "elka11 elka12" "elka13 elka14" "elka15 elka16" "elka17 ." "footer footer";
-    grid-gap: 55px 10px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .landing3__elka .elka {
-    max-width: 260px;
-    width: 100% !important;
-  }
-
-  .landing3__elka .elka.elka1 {
-    grid-area: elka1;
-    margin-top: 160px;
-  }
-
-  .landing3__elka .elka.elka2 {
-    grid-area: elka2;
-    margin-top: -100px;
-    -webkit-transform: skew(1deg, -1deg);
-        -ms-transform: skew(1deg, -1deg);
-            transform: skew(1deg, -1deg);
-  }
-
-  .landing3__elka .elka.elka3 {
-    grid-area: elka3;
-    -webkit-transform: skew(-1deg, 1deg);
-        -ms-transform: skew(-1deg, 1deg);
-            transform: skew(-1deg, 1deg);
-  }
-
-  .landing3__elka .elka.elka4 {
-    grid-area: elka4;
-    margin-top: 200px;
-    -webkit-transform: skew(1deg, -1deg);
-        -ms-transform: skew(1deg, -1deg);
-            transform: skew(1deg, -1deg);
-  }
-
-  .landing3__elka .elka.elka5 {
-    grid-area: elka5;
-    -webkit-transform: skew(-1deg, 1deg);
-        -ms-transform: skew(-1deg, 1deg);
-            transform: skew(-1deg, 1deg);
-    margin-top: 200px;
-  }
-
-  .landing3__elka .elka.elka6 {
-    grid-area: elka6;
-    margin-top: 0;
-    -webkit-transform: skew(1deg, -1deg);
-        -ms-transform: skew(1deg, -1deg);
-            transform: skew(1deg, -1deg);
-  }
-
-  .landing3__elka .elka.elka7 {
-    grid-area: elka7;
-    -webkit-transform: skew(-1deg, 1deg);
-        -ms-transform: skew(-1deg, 1deg);
-            transform: skew(-1deg, 1deg);
-  }
-
-  .landing3__elka .elka.elka8 {
-    grid-area: elka8;
-    margin-top: 200px;
-    -webkit-transform: skew(1deg, -1deg);
-        -ms-transform: skew(1deg, -1deg);
-            transform: skew(1deg, -1deg);
-  }
-
-  .landing3__elka .elka.elka9 {
-    grid-area: elka9;
-    -webkit-transform: skew(-1deg, 1deg);
-        -ms-transform: skew(-1deg, 1deg);
-            transform: skew(-1deg, 1deg);
-    margin-top: 200px;
-  }
-
-  .landing3__elka .elka.elka10 {
-    grid-area: elka10;
-    -webkit-transform: skew(1deg, -1deg);
-        -ms-transform: skew(1deg, -1deg);
-            transform: skew(1deg, -1deg);
-    margin-top: 0px;
-  }
-
-  .landing3__elka .elka.elka11 {
-    grid-area: elka11;
-    margin-top: 0;
-    -webkit-transform: skew(-1deg, 1deg);
-        -ms-transform: skew(-1deg, 1deg);
-            transform: skew(-1deg, 1deg);
-  }
-
-  .landing3__elka .elka.elka12 {
-    margin-top: 200px;
-    grid-area: elka12;
-    -webkit-transform: skew(1deg, -1deg);
-        -ms-transform: skew(1deg, -1deg);
-            transform: skew(1deg, -1deg);
-  }
-
-  .landing3__elka .elka.elka13 {
-    grid-area: elka13;
-    margin-top: 200px;
-    -webkit-transform: skew(-1deg, 1deg);
-        -ms-transform: skew(-1deg, 1deg);
-            transform: skew(-1deg, 1deg);
-  }
-
-  .landing3__elka .elka.elka14 {
-    margin-top: 0;
-    grid-area: elka14;
-    -webkit-transform: skew(1deg, -1deg);
-        -ms-transform: skew(1deg, -1deg);
-            transform: skew(1deg, -1deg);
-  }
-
-  .landing3__elka .elka.elka15 {
-    grid-area: elka15;
-    width: 29%;
-    margin-top: 0;
-  }
-
-  .landing3__elka .elka.elka16 {
-    grid-area: elka16;
-    width: 45%;
-    margin-top: 200px;
-    position: relative;
-  }
-
-  .landing3__elka .elka.elka16:before {
-    content: '';
-    display: none;
-  }
-
-  .landing3__elka .elka.elka17 {
-    grid-area: elka17;
-    width: 45%;
-    position: relative;
-  }
-
-  .landing3__elka .elka.elka17:before {
-    content: '';
-    display: none;
+    font-size: 16px;
+    line-height: 16px;
   }
 
   .selections-years__title {
