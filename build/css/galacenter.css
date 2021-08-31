@@ -12997,6 +12997,7 @@ hr {
   width: 479px;
   height: 507px;
   pointer-events: none;
+  z-index: -1;
 }
 
 .landing3__elka .elka-fai2 {
