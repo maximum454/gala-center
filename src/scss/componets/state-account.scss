@@ -49,6 +49,23 @@
         border-top: 1px solid rgba(68, 121, 163, 0.12);
         margin: 24px 0;
     }
+    &__clear{
+        background-color: #fff;
+        text-align: center;
+        margin: 0 -40px -14px;
+        a{
+            display: block;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 20px;
+            color: #A4A9BB;
+            padding: .563rem 1.4rem;
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
     a {
         font-style: normal;
         font-weight: normal;
@@ -71,10 +88,8 @@
         }
     }
     @include r(767) {
-        background: none;
         &__body {
             display: block;
-            padding: 0;
             .btn {
                 max-width: 100%;
                 display: block;

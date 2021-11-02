@@ -10248,6 +10248,17 @@ hr {
   line-height: 20px;
   position: relative;
   color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .account__templates-down::before {
@@ -10264,6 +10275,15 @@ hr {
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
+}
+
+.account__templates-down a {
+  text-decoration: none;
+  color: #324C9A;
+}
+
+.account__templates-down span {
+  max-width: 569px;
 }
 
 .state-account {
@@ -10331,6 +10351,26 @@ hr {
 .state-account__footer {
   border-top: 1px solid rgba(68, 121, 163, 0.12);
   margin: 24px 0;
+}
+
+.state-account__clear {
+  background-color: #fff;
+  text-align: center;
+  margin: 0 -40px -14px;
+}
+
+.state-account__clear a {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #A4A9BB;
+  padding: .563rem 1.4rem;
+}
+
+.state-account__clear a:hover {
+  opacity: .7;
 }
 
 .state-account a {
@@ -12523,6 +12563,33 @@ hr {
   max-width: 960px;
 }
 
+.account-history-order--order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(68, 121, 163, 0.12);
+  padding: 24px 0;
+  margin-bottom: 0;
+}
+
+.account-history-order--order:last-of-type {
+  margin-bottom: 50px;
+}
+
+.account-history-order--order .account-history-order__subtitle {
+  margin: 0 5px;
+}
+
+.account-history-order--order .account-history-order__subtitle span {
+  margin: 0 10px;
+}
+
 .account-history-order__title {
   font-style: normal;
   font-weight: bold;
@@ -12557,6 +12624,14 @@ hr {
   line-height: 20px;
   text-align: right;
   color: #a4a9bb;
+}
+
+.account-history-order__adress {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #A4A9BB;
 }
 
 .account-history-order__item {
@@ -15369,9 +15444,9 @@ hr {
     max-width: 100%;
     width: 100%;
     margin-left: auto;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
   }
 
   .account__pay {
@@ -15412,13 +15487,8 @@ hr {
     color: #a4a9bb;
   }
 
-  .state-account {
-    background: none;
-  }
-
   .state-account__body {
     display: block;
-    padding: 0;
   }
 
   .state-account__body .btn {
@@ -15677,6 +15747,32 @@ hr {
 
   .sertificat {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .account-history-order--order {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid rgba(68, 121, 163, 0.12);
+    padding: 24px 0;
+    margin-bottom: 0;
+  }
+
+  .account-history-order--order:last-of-type {
+    margin-bottom: 35px;
+  }
+
+  .account-history-order--order .account-history-order__subtitle {
+    margin: 10px 0 15px;
+    display: block;
+  }
+
+  .account-history-order--order .account-history-order__subtitle span {
+    margin: 0 10px;
   }
 
   .landing3__elka {

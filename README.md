@@ -53,6 +53,8 @@
 
 # Личный кабинет ваш заказ
 * https://maximum454.github.io/gala-center/build/account-your-order.html
+* https://maximum454.github.io/gala-center/build/account-your-order2.html
+* https://maximum454.github.io/gala-center/build/account-your-order3.html
 
 # Статьи
 * https://maximum454.github.io/gala-center/build/artıcles.html

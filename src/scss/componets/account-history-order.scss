@@ -1,6 +1,23 @@
 .account-history-order {
     margin-bottom: 60px;
     max-width: 960px;
+    &--order{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(68, 121, 163, 0.12);
+        padding: 24px 0;
+        margin-bottom: 0;
+        &:last-of-type{
+            margin-bottom: 50px;
+        }
+        .account-history-order__subtitle {
+            margin: 0 5px;
+            span {
+                margin: 0 10px;
+            }
+        }
+    }
     &__title {
         font-style: normal;
         font-weight: bold;
@@ -28,6 +45,13 @@
             text-align: right;
             color: #a4a9bb;
         }
+    }
+    &__adress{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        color: #A4A9BB;
     }
     &__body {
     }
@@ -101,6 +125,26 @@
             line-height: 28px;
             text-align: right;
             color: #333333;
+        }
+    }
+    @include r(767){
+        &--order{
+            display: block;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(68, 121, 163, 0.12);
+            padding: 24px 0;
+            margin-bottom: 0;
+            &:last-of-type{
+                margin-bottom: 35px;
+            }
+            .account-history-order__subtitle {
+                margin: 10px 0 15px;
+                display: block;
+                span {
+                    margin: 0 10px;
+                }
+            }
         }
     }
 }

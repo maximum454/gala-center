@@ -68,6 +68,10 @@
         line-height: 20px;
         position: relative;
         color: #333333;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
         &::before{
             content: '';
             position: absolute;
@@ -81,6 +85,13 @@
             width: 24px;
             height: 24px;
 
+        }
+        a{
+            text-decoration: none;
+            color:#324C9A;
+        }
+        span{
+            max-width: 569px;
         }
     }
     @include r(1023) {
@@ -108,7 +119,7 @@
             max-width: 100%;
             width: 100%;
             margin-left: auto;
-            order: 2;
+            order: 0;
         }
         &__pay {
             display: block;
