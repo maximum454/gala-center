@@ -74,6 +74,16 @@
         color: #324c9a;
         text-decoration: none;
     }
+    &__textarea{
+        max-width: 100% !important;
+        &::placeholder {
+            color: #a4a9bb;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
     @include r(1023) {
         &__body {
             display: flex;

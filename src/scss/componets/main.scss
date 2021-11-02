@@ -7,6 +7,14 @@
         line-height: 36px;
         color: #333333;
         margin-bottom: 20px;
+        span{
+            display: block;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 20px;
+            color: #A4A9BB;
+        }
     }
     &__subtitle {
         font-style: normal;
@@ -23,6 +31,14 @@
             display: block;
             height: auto;
         }
+    }
+    &__back{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 20px;
+        color: #A4A9BB;
+        text-decoration: none;
     }
     @include r(767){
         &__title {

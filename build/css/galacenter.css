@@ -3790,6 +3790,13 @@ html.remodal-is-locked {
   background-image: url("../img/icons-sprite.svg#search-blue");
 }
 
+.icon-arrow-back {
+  background-image: url("../img/icons-sprite.svg#arrow-back");
+  width: 12px;
+  height: 19px;
+  margin-right: 10px;
+}
+
 .btn-group {
   margin: 0 -10px;
 }
@@ -4186,7 +4193,23 @@ html.remodal-is-locked {
   border-bottom: 1px solid rgba(68, 121, 163, 0.12);
 }
 
-.form-control-plaintext:placeholder {
+.form-control-plaintext::-webkit-input-placeholder {
+  color: #a4a9bb;
+}
+
+.form-control-plaintext::-moz-placeholder {
+  color: #a4a9bb;
+}
+
+.form-control-plaintext:-ms-input-placeholder {
+  color: #a4a9bb;
+}
+
+.form-control-plaintext::-ms-input-placeholder {
+  color: #a4a9bb;
+}
+
+.form-control-plaintext::placeholder {
   color: #a4a9bb;
 }
 
@@ -6494,6 +6517,15 @@ hr {
   margin-bottom: 20px;
 }
 
+.main__title span {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #A4A9BB;
+}
+
 .main__subtitle {
   font-style: normal;
   font-weight: bold;
@@ -6511,6 +6543,15 @@ hr {
   max-width: 100%;
   display: block;
   height: auto;
+}
+
+.main__back {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  color: #A4A9BB;
+  text-decoration: none;
 }
 
 .breadcrumb {
@@ -10380,6 +10421,50 @@ hr {
   line-height: 20px;
   color: #324c9a;
   text-decoration: none;
+}
+
+.state-account__textarea {
+  max-width: 100% !important;
+}
+
+.state-account__textarea::-webkit-input-placeholder {
+  color: #a4a9bb;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.state-account__textarea::-moz-placeholder {
+  color: #a4a9bb;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.state-account__textarea:-ms-input-placeholder {
+  color: #a4a9bb;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.state-account__textarea::-ms-input-placeholder {
+  color: #a4a9bb;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.state-account__textarea::placeholder {
+  color: #a4a9bb;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .card-shop {
