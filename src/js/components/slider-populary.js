@@ -14,33 +14,34 @@ function swiperPopularyMode() {
         
 
     }
-    
+
     else if (desktop.matches) {
         if (!swiperPopularyInit) {
             swiperPopularyInit = true;
-            swiperPopulary = new Swiper('.swiper-container-populary', {
-                slidesPerView: 3,
-                slidesPerGroup: 3,
-                spaceBetween: !sliderSpaceBetween ? 45 : +sliderSpaceBetween,
-                freeMode: true,
-                mousewheel: false,
-                initialSlide: 0,
-                observer: true,
-                observeParents: true,
-                navigation: {
-                    nextEl: '.populary-next',
-                    prevEl: '.populary-prev',
-                },
-                breakpoints: {
-                    768: {
-                        slidesPerView: 3,
+            document.querySelectorAll('.slider-populary').forEach(n => {
+                swiperPopulary = new Swiper(n.querySelector('.swiper-container-populary'), {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                    spaceBetween: 45,
+                    mousewheel: false,
+                    initialSlide: 0,
+                    observer: true,
+                    observeParents: true,
+                    navigation: {
+                        nextEl: n.querySelector('.populary-next'),
+                        prevEl: n.querySelector('.populary-prev'),
                     },
-                    1024: {
-                        slidesPerView: 5,
-                        slidesPerGroup: 5,
+                    breakpoints: {
+                        320: {
+                            spaceBetween: 20,
+                        },
+                        1024: {
+                            slidesPerView: 5,
+                            slidesPerGroup: 5,
+                        }
                     }
-                }
 
+                });
             });
         }
     }

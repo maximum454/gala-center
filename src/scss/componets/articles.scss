@@ -79,9 +79,6 @@
 	}
 	@include r(1023){
 		&__body{
-			grid-template-columns: repeat(4, minmax(310px, 1fr));
-			overflow-x: scroll;
-			overflow-y: hidden;
 		}
 	}
 	@include r(767){

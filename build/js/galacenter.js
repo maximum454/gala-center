@@ -1853,33 +1853,34 @@ function swiperPopularyMode() {
         
 
     }
-    
+
     else if (desktop.matches) {
         if (!swiperPopularyInit) {
             swiperPopularyInit = true;
-            swiperPopulary = new Swiper('.swiper-container-populary', {
-                slidesPerView: 3,
-                slidesPerGroup: 3,
-                spaceBetween: !sliderSpaceBetween ? 45 : +sliderSpaceBetween,
-                freeMode: true,
-                mousewheel: false,
-                initialSlide: 0,
-                observer: true,
-                observeParents: true,
-                navigation: {
-                    nextEl: '.populary-next',
-                    prevEl: '.populary-prev',
-                },
-                breakpoints: {
-                    768: {
-                        slidesPerView: 3,
+            document.querySelectorAll('.slider-populary').forEach(n => {
+                swiperPopulary = new Swiper(n.querySelector('.swiper-container-populary'), {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                    spaceBetween: 45,
+                    mousewheel: false,
+                    initialSlide: 0,
+                    observer: true,
+                    observeParents: true,
+                    navigation: {
+                        nextEl: n.querySelector('.populary-next'),
+                        prevEl: n.querySelector('.populary-prev'),
                     },
-                    1024: {
-                        slidesPerView: 5,
-                        slidesPerGroup: 5,
+                    breakpoints: {
+                        320: {
+                            spaceBetween: 20,
+                        },
+                        1024: {
+                            slidesPerView: 5,
+                            slidesPerGroup: 5,
+                        }
                     }
-                }
 
+                });
             });
         }
     }
@@ -1898,6 +1899,33 @@ window.addEventListener('resize', function() {
     }
 });
 
+const swiperArticles = new Swiper('.swiper-container-articles', {
+    slidesPerView: 4,
+    slidesPerGroup: 1,
+    spaceBetween: 30,
+    freeMode: true,
+    mousewheel: false,
+    initialSlide: 0,
+    observer: true,
+    observeParents: true,
+    navigation: {
+        nextEl: '.articles-next',
+        prevEl: '.articles-prev',
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1.5,
+        },
+        768: {
+            slidesPerView: 2.2,
+        },
+        1024: {
+            slidesPerView: 4,
+            slidesPerGroup: 1,
+        }
+    }
+
+});
 $(function () {
     $('.slider-tabs__caption').on('click', 'li:not(.active)', function () {
         $(this)
@@ -2133,27 +2161,26 @@ const galleryThumbs = new Swiper(".gallery-thumbs", {
     direction: 'vertical',
     slidesPerView: 5,
     spaceBetween: 20,
-    freeMode: true,
-    initialSlide:0,
-    watchOverflow: true,
-    watchSlidesVisibility: true,
+    observer: true,
+    slideToClickedSlide: true,
     watchSlidesProgress: true,
-  });
-  
-  const galleryMain = new Swiper(".gallery-main", {
+    watchSlidesVisibility: true,
+    watchOverflow:false,
+    virtualTranslate: true
+});
+const galleryMain = new Swiper(".gallery-main", {
     slidesPerView: 1,
     spaceBetween: 20,
     watchOverflow: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
     preventInteractionOnTransition: true,
-    freeMode: true,
-    initialSlide:0,
+    initialSlide: 0,
     centeredSlides: true,
     centeredSlidesBounds: true,
     observer: true,
     thumbs: {
-      swiper: galleryThumbs
+        swiper: galleryThumbs
     },
     breakpoints: {
         320: {
@@ -2170,14 +2197,99 @@ const galleryThumbs = new Swiper(".gallery-thumbs", {
         }
 
     }
-  });
-  galleryThumbs.on('slideChange', function (){
-    galleryThumbs.update();
-})
+});
 
-galleryMain.on('slideChange', function (){
-    galleryMain .update();
-})
+const popupThumbs = new Swiper(".slider-detail-popup-thumbs", {
+    slidesPerView: 5,
+    spaceBetween: 20,
+    observer: true,
+    slideToClickedSlide: true,
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
+    watchOverflow:true,
+});
+const popupMain = new Swiper(".slider-detail-popup-main", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    watchOverflow: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    observer: true,
+    thumbs: {
+        swiper: popupThumbs
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        450: {
+            slidesPerView: 1.5,
+        },
+        768: {
+            slidesPerView: 2.5,
+        },
+        1024: {
+            slidesPerView: 1,
+        }
+
+    }
+});
+
+galleryMain.on('slideChangeTransitionStart', function() {
+    galleryThumbs.slideTo(galleryMain.activeIndex);
+    popupMain.slideTo(galleryMain.activeIndex);
+
+});
+
+galleryThumbs.on('transitionStart', function(){
+    galleryMain.slideTo(galleryThumbs.activeIndex);
+    popupMain.slideTo(galleryThumbs.activeIndex);
+});
+
+popupMain.on('slideChangeTransitionStart', function() {
+    popupThumbs.slideTo(popupMain.activeIndex);
+});
+
+popupThumbs.on('transitionStart', function(){
+    popupMain.slideTo(popupThumbs.activeIndex);
+});
+
+
+
+$(document).on('opened', '.remodal.slider-detail-popup', function () {
+    popupThumbs.update();
+    popupMain.update();
+});
+
+window.addEventListener('load', function() {
+    galleryMain.update();
+    galleryThumbs.update();
+
+    popupMain.update();
+    popupThumbs.update();
+});
+
+window.addEventListener('resize', function() {
+    galleryMain.update();
+    galleryThumbs.update();
+
+    popupMain.update();
+    popupThumbs.update();
+});
+
+
+
+
+const swiperScrollTabs = new Swiper(".swiper-scroll-tab", {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    watchOverflow: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    observer: true,
+    freeMode: true,
+});
+
 
 if(document.getElementById('header')){
     window.addEventListener("scroll", bringmenu);
@@ -2316,7 +2428,7 @@ $(function () {
     });
 
     $('.js-add-quantity-store').on('click', function(){
-        $(this).parents('.products__item').toggleClass('active').siblings().removeClass('active');
+        $(this).parents('.catalog').toggleClass('active').siblings().removeClass('active');
         $('.products--list').toggleClass('active');
     });
 

@@ -11,6 +11,7 @@
 @@include('./components/slider-season.js')
 @@include('./components/selections-goods.js')
 @@include('./components/slider-populary.js')
+@@include('./components/slider-articles.js')
 @@include('./components/slider-tabs.js')
 @@include('./components/slider-collection.js')
 @@include('./components/slider-price-list.js')
@@ -74,7 +75,7 @@ $(function () {
     });
 
     $('.js-add-quantity-store').on('click', function(){
-        $(this).parents('.products__item').toggleClass('active').siblings().removeClass('active');
+        $(this).parents('.catalog').toggleClass('active').siblings().removeClass('active');
         $('.products--list').toggleClass('active');
     });
 
